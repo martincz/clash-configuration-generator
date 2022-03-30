@@ -1,0 +1,89 @@
+# Port of HTTP(S) proxy server on the local end
+port: 3333
+
+# Port of SOCKS5 proxy server on the local end
+socks-port: 23456
+
+# Transparent proxy server port for Linux and macOS (Redirect TCP and TProxy UDP)
+redir-port: 23457
+
+# Clash as Transparent proxy gateway via TPROXY
+tproxy: true
+
+# Transparent proxy server port for Linux (TProxy TCP and TProxy UDP)
+tproxy-port: 23458
+
+# HTTP(S) and SOCKS4(A)/SOCKS5 server on the same port
+# mixed-port: 3333
+
+# authentication of local SOCKS5/HTTP(S) server
+# authentication:
+#  - "user1:pass1"
+#  - "user2:pass2"
+
+# Set to true to allow connections to the local-end server from
+# other LAN IP addresses
+allow-lan: true
+
+# This is only applicable when `allow-lan` is `true`
+# '*': bind all IP addresses
+# 192.168.122.11: bind a single IPv4 address
+# "[aaaa::a8aa:ff:fe09:57d8]": bind a single IPv6 address
+# bind-address: '*'
+
+# Clash router working mode
+# rule: rule-based packet routing
+# global: all packets will be forwarded to a single endpoint
+# direct: directly forward the packets to the Internet
+mode: rule
+
+# Clash by default prints logs to STDOUT
+# info / warning / error / debug / silent
+log-level: error
+
+# When set to false, resolver won't translate hostnames to IPv6 addresses
+ipv6: false
+
+# RESTful web API listening address
+external-controller: 192.168.0.1:9094
+
+# A relative path to the configuration directory or an absolute path to a
+# directory in which you put some static web resource. Clash core will then
+# serve it at `http://{{external-controller}}/ui`.
+external-ui: dashboard
+
+# Secret for the RESTful API (optional)
+# Authenticate by spedifying HTTP header `Authorization: Bearer ${secret}`
+# ALWAYS set a secret if RESTful API is listening on 0.0.0.0
+secret: "secret"
+
+# Outbound interface name
+# interface-name: en0
+
+# fwmark on Linux only
+# routing-mark: 6666
+
+# Static hosts for DNS server and connection establishment (like /etc/hosts)
+#
+# Wildcard hostnames are supported (e.g. *.clash.dev, *.foo.*.example.com)
+# Non-wildcard domain names have a higher priority than wildcard domain names
+# e.g. foo.example.com > *.example.com > .example.com
+# P.S. +.foo.com equals to .foo.com and foo.com
+hosts:
+  router.asus.com: 192.168.0.1
+  services.googleapis.cn: 74.125.193.94
+  ipv6.msftconnecttest.com: 2a01:111:2003::52 #请勿删除
+  www.msftconnecttest.com: 13.107.4.52 #请勿删除
+
+profile:
+  # Store the `select` results in $HOME/.config/clash/.cache
+  # set false If you don't want this behavior
+  # when two different configurations have groups with the same name, the selected values are shared
+  store-selected: true
+
+  # persistence fakeip
+  # store-fake-ip: true
+
+experimental:
+  ignore-resolve-fail: true
+

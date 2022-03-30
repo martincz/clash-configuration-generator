@@ -26,7 +26,7 @@ dns:
   # involved. Clash answers the DNS question with the first result gathered.
   nameserver:
     # - 192.168.2.2:1053
-    - 222.74.1.200 # 建议添加一个ISP默认提供的DNS地址
+    - 222.74.1.200 # 建议替换为所在地ISP提供商的DNS地址
     - 114.114.114.114
     - 119.29.29.29
     - 223.5.5.5

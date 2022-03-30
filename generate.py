@@ -32,9 +32,6 @@ def main():
     with open('configs/common.yaml') as fp:
         cfg_common = yaml.load(fp)
 
-    with open('configs/proxy.yaml') as fp:
-        cfg_proxy = yaml.load(fp)
-
     with open('configs/dns.yaml') as fp:
         cfg_dns = yaml.load(fp)
     try:
@@ -65,7 +62,7 @@ def main():
 
     # 生成最终配置
     cfg_final = cfg_common.copy()
-    cfg_array = [cfg_common, cfg_proxy, rule_final, cfg_dns, cfg_custom]
+    cfg_array = [cfg_common, rule_final, cfg_dns, cfg_custom]
     for cfg in cfg_array:
         cfg_final.update(cfg)
 

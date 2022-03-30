@@ -449,12 +449,6 @@ rules:
   - DOMAIN,d1k2us671qcoau.cloudfront.net,GlobalMedia
   - DOMAIN,d2anahhhmp1ffz.cloudfront.net,GlobalMedia
   - DOMAIN,dfp6rglgjqszk.cloudfront.net,GlobalMedia
-# > YouTube
-# USER-AGENT,com.google.ios.youtube*,GlobalMedia
-# USER-AGENT,YouTube*,GlobalMedia
-  - DOMAIN-SUFFIX,googlevideo.com,GlobalMedia
-  - DOMAIN-SUFFIX,youtube.com,GlobalMedia
-  - DOMAIN,youtubei.googleapis.com,GlobalMedia
 # (HKMTMedia)
 # > 愛奇藝台灣站
 #- DOMAIN,cache.video.iqiyi.com,HKMTMedia

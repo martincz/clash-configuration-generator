@@ -16,8 +16,7 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 
-import numpy as np
-import sys
+from deepmerge import always_merger
 from ruamel.yaml import YAML
 
 def main():
@@ -28,6 +27,7 @@ def main():
     yaml.preserve_quotes = True
     yaml.indent(mapping=2, sequence=4, offset=2)
 
+    # 读取所有配置
     with open('configs/common.yaml') as fp:
         cfg_common = yaml.load(fp)
 
@@ -40,24 +40,28 @@ def main():
     with open('configs/custom.yaml') as fp:
         cfg_custom = yaml.load(fp)
 
-    # 合并所有规则
+    # 读取所有规则
     with open('rules/common.yaml') as fp:
-        rules_common = yaml.load(fp)
+        rule_common = yaml.load(fp)
 
     with open('rules/custom.yaml') as fp:
-        rules_custom = yaml.load(fp)
+        rule_custom = yaml.load(fp)
 
     with open('rules/suffix.yaml') as fp:
-        rules_suffix = yaml.load(fp)
+        rule_suffix = yaml.load(fp)
 
-    rules_final = rules_common.copy()
-    rules_final['rules'] = rules_common['rules'] + rules_custom['rules'] + rules_suffix['rules']
+    # 合并所有规则
+    rule_final = {}
+    rule_array = [rule_common, rule_custom, rule_suffix]
+    for rule in rule_array:
+        always_merger.merge(rule_final, rule)
 
-    # 整合最终配置
+    # 生成最终配置
     cfg_final = cfg_common.copy()
-    cfg_arrays = [cfg_proxy, rules_final, cfg_dns, cfg_custom]
-    for cfg in cfg_arrays:
+    cfg_array = [cfg_common, cfg_proxy, rule_final, cfg_dns, cfg_custom]
+    for cfg in cfg_array:
         cfg_final.update(cfg)
+
     with open('configuration.yaml', 'w') as fp:
         yaml.dump(cfg_final, fp)
 

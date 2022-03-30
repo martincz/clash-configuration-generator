@@ -16,9 +16,11 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 
+import collections
+import os
+import sys
 from deepmerge import always_merger
 from ruamel.yaml import YAML
-import sys
 
 def main():
 
@@ -42,6 +44,12 @@ def main():
         sys.exit(1)
 
     # 读取所有规则
+    rule_merged = {}
+    for curDir, dirs, files in os.walk('rules/parts'):
+        for file in files:
+            if file.endswith('.yaml'):
+                with open(os.path.join(curDir, file)) as fp:
+                    always_merger.merge(rule_merged, yaml.load(fp))
     with open('rules/common.yaml') as fp:
         rule_common = yaml.load(fp)
     try:
@@ -54,9 +62,12 @@ def main():
 
     # 合并所有规则
     rule_final = {}
-    rule_array = [rule_common, rule_custom, rule_suffix]
+    rule_array = [rule_common, rule_merged, rule_custom, rule_suffix]
     for rule in rule_array:
         always_merger.merge(rule_final, rule)
+
+    # 检查重复项
+    # print([item for item, count in collections.Counter(rule_final['rules']).items() if count > 1])
 
     # 生成最终配置
     cfg_final = cfg_common.copy()

@@ -8,7 +8,7 @@ dns:
   # These nameservers are used to resolve the DNS nameserver hostnames below.
   # Specify IP addresses only
   default-nameserver:
-    - 222.74.1.200 # 建议添加一个ISP默认提供的DNS地址
+    - 222.74.1.200 # 建议替换为所在地ISP提供商的DNS地址
     - 114.114.114.114
   enhanced-mode: redir-host # or fake-ip
   # fake-ip-range: 198.18.0.1/16 # Fake IP addresses pool CIDR

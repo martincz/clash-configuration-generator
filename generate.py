@@ -18,6 +18,7 @@
 
 from deepmerge import always_merger
 from ruamel.yaml import YAML
+import sys
 
 def main():
 
@@ -36,17 +37,23 @@ def main():
 
     with open('configs/dns.yaml') as fp:
         cfg_dns = yaml.load(fp)
-
-    with open('configs/custom.yaml') as fp:
-        cfg_custom = yaml.load(fp)
+    try:
+        with open('configs/custom.yaml') as fp:
+            cfg_custom = yaml.load(fp)
+            if cfg_custom is None:
+                raise FileNotFoundError
+    except FileNotFoundError:
+        print('未配置 configs/custom.yaml 文件！')
+        sys.exit(1)
 
     # 读取所有规则
     with open('rules/common.yaml') as fp:
         rule_common = yaml.load(fp)
-
-    with open('rules/custom.yaml') as fp:
-        rule_custom = yaml.load(fp)
-
+    try:
+        with open('rules/custom.yaml') as fp:
+            rule_custom = yaml.load(fp)
+    except FileNotFoundError:
+        rule_custom = None
     with open('rules/suffix.yaml') as fp:
         rule_suffix = yaml.load(fp)
 

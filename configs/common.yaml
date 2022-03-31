@@ -70,10 +70,13 @@ secret: "secret"
 # e.g. foo.example.com > *.example.com > .example.com
 # P.S. +.foo.com equals to .foo.com and foo.com
 hosts:
-  router.asus.com: 192.168.0.1
+  #域名登陆路由器后台
+  router.asus.com: 192.168.50.1
+  #google中国重新定向
   services.googleapis.cn: 74.125.193.94
-  ipv6.msftconnecttest.com: 2a01:111:2003::52 #请勿删除
-  www.msftconnecttest.com: 13.107.4.52 #请勿删除
+  #win网络状态检查
+  ipv6.msftconnecttest.com: 2a01:111:2003::52
+  www.msftconnecttest.com: 13.107.4.52
 
 profile:
   # Store the `select` results in $HOME/.config/clash/.cache

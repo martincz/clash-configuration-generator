@@ -8,6 +8,11 @@
   group: "Hijacking"
   ruleset: "rules/blackmatrix7/rule/Clash/Hijacking/Hijacking.yaml"
 
+# China
+- name: "China" 
+  group: "DIRECT"
+  ruleset: "rules/blackmatrix7/rule/Clash/China/China.yaml"
+
 # Apple
 - name: "Apple" 
   group: "Apple"

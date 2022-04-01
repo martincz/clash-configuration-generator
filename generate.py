@@ -62,7 +62,7 @@ def main():
 
     # 合并所有规则
     rule_final = {}
-    rule_array = [rule_common, rule_merged, rule_custom, rule_suffix]
+    rule_array = [rule_custom, rule_common, rule_merged, rule_suffix]
     for rule in rule_array:
         always_merger.merge(rule_final, rule)
 

@@ -8,8 +8,8 @@ dns:
   # These nameservers are used to resolve the DNS nameserver hostnames below.
   # Specify IP addresses only
   default-nameserver:
-    - 114.114.114.114
     - 119.29.29.29
+    - 223.5.5.5
   enhanced-mode: redir-host # or fake-ip
   # fake-ip-range: 198.18.0.1/16 # Fake IP addresses pool CIDR
   # use-hosts: true # lookup hosts and return IP record
@@ -25,10 +25,9 @@ dns:
   # All DNS questions are sent directly to the nameserver, without proxies
   # involved. Clash answers the DNS question with the first result gathered.
   nameserver:
-    # - 192.168.2.2:1053
-    - 114.114.114.114
-    - 119.29.29.29
-    - 223.5.5.5
+    - https://doh.pub/dns-query
+    - https://223.5.5.5/dns-query
+    - tls://101.101.101.101
 
   # When `fallback` is present, the DNS server will send concurrent requests
   # to the servers in this section along with servers in `nameservers`.

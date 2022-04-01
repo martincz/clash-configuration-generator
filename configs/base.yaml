@@ -8,7 +8,7 @@ socks-port: 23456
 redir-port: 23457
 
 # Clash as Transparent proxy gateway via TPROXY
-tproxy: true
+tproxy: false
 
 # Transparent proxy server port for Linux (TProxy TCP and TProxy UDP)
 tproxy-port: 23458
@@ -45,7 +45,7 @@ log-level: error
 ipv6: false
 
 # RESTful web API listening address
-external-controller: 192.168.0.1:9094
+external-controller: 192.168.50.1:9090
 
 # A relative path to the configuration directory or an absolute path to a
 # directory in which you put some static web resource. Clash core will then
@@ -55,7 +55,7 @@ external-ui: dashboard
 # Secret for the RESTful API (optional)
 # Authenticate by spedifying HTTP header `Authorization: Bearer ${secret}`
 # ALWAYS set a secret if RESTful API is listening on 0.0.0.0
-secret: "secret"
+secret: ""
 
 # Outbound interface name
 # interface-name: en0

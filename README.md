@@ -1,3 +1,15 @@
 # MerlinClash Configuration Generator
-- 拆分配置选项与分流规则，便于阅读和维护。
-- 通过脚本自动生成个性化配置文件。
+
+适用于 MerlinClash 的个性化配置生成脚本
+
+## 前提条件
+
+1. 运行此工具需要安装 [Python](https://www.python.org/) 运行环境。
+
+2. 安装依赖的软件包。
+
+    ```bash
+    pip install deepmerge
+    pip install ruamel.yaml
+
+    ```

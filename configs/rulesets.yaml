@@ -1,0 +1,69 @@
+# 本地局域网地址
+- name: "Lan"
+  group: "DIRECT"
+  ruleset: "rules/blackmatrix7/rule/Clash/Lan/Lan.yaml"
+
+# 反劫持
+- name: "Hijacking"
+  group: "Hijacking"
+  ruleset: "rules/blackmatrix7/rule/Clash/Hijacking/Hijacking.yaml"
+
+# Apple
+- name: "Apple" 
+  group: "Apple"
+  ruleset: "rules/blackmatrix7/rule/Clash/Apple/Apple.yaml"
+
+# Facebook
+- name: "Facebook"
+  group: "PROXY"
+  ruleset: "rules/blackmatrix7/rule/Clash/Facebook/Facebook.yaml"
+
+# Twitter
+- name: "Twitter"
+  group: "PROXY"
+  ruleset: "rules/blackmatrix7/rule/Clash/Twitter/Twitter.yaml"
+
+# Google
+- name: "Google"
+  group: "PROXY"
+  ruleset: "rules/blackmatrix7/rule/Clash/Google/Google.yaml"
+
+# OneDrive
+- name: "OneDrive"
+  group: "PROXY"
+  ruleset: "rules/blackmatrix7/rule/Clash/OneDrive/OneDrive.yaml"
+
+# YouTube
+- name: "YouTube"
+  group: "GlobalMedia"
+  ruleset: "rules/blackmatrix7/rule/Clash/YouTube/YouTube.yaml"
+
+# YouTubeMusic
+- name: "YouTubeMusic"
+  group: "GlobalMedia"
+  ruleset: "rules/blackmatrix7/rule/Clash/YouTubeMusic/YouTubeMusic.yaml"
+
+# Pandora
+- name: "Pandora"
+  group: "GlobalMedia"
+  ruleset: "rules/blackmatrix7/rule/Clash/Pandora/Pandora.yaml"
+
+# Spotify
+- name: "Spotify"
+  group: "GlobalMedia"
+  ruleset: "rules/blackmatrix7/rule/Clash/Spotify/Spotify.yaml"
+
+# Netflix
+- name: "Netflix"
+  group: "GlobalMedia"
+  ruleset: "rules/blackmatrix7/rule/Clash/Netflix/Netflix.yaml"
+
+# AmazonPrimeVideo
+- name: "AmazonPrimeVideo"
+  group: "GlobalMedia"
+  ruleset: "rules/blackmatrix7/rule/Clash/AmazonPrimeVideo/AmazonPrimeVideo.yaml"
+
+# Disney
+- name: "Disney"
+  group: "GlobalMedia"
+  ruleset: "rules/blackmatrix7/rule/Clash/Disney/Disney.yaml"

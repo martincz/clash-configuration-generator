@@ -33,6 +33,11 @@
   group: "PROXY"
   ruleset: "rules/blackmatrix7/rule/Clash/OneDrive/OneDrive.yaml"
 
+# Telegram
+- name: "Telegram"
+  group: "PROXY"
+  ruleset: "rules/blackmatrix7/rule/Clash/Telegram/Telegram.yaml"
+
 # YouTube
 - name: "YouTube"
   group: "GlobalMedia"

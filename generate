@@ -18,6 +18,7 @@
 
 import collections
 import os
+import rule
 import sys
 from deepmerge import always_merger
 from ruamel.yaml import YAML
@@ -43,35 +44,14 @@ def main():
         print('未配置 configs/custom.yaml 文件！')
         sys.exit(1)
 
-    # 读取所有规则
-    rule_merged = {}
-    for curDir, dirs, files in os.walk('rules/parts'):
-        for file in files:
-            if file.endswith('.yaml'):
-                with open(os.path.join(curDir, file)) as fp:
-                    always_merger.merge(rule_merged, yaml.load(fp))
-    with open('rules/common.yaml') as fp:
-        rule_common = yaml.load(fp)
-    try:
-        with open('rules/custom.yaml') as fp:
-            rule_custom = yaml.load(fp)
-    except FileNotFoundError:
-        rule_custom = None
-    with open('rules/suffix.yaml') as fp:
-        rule_suffix = yaml.load(fp)
-
-    # 合并所有规则
-    rule_final = {}
-    rule_array = [rule_custom, rule_common, rule_merged, rule_suffix]
-    for rule in rule_array:
-        always_merger.merge(rule_final, rule)
+    cfg_rule = rule.getRules()
 
     # 检查重复项
-    # print([item for item, count in collections.Counter(rule_final['rules']).items() if count > 1])
+    # print([item for item, count in collections.Counter(cfg_rule['rules']).items() if count > 1])
 
     # 生成最终配置
     cfg_final = cfg_base.copy()
-    cfg_array = [cfg_base, rule_final, cfg_custom]
+    cfg_array = [cfg_base, cfg_custom, cfg_rule]
     for cfg in cfg_array:
         cfg_final.update(cfg)
 

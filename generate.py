@@ -31,8 +31,8 @@ def main():
     yaml.indent(mapping=2, sequence=4, offset=2)
 
     # 读取所有配置
-    with open('configs/common.yaml') as fp:
-        cfg_common = yaml.load(fp)
+    with open('configs/base.yaml') as fp:
+        cfg_base = yaml.load(fp)
 
     try:
         with open('configs/custom.yaml') as fp:
@@ -70,8 +70,8 @@ def main():
     # print([item for item, count in collections.Counter(rule_final['rules']).items() if count > 1])
 
     # 生成最终配置
-    cfg_final = cfg_common.copy()
-    cfg_array = [cfg_common, rule_final, cfg_custom]
+    cfg_final = cfg_base.copy()
+    cfg_array = [cfg_base, rule_final, cfg_custom]
     for cfg in cfg_array:
         cfg_final.update(cfg)
 

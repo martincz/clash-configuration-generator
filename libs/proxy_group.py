@@ -35,7 +35,7 @@ def getProxyGroups(proxies):
     for proxy in proxies:
         ext_proxies.append(proxy.get('name'))
 
-    with open('configs/proxy-groups.yaml') as fp:
+    with open('configs/proxy-groups.yaml', 'rb') as fp:
         groups = yaml.load(fp)
 
     proxy_groups = {'proxy-groups': []}

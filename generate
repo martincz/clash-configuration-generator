@@ -38,7 +38,7 @@ def main():
     yaml.indent(mapping=2, sequence=4, offset=2)
 
     # 读取默认配置
-    with open('configs/basic.yaml') as fp:
+    with open('configs/basic.yaml', 'rb') as fp:
         cfg_basic = yaml.load(fp)
 
     # 生成最终配置

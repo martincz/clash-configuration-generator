@@ -37,7 +37,7 @@ def getPreference():
     yaml.indent(mapping=2, sequence=4, offset=2)
 
     try:
-        with open('preference.yaml') as fp:
+        with open('preference.yaml', 'rb') as fp:
             cfg_preference = yaml.load(fp)
             if cfg_preference is None:
                 raise FileNotFoundError

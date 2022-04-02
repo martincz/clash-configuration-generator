@@ -39,14 +39,6 @@ def getRules():
 
     rules = {'rules': []}
 
-    # 自定义规则
-    try:
-        with open('rules/custom.yaml') as fp:
-            custom = yaml.load(fp)
-            always_merger.merge(rules, custom);
-    except FileNotFoundError:
-        pass
-
     # 合并规则集
     for policy in rulesets:
         group = policy.get('group')

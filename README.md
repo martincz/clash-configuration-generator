@@ -23,13 +23,14 @@
 
 ## 简易用法
 
-### 1. 拷贝 preference.example.yaml 副本并更名为 preference.yaml。
+1. 拷贝 preference.example.yaml 副本并更名为 preference.yaml。
 
-### 2. 根据需求修改 preference.yaml 中的默认配置项。
+2. 根据需求修改 preference.yaml 中的默认配置项。
 
-### 3. 在仓库根目录运行以下命令：
+3. 在仓库根目录运行以下命令：
 
     ```bash
     python generate
     ```
-### 4. 导入生成的 configuration.yaml 配置文件到 MerlinClash
+
+4. 导入生成的 configuration.yaml 配置文件到 MerlinClash。

@@ -44,12 +44,12 @@ class Rule(object):
         always_merger.merge(rules, self.getRulesFromRuleSets(ext_rulesets))
 
         # 预设规则集
-        with open('configs/rulesets.yaml') as fp:
+        with open('configs/rulesets.yaml', 'rb') as fp:
             def_rulesets = self.yaml.load(fp)
             always_merger.merge(rules, self.getRulesFromRuleSets(def_rulesets))
 
         # 结尾规则
-        with open('rules/suffix.yaml') as fp:
+        with open('rules/suffix.yaml', 'rb') as fp:
             suffix = self.yaml.load(fp)
             always_merger.merge(rules, suffix)
 
@@ -60,7 +60,7 @@ class Rule(object):
         for policy in rulesets:
             group = policy.get('group')
             ruleset = policy.get('ruleset')
-            with open(ruleset) as fp:
+            with open(ruleset, 'rb') as fp:
                 rulelines = self.yaml.load(fp)
                 for line in rulelines.get('payload'):
                     info = line.split(',')

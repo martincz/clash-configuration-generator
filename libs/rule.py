@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-#
 # MIT License
 
 # Copyright (c) 2022 Martincz Gao
@@ -23,13 +21,12 @@
 # SOFTWARE.
 #
 
-import collections
-import os
-import sys
-from libs.preference import getPreference
+from deepmerge import always_merger
 from ruamel.yaml import YAML
 
-def main():
+ALLOWED_RULE_TYPES = ['DOMAIN', 'DOMAIN-KEYWORD', 'DOMAIN-SUFFIX', 'IP-CIDR', 'IP-CIDR6']
+
+def getRules():
 
     yaml = YAML()
     yaml.allow_unicode = True
@@ -37,17 +34,37 @@ def main():
     yaml.preserve_quotes = True
     yaml.indent(mapping=2, sequence=4, offset=2)
 
-    # 读取默认配置
-    with open('configs/basic.yaml') as fp:
-        cfg_basic = yaml.load(fp)
+    with open('configs/rulesets.yaml') as fp:
+        rulesets = yaml.load(fp)
 
-    # 生成最终配置
-    cfg_final = cfg_basic.copy()
-    cfg_final.update(getPreference())
+    rules = {'rules': []}
 
-    with open('configuration.yaml', 'w') as fp:
-        yaml.dump(cfg_final, fp)
+    # 自定义规则
+    try:
+        with open('rules/custom.yaml') as fp:
+            custom = yaml.load(fp)
+            always_merger.merge(rules, custom);
+    except FileNotFoundError:
+        pass
 
+    # 合并规则集
+    for policy in rulesets:
+        group = policy.get('group')
+        ruleset = policy.get('ruleset')
+        with open(ruleset) as fp:
+            rulelines = yaml.load(fp)
+            for line in rulelines.get('payload'):
+                info = line.split(',')
+                if (info[0] in ALLOWED_RULE_TYPES):
+                    if (len(info) == 2):
+                        rule = ','.join([info[0], info[1], group])
+                    elif (len(info) == 3):
+                        rule = ','.join([info[0], info[1], group, info[2]])
+                    rules['rules'].append(rule)
 
-if __name__ == '__main__':
-    main()
+    # 结尾规则
+    with open('rules/suffix.yaml') as fp:
+        suffix = yaml.load(fp)
+        always_merger.merge(rules, suffix)
+
+    return rules

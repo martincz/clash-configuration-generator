@@ -1,0 +1,16 @@
+# Clash as Transparent proxy gateway via TPROXY
+tproxy: false
+
+# RESTful web API listening address
+external-controller: 192.168.50.1:9090
+
+proxies: # 更多协议配置示例：https://github.com/Dreamacro/clash/wiki/configuration
+# VMess
+- { name: "US-Ashburn-01", type: vmess, server: server, port: 443, uuid: uuid, alterId: 0, cipher: auto }
+- { name: "JP-Tokyo-02", type: vmess, server: server, port: 443, uuid: uuid, alterId: 0, cipher: auto }
+
+proxy-groups:
+- name: "STATIC" # 固定IP模式
+  type: select
+  proxies:
+    - "US-Ashburn-01"

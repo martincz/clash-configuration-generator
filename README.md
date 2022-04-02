@@ -1,6 +1,6 @@
 # MerlinClash Configuration Generator
 
-适用于 MerlinClash 的个性化配置生成脚本
+适用于 MerlinClash 的自定义配置生成脚本
 
 ## 前提条件
 

@@ -25,7 +25,7 @@ from deepmerge import always_merger
 from ruamel.yaml import YAML
 from libs.proxy import getProxies
 from libs.proxy_group import getProxyGroups
-from libs.rule import getRules
+from libs.rule import Rule
 import sys
 
 def getPreference():
@@ -45,9 +45,14 @@ def getPreference():
         print('未配置 preference.yaml 文件！')
         sys.exit(1)
 
+    # 代理组策略
     proxy_groups = getProxyGroups(getProxies(cfg_preference))
     cfg_preference = always_merger.merge(proxy_groups, cfg_preference)
-    always_merger.merge(cfg_preference, getRules())
+
+    # 分流规则
+    rule = Rule()
+    always_merger.merge(cfg_preference, rule.getRules(cfg_preference))
+    del cfg_preference['rulesets']
 
     # 检查重复项
     # print([item for item, count in collections.Counter(cfg_preference['rules']).items() if count > 1])

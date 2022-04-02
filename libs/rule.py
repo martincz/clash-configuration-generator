@@ -26,37 +26,48 @@ from ruamel.yaml import YAML
 
 ALLOWED_RULE_TYPES = ['DOMAIN', 'DOMAIN-KEYWORD', 'DOMAIN-SUFFIX', 'IP-CIDR', 'IP-CIDR6']
 
-def getRules():
+class Rule(object):
 
-    yaml = YAML()
-    yaml.allow_unicode = True
-    yaml.explicit_start = False
-    yaml.preserve_quotes = True
-    yaml.indent(mapping=2, sequence=4, offset=2)
+    def __init__(self):
+        self.yaml = YAML()
+        self.yaml.allow_unicode = True
+        self.yaml.explicit_start = False
+        self.yaml.preserve_quotes = True
+        self.yaml.indent(mapping=2, sequence=4, offset=2)
 
-    with open('configs/rulesets.yaml') as fp:
-        rulesets = yaml.load(fp)
+    def getRules(self, preference):
 
-    rules = {'rules': []}
+        rules = {'rules': []}
 
-    # 合并规则集
-    for policy in rulesets:
-        group = policy.get('group')
-        ruleset = policy.get('ruleset')
-        with open(ruleset) as fp:
-            rulelines = yaml.load(fp)
-            for line in rulelines.get('payload'):
-                info = line.split(',')
-                if (info[0] in ALLOWED_RULE_TYPES):
-                    if (len(info) == 2):
-                        rule = ','.join([info[0], info[1], group])
-                    elif (len(info) == 3):
-                        rule = ','.join([info[0], info[1], group, info[2]])
-                    rules['rules'].append(rule)
+        # 偏好规则集
+        ext_rulesets = preference.get('rulesets')
+        always_merger.merge(rules, self.getRulesFromRuleSets(ext_rulesets))
 
-    # 结尾规则
-    with open('rules/suffix.yaml') as fp:
-        suffix = yaml.load(fp)
-        always_merger.merge(rules, suffix)
+        # 预设规则集
+        with open('configs/rulesets.yaml') as fp:
+            def_rulesets = self.yaml.load(fp)
+            always_merger.merge(rules, self.getRulesFromRuleSets(def_rulesets))
 
-    return rules
+        # 结尾规则
+        with open('rules/suffix.yaml') as fp:
+            suffix = self.yaml.load(fp)
+            always_merger.merge(rules, suffix)
+
+        return rules
+
+    def getRulesFromRuleSets(self, rulesets):
+        rules = {'rules': []}
+        for policy in rulesets:
+            group = policy.get('group')
+            ruleset = policy.get('ruleset')
+            with open(ruleset) as fp:
+                rulelines = self.yaml.load(fp)
+                for line in rulelines.get('payload'):
+                    info = line.split(',')
+                    if (info[0] in ALLOWED_RULE_TYPES):
+                        if (len(info) == 2):
+                            rule = ','.join([info[0], info[1], group])
+                        elif (len(info) == 3):
+                            rule = ','.join([info[0], info[1], group, info[2]])
+                        rules['rules'].append(rule)
+        return rules

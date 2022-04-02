@@ -18,3 +18,9 @@ proxy-groups:
 rules:
 # 绕过代理
   - DST-PORT,22,DIRECT # SSH
+
+rulesets:
+# PayPal
+- name: "PayPal"
+  group: "STATIC"
+  ruleset: "rules/blackmatrix7/rule/Clash/PayPal/PayPal.yaml"

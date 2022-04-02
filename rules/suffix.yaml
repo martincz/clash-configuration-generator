@@ -2,4 +2,4 @@ rules:
 # GeoIP China
   - GEOIP,CN,DIRECT
 # Final
-  - MATCH,PROXY
+  - MATCH,Proxy

@@ -10,7 +10,15 @@ proxies: # 更多协议配置示例：https://github.com/Dreamacro/clash/wiki/co
 - { name: "JP-Tokyo-02", type: vmess, server: server, port: 443, uuid: uuid, alterId: 0, cipher: auto }
 
 proxy-groups:
-- name: "STATIC" # 预设IP模式
+- name: "Load-Balance" # 负载均衡
+  type: load-balance
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+  proxies:
+    - "US-Ashburn-01"
+    - "JP-Tokyo-02"
+
+- name: "Static" # 预设IP模式
   type: select
   proxies:
     - "US-Ashburn-01"
@@ -22,5 +30,5 @@ rules:
 rulesets:
 # PayPal
 - name: "PayPal"
-  group: "STATIC"
+  group: "Static"
   ruleset: "rules/blackmatrix7/rule/Clash/PayPal/PayPal.yaml"

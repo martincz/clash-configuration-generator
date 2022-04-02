@@ -25,7 +25,7 @@ from ruamel.yaml import YAML
 
 def getProxyGroups(proxies):
 
-    yaml = YAML(typ='safe')
+    yaml = YAML()
     yaml.allow_unicode = True
     yaml.explicit_start = False
     yaml.preserve_quotes = True

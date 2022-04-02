@@ -20,27 +20,27 @@
 
 # Facebook
 - name: "Facebook"
-  group: "PROXY"
+  group: "Proxy"
   ruleset: "rules/blackmatrix7/rule/Clash/Facebook/Facebook.yaml"
 
 # Twitter
 - name: "Twitter"
-  group: "PROXY"
+  group: "Proxy"
   ruleset: "rules/blackmatrix7/rule/Clash/Twitter/Twitter.yaml"
 
 # Google
 - name: "Google"
-  group: "PROXY"
+  group: "Proxy"
   ruleset: "rules/blackmatrix7/rule/Clash/Google/Google.yaml"
 
 # OneDrive
 - name: "OneDrive"
-  group: "PROXY"
+  group: "Proxy"
   ruleset: "rules/blackmatrix7/rule/Clash/OneDrive/OneDrive.yaml"
 
 # Telegram
 - name: "Telegram"
-  group: "PROXY"
+  group: "Proxy"
   ruleset: "rules/blackmatrix7/rule/Clash/Telegram/Telegram.yaml"
 
 # YouTube

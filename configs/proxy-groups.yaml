@@ -1,11 +1,11 @@
-- name: "PROXY" # 手动选择代理节点
+- name: "Proxy" # 手动选择代理节点
   type: select
   proxies:
-    - "AUTO"
+    - "Auto"
     - "DIRECT"
     - ".*"
 
-- name: "AUTO" # 通过指定的 URL 测试并自动选择延迟最低的节点
+- name: "Auto" # 通过指定的 URL 测试并自动选择延迟最低的节点
   type: url-test
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -16,20 +16,20 @@
   type: select
   proxies:
     - "DIRECT"
-    - "PROXY"
+    - "Proxy"
     - ".*"
 
 - name: "GlobalMedia" # 国际流媒体服务
   type: select
   proxies:
-    - "PROXY"
+    - "Proxy"
     - "DIRECT"
     - ".*"
 
 - name: "HKMTMedia" # 大陆流媒体面向港澳台限定服务
   type: select
   proxies:
-    - "PROXY"
+    - "Proxy"
     - "DIRECT"
     - ".*"
 

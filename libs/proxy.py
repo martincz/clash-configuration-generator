@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-#
 # MIT License
 
 # Copyright (c) 2022 Martincz Gao
@@ -23,31 +21,12 @@
 # SOFTWARE.
 #
 
-import collections
-import os
 import sys
-from libs.preference import getPreference
-from ruamel.yaml import YAML
 
-def main():
-
-    yaml = YAML()
-    yaml.allow_unicode = True
-    yaml.explicit_start = False
-    yaml.preserve_quotes = True
-    yaml.indent(mapping=2, sequence=4, offset=2)
-
-    # 读取默认配置
-    with open('configs/basic.yaml') as fp:
-        cfg_basic = yaml.load(fp)
-
-    # 生成最终配置
-    cfg_final = cfg_basic.copy()
-    cfg_final.update(getPreference())
-
-    with open('configuration.yaml', 'w') as fp:
-        yaml.dump(cfg_final, fp)
-
-
-if __name__ == '__main__':
-    main()
+def getProxies(preference):
+    proxies = preference.get('proxies')
+    if (len(preference.get('proxies')) > 0):
+        return proxies
+    else:
+        print('请先配置 preference.yaml 中的代理节点!')
+        sys.exit(1)

@@ -90,5 +90,9 @@ profile:
 experimental:
   ignore-resolve-fail: true
 
+# 代理节点
 proxies:
+# 代理组策略
 proxy-groups:
+# 分流规则
+rules:

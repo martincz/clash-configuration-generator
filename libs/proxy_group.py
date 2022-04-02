@@ -21,50 +21,28 @@
 # SOFTWARE.
 #
 
-from deepmerge import always_merger
 from ruamel.yaml import YAML
 
-ALLOWED_RULE_TYPES = ['DOMAIN', 'DOMAIN-KEYWORD', 'DOMAIN-SUFFIX', 'IP-CIDR', 'IP-CIDR6']
+def getProxyGroups(proxies):
 
-def getRules():
-
-    yaml = YAML()
+    yaml = YAML(typ='safe')
     yaml.allow_unicode = True
     yaml.explicit_start = False
     yaml.preserve_quotes = True
     yaml.indent(mapping=2, sequence=4, offset=2)
 
-    with open('configs/rulesets.yaml') as fp:
-        rulesets = yaml.load(fp)
+    ext_proxies = []
+    for proxy in proxies:
+        ext_proxies.append(proxy.get('name'))
 
-    rules = {'rules': []}
+    with open('configs/proxy-groups.yaml') as fp:
+        groups = yaml.load(fp)
 
-    # 自定义规则
-    try:
-        with open('rules/custom.yaml') as fp:
-            custom = yaml.load(fp)
-            always_merger.merge(rules, custom);
-    except FileNotFoundError:
-        pass
-
-    # 合并规则集
-    for policy in rulesets:
-        group = policy.get('group')
-        ruleset = policy.get('ruleset')
-        with open(ruleset) as fp:
-            rulelines = yaml.load(fp)
-            for line in rulelines.get('payload'):
-                info = line.split(',')
-                if (info[0] in ALLOWED_RULE_TYPES):
-                    if (len(info) == 2):
-                        rule = ','.join([info[0], info[1], group])
-                    elif (len(info) == 3):
-                        rule = ','.join([info[0], info[1], group, info[2]])
-                    rules['rules'].append(rule)
-
-    # 结尾规则
-    with open('rules/suffix.yaml') as fp:
-        suffix = yaml.load(fp)
-        always_merger.merge(rules, suffix);
-
-    return rules
+    proxy_groups = {'proxy-groups': []}
+    for group in groups:
+        def_proxies = group.get('proxies')
+        if ('.*' in def_proxies):
+            def_proxies.remove('.*')
+            def_proxies.extend(ext_proxies)
+        proxy_groups['proxy-groups'].append(group)
+    return proxy_groups

@@ -1,0 +1,46 @@
+# 手动选择代理节点
+- name: "PROXY"
+  type: select
+  proxies:
+    - "AUTO"
+    - "DIRECT"
+    - ".*"
+
+# 通过指定的 URL 测试并自动选择延迟最低的节点
+- name: "AUTO"
+  type: url-test
+  proxies:
+    - ".*"
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+
+# Apple 服务代理
+- name: "Apple"
+  type: select
+  proxies:
+    - "DIRECT"
+    - "PROXY"
+    - ".*"
+
+# 国际流媒体服务
+- name: "GlobalMedia"
+  type: select
+  proxies:
+    - "PROXY"
+    - "DIRECT"
+    - ".*"
+
+# 大陆流媒体面向港澳台限定服务
+- name: "HKMTMedia"
+  type: select
+  proxies:
+    - "PROXY"
+    - "DIRECT"
+    - ".*"
+
+# 运营商及声名狼藉网站劫持
+- name: "Hijacking"
+  type: select
+  proxies:
+    - "REJECT"
+    - "DIRECT"

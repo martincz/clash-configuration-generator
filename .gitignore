@@ -1,5 +1,5 @@
 *.pyc
 __pycache__
 configuration.yaml
-configs/custom.yaml
+preference.yaml
 rules/custom.yaml

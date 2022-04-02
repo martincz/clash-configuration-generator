@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-#
 # MIT License
 
 # Copyright (c) 2022 Martincz Gao
@@ -23,13 +21,14 @@
 # SOFTWARE.
 #
 
-import collections
-import os
-import sys
-from libs.preference import getPreference
+from deepmerge import always_merger
 from ruamel.yaml import YAML
+from libs.proxy import getProxies
+from libs.proxy_group import getProxyGroups
+from libs.rule import getRules
+import sys
 
-def main():
+def getPreference():
 
     yaml = YAML()
     yaml.allow_unicode = True
@@ -37,17 +36,19 @@ def main():
     yaml.preserve_quotes = True
     yaml.indent(mapping=2, sequence=4, offset=2)
 
-    # 读取默认配置
-    with open('configs/basic.yaml') as fp:
-        cfg_basic = yaml.load(fp)
+    try:
+        with open('preference.yaml') as fp:
+            cfg_preference = yaml.load(fp)
+            if cfg_preference is None:
+                raise FileNotFoundError
+    except FileNotFoundError:
+        print('未配置 preference.yaml 文件！')
+        sys.exit(1)
 
-    # 生成最终配置
-    cfg_final = cfg_basic.copy()
-    cfg_final.update(getPreference())
+    proxy_groups = getProxyGroups(getProxies(cfg_preference))
+    cfg_preference = always_merger.merge(proxy_groups, cfg_preference)
+    always_merger.merge(cfg_preference, getRules())
 
-    with open('configuration.yaml', 'w') as fp:
-        yaml.dump(cfg_final, fp)
-
-
-if __name__ == '__main__':
-    main()
+    # 检查重复项
+    # print([item for item, count in collections.Counter(cfg_preference['rules']).items() if count > 1])
+    return cfg_preference

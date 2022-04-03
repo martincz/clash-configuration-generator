@@ -43,37 +43,7 @@
   group: "Proxy"
   ruleset: "rules/blackmatrix7/rule/Clash/Telegram/Telegram.yaml"
 
-# YouTube
-- name: "YouTube"
+# GlobalMedia
+- name: "GlobalMedia"
   group: "GlobalMedia"
-  ruleset: "rules/blackmatrix7/rule/Clash/YouTube/YouTube.yaml"
-
-# YouTubeMusic
-- name: "YouTubeMusic"
-  group: "GlobalMedia"
-  ruleset: "rules/blackmatrix7/rule/Clash/YouTubeMusic/YouTubeMusic.yaml"
-
-# Pandora
-- name: "Pandora"
-  group: "GlobalMedia"
-  ruleset: "rules/blackmatrix7/rule/Clash/Pandora/Pandora.yaml"
-
-# Spotify
-- name: "Spotify"
-  group: "GlobalMedia"
-  ruleset: "rules/blackmatrix7/rule/Clash/Spotify/Spotify.yaml"
-
-# Netflix
-- name: "Netflix"
-  group: "GlobalMedia"
-  ruleset: "rules/blackmatrix7/rule/Clash/Netflix/Netflix.yaml"
-
-# AmazonPrimeVideo
-- name: "AmazonPrimeVideo"
-  group: "GlobalMedia"
-  ruleset: "rules/blackmatrix7/rule/Clash/AmazonPrimeVideo/AmazonPrimeVideo.yaml"
-
-# Disney
-- name: "Disney"
-  group: "GlobalMedia"
-  ruleset: "rules/blackmatrix7/rule/Clash/Disney/Disney.yaml"
+  ruleset: "rules/blackmatrix7/rule/Clash/GlobalMedia/GlobalMedia.yaml"

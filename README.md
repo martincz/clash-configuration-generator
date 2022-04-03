@@ -1,6 +1,6 @@
-# MerlinClash Configuration Generator
+# Clash Configuration Generator
 
-适用于 MerlinClash 的自定义配置生成脚本
+适用于 Clash 的自定义配置生成脚本
 
 ## 前提条件
 
@@ -18,7 +18,7 @@
 * 使用以下命令同步仓库到本地：
 
     ```bash
-    git clone --recurse-submodules https://github.com/martincz/MerlinClash-Configuration-Generator.git
+    git clone --recurse-submodules https://github.com/martincz/Clash-Configuration-Generator.git
     ```
 
 ## 简易用法
@@ -33,4 +33,4 @@
     python generate
     ```
 
-4. 导入生成的 configuration.yaml 配置文件到 MerlinClash。
+4. 导入生成的 configuration.yaml 配置文件到 Clash。

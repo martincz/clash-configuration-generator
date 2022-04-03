@@ -24,13 +24,10 @@ external-controller: 192.168.50.1:9090
 # e.g. foo.example.com > *.example.com > .example.com
 # P.S. +.foo.com equals to .foo.com and foo.com
 hosts:
-  #域名登陆路由器后台
-  router.asus.com: 192.168.50.1
-  #google中国重新定向
-  services.googleapis.cn: 74.125.193.94
-  #win网络状态检查
-  ipv6.msftconnecttest.com: 2a01:111:2003::52
-  www.msftconnecttest.com: 13.107.4.52
+  router.asus.com: 192.168.50.1 # 华硕路由器后台登录域名
+  services.googleapis.cn: 74.125.193.94 # Google 中国重新定向
+  ipv6.msftconnecttest.com: 2a01:111:2003::52 # Windows 网络状态检查
+  www.msftconnecttest.com: 13.107.4.52 # Windows 网络状态检查
 
 proxies: # 更多协议配置示例：https://github.com/Dreamacro/clash/wiki/configuration
 # VMess

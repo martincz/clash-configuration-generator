@@ -70,11 +70,9 @@ secret: ""
 # e.g. foo.example.com > *.example.com > .example.com
 # P.S. +.foo.com equals to .foo.com and foo.com
 hosts:
-  #google中国重新定向
-  services.googleapis.cn: 74.125.193.94
-  #win网络状态检查
-  ipv6.msftconnecttest.com: 2a01:111:2003::52
-  www.msftconnecttest.com: 13.107.4.52
+  services.googleapis.cn: 74.125.193.94 # Google 中国重新定向
+  ipv6.msftconnecttest.com: 2a01:111:2003::52 # Windows 网络状态检查
+  www.msftconnecttest.com: 13.107.4.52 # Windows 网络状态检查
 
 profile:
   # Store the `select` results in $HOME/.config/clash/.cache

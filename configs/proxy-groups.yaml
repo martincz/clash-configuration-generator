@@ -12,6 +12,13 @@
   proxies:
     - ".*"
 
+- name: "Load-Balance" # 负载均衡
+  type: load-balance
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+  proxies:
+    - ".*"
+
 - name: "Apple" # Apple 服务代理
   type: select
   proxies:

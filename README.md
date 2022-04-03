@@ -23,7 +23,7 @@
 
 ## 简易用法
 
-1. 拷贝 preference.example.yaml 副本并更名为 preference.yaml。
+1. 拷贝 preference.clash.yaml 或 preference.merlinclash.yaml 的副本并更名为 preference.yaml。
 
 2. 根据需求修改 preference.yaml 中的默认配置项。
 

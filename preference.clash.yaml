@@ -1,0 +1,60 @@
+# Port of HTTP(S) proxy server on the local end
+port: 7890
+
+# Port of SOCKS5 proxy server on the local end
+socks-port: 7891
+
+# Transparent proxy server port for Linux and macOS (Redirect TCP and TProxy UDP)
+redir-port: 7892
+
+# Transparent proxy server port for Linux (TProxy TCP and TProxy UDP)
+tproxy-port: 7893
+
+# Set to true to allow connections to the local-end server from
+# other LAN IP addresses
+allow-lan: false
+
+# RESTful web API listening address
+external-controller: 127.0.0.1:9090
+
+# Static hosts for DNS server and connection establishment (like /etc/hosts)
+#
+# Wildcard hostnames are supported (e.g. *.clash.dev, *.foo.*.example.com)
+# Non-wildcard domain names have a higher priority than wildcard domain names
+# e.g. foo.example.com > *.example.com > .example.com
+# P.S. +.foo.com equals to .foo.com and foo.com
+hosts:
+  #google中国重新定向
+  services.googleapis.cn: 74.125.193.94
+  #win网络状态检查
+  ipv6.msftconnecttest.com: 2a01:111:2003::52
+  www.msftconnecttest.com: 13.107.4.52
+
+proxies: # 更多协议配置示例：https://github.com/Dreamacro/clash/wiki/configuration
+# VMess
+- { name: "US-Ashburn-01", type: vmess, server: server, port: 443, uuid: uuid, alterId: 0, cipher: auto }
+- { name: "JP-Tokyo-02", type: vmess, server: server, port: 443, uuid: uuid, alterId: 0, cipher: auto }
+
+proxy-groups:
+- name: "Static" # 预设IP模式
+  type: select
+  proxies:
+    - "US-Ashburn-01"
+
+rules:
+# 绕过代理
+  - DST-PORT,22,DIRECT # SSH
+
+rulesets:
+# PayPal
+- name: "PayPal"
+  group: "Static"
+  ruleset: "rules/blackmatrix7/rule/Clash/PayPal/PayPal.yaml"
+# AppleTV
+- name: "AppleTV"
+  group: "GlobalMedia"
+  ruleset: "rules/blackmatrix7/rule/Clash/AppleTV/AppleTV.yaml"
+# GitHub
+- name: "GitHub"
+  group: "Proxy"
+  ruleset: "rules/blackmatrix7/rule/Clash/GitHub/GitHub.yaml"

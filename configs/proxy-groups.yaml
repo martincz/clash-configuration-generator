@@ -33,6 +33,12 @@
     - "DIRECT"
     - ".*"
 
+- name: "Speedtest" # 测速专用
+  type: select
+  proxies:
+    - "DIRECT"
+    - ".*"
+
 - name: "Hijacking" # 运营商及声名狼藉网站劫持
   type: select
   proxies:

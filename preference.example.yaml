@@ -24,3 +24,11 @@ rulesets:
 - name: "PayPal"
   group: "Static"
   ruleset: "rules/blackmatrix7/rule/Clash/PayPal/PayPal.yaml"
+# AppleTV
+- name: "AppleTV"
+  group: "GlobalMedia"
+  ruleset: "rules/blackmatrix7/rule/Clash/AppleTV/AppleTV.yaml"
+# GitHub
+- name: "GitHub"
+  group: "Proxy"
+  ruleset: "rules/blackmatrix7/rule/Clash/GitHub/GitHub.yaml"

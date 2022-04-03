@@ -8,10 +8,20 @@
   group: "Hijacking"
   ruleset: "rules/blackmatrix7/rule/Clash/Hijacking/Hijacking.yaml"
 
+# ChinaMedia
+- name: "ChinaMedia" 
+  group: "DIRECT"
+  ruleset: "rules/blackmatrix7/rule/Clash/ChinaMedia/ChinaMedia.yaml"
+
 # China
 - name: "China" 
   group: "DIRECT"
   ruleset: "rules/blackmatrix7/rule/Clash/China/China.yaml"
+
+# AsianMedia
+- name: "AsianMedia" 
+  group: "DIRECT"
+  ruleset: "rules/blackmatrix7/rule/Clash/AsianMedia/AsianMedia.yaml"
 
 # Apple
 - name: "Apple" 

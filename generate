@@ -23,11 +23,12 @@
 # SOFTWARE.
 #
 
+from libs.preference import getPreference
+from ruamel.yaml import YAML
+
 import collections
 import os
 import sys
-from libs.preference import getPreference
-from ruamel.yaml import YAML
 
 def main():
 

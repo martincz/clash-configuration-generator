@@ -21,11 +21,13 @@
 # SOFTWARE.
 #
 
+from __future__ import print_function
 from deepmerge import always_merger
 from ruamel.yaml import YAML
 from libs.proxy import getProxies
 from libs.proxy_group import getProxyGroups
 from libs.rule import Rule
+
 import sys
 
 def getPreference():

@@ -1,8 +1,8 @@
 # DNS server settings
 # This section is optional. When not present, the DNS server will be disabled.
 dns:
-  enable: true
-  listen: :23453
+  enable: false
+  listen: :53
   ipv6: false # when the false, response to AAAA questions will be empty
 
   # These nameservers are used to resolve the DNS nameserver hostnames below.

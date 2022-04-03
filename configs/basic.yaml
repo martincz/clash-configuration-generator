@@ -92,3 +92,5 @@ proxies:
 proxy-groups:
 # 分流规则
 rules:
+# DNS 服务器设置
+dns:

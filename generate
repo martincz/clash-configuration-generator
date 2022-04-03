@@ -30,7 +30,26 @@ import collections
 import os
 import sys
 
-def main():
+class _Options(object):
+  dns = False
+
+def _ParseArguments(args):
+  cmd = None
+  opt = _Options()
+  arg = []
+
+  for i in range(len(args)):
+    a = args[i]
+    if a == '--dns':
+      opt.dns = True
+    elif not a.startswith('-'):
+      cmd = a
+      arg = args[i + 1:]
+      break
+  return cmd, opt, arg
+
+def main(orig_args):
+    cmd, opt, args = _ParseArguments(orig_args)
 
     yaml = YAML()
     yaml.allow_unicode = True
@@ -42,13 +61,16 @@ def main():
     with open('configs/basic.yaml', 'rb') as fp:
         cfg_basic = yaml.load(fp)
 
-    # 生成最终配置
+    # 合并偏好配置
     cfg_final = cfg_basic.copy()
     cfg_final.update(getPreference())
 
+    if opt.dns != True and 'dns' in cfg_final.keys():
+        del cfg_final['dns']
+
+    # 生成最终配置
     with open('configuration.yaml', 'w') as fp:
         yaml.dump(cfg_final, fp)
 
-
 if __name__ == '__main__':
-    main()
+    main(sys.argv[1:])

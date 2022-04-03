@@ -23,9 +23,15 @@
 
 ## 简易用法
 
-1. 拷贝 preference.clash.yaml 或 preference.merlinclash.yaml 的副本并更名为 preference.yaml。
+1. 拷贝配置示例的副本并更名为 preference.yaml。
 
-2. 根据需求修改 preference.yaml 中的默认配置项。
+    | 文件名 | 解释 |
+    | :--- | :--- |
+    | preference.yaml | 实际生效的配置 |
+    | preference.default.yaml | 用于参考的标准配置示例
+    | preference.merlinclash.yaml | 用于参考的 MerlinClash 配置示例 |
+
+2. 按需修改 preference.yaml 中的默认参数。
 
 3. 在仓库根目录运行以下命令：
 

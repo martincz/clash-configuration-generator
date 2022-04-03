@@ -43,6 +43,11 @@
   group: "Proxy"
   ruleset: "rules/blackmatrix7/rule/Clash/Telegram/Telegram.yaml"
 
+# Speedtest
+- name: "Speedtest"
+  group: "Speedtest"
+  ruleset: "rules/blackmatrix7/rule/Clash/Speedtest/Speedtest.yaml"
+
 # GlobalMedia
 - name: "GlobalMedia"
   group: "GlobalMedia"

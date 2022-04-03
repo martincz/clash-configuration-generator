@@ -21,17 +21,9 @@
 # SOFTWARE.
 #
 
-from __future__ import print_function
-from deepmerge import always_merger
 from ruamel.yaml import YAML
-from libs.dns import getDns
-from libs.proxy import getProxies
-from libs.proxy_group import getProxyGroups
-from libs.rule import Rule
 
-import sys
-
-def getPreference():
+def getDns():
 
     yaml = YAML()
     yaml.allow_unicode = True
@@ -39,30 +31,6 @@ def getPreference():
     yaml.preserve_quotes = True
     yaml.indent(mapping=2, sequence=4, offset=2)
 
-    try:
-        with open('preference.yaml', 'rb') as fp:
-            orig_preference = yaml.load(fp)
-            if orig_preference is None:
-                raise FileNotFoundError
-    except FileNotFoundError:
-        print('未配置 preference.yaml 文件！')
-        sys.exit(1)
-
-    # DNS服务器
-    dns = getDns()
-    preference = always_merger.merge(dns, orig_preference)
-
-    # 代理组策略
-    proxies = getProxies(preference)
-    proxy_groups = getProxyGroups(proxies)
-    preference = always_merger.merge(proxy_groups, preference)
-
-    # 分流规则
-    rule = Rule()
-    rules = rule.getRules(preference)
-    always_merger.merge(preference, rules)
-    del preference['rulesets']
-
-    # 检查重复项
-    # print([item for item, count in collections.Counter(preference['rules']).items() if count > 1])
-    return preference
+    with open('configs/dns.yaml', 'rb') as fp:
+        dns = yaml.load(fp)
+    return dns

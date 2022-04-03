@@ -57,3 +57,5 @@ rulesets:
 - name: "GitHub"
   group: "Proxy"
   ruleset: "rules/blackmatrix7/rule/Clash/GitHub/GitHub.yaml"
+
+dns:

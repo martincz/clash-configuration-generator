@@ -23,6 +23,8 @@
 
 from ruamel.yaml import YAML
 
+import os
+
 def getProxyGroups(proxies):
 
     yaml = YAML()
@@ -35,7 +37,8 @@ def getProxyGroups(proxies):
     for proxy in proxies:
         ext_proxies.append(proxy.get('name'))
 
-    with open('configs/proxy-groups.yaml', 'rb') as fp:
+    top_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+    with open(os.path.join(top_dir, 'configs/proxy-groups.yaml'), 'rb') as fp:
         groups = yaml.load(fp)
 
     proxy_groups = {'proxy-groups': []}

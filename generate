@@ -26,9 +26,10 @@
 from libs.preference import getPreference
 from ruamel.yaml import YAML
 
-import collections
 import os
 import sys
+
+ROOT_DIR = os.path.dirname(os.path.realpath(__file__))
 
 class _Options(object):
   dns = False
@@ -58,7 +59,7 @@ def main(orig_args):
     yaml.indent(mapping=2, sequence=4, offset=2)
 
     # 读取默认配置
-    with open('configs/basic.yaml', 'rb') as fp:
+    with open(os.path.join(ROOT_DIR, 'configs/basic.yaml'), 'rb') as fp:
         cfg_basic = yaml.load(fp)
 
     # 合并偏好配置
@@ -69,7 +70,7 @@ def main(orig_args):
         del cfg_final['dns']
 
     # 生成最终配置
-    with open('configuration.yaml', 'w') as fp:
+    with open(os.path.join(ROOT_DIR, 'configuration.yaml'), 'w') as fp:
         yaml.dump(cfg_final, fp)
 
 if __name__ == '__main__':

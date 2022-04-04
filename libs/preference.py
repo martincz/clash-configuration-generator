@@ -29,6 +29,7 @@ from libs.proxy import getProxies
 from libs.proxy_group import getProxyGroups
 from libs.rule import Rule
 
+import os
 import sys
 
 def getPreference():
@@ -40,7 +41,8 @@ def getPreference():
     yaml.indent(mapping=2, sequence=4, offset=2)
 
     try:
-        with open('preference.yaml', 'rb') as fp:
+        top_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+        with open(os.path.join(top_dir, 'preference.yaml'), 'rb') as fp:
             orig_preference = yaml.load(fp)
             if orig_preference is None:
                 raise FileNotFoundError

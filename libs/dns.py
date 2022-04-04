@@ -23,6 +23,8 @@
 
 from ruamel.yaml import YAML
 
+import os
+
 def getDns():
 
     yaml = YAML()
@@ -31,6 +33,7 @@ def getDns():
     yaml.preserve_quotes = True
     yaml.indent(mapping=2, sequence=4, offset=2)
 
-    with open('configs/dns.yaml', 'rb') as fp:
+    top_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+    with open(os.path.join(top_dir, 'configs/dns.yaml'), 'rb') as fp:
         dns = yaml.load(fp)
     return dns

@@ -18,7 +18,7 @@
 * 使用以下命令同步仓库到本地：
 
     ```bash
-    git clone --recurse-submodules https://github.com/martincz/Clash-Configuration-Generator.git
+    git clone --recurse-submodules https://github.com/martincz/clash-configuration-generator.git
     ```
 
 ## 简易用法

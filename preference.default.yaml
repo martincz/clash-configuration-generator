@@ -25,6 +25,7 @@ external-controller: 127.0.0.1:9090
 # P.S. +.foo.com equals to .foo.com and foo.com
 hosts:
   services.googleapis.cn: 74.125.193.94 # Google 中国重新定向
+  time.android.com: 203.107.6.88 # 国内可用 NTP 服务器
   ipv6.msftconnecttest.com: 2a01:111:2003::52 # Windows 网络状态检查
   www.msftconnecttest.com: 13.107.4.52 # Windows 网络状态检查
 

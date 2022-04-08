@@ -28,8 +28,9 @@
     | 文件名 | 解释 |
     | :--- | :--- |
     | preference.yaml | 实际生效的配置 |
-    | preference.default.yaml | 用于参考的标准配置示例
+    | preference.basic.yaml | 用于参考的标准配置示例 |
     | preference.merlinclash.yaml | 用于参考的 MerlinClash 配置示例 |
+    | preference.advanced.yaml | 用于参考的进阶配置示例 |
 
 2. 按需修改 preference.yaml 中的默认参数。
 

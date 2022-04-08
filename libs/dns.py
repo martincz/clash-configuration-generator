@@ -27,7 +27,7 @@ import os
 
 def getDns():
 
-    yaml = YAML()
+    yaml = YAML(typ='safe')
     yaml.allow_unicode = True
     yaml.explicit_start = False
     yaml.preserve_quotes = True

@@ -48,7 +48,7 @@ rulesets:
 # PayPal
 - name: "PayPal"
   group: "Static"
-  ruleset: "rules/blackmatrix7/PayPal/PayPal.yaml"
+  ruleset: "rules/martincz/PayPal/PayPal.yaml"
 # AppleTV
 - name: "AppleTV"
   group: "GlobalMedia"

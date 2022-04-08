@@ -72,6 +72,11 @@ proxy-groups:
     - "US-Ashburn-02"
     - "JP-Tokyo-01"
     - "JP-Tokyo-02"
+- name: "Game" # 游戏服务
+  type: select
+  proxies:
+    - "Perfomance"
+    - "DIRECT"
 - name: "Apple" # Apple 服务代理
   type: select
   proxies:
@@ -146,19 +151,19 @@ rulesets:
   ruleset: "rules/blackmatrix7/rule/Clash/GitHub/GitHub.yaml"
 # PlayStation
 - name: "PlayStation"
-  group: "Perfomance"
+  group: "Game"
   ruleset: "rules/blackmatrix7/rule/Clash/PlayStation/PlayStation.yaml"
 # Steam
 - name: "Steam"
-  group: "Perfomance"
+  group: "Game"
   ruleset: "rules/blackmatrix7/rule/Clash/Steam/Steam.yaml"
 # Nintendo
 - name: "Nintendo"
-  group: "Perfomance"
+  group: "Game"
   ruleset: "rules/blackmatrix7/rule/Clash/Nintendo/Nintendo.yaml"
 # Xbox
 - name: "Xbox"
-  group: "Perfomance"
+  group: "Game"
   ruleset: "rules/blackmatrix7/rule/Clash/Xbox/Xbox.yaml"
 
 dns:

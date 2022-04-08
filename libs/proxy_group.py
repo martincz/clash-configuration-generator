@@ -22,10 +22,11 @@
 #
 
 from ruamel.yaml import YAML
+from libs.proxy import getProxies
 
 import os
 
-def getProxyGroups(proxies):
+def getProxyGroups(preference):
 
     yaml = YAML()
     yaml.allow_unicode = True
@@ -34,6 +35,7 @@ def getProxyGroups(proxies):
     yaml.indent(mapping=2, sequence=4, offset=2)
 
     ext_proxies = []
+    proxies = getProxies(preference)
     for proxy in proxies:
         ext_proxies.append(proxy.get('name'))
 
@@ -42,7 +44,11 @@ def getProxyGroups(proxies):
         groups = yaml.load(fp)
 
     proxy_groups = {'proxy-groups': []}
+    ext_proxy_groups = [o['name'] for o in preference.get('proxy-groups')]
     for group in groups:
+        name = group.get('name')
+        if (name in ext_proxy_groups):
+            continue
         def_proxies = group.get('proxies')
         if ('.*' in def_proxies):
             def_proxies.remove('.*')

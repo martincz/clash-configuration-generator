@@ -25,7 +25,6 @@ from __future__ import print_function
 from deepmerge import always_merger
 from ruamel.yaml import YAML
 from libs.dns import getDns
-from libs.proxy import getProxies
 from libs.proxy_group import getProxyGroups
 from libs.rule import Rule
 
@@ -55,8 +54,7 @@ def getPreference():
     preference = always_merger.merge(dns, orig_preference)
 
     # 代理组策略
-    proxies = getProxies(preference)
-    proxy_groups = getProxyGroups(proxies)
+    proxy_groups = getProxyGroups(preference)
     preference = always_merger.merge(proxy_groups, preference)
 
     # 分流规则

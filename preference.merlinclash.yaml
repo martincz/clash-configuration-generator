@@ -36,7 +36,7 @@ proxies: # 更多协议配置示例：https://github.com/Dreamacro/clash/wiki/co
 - { name: "JP-Tokyo-02", type: vmess, server: server, port: 443, uuid: uuid, alterId: 0, cipher: auto }
 
 proxy-groups:
-- name: "Static" # 预设IP模式
+- name: "Static" # 静态IP模式
   type: select
   proxies:
     - "US-Ashburn-01"

@@ -61,7 +61,6 @@ def getPreference():
     rule = Rule()
     rules = rule.getRules(preference)
     always_merger.merge(preference, rules)
-    del preference['rulesets']
 
     # 检查重复项
     # print([item for item, count in collections.Counter(preference['rules']).items() if count > 1])

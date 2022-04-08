@@ -40,9 +40,11 @@ proxy-groups:
   proxies:
     - "US-Ashburn-01"
 
-rules:
+prefix-rules: # 前置规则
 # 绕过代理
   - DST-PORT,22,DIRECT # SSH
+
+suffix-rules: # 后置规则
 
 rulesets:
 # PayPal

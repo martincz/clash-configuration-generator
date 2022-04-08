@@ -125,16 +125,19 @@ proxy-groups:
     - "KR-Seoul-01"
     - "KR-Seoul-02"
 
-rules:
+prefix-rules: # 前置规则
 # 绕过代理
   - DST-PORT,22,DIRECT # SSH
   - SRC-PORT,51413,DIRECT # Transmission
-  - SRC-IP-CIDR,192.168.0.2/32,DIRECT # Synology
 # 负载均衡
   - SRC-IP-CIDR,192.168.0.110/32,Load-Balance
   - SRC-IP-CIDR,192.168.0.111/32,Load-Balance
   - SRC-IP-CIDR,192.168.0.112/32,Load-Balance
   - SRC-IP-CIDR,192.168.0.113/32,Load-Balance
+
+suffix-rules: # 后置规则
+# 绕过代理
+  - SRC-IP-CIDR,192.168.0.2/32,DIRECT # Synology
 
 rulesets:
 # PayPal

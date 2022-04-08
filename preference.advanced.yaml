@@ -153,17 +153,9 @@ rulesets:
 - name: "PlayStation"
   group: "Game"
   ruleset: "rules/blackmatrix7/PlayStation/PlayStation.yaml"
-# Steam
-- name: "Steam"
-  group: "Game"
-  ruleset: "rules/blackmatrix7/Steam/Steam.yaml"
 # Nintendo
 - name: "Nintendo"
   group: "Game"
   ruleset: "rules/blackmatrix7/Nintendo/Nintendo.yaml"
-# Xbox
-- name: "Xbox"
-  group: "Game"
-  ruleset: "rules/blackmatrix7/Xbox/Xbox.yaml"
 
 dns:

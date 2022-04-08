@@ -1,0 +1,28 @@
+# NAME: ChinaNoMedia
+# AUTHOR: blackmatrix7
+# REPO: https://gitlab.com/blackmatrix7/ios_rule_script
+# UPDATED: 2022-04-03 10:56:32
+# DOMAIN-SUFFIX: 7089
+# PROCESS-NAME: 3
+# DOMAIN: 17
+# IP-CIDR: 6137
+# DOMAIN-KEYWORD: 13
+# IP-CIDR6: 4151
+# TOTAL: 17410
+payload:
+  - DOMAIN-KEYWORD,-cn
+  - DOMAIN-KEYWORD,.tmall.com
+  - DOMAIN-KEYWORD,alicdn
+  - DOMAIN-KEYWORD,alipay
+  - DOMAIN-KEYWORD,aliyun
+  - DOMAIN-KEYWORD,baidu
+  - DOMAIN-KEYWORD,beplay
+  - DOMAIN-KEYWORD,hnagroup
+  - DOMAIN-KEYWORD,microsoft
+  - DOMAIN-KEYWORD,netease
+  - DOMAIN-KEYWORD,officecdn
+  - DOMAIN-KEYWORD,taobao
+  - DOMAIN-KEYWORD,weibo
+  - PROCESS-NAME,com.jjwxc.reader
+  - PROCESS-NAME,com.qiyi.video
+  - PROCESS-NAME,com.taobao.taobao

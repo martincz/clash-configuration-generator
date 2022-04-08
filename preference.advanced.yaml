@@ -99,7 +99,7 @@ proxy-groups:
     - "JPN"
     - "USA"
     - "DIRECT"
-- name: "Static" # 静态IP模式
+- name: "Static" # 静态IP模式，支付类网站ip变动容易被风控
   type: select
   proxies:
     - "US-Ashburn-01"

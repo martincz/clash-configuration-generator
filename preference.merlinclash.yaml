@@ -49,14 +49,14 @@ rulesets:
 # PayPal
 - name: "PayPal"
   group: "Static"
-  ruleset: "rules/blackmatrix7/rule/Clash/PayPal/PayPal.yaml"
+  ruleset: "rules/blackmatrix7/Clash/PayPal/PayPal.yaml"
 # AppleTV
 - name: "AppleTV"
   group: "GlobalMedia"
-  ruleset: "rules/blackmatrix7/rule/Clash/AppleTV/AppleTV.yaml"
+  ruleset: "rules/blackmatrix7/Clash/AppleTV/AppleTV.yaml"
 # GitHub
 - name: "GitHub"
   group: "Proxy"
-  ruleset: "rules/blackmatrix7/rule/Clash/GitHub/GitHub.yaml"
+  ruleset: "rules/blackmatrix7/Clash/GitHub/GitHub.yaml"
 
 dns:

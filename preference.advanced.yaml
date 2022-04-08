@@ -140,30 +140,30 @@ rulesets:
 # PayPal
 - name: "PayPal"
   group: "Static"
-  ruleset: "rules/blackmatrix7/rule/Clash/PayPal/PayPal.yaml"
+  ruleset: "rules/blackmatrix7/Clash/PayPal/PayPal.yaml"
 # AppleTV
 - name: "AppleTV"
   group: "GlobalMedia"
-  ruleset: "rules/blackmatrix7/rule/Clash/AppleTV/AppleTV.yaml"
+  ruleset: "rules/blackmatrix7/Clash/AppleTV/AppleTV.yaml"
 # GitHub
 - name: "GitHub"
   group: "Proxy"
-  ruleset: "rules/blackmatrix7/rule/Clash/GitHub/GitHub.yaml"
+  ruleset: "rules/blackmatrix7/Clash/GitHub/GitHub.yaml"
 # PlayStation
 - name: "PlayStation"
   group: "Game"
-  ruleset: "rules/blackmatrix7/rule/Clash/PlayStation/PlayStation.yaml"
+  ruleset: "rules/blackmatrix7/Clash/PlayStation/PlayStation.yaml"
 # Steam
 - name: "Steam"
   group: "Game"
-  ruleset: "rules/blackmatrix7/rule/Clash/Steam/Steam.yaml"
+  ruleset: "rules/blackmatrix7/Clash/Steam/Steam.yaml"
 # Nintendo
 - name: "Nintendo"
   group: "Game"
-  ruleset: "rules/blackmatrix7/rule/Clash/Nintendo/Nintendo.yaml"
+  ruleset: "rules/blackmatrix7/Clash/Nintendo/Nintendo.yaml"
 # Xbox
 - name: "Xbox"
   group: "Game"
-  ruleset: "rules/blackmatrix7/rule/Clash/Xbox/Xbox.yaml"
+  ruleset: "rules/blackmatrix7/Clash/Xbox/Xbox.yaml"
 
 dns:

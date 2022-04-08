@@ -62,8 +62,3 @@
 - name: "GlobalMedia"
   group: "GlobalMedia"
   ruleset: "rules/blackmatrix7/rule/Clash/GlobalMedia/GlobalMedia.yaml"
-
-# Proxy
-- name: "Proxy"
-  group: "Proxy"
-  ruleset: "rules/blackmatrix7/rule/Clash/Proxy/Proxy_Classical.yaml"

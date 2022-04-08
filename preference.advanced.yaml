@@ -57,6 +57,12 @@ proxy-groups:
   proxies:
     - "US-Ashburn-01"
     - "US-Ashburn-02"
+- name: "Perfomance" # 速度最快节点
+  type: url-test
+  url: 'http://www.gstatic.com/generate_204'
+  interval: 300
+  proxies:
+    - ".*"
 - name: "Load-Balance" # 上传分流
   type: load-balance
   url: 'http://www.gstatic.com/generate_204'
@@ -138,5 +144,21 @@ rulesets:
 - name: "GitHub"
   group: "Proxy"
   ruleset: "rules/blackmatrix7/rule/Clash/GitHub/GitHub.yaml"
+# PlayStation
+- name: "PlayStation"
+  group: "Perfomance"
+  ruleset: "rules/blackmatrix7/rule/Clash/PlayStation/PlayStation.yaml"
+# Steam
+- name: "Steam"
+  group: "Perfomance"
+  ruleset: "rules/blackmatrix7/rule/Clash/Steam/Steam.yaml"
+# Nintendo
+- name: "Nintendo"
+  group: "Perfomance"
+  ruleset: "rules/blackmatrix7/rule/Clash/Nintendo/Nintendo.yaml"
+# Xbox
+- name: "Xbox"
+  group: "Perfomance"
+  ruleset: "rules/blackmatrix7/rule/Clash/Xbox/Xbox.yaml"
 
 dns:

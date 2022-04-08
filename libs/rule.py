@@ -42,6 +42,10 @@ class Rule(object):
 
         rules = {'rules': []}
 
+        # 前置偏好规则
+        prefix_rules = {'rules': preference.get('prefix-rules')}
+        always_merger.merge(rules, prefix_rules)
+
         # 偏好规则集
         pref_rulesets = preference.get('rulesets')
         always_merger.merge(rules, self.getRulesFromRuleSets(pref_rulesets))
@@ -51,10 +55,18 @@ class Rule(object):
             def_rulesets = self.yaml.load(fp)
             always_merger.merge(rules, self.getRulesFromRuleSets(def_rulesets))
 
+        # 后置偏好规则
+        suffix_rules = {'rules': preference.get('suffix-rules')}
+        always_merger.merge(rules, suffix_rules)
+
         # 结尾规则
         with open(os.path.join(self.top_dir, 'rules/suffix.yaml'), 'rb') as fp:
             suffix = self.yaml.load(fp)
             always_merger.merge(rules, suffix)
+
+        del preference['rulesets']
+        del preference['prefix-rules']
+        del preference['suffix-rules']
 
         return rules
 

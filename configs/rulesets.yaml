@@ -1,64 +1,64 @@
 # 本地局域网地址
 - name: "Lan"
   group: "DIRECT"
-  ruleset: "rules/blackmatrix7/Clash/Lan/Lan.yaml"
+  ruleset: "rules/blackmatrix7/Lan/Lan.yaml"
 
 # 反劫持
 - name: "Hijacking"
   group: "Hijacking"
-  ruleset: "rules/blackmatrix7/Clash/Hijacking/Hijacking.yaml"
+  ruleset: "rules/blackmatrix7/Hijacking/Hijacking.yaml"
 
 # ChinaMedia
 - name: "ChinaMedia" 
   group: "DIRECT"
-  ruleset: "rules/blackmatrix7/Clash/ChinaMedia/ChinaMedia.yaml"
+  ruleset: "rules/blackmatrix7/ChinaMedia/ChinaMedia.yaml"
 
 # China
 - name: "China" 
   group: "DIRECT"
-  ruleset: "rules/blackmatrix7/Clash/China/China.yaml"
+  ruleset: "rules/blackmatrix7/China/China.yaml"
 
 # AsianMedia
 - name: "AsianMedia" 
   group: "DIRECT"
-  ruleset: "rules/blackmatrix7/Clash/AsianMedia/AsianMedia.yaml"
+  ruleset: "rules/blackmatrix7/AsianMedia/AsianMedia.yaml"
 
 # Apple
 - name: "Apple" 
   group: "Apple"
-  ruleset: "rules/blackmatrix7/Clash/Apple/Apple.yaml"
+  ruleset: "rules/blackmatrix7/Apple/Apple.yaml"
 
 # Facebook
 - name: "Facebook"
   group: "Proxy"
-  ruleset: "rules/blackmatrix7/Clash/Facebook/Facebook.yaml"
+  ruleset: "rules/blackmatrix7/Facebook/Facebook.yaml"
 
 # Twitter
 - name: "Twitter"
   group: "Proxy"
-  ruleset: "rules/blackmatrix7/Clash/Twitter/Twitter.yaml"
+  ruleset: "rules/blackmatrix7/Twitter/Twitter.yaml"
 
 # Google
 - name: "Google"
   group: "Proxy"
-  ruleset: "rules/blackmatrix7/Clash/Google/Google.yaml"
+  ruleset: "rules/blackmatrix7/Google/Google.yaml"
 
 # OneDrive
 - name: "OneDrive"
   group: "Proxy"
-  ruleset: "rules/blackmatrix7/Clash/OneDrive/OneDrive.yaml"
+  ruleset: "rules/blackmatrix7/OneDrive/OneDrive.yaml"
 
 # Telegram
 - name: "Telegram"
   group: "Proxy"
-  ruleset: "rules/blackmatrix7/Clash/Telegram/Telegram.yaml"
+  ruleset: "rules/blackmatrix7/Telegram/Telegram.yaml"
 
 # Speedtest
 - name: "Speedtest"
   group: "Speedtest"
-  ruleset: "rules/blackmatrix7/Clash/Speedtest/Speedtest.yaml"
+  ruleset: "rules/blackmatrix7/Speedtest/Speedtest.yaml"
 
 # GlobalMedia
 - name: "GlobalMedia"
   group: "GlobalMedia"
-  ruleset: "rules/blackmatrix7/Clash/GlobalMedia/GlobalMedia.yaml"
+  ruleset: "rules/blackmatrix7/GlobalMedia/GlobalMedia.yaml"

@@ -55,7 +55,7 @@ def getPreference():
 
     # 代理组策略
     proxy_groups = getProxyGroups(preference)
-    preference = always_merger.merge(proxy_groups, preference)
+    preference.update(proxy_groups)
 
     # 分流规则
     rule = Rule()

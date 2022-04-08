@@ -43,8 +43,8 @@ class Rule(object):
         rules = {'rules': []}
 
         # 偏好规则集
-        ext_rulesets = preference.get('rulesets')
-        always_merger.merge(rules, self.getRulesFromRuleSets(ext_rulesets))
+        pref_rulesets = preference.get('rulesets')
+        always_merger.merge(rules, self.getRulesFromRuleSets(pref_rulesets))
 
         # 预设规则集
         with open(os.path.join(self.top_dir, 'configs/rulesets.yaml'), 'rb') as fp:

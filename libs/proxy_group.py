@@ -34,24 +34,36 @@ def getProxyGroups(preference):
     yaml.preserve_quotes = True
     yaml.indent(mapping=2, sequence=4, offset=2)
 
-    ext_proxies = []
-    proxies = getProxies(preference)
-    for proxy in proxies:
-        ext_proxies.append(proxy.get('name'))
-
+    # 获取预设代理组
     top_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
     with open(os.path.join(top_dir, 'configs/proxy-groups.yaml'), 'rb') as fp:
-        groups = yaml.load(fp)
+        cur_groups = yaml.load(fp)
+    # 获取偏好代理组
+    pref_groups = preference.get('proxy-groups')
+
+    # 获取所有代理节点名
+    all_proxies = [proxy['name'] for proxy in getProxies(preference)]
+
+    # 获取偏好代理组名
+    pref_group_names = [proxy['name'] for proxy in pref_groups]
 
     proxy_groups = {'proxy-groups': []}
-    ext_proxy_groups = [o['name'] for o in preference.get('proxy-groups')]
-    for group in groups:
+    # 预设代理组
+    for group in cur_groups:
         name = group.get('name')
-        if (name in ext_proxy_groups):
+        if (name in pref_group_names): # 如果预设代理组在偏好代理组中存在，则使用偏好代理组的配置
             continue
-        def_proxies = group.get('proxies')
-        if ('.*' in def_proxies):
-            def_proxies.remove('.*')
-            def_proxies.extend(ext_proxies)
+        replaceProxies(group, all_proxies)
         proxy_groups['proxy-groups'].append(group)
+    # 偏好代理组
+    for group in pref_groups:
+        replaceProxies(group, all_proxies)
+        proxy_groups['proxy-groups'].append(group)
+
     return proxy_groups
+
+def replaceProxies(group, proxies):
+    def_proxies = group.get('proxies')
+    if ('.*' in def_proxies):
+        def_proxies.remove('.*')
+        def_proxies.extend(proxies)

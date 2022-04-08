@@ -41,3 +41,8 @@
     ```
 
 4. 导入生成的 configuration.yaml 配置文件到 Clash。
+
+## 可选参数
+
+    --dns
+        生成带有 DNS 服务器相关配置的文件。（Clash 内置了 DNS 服务器，默认未启用）

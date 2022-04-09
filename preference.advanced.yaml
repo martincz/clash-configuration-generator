@@ -152,6 +152,10 @@ rulesets:
 - name: "GitHub"
   group: "Proxy"
   ruleset: "rules/blackmatrix7/GitHub/GitHub.yaml"
+# Developer
+- name: "Developer"
+  group: "Proxy"
+  ruleset: "rules/blackmatrix7/Developer/Developer.yaml"
 # PlayStation
 - name: "PlayStation"
   group: "Game"

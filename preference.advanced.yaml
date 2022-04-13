@@ -158,7 +158,7 @@ rulesets:
   ruleset: "rules/blackmatrix7/Developer/Developer.yaml"
 # PlayStation
 - name: "PlayStation"
-  group: "Game"
+  group: "DIRECT"
   ruleset: "rules/blackmatrix7/PlayStation/PlayStation.yaml"
 # Nintendo
 - name: "Nintendo"

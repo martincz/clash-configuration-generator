@@ -162,7 +162,7 @@ rulesets:
   ruleset: "rules/blackmatrix7/PlayStation/PlayStation.yaml"
 # Nintendo
 - name: "Nintendo"
-  group: "Game"
+  group: "DIRECT"
   ruleset: "rules/blackmatrix7/Nintendo/Nintendo.yaml"
 
 dns:

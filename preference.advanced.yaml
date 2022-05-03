@@ -134,6 +134,8 @@ prefix-rules: # 前置规则
   - SRC-IP-CIDR,192.168.0.111/32,Load-Balance
   - SRC-IP-CIDR,192.168.0.112/32,Load-Balance
   - SRC-IP-CIDR,192.168.0.113/32,Load-Balance
+# 特殊规则
+  - DOMAIN-SUFFIX,synocommunity.com,Proxy
 
 suffix-rules: # 后置规则
 # 绕过代理

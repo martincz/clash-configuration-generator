@@ -57,7 +57,7 @@ proxy-groups:
   proxies:
     - "US-Ashburn-01"
     - "US-Ashburn-02"
-- name: "Perfomance" # 速度最快节点
+- name: "Performance" # 速度最快节点
   type: url-test
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -75,7 +75,7 @@ proxy-groups:
 - name: "Game" # 游戏服务
   type: select
   proxies:
-    - "Perfomance"
+    - "Performance"
     - "DIRECT"
 - name: "Apple" # Apple 服务代理
   type: select

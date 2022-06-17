@@ -23,6 +23,11 @@
   group: "DIRECT"
   ruleset: "rules/blackmatrix7/AsianMedia/AsianMedia.yaml"
 
+# GlobalMedia
+- name: "GlobalMedia"
+  group: "GlobalMedia"
+  ruleset: "rules/blackmatrix7/GlobalMedia/GlobalMedia.yaml"
+
 # Apple
 - name: "Apple" 
   group: "Apple"
@@ -57,8 +62,3 @@
 - name: "Speedtest"
   group: "Speedtest"
   ruleset: "rules/blackmatrix7/Speedtest/Speedtest.yaml"
-
-# GlobalMedia
-- name: "GlobalMedia"
-  group: "GlobalMedia"
-  ruleset: "rules/blackmatrix7/GlobalMedia/GlobalMedia.yaml"

@@ -15,22 +15,22 @@
 
 引用此规则后，不要再引用其他的国内规则，否则可能造成大量规则重复。
 
-实验性规则，效果待观察，请谨慎评估后使用。
+实验性规则，效果待观察，不建议使用，不建议使用，不建议使用，已考虑进行删除。
 
 ## 规则统计
 
-总计规则：81802 条。
+总计规则：80435 条。
 
 各类型规则统计：
 
 | 类型 | 数量(条) |
 | ---- | ---- |
-| DOMAIN-SUFFIX | 71406 |
-| PROCESS-NAME | 5 |
-| DOMAIN | 84 |
-| IP-CIDR | 6141 |
+| DOMAIN-SUFFIX | 69928 |
+| PROCESS-NAME | 6 |
+| DOMAIN | 75 |
+| IP-CIDR | 6245 |
 | DOMAIN-KEYWORD | 15 |
-| IP-CIDR6 | 4151 |
+| IP-CIDR6 | 4166 |
 ## 配置说明
 
 实时版：程序定时更新，更新频率高，能尽快同步数据源变化，适合希望尝鲜的人。
@@ -111,8 +111,6 @@ ChinaMax_Classical.yaml 可以单独使用，其他规则必须同时使用。
 - Agora
 
 - AliPay
-
-- Alibaba
 
 - AnTianKeJi
 
@@ -500,6 +498,8 @@ ChinaMax_Classical.yaml 可以单独使用，其他规则必须同时使用。
 
 - AdvertisingTest
 
+- Proxy
+
 - Steam
 
 - SteamCN
@@ -514,7 +514,6 @@ ChinaMax_Classical.yaml 可以单独使用，其他规则必须同时使用。
 
 - https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/360.list
 - https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/4399.list
-- https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Alibaba.list
 - https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Baidu.list
 - https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/ByteDance.list
 - https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/CCTV.list
@@ -562,7 +561,6 @@ ChinaMax_Classical.yaml 可以单独使用，其他规则必须同时使用。
 - https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/AcFun.list
 - https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/Agora.list
 - https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/AliPay.list
-- https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/Alibaba.list
 - https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/AnTianKeJi.list
 - https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/Anjuke.list
 - https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/BOC.list

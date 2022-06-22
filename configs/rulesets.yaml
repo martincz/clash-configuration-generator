@@ -28,15 +28,15 @@
   group: "GlobalMedia"
   ruleset: "rules/blackmatrix7/GlobalMedia/GlobalMedia.yaml"
 
-# AppleTV
-- name: "AppleTV"
-  group: "GlobalMedia"
-  ruleset: "rules/blackmatrix7/AppleTV/AppleTV.yaml"
-
 # Apple
 - name: "Apple" 
   group: "Apple"
   ruleset: "rules/blackmatrix7/Apple/Apple.yaml"
+
+# AppleTV
+- name: "AppleTV"
+  group: "GlobalMedia"
+  ruleset: "rules/blackmatrix7/AppleTV/AppleTV.yaml"
 
 # Facebook
 - name: "Facebook"

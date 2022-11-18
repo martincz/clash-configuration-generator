@@ -1,9 +1,9 @@
 # NAME: Discord
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2022-02-04 02:11:41
-# DOMAIN-SUFFIX: 27
-# TOTAL: 27
+# UPDATED: 2022-11-03 17:10:07
+# DOMAIN-SUFFIX: 28
+# TOTAL: 28
 payload:
   - DOMAIN-SUFFIX,airhorn.solutions
   - DOMAIN-SUFFIX,airhornbot.com
@@ -31,4 +31,5 @@ payload:
   - DOMAIN-SUFFIX,discordpartygames.com
   - DOMAIN-SUFFIX,discordsays.com
   - DOMAIN-SUFFIX,discordstatus.com
+  - DOMAIN-SUFFIX,hammerandchisel.ssl.zendesk.com
   - DOMAIN-SUFFIX,watchanimeattheoffice.com

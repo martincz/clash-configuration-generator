@@ -12,14 +12,14 @@ Nintendo规则由《RULE GENERATOR 规则生成器》自动生成。
 
 ## 规则统计
 
-最后更新时间：2022-11-03 17:09:27
+最后更新时间：2022-12-25 18:48:43
 
 各类型规则统计：
 | 类型 | 数量(条)  | 
 | ---- | ----  |
-| DOMAIN-SUFFIX | 123  | 
-| IP-CIDR | 9  | 
-| TOTAL | 132  | 
+| DOMAIN-SUFFIX | 126  | 
+| IP-CIDR | 1  | 
+| TOTAL | 127  | 
 
 
 ## Clash 

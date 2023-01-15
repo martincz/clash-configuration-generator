@@ -1,10 +1,12 @@
 # NAME: NBC
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2022-11-03 17:11:07
+# UPDATED: 2022-12-25 18:52:32
+# DOMAIN: 1
 # DOMAIN-SUFFIX: 21
-# TOTAL: 21
+# TOTAL: 22
 payload:
+  - DOMAIN,nbcstreaming.sc.omtrdc.net
   - DOMAIN-SUFFIX,bravotv.com
   - DOMAIN-SUFFIX,cnbc.com
   - DOMAIN-SUFFIX,cnbcfm.com

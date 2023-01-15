@@ -1,16 +1,15 @@
 # NAME: ChinaMax
 # AUTHOR: blackmatrix7
 # REPO: https://gitlab.com/blackmatrix7/ios_rule_script
-# UPDATED: 2022-11-18 02:09:31
+# UPDATED: 2023-01-14 18:30:49
 # DOMAIN: 174
-# DOMAIN-KEYWORD: 14
-# DOMAIN-SUFFIX: 69464
-# IP-CIDR: 6316
-# IP-CIDR6: 4397
+# DOMAIN-KEYWORD: 13
+# DOMAIN-SUFFIX: 67414
+# IP-CIDR: 5265
+# IP-CIDR6: 5321
 # PROCESS-NAME: 13
-# TOTAL: 80378
+# TOTAL: 78200
 payload:
-  - DOMAIN-KEYWORD,-cn
   - DOMAIN-KEYWORD,.tmall.com
   - DOMAIN-KEYWORD,alicdn
   - DOMAIN-KEYWORD,alipay
@@ -21,9 +20,9 @@ payload:
   - DOMAIN-KEYWORD,officecdn
   - DOMAIN-KEYWORD,taobao
   - DOMAIN-KEYWORD,bilibili
-  - DOMAIN-KEYWORD,qiyi
   - DOMAIN-KEYWORD,hnagroup
   - DOMAIN-KEYWORD,weibo
+  - DOMAIN-KEYWORD,qiyi
   - PROCESS-NAME,com.bilibili.app.blue
   - PROCESS-NAME,com.bilibili.app.in
   - PROCESS-NAME,com.bilibili.comic

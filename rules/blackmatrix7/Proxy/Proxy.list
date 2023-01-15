@@ -1,13 +1,13 @@
 # NAME: Proxy
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2022-11-16 02:29:06
+# UPDATED: 2023-01-11 02:10:03
 # DOMAIN: 7
 # DOMAIN-KEYWORD: 31
-# DOMAIN-SUFFIX: 24704
-# IP-CIDR: 92
+# DOMAIN-SUFFIX: 24722
+# IP-CIDR: 88
 # IP-CIDR6: 3
-# TOTAL: 24837
+# TOTAL: 24851
 DOMAIN,api.waqi.info
 DOMAIN,aqi.aqicn.org
 DOMAIN,assets-priconne-redive-us.akamaized.net
@@ -2670,6 +2670,7 @@ DOMAIN-SUFFIX,adsa2.9acz1.com
 DOMAIN-SUFFIX,adsense.com
 DOMAIN-SUFFIX,adshoppeevents.com
 DOMAIN-SUFFIX,adss.asia
+DOMAIN-SUFFIX,adtidy.org
 DOMAIN-SUFFIX,adult-cartoon-sex.com
 DOMAIN-SUFFIX,adult-empire.com
 DOMAIN-SUFFIX,adult-sex-games.com
@@ -3696,6 +3697,7 @@ DOMAIN-SUFFIX,baixetudofree.comuv.com
 DOMAIN-SUFFIX,baixing.me
 DOMAIN-SUFFIX,baixn.xyz
 DOMAIN-SUFFIX,baiyun.net
+DOMAIN-SUFFIX,baizhi.org
 DOMAIN-SUFFIX,bakaproxy.moe
 DOMAIN-SUFFIX,bakerpr.com.au
 DOMAIN-SUFFIX,bakerssecret.com
@@ -4554,7 +4556,6 @@ DOMAIN-SUFFIX,buddhanet.idv.tw
 DOMAIN-SUFFIX,buddhism-controversy-blog.com
 DOMAIN-SUFFIX,buddhism.about.com
 DOMAIN-SUFFIX,buddhismnow.com
-DOMAIN-SUFFIX,buddhistchannel.tv
 DOMAIN-SUFFIX,bufalopedia.ch
 DOMAIN-SUFFIX,bufalopedia.com
 DOMAIN-SUFFIX,bufalopedia.net
@@ -4576,6 +4577,7 @@ DOMAIN-SUFFIX,bullog.org
 DOMAIN-SUFFIX,bullogger.com
 DOMAIN-SUFFIX,bullogs.com
 DOMAIN-SUFFIX,bullvpn.com
+DOMAIN-SUFFIX,bumingbai.net
 DOMAIN-SUFFIX,bunbunhk.com
 DOMAIN-SUFFIX,bundesliga.de
 DOMAIN-SUFFIX,bungzhu.web.id
@@ -5153,7 +5155,6 @@ DOMAIN-SUFFIX,chaikair.cc
 DOMAIN-SUFFIX,chain.net
 DOMAIN-SUFFIX,chalungu.cn
 DOMAIN-SUFFIX,chamirris.com
-DOMAIN-SUFFIX,chan.sankakucomplex.com
 DOMAIN-SUFFIX,changchengremit.com
 DOMAIN-SUFFIX,change.org
 DOMAIN-SUFFIX,changeip.name
@@ -6676,6 +6677,7 @@ DOMAIN-SUFFIX,doubiyunbackup.com
 DOMAIN-SUFFIX,doublechins.ca
 DOMAIN-SUFFIX,doublehop.me
 DOMAIN-SUFFIX,doublemoney.site
+DOMAIN-SUFFIX,doublethinklab.org
 DOMAIN-SUFFIX,doubmirror.cf
 DOMAIN-SUFFIX,dougscripts.com
 DOMAIN-SUFFIX,douhokanko.net
@@ -6899,6 +6901,7 @@ DOMAIN-SUFFIX,earthcam.com
 DOMAIN-SUFFIX,earthcam.net
 DOMAIN-SUFFIX,earthvpn.com
 DOMAIN-SUFFIX,easibook.my
+DOMAIN-SUFFIX,east-plus.net
 DOMAIN-SUFFIX,east.moe
 DOMAIN-SUFFIX,eastasiaforum.org
 DOMAIN-SUFFIX,eastern-ark.com
@@ -8155,6 +8158,7 @@ DOMAIN-SUFFIX,fun88.com
 DOMAIN-SUFFIX,fun88.com.cn
 DOMAIN-SUFFIX,fun8802.com
 DOMAIN-SUFFIX,fun8809.com
+DOMAIN-SUFFIX,fun881211.com
 DOMAIN-SUFFIX,fun8878.com
 DOMAIN-SUFFIX,fun8889.com
 DOMAIN-SUFFIX,fun88asia1.com
@@ -8290,6 +8294,7 @@ DOMAIN-SUFFIX,ganbe.jp
 DOMAIN-SUFFIX,gandhidham.com
 DOMAIN-SUFFIX,ganetstudio.com
 DOMAIN-SUFFIX,ganges.com
+DOMAIN-SUFFIX,ganjing.com
 DOMAIN-SUFFIX,ganjingworld.com
 DOMAIN-SUFFIX,gaoloumi.cc
 DOMAIN-SUFFIX,gaoming.net
@@ -9575,6 +9580,7 @@ DOMAIN-SUFFIX,hotav.tv
 DOMAIN-SUFFIX,hotbak.net
 DOMAIN-SUFFIX,hotbox.com
 DOMAIN-SUFFIX,hotclaudia.de
+DOMAIN-SUFFIX,hotcoin.com
 DOMAIN-SUFFIX,hotdh.xyz
 DOMAIN-SUFFIX,hoteljen.com
 DOMAIN-SUFFIX,hotels.cn
@@ -9693,6 +9699,7 @@ DOMAIN-SUFFIX,humanevents.com
 DOMAIN-SUFFIX,humanharvestmovie.com
 DOMAIN-SUFFIX,humanrightsfoundation.org
 DOMAIN-SUFFIX,humanrightshouse.org
+DOMAIN-SUFFIX,humanrightspressawards.org
 DOMAIN-SUFFIX,humansofnewyork.com
 DOMAIN-SUFFIX,humblebundle.com
 DOMAIN-SUFFIX,hung-ya.com
@@ -10581,6 +10588,7 @@ DOMAIN-SUFFIX,jin321.com
 DOMAIN-SUFFIX,jinbushe.org
 DOMAIN-SUFFIX,jing1155.com
 DOMAIN-SUFFIX,jing444444.com
+DOMAIN-SUFFIX,jingbets.com
 DOMAIN-SUFFIX,jingking.net
 DOMAIN-SUFFIX,jingling.me
 DOMAIN-SUFFIX,jingpin.org
@@ -11073,6 +11081,7 @@ DOMAIN-SUFFIX,kqes.net
 DOMAIN-SUFFIX,kr.neoz.club
 DOMAIN-SUFFIX,kr1.hkts.win
 DOMAIN-SUFFIX,krabbenspringen.de
+DOMAIN-SUFFIX,kraken.com
 DOMAIN-SUFFIX,kralin.su
 DOMAIN-SUFFIX,kreyness.com
 DOMAIN-SUFFIX,kripaludrummers.com
@@ -11613,6 +11622,7 @@ DOMAIN-SUFFIX,livingonline.us
 DOMAIN-SUFFIX,livingotherwise.com
 DOMAIN-SUFFIX,livingstream.com
 DOMAIN-SUFFIX,liwangyang.com
+DOMAIN-SUFFIX,liyuans.com
 DOMAIN-SUFFIX,liyuwiki.com
 DOMAIN-SUFFIX,lizakii.000webhostapp.com
 DOMAIN-SUFFIX,lizhizhuangbi.com
@@ -12581,6 +12591,7 @@ DOMAIN-SUFFIX,monitorware.com
 DOMAIN-SUFFIX,monkeywerks.net
 DOMAIN-SUFFIX,monlamit.org
 DOMAIN-SUFFIX,monocloud.com.au
+DOMAIN-SUFFIX,monocloud.me
 DOMAIN-SUFFIX,monova.org
 DOMAIN-SUFFIX,monoworks.com
 DOMAIN-SUFFIX,monster.com
@@ -13107,6 +13118,7 @@ DOMAIN-SUFFIX,newlandmagazine.com.au
 DOMAIN-SUFFIX,newline.fi
 DOMAIN-SUFFIX,newmediarights.org
 DOMAIN-SUFFIX,newmexico.gov
+DOMAIN-SUFFIX,newmitbbs.com
 DOMAIN-SUFFIX,newmoon.com
 DOMAIN-SUFFIX,newnews.ca
 DOMAIN-SUFFIX,newpipe.net
@@ -13703,6 +13715,7 @@ DOMAIN-SUFFIX,ooyala.com
 DOMAIN-SUFFIX,ope99.com
 DOMAIN-SUFFIX,open.com.hk
 DOMAIN-SUFFIX,open.firstory.me
+DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openaked.com
 DOMAIN-SUFFIX,openallweb.com
 DOMAIN-SUFFIX,opendemocracy.net
@@ -15401,6 +15414,7 @@ DOMAIN-SUFFIX,sandscotaicentral.com
 DOMAIN-SUFFIX,sangunia.webuda.com
 DOMAIN-SUFFIX,sanhebfb.com
 DOMAIN-SUFFIX,sankaku.o.asakuraotome.com
+DOMAIN-SUFFIX,sankakucomplex.com
 DOMAIN-SUFFIX,sankei.com
 DOMAIN-SUFFIX,sanmin.com.tw
 DOMAIN-SUFFIX,sans.edu
@@ -16239,6 +16253,7 @@ DOMAIN-SUFFIX,spotoption.com
 DOMAIN-SUFFIX,sppoc.com
 DOMAIN-SUFFIX,spravca.net
 DOMAIN-SUFFIX,spreadshirt.es
+DOMAIN-SUFFIX,spring-plus.net
 DOMAIN-SUFFIX,spring.io
 DOMAIN-SUFFIX,spring.net
 DOMAIN-SUFFIX,spring4u.info
@@ -18786,6 +18801,7 @@ DOMAIN-SUFFIX,w8638.com
 DOMAIN-SUFFIX,w88124.com
 DOMAIN-SUFFIX,w888055.com
 DOMAIN-SUFFIX,w888066.com
+DOMAIN-SUFFIX,w88club.com
 DOMAIN-SUFFIX,w88info.com
 DOMAIN-SUFFIX,w88w989.com
 DOMAIN-SUFFIX,w9155.com
@@ -18954,6 +18970,7 @@ DOMAIN-SUFFIX,weboas.is
 DOMAIN-SUFFIX,webok.tw
 DOMAIN-SUFFIX,weboproxy.com
 DOMAIN-SUFFIX,webpack.de
+DOMAIN-SUFFIX,webpkgcache.com
 DOMAIN-SUFFIX,webproxy-service.de
 DOMAIN-SUFFIX,webproxy.ca
 DOMAIN-SUFFIX,webproxy.ru
@@ -24020,6 +24037,7 @@ DOMAIN-SUFFIX,xuv697.com
 DOMAIN-SUFFIX,xuzhiyong.net
 DOMAIN-SUFFIX,xv1.cc
 DOMAIN-SUFFIX,xv9.cc
+DOMAIN-SUFFIX,xvbelink.com
 DOMAIN-SUFFIX,xvdada.com
 DOMAIN-SUFFIX,xvideo-jp.com
 DOMAIN-SUFFIX,xvideo.cc
@@ -24757,7 +24775,6 @@ IP-CIDR,103.2.28.0/22,no-resolve
 IP-CIDR,103.246.56.0/22,no-resolve
 IP-CIDR,103.27.148.0/22,no-resolve
 IP-CIDR,103.4.96.0/22,no-resolve
-IP-CIDR,108.168.0.0/16,no-resolve
 IP-CIDR,109.239.140.0/24,no-resolve
 IP-CIDR,110.76.140.0/22,no-resolve
 IP-CIDR,113.61.104.0/22,no-resolve
@@ -24777,8 +24794,6 @@ IP-CIDR,125.6.149.0/24,no-resolve
 IP-CIDR,125.6.190.0/24,no-resolve
 IP-CIDR,129.134.0.0/17,no-resolve
 IP-CIDR,129.226.0.0/16,no-resolve
-IP-CIDR,13.251.24.0/24,no-resolve
-IP-CIDR,13.251.41.0/24,no-resolve
 IP-CIDR,13.32.0.0/15,no-resolve
 IP-CIDR,13.35.0.0/17,no-resolve
 IP-CIDR,147.92.128.0/17,no-resolve
@@ -24787,7 +24802,6 @@ IP-CIDR,157.240.0.0/17,no-resolve
 IP-CIDR,158.85.224.160/27,no-resolve
 IP-CIDR,158.85.46.128/27,no-resolve
 IP-CIDR,158.85.5.192/27,no-resolve
-IP-CIDR,17.252.156.0/23,no-resolve
 IP-CIDR,173.192.222.160/27,no-resolve
 IP-CIDR,173.192.231.32/27,no-resolve
 IP-CIDR,173.194.0.0/16,no-resolve
@@ -24835,7 +24849,7 @@ IP-CIDR,54.230.156.0/22,no-resolve
 IP-CIDR,54.242.0.0/15,no-resolve
 IP-CIDR,54.93.0.0/16,no-resolve
 IP-CIDR,66.220.144.0/20,no-resolve
-IP-CIDR,69.171.0.0/16,no-resolve
+IP-CIDR,69.171.224.0/19,no-resolve
 IP-CIDR,69.63.176.0/20,no-resolve
 IP-CIDR,74.119.76.0/22,no-resolve
 IP-CIDR,74.125.0.0/16,no-resolve

@@ -12,7 +12,7 @@ Whatsapp规则由《RULE GENERATOR 规则生成器》自动生成。
 
 ## 规则统计
 
-最后更新时间：2022-11-03 17:10:08
+最后更新时间：2022-12-25 18:51:19
 
 各类型规则统计：
 | 类型 | 数量(条)  | 
@@ -20,8 +20,8 @@ Whatsapp规则由《RULE GENERATOR 规则生成器》自动生成。
 | DOMAIN | 1  | 
 | DOMAIN-KEYWORD | 1  | 
 | DOMAIN-SUFFIX | 4  | 
-| IP-CIDR | 15  | 
-| TOTAL | 21  | 
+| IP-CIDR | 11  | 
+| TOTAL | 17  | 
 
 
 ## Clash 

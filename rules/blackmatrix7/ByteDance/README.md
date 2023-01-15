@@ -12,15 +12,15 @@
 
 ## 规则统计
 
-最后更新时间：2022-11-03 17:10:14
+最后更新时间：2022-12-25 18:51:26
 
 各类型规则统计：
 | 类型 | 数量(条)  | 
 | ---- | ----  |
-| DOMAIN-SUFFIX | 274  | 
+| DOMAIN-SUFFIX | 278  | 
 | IP-CIDR | 1  | 
 | PROCESS-NAME | 1  | 
-| TOTAL | 276  | 
+| TOTAL | 280  | 
 
 
 ## Clash 
@@ -76,7 +76,6 @@ https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_scri
 - https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rule/ByteDance/ByteDance.list
 - https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/ByteDance.list
 - https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/ByteDance.list
-- https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Douyin.yaml
 
 
 感谢以上规则作者的辛勤付出（排名不分先后）。

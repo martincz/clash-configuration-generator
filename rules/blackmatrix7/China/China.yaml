@@ -1,15 +1,14 @@
 # NAME: China
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2022-11-18 02:08:33
-# DOMAIN: 20
-# DOMAIN-KEYWORD: 10
-# DOMAIN-SUFFIX: 4118
+# UPDATED: 2023-01-09 02:10:17
+# DOMAIN: 18
+# DOMAIN-KEYWORD: 9
+# DOMAIN-SUFFIX: 3527
 # IP-CIDR: 10
 # IP-CIDR6: 4
-# TOTAL: 4162
+# TOTAL: 3568
 payload:
-  - DOMAIN-KEYWORD,-cn
   - DOMAIN-KEYWORD,.tmall.com
   - DOMAIN-KEYWORD,alicdn
   - DOMAIN-KEYWORD,alipay

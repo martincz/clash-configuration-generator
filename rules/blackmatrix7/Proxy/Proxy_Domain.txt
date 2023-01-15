@@ -1,13 +1,13 @@
 # NAME: Proxy
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2022-11-16 02:29:06
+# UPDATED: 2023-01-11 02:10:03
 # DOMAIN: 7
 # DOMAIN-KEYWORD: 31
-# DOMAIN-SUFFIX: 24704
-# IP-CIDR: 92
+# DOMAIN-SUFFIX: 24722
+# IP-CIDR: 88
 # IP-CIDR6: 3
-# TOTAL: 24837
+# TOTAL: 24851
 api.waqi.info
 aqi.aqicn.org
 assets-priconne-redive-us.akamaized.net
@@ -2670,6 +2670,7 @@ voice.telephony.goog
 .adsense.com
 .adshoppeevents.com
 .adss.asia
+.adtidy.org
 .adult-cartoon-sex.com
 .adult-empire.com
 .adult-sex-games.com
@@ -3696,6 +3697,7 @@ voice.telephony.goog
 .baixing.me
 .baixn.xyz
 .baiyun.net
+.baizhi.org
 .bakaproxy.moe
 .bakerpr.com.au
 .bakerssecret.com
@@ -4554,7 +4556,6 @@ voice.telephony.goog
 .buddhism-controversy-blog.com
 .buddhism.about.com
 .buddhismnow.com
-.buddhistchannel.tv
 .bufalopedia.ch
 .bufalopedia.com
 .bufalopedia.net
@@ -4576,6 +4577,7 @@ voice.telephony.goog
 .bullogger.com
 .bullogs.com
 .bullvpn.com
+.bumingbai.net
 .bunbunhk.com
 .bundesliga.de
 .bungzhu.web.id
@@ -5153,7 +5155,6 @@ voice.telephony.goog
 .chain.net
 .chalungu.cn
 .chamirris.com
-.chan.sankakucomplex.com
 .changchengremit.com
 .change.org
 .changeip.name
@@ -6676,6 +6677,7 @@ voice.telephony.goog
 .doublechins.ca
 .doublehop.me
 .doublemoney.site
+.doublethinklab.org
 .doubmirror.cf
 .dougscripts.com
 .douhokanko.net
@@ -6899,6 +6901,7 @@ voice.telephony.goog
 .earthcam.net
 .earthvpn.com
 .easibook.my
+.east-plus.net
 .east.moe
 .eastasiaforum.org
 .eastern-ark.com
@@ -8155,6 +8158,7 @@ voice.telephony.goog
 .fun88.com.cn
 .fun8802.com
 .fun8809.com
+.fun881211.com
 .fun8878.com
 .fun8889.com
 .fun88asia1.com
@@ -8290,6 +8294,7 @@ voice.telephony.goog
 .gandhidham.com
 .ganetstudio.com
 .ganges.com
+.ganjing.com
 .ganjingworld.com
 .gaoloumi.cc
 .gaoming.net
@@ -9575,6 +9580,7 @@ voice.telephony.goog
 .hotbak.net
 .hotbox.com
 .hotclaudia.de
+.hotcoin.com
 .hotdh.xyz
 .hoteljen.com
 .hotels.cn
@@ -9693,6 +9699,7 @@ voice.telephony.goog
 .humanharvestmovie.com
 .humanrightsfoundation.org
 .humanrightshouse.org
+.humanrightspressawards.org
 .humansofnewyork.com
 .humblebundle.com
 .hung-ya.com
@@ -10581,6 +10588,7 @@ voice.telephony.goog
 .jinbushe.org
 .jing1155.com
 .jing444444.com
+.jingbets.com
 .jingking.net
 .jingling.me
 .jingpin.org
@@ -11073,6 +11081,7 @@ voice.telephony.goog
 .kr.neoz.club
 .kr1.hkts.win
 .krabbenspringen.de
+.kraken.com
 .kralin.su
 .kreyness.com
 .kripaludrummers.com
@@ -11613,6 +11622,7 @@ voice.telephony.goog
 .livingotherwise.com
 .livingstream.com
 .liwangyang.com
+.liyuans.com
 .liyuwiki.com
 .lizakii.000webhostapp.com
 .lizhizhuangbi.com
@@ -12581,6 +12591,7 @@ voice.telephony.goog
 .monkeywerks.net
 .monlamit.org
 .monocloud.com.au
+.monocloud.me
 .monova.org
 .monoworks.com
 .monster.com
@@ -13107,6 +13118,7 @@ voice.telephony.goog
 .newline.fi
 .newmediarights.org
 .newmexico.gov
+.newmitbbs.com
 .newmoon.com
 .newnews.ca
 .newpipe.net
@@ -13703,6 +13715,7 @@ voice.telephony.goog
 .ope99.com
 .open.com.hk
 .open.firstory.me
+.openai.com
 .openaked.com
 .openallweb.com
 .opendemocracy.net
@@ -15401,6 +15414,7 @@ voice.telephony.goog
 .sangunia.webuda.com
 .sanhebfb.com
 .sankaku.o.asakuraotome.com
+.sankakucomplex.com
 .sankei.com
 .sanmin.com.tw
 .sans.edu
@@ -16239,6 +16253,7 @@ voice.telephony.goog
 .sppoc.com
 .spravca.net
 .spreadshirt.es
+.spring-plus.net
 .spring.io
 .spring.net
 .spring4u.info
@@ -18786,6 +18801,7 @@ voice.telephony.goog
 .w88124.com
 .w888055.com
 .w888066.com
+.w88club.com
 .w88info.com
 .w88w989.com
 .w9155.com
@@ -18954,6 +18970,7 @@ voice.telephony.goog
 .webok.tw
 .weboproxy.com
 .webpack.de
+.webpkgcache.com
 .webproxy-service.de
 .webproxy.ca
 .webproxy.ru
@@ -24020,6 +24037,7 @@ voice.telephony.goog
 .xuzhiyong.net
 .xv1.cc
 .xv9.cc
+.xvbelink.com
 .xvdada.com
 .xvideo-jp.com
 .xvideo.cc

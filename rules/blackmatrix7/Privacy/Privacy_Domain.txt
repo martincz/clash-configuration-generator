@@ -1,11 +1,11 @@
 # NAME: Privacy
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2022-11-03 17:09:25
+# UPDATED: 2023-01-09 02:08:03
 # DOMAIN: 14
-# DOMAIN-SUFFIX: 14741
+# DOMAIN-SUFFIX: 14855
 # IP-CIDR: 7
-# TOTAL: 14762
+# TOTAL: 14876
 hm.baidu.com
 hmma.baidu.com
 js.users.51.la
@@ -25,6 +25,7 @@ zgsdk.zhugeio.com
 .0.net.zooplus.nl
 .00d1n000002btifuae.net.zooplus.com
 .00da0000000ya3ymag.net.zooplus.com
+.00px.net
 .01-csr31.net.zooplus.de
 .01-csr41.net.zooplus.de
 .01.2lab.net.zooplus.de
@@ -95,6 +96,7 @@ zgsdk.zhugeio.com
 .12build.actonservice.com
 .13js1lbtbj3.sparkloop.app
 .150.net.zooplus.fr
+.1558334541.rsc.cdn77.org
 .16ao.mathon.fr
 .16i6nuuc2ej.koelewijn.nl
 .173.net.zooplus.de
@@ -213,7 +215,6 @@ zgsdk.zhugeio.com
 .8147563.thekingdom.bk.com
 .8147563.your-way.bk.com
 .82o9v830.com
-.8672.site
 .8ag8k205ppci.app.alpacafinance.org
 .8ehhtsv9bo7i.monkeylearn.com
 .8ezc.sfr.fr
@@ -232,6 +233,7 @@ zgsdk.zhugeio.com
 .a.acxiom.com
 .a.amw.com
 .a.beliefnet.com
+.a.centrum.cz
 .a.ctd.ai
 .a.deutschehospitality.com
 .a.easyazon.com
@@ -978,6 +980,7 @@ zgsdk.zhugeio.com
 .a8.wifi-tokyo-rentalshop.com
 .a8.yanoman.com
 .a8.yuzen-official.com
+.a8723.com
 .a8780.actonservice.com
 .a8aspconv.itx-home-router.com
 .a8aspconv.ns-softbank-hikari.com
@@ -1570,6 +1573,7 @@ zgsdk.zhugeio.com
 .activeornorthamerica.tomcatactivemarketing.net.zooplus.it
 .activity.asce.org
 .activity.fiverr.com
+.activity.wisepops.com
 .acton.iriworldwide.com
 .acton.simpleviewinc.com
 .acton.unifilabs.com
@@ -1704,6 +1708,7 @@ zgsdk.zhugeio.com
 .adfooe.hofsilk.com
 .adhudg.nec-lavie.jp
 .adjust.com
+.adl.bankofthewest.com
 .adless.io
 .adlog.com.com
 .adm-mail.net.zooplus.es
@@ -2026,6 +2031,7 @@ zgsdk.zhugeio.com
 .aesus.so-net.ne.jp
 .aeuati.wedio.com
 .afdbwq.blivakker.no
+.affilate.hh.ru
 .affiliates.minglematch.com
 .affiliates.treasureisland.com
 .affiliates.vpn.ht
@@ -2071,7 +2077,6 @@ zgsdk.zhugeio.com
 .al.autohome.com.cn
 .aladdinupdate.blackrock.com
 .alb.reddit.com
-.aleinvest.xyz
 .aleroninc.actonservice.com
 .alertafterthought.com
 .alerts.steadyapp.com
@@ -2122,6 +2127,7 @@ zgsdk.zhugeio.com
 .an.worldbaseballclassic.com
 .ana.tv5unis.ca
 .analitica.webrpp.com
+.analys.live
 .analyse.bcovery.com
 .analyse.hinemos.info
 .analyselog.dx.com
@@ -2140,7 +2146,6 @@ zgsdk.zhugeio.com
 .analytic.underarmour.com
 .analyticcdn.globalmailer.com
 .analytics-1.cavai.com
-.analytics-api.dvdfab.cn
 .analytics-api.samsunghealthcn.com
 .analytics-cms.whitebeard.me
 .analytics-coletor-site.ojc.com.br
@@ -2166,6 +2171,7 @@ zgsdk.zhugeio.com
 .analytics.agoda.com
 .analytics.aimtell.com
 .analytics.aita.gov.vn
+.analytics.algolia.com
 .analytics.allovoisins.com
 .analytics.amakings.com
 .analytics.americanfunds.com
@@ -2190,7 +2196,6 @@ zgsdk.zhugeio.com
 .analytics.bolavip.com
 .analytics.boomerangtv.co.uk
 .analytics.box.com
-.analytics.brandcrumb.com
 .analytics.brave.com
 .analytics.buoyweather.com
 .analytics.canaltnt.es
@@ -2233,7 +2238,6 @@ zgsdk.zhugeio.com
 .analytics.contents.by-fw.jp
 .analytics.convertlanguage.com
 .analytics.corusent.com
-.analytics.cynapse.com
 .analytics.daasrv.net
 .analytics.data.lloydsbankinggroup.com
 .analytics.datahc.com
@@ -2251,16 +2255,15 @@ zgsdk.zhugeio.com
 .analytics.dogecoin.gg
 .analytics.dvidshub.net
 .analytics.ecosia.org
-.analytics.edgesuite.net
 .analytics.eggoffer.com
 .analytics.eikko.ai
 .analytics.eikondigital.it
 .analytics.eleague.com
 .analytics.elx.cloud
+.analytics.emol.com
 .analytics.erepublic.com
 .analytics.esporteinterativo.com.br
 .analytics.eventbrite.com
-.analytics.evolution-x.org
 .analytics.ewz.ch
 .analytics.explained-from-first-principles.com
 .analytics.faceitanalytics.com
@@ -2284,6 +2287,8 @@ zgsdk.zhugeio.com
 .analytics.getshogun.com
 .analytics.givealittle.co
 .analytics.global.sky.com
+.analytics.googlepeer.cloud
+.analytics.gooogol.com
 .analytics.greenmountainenergy.com
 .analytics.groupe-seb.com
 .analytics.growthphysics.com
@@ -2325,6 +2330,7 @@ zgsdk.zhugeio.com
 .analytics.macklin.me
 .analytics.mail-corp.com
 .analytics.mailmunch.co
+.analytics.makeitmeme.com
 .analytics.mambaui.com
 .analytics.matchbin.com
 .analytics.mbga.jp
@@ -2341,6 +2347,7 @@ zgsdk.zhugeio.com
 .analytics.metro.pk
 .analytics.metro.ua
 .analytics.midwesternmac.com
+.analytics.ml.homedepot.ca
 .analytics.mlstatic.com
 .analytics.mobile.yandex.net
 .analytics.mondotv.jp
@@ -2445,6 +2452,7 @@ zgsdk.zhugeio.com
 .analytics.surov.fi
 .analytics.sweep.net
 .analytics.sydney.edu.au
+.analytics.synchrony.com
 .analytics.synedat.com
 .analytics.tabichan.jp
 .analytics.tcm.com
@@ -2517,8 +2525,10 @@ zgsdk.zhugeio.com
 .analytics.yolacdn.net
 .analytics.yomedia.vn
 .analytics.yourbankcard.com
+.analytics.yugen.to
 .analytics.ziftsolutions.com
 .analytics00.meride.tv
+.analytics2-3-meride-tv.akamaized.net
 .analytics2-meride-tv.akamaized.net
 .analyticsresults.bildungsforum.datev.de
 .analyticsresults.datev-karriereblog.de
@@ -2562,7 +2572,6 @@ zgsdk.zhugeio.com
 .ape-tagit.timeinc.net
 .apeagle.io
 .apenterprise.io
-.apester.com
 .api.autopilothq.com
 .api.bunzlaucastle.com
 .api.decentralize.today
@@ -2707,6 +2716,7 @@ zgsdk.zhugeio.com
 .asumi.shinobi.jp
 .aswpsdkus.com
 .at-cddc.actu-juridique.fr
+.at.360.audion.fm
 .at.badische-zeitung.de
 .at.deutsche-bank.de
 .at.mclaren.com
@@ -2749,7 +2759,6 @@ zgsdk.zhugeio.com
 .auriro.net
 .ausclh.castlery.com
 .auspiciousyard.com
-.authcaptcha.com
 .autoimmunity.thermofisher.com
 .automate.opex.com
 .automaticairplane.com
@@ -2815,7 +2824,6 @@ zgsdk.zhugeio.com
 .b2bmarketingsb.swisscom.com
 .b2bmkt.lge.co.kr
 .b5j6itccyluq.nofluffjobs.com
-.bab.frb.io
 .bablace.com
 .bacon.getcarro.com
 .bacon.section.io
@@ -2879,11 +2887,11 @@ zgsdk.zhugeio.com
 .beacon.samsclub.com
 .beacon.searchspring.io
 .beacon.securestudies.com
+.beacon.sftoaa.com
 .beacon.shazam.com
 .beacon.shutterfly.com
 .beacon.sina.com.cn
 .beacon.sojern.com
-.beacon.squixa.net
 .beacon.statful.com
 .beacon.tingyun.com
 .beacon.vertebrae-axis.com
@@ -2896,12 +2904,11 @@ zgsdk.zhugeio.com
 .beadbears.com
 .beafdf.restaupro.com
 .beagle.prod.tda.link
-.beam-ws.giraffe360.com
 .beam.bankrate.com
-.beam.giraffe360.com
 .beam.mjhlifesciences.com
 .beamincrease.com
 .beastbeef.com
+.beat.yourtv.jp
 .beaumont.actonservice.com
 .beautifulhobbies.com
 .becanium.com
@@ -2917,7 +2924,6 @@ zgsdk.zhugeio.com
 .beneficios.davivienda.hn
 .benthose.com
 .bento.agoda.com
-.berateveng.ru
 .bestboundary.com
 .bestbuy.actonservice.com
 .beuniquelyinsured.selective.com
@@ -3098,6 +3104,7 @@ zgsdk.zhugeio.com
 .bulbbait.com
 .bum7.bymycar.fr
 .bunchance.com
+.bup.bankofamerica.com
 .burgerbrush.com
 .burstblade.com
 .business-cards.americanexpress.com
@@ -3202,7 +3209,6 @@ zgsdk.zhugeio.com
 .carte.fleet-page.total.fr
 .carzbz.braincandy.net
 .carzbz.triviatoday.com
-.casalemedia.com
 .cashbeet.com
 .catalogdiscovery.com
 .catracking.finning.com
@@ -3232,7 +3238,6 @@ zgsdk.zhugeio.com
 .cdn1.skrill.com
 .cdn7.baunetz.de
 .cdnhst.xyz
-.ce.lijit.com
 .ceggfe.msc-kreuzfahrten.de
 .cellstats.mako.co.il
 .census.misterspex.at
@@ -3246,6 +3251,7 @@ zgsdk.zhugeio.com
 .census.misterspex.no
 .census.misterspex.se
 .cf.overblog.com
+.cfa.fidelity.com
 .cfpwood.actonservice.com
 .cfyhym.weightwatchers.fr
 .cgicounter.oneandone.co.uk
@@ -3287,6 +3293,7 @@ zgsdk.zhugeio.com
 .choose.nu.edu
 .christian.lifeway.com
 .christians.lifeway.com
+.chubbycreature.com
 .chunkycactus.com
 .churro.noteapps.info
 .ci.quickbooks.com
@@ -3426,6 +3433,7 @@ zgsdk.zhugeio.com
 .clumsyrock.com
 .cm-exchange.toast.com
 .cm-mms.coachmag.co.uk
+.cm.nordvpn.com
 .cmass.massmedian.co.jp
 .cmhmpr.lolaliza.com
 .cmon.congress.gov
@@ -3486,6 +3494,7 @@ zgsdk.zhugeio.com
 .cnt.viptube.com
 .cnt.vivatube.com
 .cnt2.stroeerdp.de
+.cntxtfl.com
 .coachquartz.com
 .coatfood.com
 .cod.bitrec.com
@@ -3516,6 +3525,7 @@ zgsdk.zhugeio.com
 .collect.meilleurtaux.com
 .collect.rewardstyle.com
 .collect.state.centrum24.pl
+.collect.thunder-io.com
 .collect.tianya.cn
 .collect.usefathom.com
 .collect.vans.com.cn
@@ -3547,7 +3557,6 @@ zgsdk.zhugeio.com
 .colvk.viki.io
 .com.econa.com
 .combativedetail.com
-.combbelief.com
 .combbit.com
 .combclover.com
 .comfortablecheese.com
@@ -3555,7 +3564,6 @@ zgsdk.zhugeio.com
 .commercial.davey.com
 .commonalmanac.com
 .commonswing.com
-.commsvc.stern.de
 .communicate.choicelogistics.com
 .communicatie.vub.be
 .communication.adpinfo.com
@@ -3584,6 +3592,7 @@ zgsdk.zhugeio.com
 .conditionchange.com
 .conditioncrush.com
 .conf.optum.com
+.confiant-integrations.net
 .confiant.msn.com
 .conimicutlighthouse.viessmann-us.com
 .connect.acams.org
@@ -3641,6 +3650,7 @@ zgsdk.zhugeio.com
 .consciousdirt.com
 .consistpotato.com
 .console-telemetry.oci.oraclecloud.com
+.console.uxlens.com
 .contact-us.adp.ca
 .contact.adaptavist.com
 .contact.coface.com
@@ -3681,10 +3691,12 @@ zgsdk.zhugeio.com
 .content.wacom.com
 .content.xpublisher.com
 .content22.bmoharris.com
+.content22.citibank.com.au
 .contents-tracking.beop.io
 .contents2.00110.citi.com
 .continuenow.miami.edu
 .controlswim.com
+.convead.io
 .conversions.genieventures.co.uk
 .convocation.uwindsor.ca
 .cookchalk.com
@@ -3695,7 +3707,6 @@ zgsdk.zhugeio.com
 .cookiejar.atea.no
 .cookies.engage.russellinvestments.com
 .cookies.livepartners.com
-.cookies.reedbusiness.nl
 .cookies.siemens-energy.com
 .cookies.siemens.com
 .cookietracking.eatonpowersource.com
@@ -3713,6 +3724,7 @@ zgsdk.zhugeio.com
 .correctchaos.com
 .cosmosjackson.com
 .counmg.greatvaluevacations.com
+.count-server.sharethis.com
 .count.asnetworks.de
 .count.bank99.at
 .count.candou.com
@@ -3738,7 +3750,6 @@ zgsdk.zhugeio.com
 .counter.jdi5.com
 .counter.maases.com
 .counter.megaindex.ru
-.counter.mtgnewmedia.se
 .counter.nn.ru
 .counter.packa2.cz
 .counter.people.cn
@@ -3751,7 +3762,6 @@ zgsdk.zhugeio.com
 .counter.scribblelive.com
 .counter.sibnet.ru
 .counter.snackly.co
-.counter.sparklit.com
 .counter.star.lg.ua
 .counter.subtitlebee.com
 .counter.tldw.me
@@ -3763,6 +3773,8 @@ zgsdk.zhugeio.com
 .counter2.blog.livedoor.com
 .counters.freewebs.com
 .coverapparatus.com
+.cp.official-coupons.com
+.cp.official-deals.co.uk
 .cpatrk.net
 .cpgo.avatacar.com
 .cpi1supdqcxk.tapmyback.com
@@ -3797,6 +3809,7 @@ zgsdk.zhugeio.com
 .crm-analytics.imweb.ru
 .crm.casabaca.com
 .crocetta.viessmann.it
+.crossees.com
 .crowdedmass.com
 .crsspxl.com
 .crta.and.co.uk
@@ -3820,7 +3833,6 @@ zgsdk.zhugeio.com
 .csi.gstatic.com
 .csm.magnetintell.com
 .csmetrics.wilton.com
-.csp.archant.co.uk
 .cspmkl.gruppal.com
 .csr.onet.pl
 .cstats.sankakucomplex.com
@@ -3839,6 +3851,7 @@ zgsdk.zhugeio.com
 .ctr-iwb.nmg.de
 .ctr-opc.nmg.de
 .ctwqxs.autoscout24.at
+.ctx.citiservi.es
 .ctyjsf.cellphones.com.vn
 .cubchannel.com
 .cueohf.actieforum.com
@@ -3905,7 +3918,6 @@ zgsdk.zhugeio.com
 .cwcdmm.zennioptical.com
 .cws.conviva.com
 .cxasci.sprzedajemy.pl
-.cxense.com
 .cxrfns.gu-global.com
 .cxt.ms
 .cybba.solutions
@@ -3914,6 +3926,9 @@ zgsdk.zhugeio.com
 .czvdlp.hgregoire.com
 .czx5eyk0exbhwp43ya.biz
 .d-kint.d-kintetsu.co.jp
+.d-log.asahi.co.jp
+.d-log.bs-asahi.tv
+.d-log.tv-asahi.co.jp
 .d.adlpo.com
 .d.finative.eu
 .d.getpocket.com
@@ -3926,6 +3941,7 @@ zgsdk.zhugeio.com
 .d.shareaholic.com
 .d.skk.moe
 .d.sourcepoint.capitalfm.com
+.d.tv-asahi.co.jp
 .d.uni-medias.com
 .d.wi-fi.ru
 .d0f.le-dauphin.com
@@ -4090,6 +4106,7 @@ zgsdk.zhugeio.com
 .datum.appfleet.com
 .dayyfq.rapidonline.com
 .dbex-tracker-v2.driveback.ru
+.dbhsejcg-meetup-com.cdnjs.network
 .dbpbyh.americanas.com.br
 .dbzgtg.infostrada.it
 .dc.actonservice.com
@@ -4123,6 +4140,7 @@ zgsdk.zhugeio.com
 .dcclaa.harpersbazaar.de
 .dcclaa.instyle.de
 .dcclaa.slowlyveggie.de
+.dcinfos-cache.abtasty.com
 .dckquo.holzprofi24.de
 .dcs.audi.com
 .dcs.esprit.at
@@ -4347,6 +4365,7 @@ zgsdk.zhugeio.com
 .direct-events-collector.spot.im
 .direct.colfondos.co
 .direct.t-mobile.com
+.directavenue.tech
 .disabled.owa-paywall.net.zooplus.fr
 .disabled.owa.betaarketing.net.zooplus.fr
 .disabled.owa.prod.net.zooplus.fr
@@ -4370,7 +4389,6 @@ zgsdk.zhugeio.com
 .divergentoffer.com
 .diypxh.tillys.com
 .djbztw.marimekko.com
-.djibeacon.djns.com
 .djmzap.gamivo.com
 .dk4ywix.com
 .dkclxi.sitkagear.com
@@ -4417,6 +4435,7 @@ zgsdk.zhugeio.com
 .doppler-beacons.cbsivideo.com
 .doppler-reporting.cbsivideo.com
 .dot-stat.radikal.ru
+.doubtdrawer.com
 .doubtfulrainstorm.com
 .download.dnv.com
 .download.dnvgl.com
@@ -4447,6 +4466,7 @@ zgsdk.zhugeio.com
 .ds2.independer.nl
 .dsg.interia.pl
 .dsoxjxin5jji.controlconceptsusa.com
+.dspx.tv
 .dtag.breadfinancial.com
 .dtmssl.bobcat.com
 .dttrk.com
@@ -4480,13 +4500,13 @@ zgsdk.zhugeio.com
 .e.beckmancoulter.com
 .e.e.themighty.com
 .e.kc-education.com
+.e.metarouter.io
 .e.passfolio.us
 .e.shop.app
 .e.synchronybank.com
 .e.viously.com
 .e1c.curtisswrightds.com
 .e1e.io
-.e377.thestar.com
 .e5obq1v261.www.lurkit.com
 .e62ndy5gz80q.bitdomain.biz
 .ea.access-moto.com
@@ -4682,6 +4702,7 @@ zgsdk.zhugeio.com
 .ed.large.nl
 .edeals.rbp.com
 .edge.adobedc.net
+.edge.staging.fullstory.com
 .edmi.nextinpact.com
 .educatedeggnog.com
 .education.bendigotafe.edu.au
@@ -4959,7 +4980,6 @@ zgsdk.zhugeio.com
 .err.ifengcloud.ifeng.com
 .erraticreaction.com
 .error-collector.ted.com
-.error.fc2.com
 .error.videonow.ru
 .errors.snackly.co
 .ert5.rmcsport.tv
@@ -4978,8 +4998,10 @@ zgsdk.zhugeio.com
 .et.twyn.com
 .etcwmg.instant-gaming.com
 .etgkbu.unieuro.it
+.etop.ro
 .etui.fs.ml.com
 .etx.indiatimes.com
+.eu-mobile.events.data.microsoft.com
 .eu.groupondata.com
 .euclid.kuula.co
 .eule1.pmu.fr
@@ -5008,6 +5030,7 @@ zgsdk.zhugeio.com
 .eurogamer-pl.eurogamer.pl
 .eurogamer-pt.eurogamer.pt
 .eurogamer-uk.eurogamer.net
+.ev.stellarlabs.ai
 .evaluateend.com
 .evanescentedge.com
 .event-api.contactatonce.co.uk
@@ -5037,6 +5060,7 @@ zgsdk.zhugeio.com
 .events-service.coinbase.com
 .events-tracker.deliveroo.net
 .events.air.tv
+.events.apester.com
 .events.api.godaddy.com
 .events.attentivemobile.com
 .events.audiate.me
@@ -5052,6 +5076,7 @@ zgsdk.zhugeio.com
 .events.jotform.com
 .events.matterport.com
 .events.medio.com
+.events.mercadolibre.com
 .events.mikescerealshack.co
 .events.newsroom.bi
 .events.ocdn.eu
@@ -5070,6 +5095,7 @@ zgsdk.zhugeio.com
 .events.statsigapi.net
 .events.tubecup.org
 .events.turbosquid.com
+.events.ubembed.com
 .events.whisk.com
 .events.yourcx.io
 .eventstream.dodopizza.com
@@ -5135,12 +5161,16 @@ zgsdk.zhugeio.com
 .fairdatacenter.de
 .fairfeeling.com
 .falsefeet.com
+.falseframe.com
+.familiarrod.com
 .famousquarter.com
 .fancyactivity.com
 .fangfeeling.com
 .fantasticsmash.com
 .farahatco.actonservice.com
 .farethief.com
+.farmergoldfish.com
+.farshake.com
 .fascinatedfeather.com
 .fastemu.co
 .fastenermkt.averydennison.com
@@ -5148,11 +5178,13 @@ zgsdk.zhugeio.com
 .fastfinch.co
 .fastgull.io
 .fasttiger.io
+.fatcoil.com
 .fathom.app.silverbeak.com
 .fathom.status.im
 .fathom.tdvm.net
 .faubcu.sportscheck.ch
 .faucons.viessmann.fr
+.faultycanvas.com
 .faultyfowl.com
 .favor1.fractal.jp
 .faxsdz.jateksziget.hu
@@ -5175,10 +5207,10 @@ zgsdk.zhugeio.com
 .fearlessfaucet.com
 .febcyv.joshi-spa.jp
 .feebleshock.com
-.felix.data.tm-awx.com
 .feqbqn.rent.com
 .fezoua.carfixer.co.kr
 .ffbbbdc6d3c353211fe2ba39c9f744cd.com
+.ffe390afd658c19dcbf707e0597b846d.de
 .ffrmwn.musinsa.com
 .fgfukd.sakazen.co.jp
 .fgjfwz.legami.com
@@ -5201,6 +5233,7 @@ zgsdk.zhugeio.com
 .fipsta.urbanara.de
 .firebaselogging-pa.googleapis.com
 .firebaselogging.googleapis.com
+.firstfrogs.com
 .firstparty.alloyio.com
 .fiwinet.firmenwissen.com
 .fiwinet.firmenwissen.de
@@ -5212,6 +5245,7 @@ zgsdk.zhugeio.com
 .fkwc.sfr.fr
 .fkxlsc.fenix-store.com
 .fl5dpe.oui.sncf
+.flakyfeast.com
 .flashstats.libsyn.com
 .fldoai.municipal.com
 .fleet-eml.postmates.com
@@ -5220,6 +5254,7 @@ zgsdk.zhugeio.com
 .flimsycircle.com
 .flimsythought.com
 .flixgvid.flix360.io
+.flockflame.com
 .flog.pressplay.cc
 .floodprincipal.com
 .flowerstreatment.com
@@ -5236,10 +5271,14 @@ zgsdk.zhugeio.com
 .foamyfood.com
 .fog.pixual.co
 .foodpackaging.kpfilms.com
+.forecast.huffingtonpost.fr
+.forecasttiger.com
 .foregoingfowl.com
+.foretellfifth.com
 .forgetfulflowers.com
 .forms.accc-cancer.org
 .forms.testoil.com
+.fortunatemark.com
 .fourarithmetic.com
 .fourfork.com
 .fourier.taobao.com
@@ -5247,6 +5286,7 @@ zgsdk.zhugeio.com
 .fp.measure.office.com
 .fp84rw0jinz7.blanc.ru
 .fpa-cdn.arstechnica.com
+.fpa-cdn.decrypt.co
 .fpa-events.decrypt.co
 .fpapi.io
 .fpaux.net
@@ -5258,12 +5298,14 @@ zgsdk.zhugeio.com
 .fpptmv.mrmarvis.co.uk
 .fprfvt.recambioscoches.es
 .fpt.microsoft.com
+.fptls.com
 .fpxau.net
 .fpxewa.ilmeteo.it
 .fq9vy0muyqi3.www.madrigalmaps.com
 .fqujub.hema.com
 .frailflock.com
 .frailfruit.com
+.frailoffer.com
 .franticcarpenter.com
 .frantictrail.com
 .frbdzc.goguynet.jp
@@ -5274,8 +5316,10 @@ zgsdk.zhugeio.com
 .fretfulfurniture.com
 .friendwool.com
 .frightenedpotato.com
+.frog.editorx.com
 .frog.yuanfudao.com
 .froglytics.eventfrog.ch
+.frogtray.com
 .fronttoad.com
 .frztrk.beaute-test.com
 .fsbozl.dillards.com
@@ -5343,12 +5387,12 @@ zgsdk.zhugeio.com
 .g.pcmag.com
 .g.siliconweek.es
 .g.yccdn.com
+.g10300385420.co
 .g11686975765.co
 .g1188506010.co
 .g11885060100.co
 .g12083144435.co
 .g12281228770.co
-.g12479313105.co
 .g1584674682.co
 .g1782759015.co
 .g1782759016.co
@@ -5368,7 +5412,6 @@ zgsdk.zhugeio.com
 .g990421675.co
 .g990421676.co
 .ga.dx.com
-.ga.kvideo.io
 .ga.nsimg.net
 .ga.webdigi.co.uk
 .gabrcm.membershop.lt
@@ -5394,6 +5437,7 @@ zgsdk.zhugeio.com
 .genesis.malwarebytes.com
 .gentian-frd.hjapi.com
 .geo.bluedot.io
+.geo.brobible.com
 .geo.emol.cl
 .geo.ertya.com
 .geo.gfycat.com
@@ -5425,6 +5469,7 @@ zgsdk.zhugeio.com
 .gfgywe.abril.com.br
 .gfn1.ugap.fr
 .gfnokk.natro.com
+.gfp.intuit.com
 .gfv4.destinia.co.za
 .ghdlry.greetz.nl
 .ghrnbw.avocadostore.de
@@ -5436,7 +5481,6 @@ zgsdk.zhugeio.com
 .giocdn.com
 .giojhm.finya.de
 .giy0v1igdqc1.crystalmathlabs.com
-.gj.mmstat.com
 .gk.gkservices.com
 .gk.sina.cn
 .gkfdkf.jdsports.co.uk
@@ -5549,7 +5593,6 @@ zgsdk.zhugeio.com
 .growingio.com
 .grxsaq.tagheuer.com
 .gsbygc.clarks.eu
-.gsght.com
 .gsyegj.shatura.com
 .gtgvze.chintai.net
 .gtreus.aliexpress.com
@@ -5641,9 +5684,7 @@ zgsdk.zhugeio.com
 .hevqaz.submarino.com.br
 .hfc195b.com
 .hfd.bridgetowermedia.com
-.hfp.intuit.com
 .hgf4.zanzicar.fr
-.hh.ru
 .hhbxcs.tylko.com
 .hhhedv.luxauto.lu
 .hht8m6w8mnug.quine.sh
@@ -5659,12 +5700,14 @@ zgsdk.zhugeio.com
 .highfalutinroom.com
 .hijxfm.gaspedaal.nl
 .hines.actonservice.com
+.historicalbeam.com
 .historicalrequest.com
 .hit.meta.ua
 .hit.mybestpro.com
 .hit.skrz.cz
 .hits-secure.guardian.co.uk
 .hits.antena3.com
+.hits.cyberdrop.me
 .hits.dealer.com
 .hits.eluniversal.com.mx
 .hits.guardian.co.uk
@@ -5739,6 +5782,7 @@ zgsdk.zhugeio.com
 .hsadspixel.net
 .hsleadflows.net
 .hspbotdetection.azurewebsites.net
+.hstats.hepsiburada.com
 .htmgrl.jollyroom.no
 .hub.firestonecompleteautocare.com
 .hub.hubinternational.com
@@ -5788,6 +5832,7 @@ zgsdk.zhugeio.com
 .ideadevice.actonservice.com
 .idg1.idgarages.com
 .idqwqm.kkday.com
+.idstatus.sky.com
 .idx.lat
 .iedc.fitbit.com
 .ifnyop.priceline.com
@@ -5825,6 +5870,7 @@ zgsdk.zhugeio.com
 .img.bwin.it
 .img.foodspring.dk
 .img.foodspring.se
+.imgs.signifyd.com
 .imhwzc.blibli.com
 .imjdmq.emcasa.com
 .imp.ad-plus.cn
@@ -5847,6 +5893,7 @@ zgsdk.zhugeio.com
 .inbound-analytics.pixlee.co
 .incompetentjoke.com
 .indmetric.rediff.com
+.ineed2s.ro
 .inencr.woodhouseclothing.com
 .infamousstream.com
 .infinityid.condenastdigital.com
@@ -6038,7 +6085,9 @@ zgsdk.zhugeio.com
 .iozozb.shapertools.com
 .ip.cliphunter.com
 .ip.pichunter.com
+.ip.up66.ru
 .ip2c.landscape.co.jp
+.ip7prksb2muxvmmh25t6rxl2te0tfulc.lambda-url.eu-west-1.on.aws
 .ipapi.tmbi.com
 .ipcheck.blogsys.jp
 .iphufr.circleline.com
@@ -6083,6 +6132,7 @@ zgsdk.zhugeio.com
 .jadedjoke.com
 .jailbulb.com
 .jambwe.transsibinfo.com
+.jams.wiki
 .jaomlf.giftmall.co.jp
 .jas.indeednps.com
 .jbezdi.ilsole24ore.com
@@ -6229,6 +6279,7 @@ zgsdk.zhugeio.com
 .kpcyic.sportisimo.cz
 .kqchxa.denizbutik.com
 .kqscrl.bonprix.nl
+.kraken.rambler.ru
 .krfxvi.iconbydesign.com.au
 .kristechwire.actonservice.com
 .kropka.onet.pl
@@ -6492,10 +6543,10 @@ zgsdk.zhugeio.com
 .linktrace.diningcity.cn
 .lio8.destinia.com.pa
 .liosix.mtvuutiset.fi
+.lists.ccmbg.com
 .lite-cdn.com
 .literatelight.com
 .live.cxo.name
-.live.ec2.cxo.name
 .livecounter.theyosh.nl
 .livelumber.com
 .livelylaugh.com
@@ -6519,6 +6570,7 @@ zgsdk.zhugeio.com
 .lntvby.banggood.com
 .lnvmxk.familyset.jp
 .loader.zeroform.com
+.log-global.aliyuncs.com
 .log.51cto.com
 .log.adplex.co.kr
 .log.aimtell.com
@@ -6527,8 +6579,8 @@ zgsdk.zhugeio.com
 .log.china.cn
 .log.cizion.com
 .log.codemarketing.cloud
+.log.cookieyes.com
 .log.cpex.cz
-.log.ctrl.blog
 .log.ecgh.dk
 .log.etoday.co.kr
 .log.f-tra.com
@@ -6545,9 +6597,9 @@ zgsdk.zhugeio.com
 .log.mappy.net
 .log.mediacategory.com
 .log.medietall.no
-.log.mgtv.com
 .log.mix.sina.com.cn
 .log.mofa.go.kr
+.log.nordot.jp
 .log.olark.com
 .log.outbrain.com
 .log.outbrainimg.com
@@ -6560,7 +6612,6 @@ zgsdk.zhugeio.com
 .log.seekda.com
 .log.sina.cn
 .log.snapdeal.com
-.log.superweb.ws
 .log.sv.pandora.tv
 .log.tagtic.cn
 .log.targetpush.co.kr
@@ -6584,7 +6635,6 @@ zgsdk.zhugeio.com
 .logging.carambo.la
 .logging.cmp-resources.link
 .logging.je-apps.com
-.logging.prefixbox.com
 .logging.wilmaa.com
 .loggingapi.spingo.com
 .loggychops.paulsmith.site
@@ -6644,7 +6694,6 @@ zgsdk.zhugeio.com
 .lucid.mjhassoc.com
 .ludicrousarch.com
 .lumpylumber.com
-.lunametrics.wpengine.netdna-cdn.com
 .luptbq.lampsplus.com
 .lurker.olx.com.br
 .lv6od3a4sz12.www.logology.co
@@ -6661,6 +6710,7 @@ zgsdk.zhugeio.com
 .m.delltechnologies.com
 .m.irl.com
 .m.photoshelter.com
+.m.stripe.com
 .m.trb.com
 .m.vistaresourcegroup.com
 .m1.stadiumgoods.com
@@ -7078,12 +7128,14 @@ zgsdk.zhugeio.com
 .massivebasket.com
 .mastertag.kpcustomer.de
 .mastertag.q-sis.de
+.mat.socy.es
 .materialexample.com
 .materialisticfan.com
 .materialisticmark.com
 .matheranalytics.com
 .matrix.hbo.com
 .matrix42.actonservice.com
+.matt.mercadolivre.com.br
 .maz.zba.jp
 .mbainfo.ust.hk
 .mbhs.hrm.healthgrades.com
@@ -7113,6 +7165,7 @@ zgsdk.zhugeio.com
 .media.gotham.com
 .media.pirtek.co.uk
 .media.pirtek.nl
+.mediamathrdrt.com
 .mediametrics.mpsa.com
 .mediapxv.com
 .mediasolutions.netinsight.net
@@ -7124,7 +7177,7 @@ zgsdk.zhugeio.com
 .melodicminute.com
 .memopilot.com
 .memorycobweb.com
-.mercadolibre.com
+.mer.stdout.cz
 .meremark.com
 .meriwest.actonservice.com
 .message.alldata.com
@@ -7191,7 +7244,6 @@ zgsdk.zhugeio.com
 .metrics.baitorupro.com
 .metrics.bakeryandsnacks.com
 .metrics.bakeryinfo.co.uk
-.metrics.bangbros.com
 .metrics.barclaycardus.com
 .metrics.bcbsnc.com
 .metrics.beatsbydre.com
@@ -7427,7 +7479,6 @@ zgsdk.zhugeio.com
 .metrics.reallymoving.com
 .metrics.realsimple.com
 .metrics.recunia.de
-.metrics.redgifs.com
 .metrics.refinitiv.com
 .metrics.regions.com
 .metrics.restockit.com
@@ -7569,6 +7620,7 @@ zgsdk.zhugeio.com
 .mi.miliboo.it
 .mi.miliboo.lu
 .micpn.com
+.midas.chase.com
 .mightyspiders.com
 .militaryverse.com
 .mimosamajor.com
@@ -7583,7 +7635,6 @@ zgsdk.zhugeio.com
 .mirvso.boggi.com
 .miscreantmine.com
 .miscreantmoon.com
-.mistat.xiaomi.com
 .mit.db.com
 .mit.deutsche-bank.de
 .mit.dws.com
@@ -7635,7 +7686,7 @@ zgsdk.zhugeio.com
 .monitor.azure.com
 .monitor.channel4.com
 .monitor.music.qq.com
-.monorail-edge.shopifysvc.com
+.monitoring.iraiser.eu
 .montpalatin.handicap.fr
 .monu.delivery
 .moomooz.co.kr
@@ -7652,6 +7703,7 @@ zgsdk.zhugeio.com
 .mpglie.apartmentguide.com
 .mqsicr.smiggle.co.uk
 .mqvyob.vidaxl.fi
+.mr.homedepot.ca
 .mrpdata.net
 .ms-trackingapi.phenompeople.com
 .ms.topschooljobs.org
@@ -7660,6 +7712,7 @@ zgsdk.zhugeio.com
 .msg.71.am
 .msg.qy.net
 .msr.p-antiaging.com
+.mstm.motorsport.com
 .msufcu.actonservice.com
 .msz3.destinia.cn
 .mt48.net
@@ -7693,6 +7746,7 @@ zgsdk.zhugeio.com
 .mwor.gq
 .mx.carfax.com
 .mxhunv.kurz-mal-weg.de
+.mxpl.9gag.com
 .my.bruker.com
 .my.carolina.com
 .my.exotravel.com
@@ -7705,6 +7759,7 @@ zgsdk.zhugeio.com
 .n.thestar.com
 .n0909.com
 .n26-trusted.n26.com
+.n511.thestar.com
 .nanostats.nanopress.it
 .nappyattack.com
 .nasi.etherscan.com
@@ -7713,6 +7768,7 @@ zgsdk.zhugeio.com
 .navigation-timing.meinestadt.de
 .ncc.nip-col.jp
 .nccer.actonservice.com
+.nct.ui-portal.de
 .nctrk.abmail.com.br
 .ncx2.voyage-prive.it
 .neathousepartners.actonservice.com
@@ -7751,6 +7807,7 @@ zgsdk.zhugeio.com
 .newssuite.sony.net
 .nex.163.com
 .nexac.com
+.nexxtv-events.servicebus.windows.net
 .nffxqi.jorgebischoff.com.br
 .nfused.eobuv.com.ua
 .ngc1.nsm-corp.com
@@ -7859,6 +7916,7 @@ zgsdk.zhugeio.com
 .obfrok.partyking.no
 .obscenesidewalk.com
 .observantice.com
+.observe.metarouter.io
 .observer.ip-label.net
 .obtfhl.bellemaison.jp
 .ocjeg2ca9uh9.mailfloss.com
@@ -7979,7 +8037,6 @@ zgsdk.zhugeio.com
 .omt.shinobi.jp
 .oncahh.boxlunch.com
 .one-workspace.matrix42.com
-.oneid.mmstat.com
 .onesourcebackground.actonservice.com
 .onghfx.revolve.com
 .onoztg.ultimate-guitar.com
@@ -7987,7 +8044,6 @@ zgsdk.zhugeio.com
 .op-drive-sto.carrefour.fr
 .open.delivery.net
 .openfpcdn.io
-.operationkettle.com
 .oph7o.montecarlosbm-corporate.com
 .ophan.theguardian.com
 .opinionsurprise.com
@@ -8101,6 +8157,7 @@ zgsdk.zhugeio.com
 .page.ephesus.cooperlighting.com
 .page.evergage.com
 .page.terguspharma.com
+.pageid.info
 .pages-stats.rbl.ms
 .pages.cobweb.com
 .pages.srsmith.com
@@ -8124,7 +8181,6 @@ zgsdk.zhugeio.com
 .pardonpopular.com
 .pardot.com
 .parrable.com
-.partner.cynapse.com
 .partner.haru-shop.jp
 .passengerpage.com
 .pastepot.com
@@ -8216,7 +8272,6 @@ zgsdk.zhugeio.com
 .pio.wir-sehen-uns-im-juni.de
 .pipe-collect.ebu.io
 .pipedream.wistia.com
-.pipeline.rd.nl
 .piper.amocrm.ru
 .pippio.com
 .piquantpigs.com
@@ -8263,6 +8318,7 @@ zgsdk.zhugeio.com
 .pixel.mtrcs.samba.tv
 .pixel.newscred.com
 .pixel.nine.com.au
+.pixel.redgifs.com
 .pixel.roymorgan.com
 .pixel.s3xified.com
 .pixel.safe-installation.com
@@ -8390,6 +8446,7 @@ zgsdk.zhugeio.com
 .plausible.redchamp.net
 .plausible.regex.help
 .plausible.riok.ch
+.plausible.safing.io
 .plausible.simplelogin.io
 .plausible.slope.io
 .plausible.staging.sketch.com
@@ -8407,7 +8464,7 @@ zgsdk.zhugeio.com
 .plausible.wikiotics.org
 .plausible.zest.dev
 .plausible.zorin.com
-.play.mix.kinostuff.com
+.plausiblecdn.co
 .player-telemetry.vimeo.com
 .plotparent.com
 .plotrabbit.com
@@ -8418,7 +8475,6 @@ zgsdk.zhugeio.com
 .pm.boostintegrated.com
 .pm.dailykos.com
 .pm.pmu.fr
-.pmetrics.performancing.com
 .pnhesw.jtb.co.jp
 .pnovfl.karaca.com
 .po.ponant.com
@@ -8489,6 +8545,7 @@ zgsdk.zhugeio.com
 .propeller-tracking.com
 .propertypotato.com
 .prophet.heise.de
+.protestcopy.com
 .protosell.actonservice.com
 .protys.protys.fr
 .proudprose.com
@@ -8511,10 +8568,10 @@ zgsdk.zhugeio.com
 .puiwrs.misterspex.de
 .pulsar.ebay.com
 .pulsarback.mail.ru
-.pulse.delta.com
 .pumpkin.abine.com
 .punyplant.com
 .purchasesuggestion.com
+.push-sdk.net
 .pushmaster-cdn.xyz
 .puzzlingproperty.com
 .pv.hd.sohu.com
@@ -8529,12 +8586,10 @@ zgsdk.zhugeio.com
 .pwk.nextinpact.com
 .px.derstandard.at
 .px.effirst.com
-.px.excitedigitalmedia.com
 .px.marchex.io
 .px.mountain.com
 .px.owneriq.net
 .px.pandora.com
-.px.redgifs.com
 .px.spiceworks.com
 .px.srvcs.tumblr.com
 .px.staticfiles.at
@@ -8598,7 +8653,6 @@ zgsdk.zhugeio.com
 .quarterbean.com
 .quesid.com
 .questions.theanswerco.com
-.quickanalytics.ca
 .quickkoala.io
 .quicksandear.com
 .quidel.actonservice.com
@@ -8626,6 +8680,7 @@ zgsdk.zhugeio.com
 .r.my.com
 .r.sax.sina.com.cn
 .r.skimresources.com
+.r.stripe.com
 .r1ztni.oui.sncf
 .r42tag.com
 .r4nds.absorba.com
@@ -8647,7 +8702,6 @@ zgsdk.zhugeio.com
 .rapidzebra.io
 .raspnd.quadratec.com
 .rat.rakuten.co.jp
-.rbc.magna.ru
 .rc.vtex.com.br
 .rcbsrm.fivefoxes.co.jp
 .rcgi.video.qq.com
@@ -8667,6 +8721,7 @@ zgsdk.zhugeio.com
 .readysnails.com
 .realcomm.actonservice.com
 .realm.hearst3pcc.com
+.realtimely.io
 .reauthenticator.com
 .rebelsubway.com
 .rec.udn.com
@@ -8676,6 +8731,8 @@ zgsdk.zhugeio.com
 .reconditeprison.com
 .reconditerespect.com
 .recordbutter.com
+.recv-entry.tbs.co.jp
+.recv-jnn.tbs.co.jp
 .reddwarf.till-sanders.de
 .reeokx.reima.com
 .reeyzk.momq.co.kr
@@ -8778,6 +8835,7 @@ zgsdk.zhugeio.com
 .rnffgv.wemakeprice.com
 .rnybul.gismeteo.kz
 .rnybul.gismeteo.ru
+.robotflowermobile.com
 .robustbelieve.com
 .rodeopolice.com
 .roomyreading.com
@@ -8800,6 +8858,7 @@ zgsdk.zhugeio.com
 .rs.sinajs.cn
 .rs.smc.tf
 .rsc.lepoint.fr
+.rsx.afterpay.com
 .rt.bunte.de
 .rt.flix360.com
 .rt.newswire.ca
@@ -8865,7 +8924,6 @@ zgsdk.zhugeio.com
 .s.caledonenterprise.com
 .s.cambridgetimes.ca
 .s.cameratico.com
-.s.clickability.com
 .s.clickiocdn.com
 .s.crackedthecode.co
 .s.cuoresportivo.no
@@ -8936,7 +8994,6 @@ zgsdk.zhugeio.com
 .s4s51f00a3o7.www.eldorado.gg
 .s5.charliehebdo.fr
 .sa.adidas.com
-.sa.api.intl.miui.com
 .sa.eurosport.com
 .sa.flux.community
 .sa.reebok.ch
@@ -9194,7 +9251,6 @@ zgsdk.zhugeio.com
 .sanalytics.washingtoncountybank.com
 .sanalytics.wideroe.no
 .sananalytics.prod.ori.hayneedle.com
-.sandinsect.com
 .sanl.champssports.ca
 .sanl.champssports.com
 .sanl.eastbay.com
@@ -9628,6 +9684,7 @@ zgsdk.zhugeio.com
 .securedata.monspar.be
 .securedata.solucious.be
 .securedata.unsw.edu.au
+.securedvisit.com
 .securemetrics.athletawell.com
 .securemetrics.blackrock.com
 .securemetrics.dailycandy.com
@@ -9706,6 +9763,7 @@ zgsdk.zhugeio.com
 .sfpc.changehealthcare.com
 .sftrack.searchforce.net
 .sg3.notarize.com
+.sgali-mcs.byteoversea.com
 .sgw-analytics.panasonic.com
 .shaggytank.com
 .shakegoldfish.com
@@ -9718,6 +9776,7 @@ zgsdk.zhugeio.com
 .sheeta.nrj-play.fr
 .shinesavage.com
 .shinestuart.com
+.shockingship.com
 .shop.iwantclips.com
 .shopbreakfast.com
 .shopmetric.rediff.com
@@ -9731,7 +9790,9 @@ zgsdk.zhugeio.com
 .shrillspoon.com
 .shtptt.cupshe.com
 .shutseashore.com
+.shyseed.com
 .sicas.ikea.net
+.sicksmash.com
 .sid.nordstrom.com
 .siewmi.uncommongoods.com
 .sig.ig.com
@@ -9748,7 +9809,9 @@ zgsdk.zhugeio.com
 .simply.lucanet.com
 .sincerebuffalo.com
 .sinceregarden.sincere-garden.jp
+.sinceresubstance.com
 .sinfo.dtcidev.co
+.singroot.com
 .sinmo.chasecenter.com
 .sipulo.katies.com.au
 .sis8.premieremoisson.com
@@ -9795,8 +9858,11 @@ zgsdk.zhugeio.com
 .sm.delltechnologies.com
 .sm.edweek.org
 .sm.stjude.org
+.smallbeginner.com
 .smartlook.com
+.smashquartz.com
 .smashshoe.com
+.smashsurprise.com
 .smatning.volkswagen.se
 .smatrix.hbo.com
 .smbranch.nc.mails.sssports.com
@@ -10248,7 +10314,6 @@ zgsdk.zhugeio.com
 .smetrics.deakin.edu.au
 .smetrics.dekalbasgrowdeltapine.com
 .smetrics.delacon.com.au
-.smetrics.delta.com
 .smetrics.dhc.co.jp
 .smetrics.dhl.de
 .smetrics.dickssportinggoods.com
@@ -10729,6 +10794,7 @@ zgsdk.zhugeio.com
 .smetrics.radiole.com
 .smetrics.ragsdaleair.com
 .smetrics.ralphlauren.co.kr
+.smetrics.ralphlauren.com
 .smetrics.ralphlauren.com.au
 .smetrics.ralphlauren.global
 .smetrics.ralphlauren.nl
@@ -10853,6 +10919,7 @@ zgsdk.zhugeio.com
 .smilingwaves.com
 .sminerva.healthcentral.com
 .smoggysnakes.com
+.smoggystation.com
 .smr.nuro.jp
 .smrt.as
 .sms.gestion.cetelem.fr
@@ -10874,16 +10941,20 @@ zgsdk.zhugeio.com
 .snoresmile.com
 .snowplow.swm.digital
 .snprxx.wwfmarket.com
+.snptrk.com
 .snr4.canalplus.com
 .so.blueplus.ch
 .so.boh.com
 .so.sunrise.ch
+.soapfighters.com
 .soaprange.com
 .socdm.com
 .socialannex.com
 .socialbakers.com
 .sociaplus.com
+.sofa.bankofamerica.com
 .sofire.bdstatic.com
+.soggysponge.com
 .sohiuc.sheego.de
 .sokutei.car2828.jp
 .solar.sharpmarketing.eu
@@ -10902,9 +10973,11 @@ zgsdk.zhugeio.com
 .som.hotels.com
 .som.newenergy.com
 .somberattack.com
+.somberscarecrow.com
 .sombersea.com
 .sombersquirrel.com
 .somberstructure.com
+.sombersurprise.com
 .somn.sonypictures.com
 .somn.wholesalehalloweencostumes.com
 .somni.amsurg.com
@@ -10932,6 +11005,7 @@ zgsdk.zhugeio.com
 .somniture.fitforfun.de
 .somniture.yodlee.com
 .somtr.financialengines.com
+.sonar.viously.com
 .songssmoke.com
 .songsterritory.com
 .sootheside.com
@@ -10944,6 +11018,7 @@ zgsdk.zhugeio.com
 .soretrain.com
 .sortsail.com
 .sortstructure.com
+.sortsummer.com
 .soubej.larebajavirtual.com
 .sourcepoint-mms.aetv.com
 .sourcepoint-mms.history.com
@@ -11079,9 +11154,11 @@ zgsdk.zhugeio.com
 .speedyfox.io
 .speedyrhino.co
 .speee-ad.akamaized.net
+.spellsalsa.com
 .spendpest.com
 .sphnvf.autoscout24.ch
 .spidersboats.com
+.spiffymachine.com
 .spikyslave.com
 .spinnaker-js.com
 .spirebaboon.com
@@ -11092,6 +11169,7 @@ zgsdk.zhugeio.com
 .spock.dom.codes
 .spongesalt.com
 .spookyexchange.com
+.spookyskate.com
 .spookysleet.com
 .spookyslope.com
 .spoonsilk.com
@@ -11105,6 +11183,8 @@ zgsdk.zhugeio.com
 .springaftermath.com
 .springsister.com
 .spscas.hitachi-solutions.co.jp
+.spuriousbase.com
+.spurioussteam.com
 .spuriousstranger.com
 .spysubstance.com
 .sqdgwx.jobrapido.com
@@ -11112,10 +11192,12 @@ zgsdk.zhugeio.com
 .sqs.quoka.de
 .sqtivj.vidaxl.hr
 .squashfriction.com
+.squeakzinc.com
 .squealingturn.com
 .squeamishspot.com
 .squirrel.cividi.ch
 .squirrel.malaynahocker.com
+.squirrelhands.com
 .sr-dynamic-content.ext.api.leclerc
 .srbnxr.blair.com
 .srivge.smiggle.com.au
@@ -11293,14 +11375,15 @@ zgsdk.zhugeio.com
 .stat.boredomtherapy.com
 .stat.caijing.com.cn
 .stat.canal-plus.com
+.stat.cdngeek.com
 .stat.clichehosting.de
 .stat.cncenter.cz
 .stat.dbschenker.com
 .stat.eagleplatform.com
-.stat.flytechb.com
 .stat.funshion.net
 .stat.glaze.ai
 .stat.guiasjuridicas.es
+.stat.i3.dmm.com
 .stat.ipsoa.it
 .stat.iteye.com
 .stat.landingpro.pl
@@ -11314,9 +11397,9 @@ zgsdk.zhugeio.com
 .stat.nyheter24.se
 .stat.ouedkniss.com
 .stat.ovh
+.stat.pet
 .stat.ppstream.com
 .stat.pravmir.ru
-.stat.prsmedia.fr
 .stat.pubhtml5.com
 .stat.ringier.sk
 .stat.rum.cdnvideo.ru
@@ -11340,7 +11423,6 @@ zgsdk.zhugeio.com
 .stat.vulkanvegas.com
 .stat.web-regie.com
 .stat.ws.126.net
-.stat.xiaomi.com
 .stat.y.qq.com
 .stat.zol.com.cn
 .statdb.pressflex.com
@@ -11370,6 +11452,7 @@ zgsdk.zhugeio.com
 .statm.the-adult-company.com
 .stats-bq.stylight.net
 .stats-dc1.frz.io
+.stats-dev.brid.tv
 .stats-factory.digitregroup.io
 .stats-locations.com
 .stats-messages.gifs.com
@@ -11427,6 +11510,7 @@ zgsdk.zhugeio.com
 .stats.buttondown.email
 .stats.byma.com.br
 .stats.cable.tech
+.stats.callnowbutton.com
 .stats.cardschat.com
 .stats.carecredit.com
 .stats.carrot2.org
@@ -11449,7 +11533,6 @@ zgsdk.zhugeio.com
 .stats.citizenos.com
 .stats.clear-media.com
 .stats.cleverdiabetic.com
-.stats.clickability.com
 .stats.clickforknowledge.com
 .stats.cloud-backup-for-podio.com
 .stats.cmcigroup.com
@@ -11519,7 +11602,6 @@ zgsdk.zhugeio.com
 .stats.femtobill.com
 .stats.ff.ht
 .stats.filewatch.net
-.stats.fittkaumaass.de
 .stats.flightsphere.com
 .stats.flowphantom.com
 .stats.fomo.com
@@ -11531,7 +11613,6 @@ zgsdk.zhugeio.com
 .stats.fundimmo.com
 .stats.galleriacortona.com
 .stats.gateio.ch
-.stats.geegain.com
 .stats.geobox.app
 .stats.getdoks.org
 .stats.gethyas.com
@@ -11607,6 +11688,7 @@ zgsdk.zhugeio.com
 .stats.kongressen.com
 .stats.krauss.io
 .stats.kryptoslogic.com
+.stats.ksearchnet.com
 .stats.larsroettig.dev
 .stats.lastfm.matthiasloibl.com
 .stats.laxallstars.com
@@ -11752,6 +11834,7 @@ zgsdk.zhugeio.com
 .stats.studypages.com
 .stats.stylight.it
 .stats.sublimesecurity.com
+.stats.suedtirolerjobs.it
 .stats.suenicholls.com
 .stats.suf.one
 .stats.sunpeaksstables.com
@@ -11801,6 +11884,7 @@ zgsdk.zhugeio.com
 .stats.unox.com
 .stats.urban-media.com
 .stats.urbanfinn.com
+.stats.uscreen.io
 .stats.v4.agirpourlenvironnement.org
 .stats.vanityprojects.com
 .stats.varrando.com
@@ -11808,7 +11892,6 @@ zgsdk.zhugeio.com
 .stats.viddler.com
 .stats.visions.ch
 .stats.vk-portal.net
-.stats.vliplatform.com
 .stats.voyages-sncf.com
 .stats.vulture.com
 .stats.walkiees.co.uk
@@ -11826,12 +11909,10 @@ zgsdk.zhugeio.com
 .stats.yourfone.de
 .stats.zenquiries.com
 .stats.zotabox.com
-.stats1.tune.pk
 .stats2.architecturaldigest.com
 .stats2.bonappetit.com
 .stats2.glamour.com
 .stats2.newyorker.com
-.stats2.tune.pk
 .stats2.videonow.ru
 .statsapi.screen9.com
 .statsbox.info
@@ -11846,6 +11927,7 @@ zgsdk.zhugeio.com
 .std.o.medscape.com
 .std.o.webmd.com
 .steadfastseat.com
+.steadfastsound.com
 .steadfastsystem.com
 .steadycopper.com
 .steel.newmill.com
@@ -11854,6 +11936,7 @@ zgsdk.zhugeio.com
 .steinernehaus.viessmann.at
 .steinsala.viessmann.lu
 .stel.telegraaf.nl
+.stepplane.com
 .stereoproxy.com
 .stereos2s.crutchfield.ca
 .stereos2s.crutchfield.com
@@ -11863,10 +11946,14 @@ zgsdk.zhugeio.com
 .sticketsmetrics.masters.com
 .stickssheep.com
 .stickysheet.com
+.stiffgame.com
+.stiffstem.com
 .stms.53.com
 .stockingsneeze.com
 .storescissors.com
 .storeslope.com
+.storesurprise.com
+.stormyachiever.com
 .stoveseashore.com
 .stpmgo.com
 .str.globalnews.ca
@@ -11917,6 +12004,7 @@ zgsdk.zhugeio.com
 .subscriber.smallbusinessstartup.com
 .subsequentsand.com
 .subsequentstew.com
+.subsequentswim.com
 .subsidies.pnoconsultants.com
 .substantialcarpenter.com
 .substantialstraw.com
@@ -11931,9 +12019,11 @@ zgsdk.zhugeio.com
 .sucmetrics.unicredit.it
 .sucmetrics.unicreditgroup.eu
 .sud.holidayinsider.com
+.suddensidewalk.com
 .suddensnake.com
 .suddensoda.com
 .suddenstructure.com
+.sugarcurtain.com
 .sugs.m.sm.cn
 .sulkybutter.com
 .sulkycook.com
@@ -11944,6 +12034,7 @@ zgsdk.zhugeio.com
 .sunlightmetrics.b-cdn.net
 .superficialeyes.com
 .superficialspring.com
+.superficialsquare.com
 .superpointlesshamsters.com
 .supervisegoldfish.com
 .support-northamerica.partnerrestricted.apimail-v2api.net.zooplus.de
@@ -12063,6 +12154,7 @@ zgsdk.zhugeio.com
 .swebstats.americanbar.org
 .swebstats.imf.org
 .sweepsheep.com
+.sweetslope.com
 .swellstocking.com
 .swimslope.com
 .swordgoose.com
@@ -12099,7 +12191,6 @@ zgsdk.zhugeio.com
 .sypuhe.thelittlegreenbag.nl
 .syqhvv.vivense.com
 .systemizecoat.com
-.systemmonitoring.badgeville.com
 .sytuzk.nissanvimontlaval.com
 .szakms.bygghemma.se
 .t-pan.triodos.com
@@ -12107,6 +12198,7 @@ zgsdk.zhugeio.com
 .t-s.gene.com
 .t-s.xolairhcp.com
 .t.10er-tagesticket.de
+.t.360.audion.fm
 .t.91syun.com
 .t.9gag.com
 .t.a3cloud.net
@@ -12128,6 +12220,7 @@ zgsdk.zhugeio.com
 .t.birchlane.com
 .t.blablacar.com
 .t.brand-server.com
+.t.buyist.app
 .t.c4tw.net
 .t.castle.io
 .t.cfjump.com
@@ -12166,6 +12259,7 @@ zgsdk.zhugeio.com
 .t.nusports.com
 .t.nypost.com
 .t.ofsys.com
+.t.pagesix.com
 .t.paydirekt.de
 .t.perigold.com
 .t.pmu.fr
@@ -12193,11 +12287,13 @@ zgsdk.zhugeio.com
 .t.wayfair.com
 .t.wayfair.de
 .t.wiz.meilleurtaux.com
+.t.y8.com
 .t0y.toyota.ca
 .t1.benefits.tops.co.th
 .t1.discover.flashnews.com.au
 .t1.stadiumgoods.com
 .t1.trex.media
+.t13.io
 .t2.hulu.com
 .t2.t2b.click
 .t570.wiltonbulletin.com
@@ -12223,9 +12319,8 @@ zgsdk.zhugeio.com
 .tag.rightmessage.com
 .tag.rmp.rakuten.com
 .tag.shopping-feed.com
+.tag.statshop.fr
 .tag.triboomedia.it
-.tagcachedataxrt.com
-.tagcachestaticx.com
 .tagcommander.com
 .tagcommander.laredoute.be
 .tagcommander.laredoute.co.uk
@@ -12245,7 +12340,6 @@ zgsdk.zhugeio.com
 .tags.globo.com
 .tags.johnlewis.com
 .tags.master-perf-tools.com
-.tags.newscgp.com
 .tags.op-palvelut.fi
 .tags.refinery89.com
 .tags.soloway.ru
@@ -12312,6 +12406,7 @@ zgsdk.zhugeio.com
 .tastelesstrucks.com
 .tatehj.nylaarp.com
 .tatpek.com
+.tawdryson.com
 .taylorshellfish.actonservice.com
 .tbe.tom.ru
 .tbuxoc.idee-shop.com
@@ -12383,7 +12478,9 @@ zgsdk.zhugeio.com
 .teach.graduateprogram.org
 .technical.kyzen.com
 .ted.dailymail.co.uk
+.tediousticket.com
 .tedioustooth.com
+.teenytinycellar.com
 .teenytinyshirt.com
 .teenytinytongue.com
 .teenyvolcano.com
@@ -12436,6 +12533,9 @@ zgsdk.zhugeio.com
 .tf.360.cn
 .tfdtpa.dot-st.com
 .tgtgzo.otelz.com
+.tgw.gmx.ch
+.tgw.gmx.net
+.tgw.web.de
 .thaqyl.mediamarkt.nl
 .the-ozone-project.com
 .thefontzone.com
@@ -12451,6 +12551,7 @@ zgsdk.zhugeio.com
 .thirdrespect.com
 .thirstylettuce.com
 .thirstyswing.com
+.thirstytwig.com
 .thomastorch.com
 .thor.pureelectric.se
 .thqjrh.elly.vn
@@ -12461,11 +12562,11 @@ zgsdk.zhugeio.com
 .thunderingrose.com
 .ti3av8k3ikwm.resume.gerardbosch.xyz
 .ticketaunt.com
+.ticklesign.com
 .tics.seeker.gg
 .tics.techdirt.com
 .tiglck.technopolis.bg
 .tilanalytics.timesinternet.in
-.tilt.bankofamerica.com
 .tim.nextinpact.com
 .timber.sendtonews.com
 .timejs.game.163.com
@@ -12561,6 +12662,7 @@ zgsdk.zhugeio.com
 .tm.vendemore.com
 .tmetrics.hdfcbank.com
 .tmetrics.webex.com
+.tmetrix.my.chick-fil-a.com
 .tmrhpl.nurse-agent.com
 .tms-st.cdn.ngenix.net
 .tms.dmp.wi-fi.ru
@@ -12570,12 +12672,14 @@ zgsdk.zhugeio.com
 .tms.hft.factor75.com
 .tms.hft.greenchef.com
 .tms.hft.hellofresh.com
+.tmx.td.com
 .tmy8.madeindesign.ch
 .tncid.app
 .tniujy.natura.com.br
 .tns.simba.taobao.com
 .to.getnitropack.com
 .tock.weg.plus
+.toecircle.com
 .toedrawer.com
 .toevgi.boostmobile.com
 .tokei.upstract.com
@@ -12711,6 +12815,7 @@ zgsdk.zhugeio.com
 .tr.bureauveritas.espmp-aufr.net
 .tr.business-deal.nl
 .tr.businessdev.younited-credit.es
+.tr.c-tag.net
 .tr.cacf-acq.ipsos-surveys.com
 .tr.cacf.ipsos-surveys.com
 .tr.camara.eu.com
@@ -13235,6 +13340,7 @@ zgsdk.zhugeio.com
 .trac.roomster.com
 .traccoon.intellectsoft.net
 .trace.qq.com
+.tracer.autoscout24.ch
 .track-mail.homage.co
 .track-srv.vietnamnet.vn
 .track-visit.monday.com
@@ -13280,11 +13386,11 @@ zgsdk.zhugeio.com
 .track.mp4.center
 .track.mrgugu.com
 .track.mycliplister.com
+.track.myli.io
 .track.netzero.net
 .track.noddus.com
 .track.nopaperforms.com
 .track.noz.de
-.track.omgpl.com
 .track.opentable.ae
 .track.opentable.ca
 .track.opentable.co.th
@@ -13316,13 +13422,11 @@ zgsdk.zhugeio.com
 .track.rundschau-online.de
 .track.searchignite.com
 .track.searchiq.co
-.track.securedvisit.com
 .track.shop2market.com
 .track.sitetag.us
 .track.slickinbox.com
 .track.social.com
 .track.sohu.com
-.track.spacepush.ru
 .track.span-smt.jp
 .track.spothero.com
 .track.sprinklecontent.com
@@ -13377,7 +13481,6 @@ zgsdk.zhugeio.com
 .tracker.icerocket.com
 .tracker.idocdn.com
 .tracker.iltrovatore.it
-.tracker.jawcloud.co
 .tracker.jkstremum.xyz
 .tracker.keywordintent.com
 .tracker.marinsoftware.com
@@ -13389,6 +13492,7 @@ zgsdk.zhugeio.com
 .tracker.providence.org
 .tracker.publico.pt
 .tracker.roitesting.com
+.tracker.services.vaix.ai
 .tracker.shopclues.com
 .tracker.softcube.com
 .tracker.ssl0d.com
@@ -13410,7 +13514,6 @@ zgsdk.zhugeio.com
 .trackerapi.truste.com
 .tracking-driver.staging.goshare.co
 .tracking-explore.agilent.com
-.tracking-opi.fonpit.de
 .tracking-secure.csob.cz
 .tracking.aapa.org
 .tracking.about.bgov.com
@@ -13506,6 +13609,7 @@ zgsdk.zhugeio.com
 .tracking.listhub.net
 .tracking.live.wetter.at
 .tracking.livingsocial.com
+.tracking.lqm.io
 .tracking.magnetmail.net
 .tracking.markethero.io
 .tracking.massierendeladies.de
@@ -13516,7 +13620,6 @@ zgsdk.zhugeio.com
 .tracking.mysurance.co.jp
 .tracking.netcologne.de
 .tracking.netvigie.com
-.tracking.netzathleten-media.de
 .tracking.noen.at
 .tracking.nokai.jp
 .tracking.novem.pl
@@ -13529,7 +13632,6 @@ zgsdk.zhugeio.com
 .tracking.pacharge.com
 .tracking.piercingladies.de
 .tracking.plinga.de
-.tracking.promiflash.de
 .tracking.quillion.com
 .tracking.quisma.com
 .tracking.rapidape.com
@@ -13570,12 +13672,14 @@ zgsdk.zhugeio.com
 .tracking.wao-corp.com
 .tracking.waterfrontmedia.com
 .tracking.webtradecenter.com
+.tracking.wisepops.com
 .tracking.wlscripts.net
 .tracking.zaertlicheladies.de
 .tracking.zierlicheladies.de
 .tracking1.brandmentions.com
 .tracking1.filemoon.sx
 .tracking2.channeladvisor.com
+.tracking3.vnncdn.net
 .trackingaa.hitachienergy.com
 .trackingapi.cloudapp.net
 .trackingio.com
@@ -13592,6 +13696,7 @@ zgsdk.zhugeio.com
 .traffic.prod.cobaltgroup.com
 .traffic.shareaholic.com
 .traffic.taktikal.is
+.tranquilside.com
 .transitapi-git.lax.repo.lab2-firewall.net.zooplus.de
 .transitfrontpagemgmt-pay.azuremgmt.docker.2lab-netnode-netrepobed.net.zooplus.de
 .transitfrontpagemgmt-pay.elasticmgmt.docker.2lab-netnode-netrepobed.net.zooplus.de
@@ -13604,7 +13709,6 @@ zgsdk.zhugeio.com
 .travel.caradonna.com
 .travel.onlinevacationcenter.com
 .travelmarketreport.actonservice.com
-.trc.caravas.jp
 .trc.pushnami.com
 .trck.aeon.co.jp
 .trck.bdi-services.de
@@ -13643,11 +13747,13 @@ zgsdk.zhugeio.com
 .trkn.us
 .trkpzz.dcinside.com
 .trkr.shoppingminds.net
+.troubledtail.com
 .trpreviews.bp01.net
 .tru.am
 .tru.webelapp.com
 .truckstomatoes.com
 .truffle.bid
+.trust-provider.com
 .trust.mitutoyo.com
 .trust.titanhq.com
 .trusted-web-seal.cybertrust.ne.jp
@@ -13689,11 +13795,14 @@ zgsdk.zhugeio.com
 .txvoin.with2.net
 .tybfxw.puma.com
 .typicalairplane.com
+.typicalteeth.com
 .tyvjyt.rivers.com.au
 .tyvuwf.lameteoagricole.net
+.tzegilo.com
 .tzwaw.pw
 .u0crsrah75fy.camberlion.com
 .u299.libelle-lekker.be
+.u44.pnc.com
 .u47.pnc.com
 .u652.myplainview.com
 .u927.sfgate.com
@@ -13701,6 +13810,7 @@ zgsdk.zhugeio.com
 .ua.indianexpress.com
 .uazmti.a101.com.tr
 .ubdjfy.maje.com
+.ubiquitousyard.com
 .ubmnyu.grancursosonline.com.br
 .ubrihx.allbirds.jp
 .ubuyanalytics.ubuy.com
@@ -13729,20 +13839,25 @@ zgsdk.zhugeio.com
 .ultraoranges.com
 .ultund.misterspex.nl
 .umami.wakarimasen.moe
+.unarmedindustry.com
 .unbecomingbikes.com
 .unbecominghall.com
 .uncoveredcircle.com
 .uncoveredexpert.com
 .understoodocean.com
+.unequalbrake.com
 .unevenstring.com
 .unifilabs.actonservice.com
 .unifyaddition.com
 .uninterestedquarter.com
 .units.knotch.it
+.unknowncrate.com
 .unknowntray.com
 .unl1zvy2zuyn.franchiseplus.nl
+.unm.emol.com
 .unnaturalcaption.com
 .untidyquestion.com
+.untidyrice.com
 .unusedquestion.com
 .unusedstone.com
 .unusualtitle.com
@@ -13782,6 +13897,7 @@ zgsdk.zhugeio.com
 .upstats.yadro.ru
 .upwwgd.zentempel.com
 .upz1.destinia.lt
+.uqd.io
 .urbanairship.com
 .urc.taboolasyndication.com
 .ureoaw.netthandelen.no
@@ -13803,7 +13919,6 @@ zgsdk.zhugeio.com
 .url9609.account.experience-muse.com
 .urr.kumamoto-food.com
 .urs.metacritic.com
-.urtracker.q-sis.de
 .us.lucanet.com
 .us.onkyo.actonservice.com
 .usedexample.com
@@ -13818,7 +13933,6 @@ zgsdk.zhugeio.com
 .ustat.info
 .ut.dailyfx.com
 .utexas.actonservice.com
-.utle.tech426.com
 .utrack.hexun.com
 .uts.auction.co.kr
 .uttermosthobbies.com
@@ -13840,7 +13954,6 @@ zgsdk.zhugeio.com
 .v1development.mgmt.chef.api-docsowazo4-transit-net.2lab-testbed.net.zooplus.de
 .v1machinevisiongwmarketing.cloudfront-dii1.sslengine.chef.net.zooplus.it
 .v1owa.opsadmins.net.zooplus.it
-.v1sts.me
 .v1svcapiserver.marketing.account.net.zooplus.de
 .v2api.alpha.net.zooplus.de
 .v2nginxowaoid.development.net.zooplus.nl
@@ -13853,14 +13966,15 @@ zgsdk.zhugeio.com
 .vch.voyage-prive.ch
 .vde1.voyage-prive.de
 .vdrn.redplum.com
+.vengefulgrass.com
 .venusgloria.com
 .venusrevival.com
 .verdantanswer.com
-.verifier.live
 .verifyvegetable.com
 .verseballs.com
 .vet0.carrefour-banque.fr
 .vfd2dyn.vodafone.de
+.vfgte.com
 .vfo.voyage-prive.co.uk
 .vgo.vegaoo.de
 .vgo.vegaoo.es
@@ -13873,11 +13987,11 @@ zgsdk.zhugeio.com
 .video-mia3-2.xx.fbcdn.net.iberostar.com
 .video.fcjs3-1.fna.fbcdn.net.iberostar.com
 .videoevents.outbrain.com
-.videoplayer2.xyz
 .videoplayerhub.com
 .videostat-new.index.hu
 .videostat.index.hu
 .videostats.kakao.com
+.view.fujitv.co.jp
 .views.arabnews.com
 .views.b1tv.ro
 .views.cancan.ro
@@ -13895,6 +14009,7 @@ zgsdk.zhugeio.com
 .visitors.winecountrygiftbaskets.com
 .visitping.rossel.be
 .visits.tommi.space
+.visor.sberbank.ru
 .vivaciousveil.com
 .vkanalytics.net
 .vlogs.deja.media
@@ -14009,6 +14124,7 @@ zgsdk.zhugeio.com
 .web-reco.marketing-ns.machinetrain-cvs.net.zooplus.it
 .web-t.9gag.com
 .web-trace.ksapisrv.com
+.web-tracker.smsbump.com
 .web.autobodytoolmart.com
 .web.bankofscotland.de
 .web.campaign.miriade.com
@@ -14088,12 +14204,10 @@ zgsdk.zhugeio.com
 .webcare.byside.com
 .webcounter.goweb.de
 .webdashboard.net.zooplus.com
-.webhit.snd.no
 .weblog.eseoul.go.kr
 .weblog.flyasiana.com
 .weblog.strawberrynet.com
 .weblog2.eseoul.go.kr
-.weblogger-dynamic-lb.playdom.com
 .webmet.creditreform.de
 .webpixel.smartmeapp.com
 .websdk.appsflyer.com
@@ -14144,10 +14258,10 @@ zgsdk.zhugeio.com
 .wl-analytics.tsp.li
 .wl-pixel.index.digital
 .wmgroup.us
+.womanear.com
 .woodpeckerlog.com
 .woopra.com
 .wootric.com
-.wordc.ga
 .workableachiever.com
 .workoperation.com
 .workwonders.hallstar.com
@@ -14162,6 +14276,7 @@ zgsdk.zhugeio.com
 .wrongpotato.com
 .wryfinger.com
 .ws.audioeye.com
+.ws3.smartp.com
 .wsmcdn.audioeye.com
 .wspeed.qq.com
 .wssgmstats.vibbo.com
@@ -14200,6 +14315,7 @@ zgsdk.zhugeio.com
 .wvvw.mc-doualiya.com
 .wvvw.rfi.fr
 .ww2.businessgrouphealth.org
+.wwopenclick.space
 .www-171.aig.com
 .www-172.aig.com
 .www-ebis.384.co.jp
@@ -14717,8 +14833,8 @@ zgsdk.zhugeio.com
 .zkmhhr1fr79z.dictionary.basabali.org
 .zkxmhc.carcam.ru
 .zlmapa.nestenn.com
+.zlp6s.pw
 .zmhsxr.hometogo.com
-.zminer.zaloapp.com
 .zmtqmp.shoestock.com.br
 .znq9.destinia.mx
 .znrgrd.johndog.pl
@@ -14726,7 +14842,6 @@ zgsdk.zhugeio.com
 .zononi.com
 .zoohit-naapidocsmachinevision.secure-git.ghcpi-machinevision.net.zooplus.it
 .zoomanalytics.co
-.zoomhead.xyz
 .zopqks.kavehome.com
 .zpnrnr.ab-in-den-urlaub.de
 .zqkdzl.invia.sk
@@ -14747,7 +14862,6 @@ zgsdk.zhugeio.com
 .ztgblo.vidaxl.lt
 .ztoash.cyberpuerta.mx
 .ztqnls.lojasrenner.com.br
-.zucks.net.zimg.jp
 .zudver.matsmart.se
 .zug.sbb.ch
 .zum7cc.oui.sncf

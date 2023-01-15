@@ -21,18 +21,18 @@
 
 ## 规则统计
 
-最后更新时间：2022-11-18 02:09:31
+最后更新时间：2023-01-14 02:12:44
 
 各类型规则统计：
 | 类型 | 数量(条)  | 
 | ---- | ----  |
 | DOMAIN | 174  | 
-| DOMAIN-KEYWORD | 14  | 
-| DOMAIN-SUFFIX | 69464  | 
-| IP-CIDR | 6316  | 
-| IP-CIDR6 | 4397  | 
+| DOMAIN-KEYWORD | 13  | 
+| DOMAIN-SUFFIX | 67414  | 
+| IP-CIDR | 5265  | 
+| IP-CIDR6 | 5321  | 
 | PROCESS-NAME | 13  | 
-| TOTAL | 80378  | 
+| TOTAL | 78200  | 
 
 
 ## Clash 
@@ -473,27 +473,6 @@ https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_scri
 - https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/DuoWan.list
 - https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/WanKaHuanJu.list
 - https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/ZhiYinManKe.list
-- https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/bilibili.list
-- https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/ShiJiChaoXing.list
-- https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/WoLai.list
-- https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Domestic%20IPs.yaml
-- https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Domestic.yaml
-- https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Douyin.yaml
-- https://raw.githubusercontent.com/LM-Firefly/Rules/master/Special/XunLei.list
-- https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/ABC.list
-- https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
-- https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Iflytek.list
-- https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Iqiyi.list
-- https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Kingsoft.list
-- https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Kuaishou.list
-- https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/LeTV.list
-- https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/NetEaseMusic.list
-- https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/PPTVPPLive.list
-- https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YYeTs.list
-- https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Bilibili.yaml
-- https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/NetEaseMusic.yaml
-- https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list
-- https://rules.kr328.app/geolocation-cn.yaml
 
 
 感谢以上规则作者的辛勤付出（排名不分先后）。

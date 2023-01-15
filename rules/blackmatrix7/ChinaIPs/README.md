@@ -12,14 +12,14 @@ ChinaIPs规则由《RULE GENERATOR 规则生成器》自动生成。
 
 ## 规则统计
 
-最后更新时间：2022-11-18 02:08:57
+最后更新时间：2023-01-14 02:11:43
 
 各类型规则统计：
 | 类型 | 数量(条)  | 
 | ---- | ----  |
-| IP-CIDR | 6285  | 
-| IP-CIDR6 | 4393  | 
-| TOTAL | 10678  | 
+| IP-CIDR | 5225  | 
+| IP-CIDR6 | 5317  | 
+| TOTAL | 10542  | 
 
 
 ## Clash 
@@ -144,8 +144,6 @@ https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_scri
 - https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/develop/Rules/Region/ChinaIP.list
 - https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt
 - https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt
-- https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Domestic%20IPs.yaml
-- https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list
 
 
 感谢以上规则作者的辛勤付出（排名不分先后）。

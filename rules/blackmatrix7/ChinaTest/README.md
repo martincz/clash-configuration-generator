@@ -12,17 +12,17 @@ ChinaTest规则由《RULE GENERATOR 规则生成器》自动生成。
 
 ## 规则统计
 
-最后更新时间：2022-11-18 02:08:39
+最后更新时间：2023-01-12 02:11:45
 
 各类型规则统计：
 | 类型 | 数量(条)  | 
 | ---- | ----  |
-| DOMAIN | 177  | 
-| DOMAIN-KEYWORD | 10  | 
-| DOMAIN-SUFFIX | 66934  | 
+| DOMAIN | 174  | 
+| DOMAIN-KEYWORD | 9  | 
+| DOMAIN-SUFFIX | 65980  | 
 | IP-CIDR | 10  | 
 | IP-CIDR6 | 4  | 
-| TOTAL | 67135  | 
+| TOTAL | 66177  | 
 
 
 ## Clash 
@@ -112,8 +112,6 @@ https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_scri
 - https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/Filter/Mainland.list
 - https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/develop/Rules/Region/China.list
 - https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/direct.txt
-- https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Domestic.yaml
-- https://rules.kr328.app/geolocation-cn.yaml
 
 
 感谢以上规则作者的辛勤付出（排名不分先后）。

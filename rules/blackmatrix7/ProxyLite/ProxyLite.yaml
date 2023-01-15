@@ -1,13 +1,13 @@
 # NAME: ProxyLite
 # AUTHOR: blackmatrix7
 # REPO: https://gitlab.com/blackmatrix7/ios_rule_script
-# UPDATED: 2022-11-03 17:11:05
+# UPDATED: 2022-12-27 02:10:57
 # DOMAIN: 18
 # DOMAIN-KEYWORD: 24
-# DOMAIN-SUFFIX: 829
-# IP-CIDR: 94
+# DOMAIN-SUFFIX: 831
+# IP-CIDR: 90
 # IP-CIDR6: 4
-# TOTAL: 969
+# TOTAL: 967
 payload:
   - DOMAIN,addons.mozilla.org
   - DOMAIN,amp-api.podcasts.apple.com
@@ -42,6 +42,7 @@ payload:
   - DOMAIN-SUFFIX,adguard.org
   - DOMAIN-SUFFIX,adobe.com
   - DOMAIN-SUFFIX,adobedtm.com
+  - DOMAIN-SUFFIX,adtidy.org
   - DOMAIN-SUFFIX,aerisapi.com
   - DOMAIN-SUFFIX,aex.com
   - DOMAIN-SUFFIX,ahcdn.com
@@ -142,7 +143,6 @@ payload:
   - DOMAIN-SUFFIX,cachefly.net
   - DOMAIN-SUFFIX,castbox.fm
   - DOMAIN-SUFFIX,cbc.ca
-  - DOMAIN-SUFFIX,cccat.io
   - DOMAIN-SUFFIX,cdn.angruo.com
   - DOMAIN-SUFFIX,cdn.segment.com
   - DOMAIN-SUFFIX,cdnst.net
@@ -384,6 +384,7 @@ payload:
   - DOMAIN-SUFFIX,littlehj.com
   - DOMAIN-SUFFIX,livejasmin.com
   - DOMAIN-SUFFIX,livestream.com
+  - DOMAIN-SUFFIX,liyuans.com
   - DOMAIN-SUFFIX,llnwd.net
   - DOMAIN-SUFFIX,logmein.com
   - DOMAIN-SUFFIX,m.me
@@ -463,6 +464,7 @@ payload:
   - DOMAIN-SUFFIX,omnigroup.com
   - DOMAIN-SUFFIX,omny.fm
   - DOMAIN-SUFFIX,ooyala.com
+  - DOMAIN-SUFFIX,openai.com
   - DOMAIN-SUFFIX,openvpn.net
   - DOMAIN-SUFFIX,openwrt.org
   - DOMAIN-SUFFIX,orkut.com
@@ -887,7 +889,6 @@ payload:
   - IP-CIDR,103.246.56.0/22
   - IP-CIDR,103.27.148.0/22
   - IP-CIDR,103.4.96.0/22
-  - IP-CIDR,108.168.0.0/16
   - IP-CIDR,109.239.140.0/24
   - IP-CIDR,110.76.140.0/22
   - IP-CIDR,113.61.104.0/22
@@ -907,8 +908,6 @@ payload:
   - IP-CIDR,125.6.190.0/24
   - IP-CIDR,129.134.0.0/17
   - IP-CIDR,129.226.0.0/16
-  - IP-CIDR,13.251.24.0/24
-  - IP-CIDR,13.251.41.0/24
   - IP-CIDR,13.32.0.0/15
   - IP-CIDR,13.35.0.0/17
   - IP-CIDR,147.92.128.0/17
@@ -917,7 +916,6 @@ payload:
   - IP-CIDR,158.85.224.160/27
   - IP-CIDR,158.85.46.128/27
   - IP-CIDR,158.85.5.192/27
-  - IP-CIDR,17.252.156.0/23
   - IP-CIDR,173.192.222.160/27
   - IP-CIDR,173.192.231.32/27
   - IP-CIDR,173.194.0.0/16
@@ -966,7 +964,7 @@ payload:
   - IP-CIDR,54.242.0.0/15
   - IP-CIDR,54.93.0.0/16
   - IP-CIDR,66.220.144.0/20
-  - IP-CIDR,69.171.0.0/16
+  - IP-CIDR,69.171.224.0/19
   - IP-CIDR,69.63.176.0/20
   - IP-CIDR,74.119.76.0/22
   - IP-CIDR,74.125.0.0/16

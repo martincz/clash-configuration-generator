@@ -40,7 +40,7 @@
     python generate
     ```
 
-4. 导入生成的 configuration.yaml 配置文件到 Clash。
+4. 导入生成的 config.yaml 配置文件到 Clash。
 
 ## 可选参数
 

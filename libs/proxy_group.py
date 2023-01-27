@@ -1,6 +1,6 @@
 # MIT License
 
-# Copyright (c) 2022 Martincz Gao
+# Copyright (c) 2022-2023 Martincz Gao
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -65,5 +65,8 @@ def getProxyGroups(preference):
 def replaceProxies(group, proxies):
     def_proxies = group.get('proxies')
     if ('.*' in def_proxies):
+        index = def_proxies.index('.*')
         def_proxies.remove('.*')
-        def_proxies.extend(proxies)
+        for proxy in proxies:
+            def_proxies.insert(index, proxy)
+            index += 1

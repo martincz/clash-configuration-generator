@@ -1,5 +1,6 @@
 *.pyc
 __pycache__
 config.yaml
+config_old.yaml
 configuration.yaml
 preference.yaml

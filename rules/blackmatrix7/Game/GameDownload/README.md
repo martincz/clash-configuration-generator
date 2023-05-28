@@ -12,14 +12,14 @@ GameDownload规则由《RULE GENERATOR 规则生成器》自动生成。
 
 ## 规则统计
 
-最后更新时间：2022-12-25 18:53:29
+最后更新时间：2023-05-28 18:23:18
 
 各类型规则统计：
 | 类型 | 数量(条)  | 
 | ---- | ----  |
-| DOMAIN | 18  | 
-| DOMAIN-SUFFIX | 2  | 
-| TOTAL | 20  | 
+| DOMAIN | 36  | 
+| DOMAIN-SUFFIX | 3  | 
+| TOTAL | 39  | 
 
 
 ## Clash 
@@ -62,7 +62,14 @@ https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_scri
 
 ## 数据来源
 
-当前规则未直接引用数据源。
+《GameDownload》的数据来自以下链接，如与本项目的《GameDownload》规则混合使用，可能会造成规则大量重复。
+
+- https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GameDownload.list
+- https://gitlab.com/lodepuly/vpn_tool/raw/main/Tool/Clash/Rule/InternationalGameDownload.yaml
+- https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GameDownload.yaml
+
+
+感谢以上规则作者的辛勤付出（排名不分先后）。
 
 ## 最后
 

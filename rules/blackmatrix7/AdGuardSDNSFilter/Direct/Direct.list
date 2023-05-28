@@ -1,9 +1,9 @@
 # NAME: AdGuardSDNSFilterDirect
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2022-12-25 18:53:00
-# DOMAIN: 108
-# TOTAL: 108
+# UPDATED: 2023-05-28 18:22:46
+# DOMAIN: 112
+# TOTAL: 112
 DOMAIN,5471782.fls.doubleclick.net
 DOMAIN,79423.analytics.edgekey.net
 DOMAIN,a.adwolf.ru
@@ -23,15 +23,18 @@ DOMAIN,anwb.webpower.eu
 DOMAIN,api.ads.tvb.com
 DOMAIN,api.docodoco.jp
 DOMAIN,app-advertise.zhihuishu.com
+DOMAIN,app-cdn.minepi.com
 DOMAIN,app.appsflyer.com
 DOMAIN,artifactory.appodeal.com
 DOMAIN,awin1.com
-DOMAIN,blog.logrocket.com
 DOMAIN,buyad.bi-xenon.cn
 DOMAIN,c.office.com
 DOMAIN,captcha.su.baidu.com
+DOMAIN,catchup.thisisdax.com
+DOMAIN,cdn.duurzaam.greenchoice.nl
 DOMAIN,cdn.rozetka.com.ua
 DOMAIN,cdnbc-wup.hsbc.com.hk
+DOMAIN,chathamdailynews.remembering.ca
 DOMAIN,cindyholbrook.lpages.co
 DOMAIN,citiintl.122.2o7.net
 DOMAIN,cj.dotomi.com
@@ -40,10 +43,11 @@ DOMAIN,click.appcast.io
 DOMAIN,click.simba.taobao.com
 DOMAIN,click.trafficguard.ai
 DOMAIN,click.virt.exacttarget.com
-DOMAIN,clj.valuecommerce.com
+DOMAIN,clickattr.wayup.com
 DOMAIN,cloud.notification-naviextras.com
 DOMAIN,cm-beacon.nakanohito.jp
 DOMAIN,cm-widget.nakanohito.jp
+DOMAIN,crm-cdn.peek-cloppenburg.com
 DOMAIN,cs.silverpop.com
 DOMAIN,cutcaptcha.com
 DOMAIN,daikoku.ebis.ne.jp
@@ -55,13 +59,13 @@ DOMAIN,envato.market
 DOMAIN,eum-blue-saas.instana.io
 DOMAIN,feed.adrelayer.com
 DOMAIN,forum.notebookreview.com
+DOMAIN,go.adjust.com
 DOMAIN,go.scorptec.com.au
 DOMAIN,goto.target.com
 DOMAIN,goto.walmart.com
 DOMAIN,grp07.ias.rakuten.co.jp
 DOMAIN,gs.statcounter.com
 DOMAIN,guce.advertising.com
-DOMAIN,h-sdk.online-metrix.net
 DOMAIN,hb.afl.rakuten.co.jp
 DOMAIN,health.halodoc.com
 DOMAIN,home.focusatwill.com
@@ -76,7 +80,6 @@ DOMAIN,links.e.theatlantic.com
 DOMAIN,links.getblueshift.com
 DOMAIN,log.mmstat.com
 DOMAIN,logentries.com
-DOMAIN,login.eki-net.com
 DOMAIN,login.sendpulse.com
 DOMAIN,ma135-r.analytics.edgekey.net
 DOMAIN,marketing.net.idealo-partner.com
@@ -94,6 +97,7 @@ DOMAIN,promo.gramedia.com
 DOMAIN,proto2ad.durasite.net
 DOMAIN,pt.afl.rakuten.co.jp
 DOMAIN,public-cis.exponea.com
+DOMAIN,px.a8.net
 DOMAIN,radiofrance.targetspot.com
 DOMAIN,redir.tradedoubler.com
 DOMAIN,redirect.appmetrica.yandex.com

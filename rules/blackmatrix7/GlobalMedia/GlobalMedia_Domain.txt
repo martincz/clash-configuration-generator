@@ -1,14 +1,14 @@
 # NAME: GlobalMedia
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2022-12-25 18:51:15
-# DOMAIN: 28
-# DOMAIN-KEYWORD: 22
-# DOMAIN-SUFFIX: 1067
+# UPDATED: 2023-05-28 18:21:13
+# DOMAIN: 25
+# DOMAIN-KEYWORD: 24
+# DOMAIN-SUFFIX: 1084
 # IP-CIDR: 918
 # IP-CIDR6: 6
 # PROCESS-NAME: 3
-# TOTAL: 2044
+# TOTAL: 2060
 api.okzy.tv
 apm-misaka.biliapi.net
 apple.comscoreresearch.com
@@ -30,13 +30,10 @@ ktpx.amazon.com
 news-client.apple.com
 news-edge.apple.com
 news-events.apple.com
-np-edge.itunes.apple.com
 p.bstarstatic.com
-play-edge.itunes.apple.com
 rpg.pic-imges.com
 rthklive2-lh.akamaihd.net
 tv.applemusic.com
-uts-api.itunes.apple.com
 .112263.com
 .20thcenturystudios.com.au
 .20thcenturystudios.com.br
@@ -61,7 +58,6 @@ uts-api.itunes.apple.com
 .amazonaws.co.uk
 .amazonaws.com
 .amazonprimevideo.cn
-.amazonprimevideo.com.cn
 .amazonprimevideos.com
 .amazonuniversity.jobs
 .amazonvideo.cc
@@ -120,6 +116,7 @@ uts-api.itunes.apple.com
 .bidi.net.uk
 .bigbigchannel.com.hk
 .bigbigshop.com
+.biggggg.com
 .biliintl.com
 .bitmovin.com
 .bootstrapcdn.com
@@ -198,6 +195,7 @@ uts-api.itunes.apple.com
 .daznedge.net
 .daznfeeds.com
 .daznservices.com
+.dc1-lm-live2dazn.secure.footprint.net
 .dc2-vodhls-perform.secure.footprint.net
 .dca-ll-livedazn-dznlivejp.s.llnwi.net
 .dca-ll-voddazn-dznvodjp.s.llnwi.net
@@ -547,6 +545,7 @@ uts-api.itunes.apple.com
 .gorin.jp
 .gvt1.com
 .gvt2.com
+.haiwaikan.com
 .happyon.jp
 .hath.network
 .hayabusa.dev
@@ -645,6 +644,7 @@ uts-api.itunes.apple.com
 .intl-rcd.iqiyi.com
 .intl-subscription.iqiyi.com
 .intl.iqiyi.com
+.iole.tv
 .ipstatp.com
 .iq.com
 .italkbb.com
@@ -715,6 +715,7 @@ uts-api.itunes.apple.com
 .moviesanywhere.com
 .msnbc.com
 .mtvnservices.com
+.mudvod.tv
 .muscdn.com
 .mushymush.tv
 .musical.ly
@@ -765,6 +766,9 @@ uts-api.itunes.apple.com
 .nbcsports.h-cdn.com
 .nbcudigitaladops.com
 .nbcuni.com
+.nbys.tv
+.nbys1.tv
+.nbyy.tv
 .nebula.app
 .netflix.ca
 .netflix.com
@@ -785,6 +789,7 @@ uts-api.itunes.apple.com
 .netflixstudios.com
 .netflixtechblog.com
 .nettyinternet.com
+.newpppp.com
 .newsnowfox.com
 .nflxext.com
 .nflximg.com
@@ -802,6 +807,9 @@ uts-api.itunes.apple.com
 .nikkei.com
 .nikkei.jp
 .nimg.jp
+.nivod.tv
+.nivodi.tv
+.nivodz.com
 .nomadlandmovie.ch
 .now-ashare.com
 .now-tv.com
@@ -824,6 +832,12 @@ uts-api.itunes.apple.com
 .nytlog.com
 .nytstyle.com
 .ocnttv.com
+.olehd.com
+.olelive.com
+.olevod.com
+.olevod.io
+.olevod.tv
+.olevodtv.com
 .originalhulu.com
 .orlandohurricane.com
 .overcast.fm
@@ -977,7 +991,6 @@ uts-api.itunes.apple.com
 .tvb.com.au
 .tvbanywhere.com
 .tvbanywhere.com.sg
-.tvbc.com.cn
 .tvbeventpower.com.hk
 .tvbusa.com
 .tvbweekly.com
@@ -1056,6 +1069,7 @@ uts-api.itunes.apple.com
 .voatiengviet.com
 .voatour.com
 .voazimbabwe.com
+.vod360.net
 .vox-cdn.com
 .vox.com
 .voxcreative.com

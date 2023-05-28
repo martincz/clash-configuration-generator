@@ -12,14 +12,14 @@
 
 ## 规则统计
 
-最后更新时间：2022-12-25 18:51:47
+最后更新时间：2023-05-28 18:21:55
 
 各类型规则统计：
 | 类型 | 数量(条)  | 
 | ---- | ----  |
-| DOMAIN-SUFFIX | 474  | 
+| DOMAIN-SUFFIX | 560  | 
 | IP-CIDR | 11  | 
-| TOTAL | 485  | 
+| TOTAL | 571  | 
 
 
 ## Clash 
@@ -66,6 +66,12 @@ https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_scri
 
 - https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Tencent.list
 - https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/Tencent.list
+- https://rules.kr328.app/tencent.yaml
+- https://rules.kr328.app/tencent-ads.yaml
+- https://rules.kr328.app/tencent-ads@ads.yaml
+- https://rules.kr328.app/tencent@cn.yaml
+- https://rules.kr328.app/tencent@ads.yaml
+- https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Tencent.yaml
 
 
 感谢以上规则作者的辛勤付出（排名不分先后）。

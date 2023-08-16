@@ -2,5 +2,6 @@
 __pycache__
 config.yaml
 config_old.yaml
+config_bkp.yaml
 configuration.yaml
 preference.yaml

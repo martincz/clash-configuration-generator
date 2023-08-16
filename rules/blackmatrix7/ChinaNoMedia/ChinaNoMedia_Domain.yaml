@@ -1,13 +1,13 @@
 # NAME: ChinaNoMedia
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2023-05-28 18:22:39
+# UPDATED: 2023-07-31 02:12:38
 # DOMAIN: 19
 # DOMAIN-KEYWORD: 9
-# DOMAIN-SUFFIX: 3539
+# DOMAIN-SUFFIX: 3557
 # IP-CIDR: 11
 # IP-CIDR6: 4
-# TOTAL: 3582
+# TOTAL: 3600
 payload:
   - 'analytics.strava.com'
   - 'blzddist1-a.akamaihd.net'
@@ -39,6 +39,7 @@ payload:
   - '+.100offer.com'
   - '+.11467.com'
   - '+.114chn.com'
+  - '+.114menhu.com'
   - '+.114piaowu.com'
   - '+.114shouji.com'
   - '+.115.com'
@@ -448,6 +449,7 @@ payload:
   - '+.apabi.com'
   - '+.apcdns.net'
   - '+.api.crisp.chat'
+  - '+.apifox.com'
   - '+.apigwtencent.com'
   - '+.apimkt.net'
   - '+.apk3.com'
@@ -496,6 +498,7 @@ payload:
   - '+.baitiao.com'
   - '+.baixing.com'
   - '+.baixing.net'
+  - '+.baltamatica.com'
   - '+.bamenzhushou.com'
   - '+.bangongziyuan.com'
   - '+.bank-of-china.com'
@@ -576,6 +579,7 @@ payload:
   - '+.bocifunds.com'
   - '+.bocigroup.com'
   - '+.bocim.com'
+  - '+.bohejiasuqi.com'
   - '+.bojianger.com'
   - '+.bokecc.com'
   - '+.booking.com'
@@ -584,6 +588,7 @@ payload:
   - '+.bootcss.com'
   - '+.bosera.com'
   - '+.broadcasthe.net'
+  - '+.browserleaks.com'
   - '+.bstatic.com'
   - '+.btcfans.com'
   - '+.btgtravel.com'
@@ -598,6 +603,7 @@ payload:
   - '+.bytedance.com'
   - '+.bytedance.net'
   - '+.bytedanceapi.com'
+  - '+.bytedapm.com'
   - '+.bytedns.net'
   - '+.bytedns1.com'
   - '+.bytednsdoc.com'
@@ -607,6 +613,7 @@ payload:
   - '+.bytegslb.com'
   - '+.bytehwm.com'
   - '+.byteimg.com'
+  - '+.byteintl.net'
   - '+.bytelb.net'
   - '+.bytescm.com'
   - '+.bytetcc.com'
@@ -1269,6 +1276,7 @@ payload:
   - '+.fdcyun.com'
   - '+.feihuo.com'
   - '+.feiliao.com'
+  - '+.feimaoyun.com'
   - '+.feiniaomy.com'
   - '+.feishu.net'
   - '+.feishucdn.com'
@@ -1873,6 +1881,7 @@ payload:
   - '+.jianzhi8.com'
   - '+.jiaodong.net'
   - '+.jiaoyimao.com'
+  - '+.jiasu.bohe.com'
   - '+.jiasuhui.com'
   - '+.jiasule.com'
   - '+.jiathis.com'
@@ -2244,6 +2253,7 @@ payload:
   - '+.mihoyocg.com'
   - '+.mihoyogift.com'
   - '+.mihoyomall.com'
+  - '+.mihuashi.com'
   - '+.mijisou.com'
   - '+.mikecrm.com'
   - '+.minapp.com'
@@ -2618,6 +2628,7 @@ payload:
   - '+.qyerstatic.com'
   - '+.qyunapp.com'
   - '+.qzone.com'
+  - '+.rainclassroom.com'
   - '+.rarbg.to'
   - '+.raychase.net'
   - '+.rdfybk.com'
@@ -2965,6 +2976,8 @@ payload:
   - '+.tietuku.com'
   - '+.tiexue.net'
   - '+.tieyou.com'
+  - '+.tiktokd.net'
+  - '+.tiktokd.org'
   - '+.timedoo.com'
   - '+.timibase.com'
   - '+.timmerse.com'
@@ -3269,6 +3282,7 @@ payload:
   - '+.wuximediaglobal.com'
   - '+.wxzq.com'
   - '+.wywyx.com'
+  - '+.x-cloud.cc'
   - '+.x315.com'
   - '+.xafc.com'
   - '+.xbiao.com'
@@ -3342,11 +3356,13 @@ payload:
   - '+.xueersi.com'
   - '+.xuekanba.com'
   - '+.xueqiu.com'
+  - '+.xuetangx.com'
   - '+.xuexi365.com'
   - '+.xuexi365.net'
   - '+.xuexicha.com'
   - '+.xueyuanjun.com'
   - '+.xundupdf.com'
+  - '+.xunfeixxj.com'
   - '+.xunlei.com'
   - '+.xunyou.com'
   - '+.xxsy.net'
@@ -3461,6 +3477,7 @@ payload:
   - '+.yunkanpan.com'
   - '+.yunos-inc.com'
   - '+.yunos.com'
+  - '+.yunpan.com'
   - '+.yunqishi.net'
   - '+.yunshipei.com'
   - '+.yunxiao.com'
@@ -3468,6 +3485,7 @@ payload:
   - '+.yupoo.com'
   - '+.yuque.com'
   - '+.yushanfang.com'
+  - '+.yushiyan.net'
   - '+.yuzua.com'
   - '+.yxbao.com'
   - '+.yxdmgame.com'

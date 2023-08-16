@@ -1,14 +1,14 @@
 # NAME: GlobalMedia
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2023-05-28 18:21:13
+# UPDATED: 2023-07-28 02:12:12
 # DOMAIN: 25
 # DOMAIN-KEYWORD: 24
-# DOMAIN-SUFFIX: 1084
+# DOMAIN-SUFFIX: 1087
 # IP-CIDR: 918
 # IP-CIDR6: 6
 # PROCESS-NAME: 3
-# TOTAL: 2060
+# TOTAL: 2063
 api.okzy.tv
 apm-misaka.biliapi.net
 apple.comscoreresearch.com
@@ -59,6 +59,7 @@ tv.applemusic.com
 .amazonaws.com
 .amazonprimevideo.cn
 .amazonprimevideos.com
+.amazontools.com
 .amazonuniversity.jobs
 .amazonvideo.cc
 .amazonvideo.com
@@ -205,6 +206,7 @@ tv.applemusic.com
 .dilcdn.com
 .directv.com
 .disco-api.com
+.discomax.com
 .discovery.com
 .discoveryplus.co.uk
 .discoveryplus.com
@@ -245,6 +247,7 @@ tv.applemusic.com
 .disney.io
 .disney.it
 .disney.my
+.disney.my.sentry.io
 .disney.nl
 .disney.no
 .disney.ph
@@ -640,7 +643,6 @@ tv.applemusic.com
 .indaznlab.com
 .insidevoa.com
 .inter.iqiyi.com
-.intercom.io
 .intl-rcd.iqiyi.com
 .intl-subscription.iqiyi.com
 .intl.iqiyi.com
@@ -705,6 +707,7 @@ tv.applemusic.com
 .marvelsuperheroseptember.com
 .marvelsuperwar.com
 .maskedsingerfox.com
+.max.com
 .maxgo.com
 .media-amazon.com
 .meridian.net
@@ -919,7 +922,7 @@ tv.applemusic.com
 .sbnation.com
 .scdn.co
 .screens-lab.jp
-.sentry.io
+.seattlespheres.com
 .sgpstatp.com
 .shopdisney.com
 .shops-disney.com

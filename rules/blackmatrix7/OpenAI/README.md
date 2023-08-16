@@ -12,15 +12,14 @@ OpenAI规则由《RULE GENERATOR 规则生成器》自动生成。
 
 ## 规则统计
 
-最后更新时间：2023-05-28 18:23:59
+最后更新时间：2023-07-20 23:25:19
 
 各类型规则统计：
 | 类型 | 数量(条)  | 
 | ---- | ----  |
-| DOMAIN | 2  | 
 | DOMAIN-KEYWORD | 1  | 
-| DOMAIN-SUFFIX | 4  | 
-| TOTAL | 7  | 
+| DOMAIN-SUFFIX | 12  | 
+| TOTAL | 13  | 
 
 
 ## Clash 

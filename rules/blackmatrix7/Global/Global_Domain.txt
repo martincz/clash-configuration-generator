@@ -1,14 +1,14 @@
 # NAME: Global
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2023-05-28 18:20:55
-# DOMAIN: 159
+# UPDATED: 2023-08-16 02:11:23
+# DOMAIN: 154
 # DOMAIN-KEYWORD: 39
-# DOMAIN-SUFFIX: 19021
-# IP-CIDR: 106
+# DOMAIN-SUFFIX: 19163
+# IP-CIDR: 105
 # IP-CIDR6: 4
 # PROCESS-NAME: 1
-# TOTAL: 19330
+# TOTAL: 19466
 adobeereg.com
 angle.com.tw
 anime-rule34-world.b-cdn.net
@@ -31,11 +31,9 @@ blz.nosdn.127.net
 cbsi.live.ott.irdeto.com
 cbsplaylistserver.aws.syncbak.com
 cbsservice.aws.syncbak.com
-certs-lb.apple.com.akadns.net
 cisco.evergage.com
 clubhouse.pubnubapi.com
 courier-push-apple.com.akadns.net
-crl-lb.apple.com.akadns.net
 crl.microsoft.com
 crl.versign.net
 databank.worldbank.org
@@ -46,7 +44,6 @@ di.res.netease.com
 diablo3.nosdn.127.net
 dl.begellhouse.com
 download.visualstudio.microsoft.com
-e122475.dscg.akamaiedge.net
 ea.tt.omtrdc.net
 elib.maruzen.co.jp
 espn.hb.omtrdc.net
@@ -70,10 +67,8 @@ muse.jhu.edu
 nationalaustraliaban.tt.omtrdc.net
 nvidia.tt.omtrdc.net
 ocsp.microsoft.com
-ocsp2-lb.apple.com.akadns.net
 oneocsp.microsoft.com
 ood.opsource.net
-openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 overwatch.nosdn.127.net
 pchomeonline.com.tw
 practivate.adobe
@@ -198,6 +193,7 @@ cloud.oracle.com
 .12diasderegalosdeitunes.com.co
 .12joursdecadeauxdeitunes.com
 .132288.cc
+.141jav.com
 .159i.com
 .161sex.com
 .16885858.com
@@ -291,6 +287,7 @@ cloud.oracle.com
 .32bm.cc
 .35s4.com
 .365buymy.com
+.36717.info
 .3789av.com
 .39group.info
 .3animalsextube.com
@@ -407,6 +404,7 @@ cloud.oracle.com
 .6asianporn.com
 .6e8xr2gk.me
 .6japaneseporn.com
+.6kea.com
 .6mature9.com
 .6neek.com
 .6sextube.com
@@ -424,6 +422,7 @@ cloud.oracle.com
 .8111y.top
 .82mvmv.com
 .85tube.com
+.8664av.com
 .88gals.com
 .88kkn.com
 .88square.com
@@ -436,11 +435,13 @@ cloud.oracle.com
 .8xxx.net
 .91avfuli.com
 .91cy.app
+.91dy.club
 .91fans.org
 .91gay.me
 .91jinman.com
 .91md.me
 .91moxiong.com
+.91oo.xyz
 .91porn.best
 .91porn.com
 .91porn.work
@@ -450,6 +451,7 @@ cloud.oracle.com
 .91rb.net
 .91se.fun
 .91sesex.xyz
+.91sew.xyz
 .920share.com
 .921bb.com
 .922tp.com
@@ -551,12 +553,12 @@ cloud.oracle.com
 .adanaatikhaber.com
 .adbecrsl.com
 .adbkm.com
-.adcdownload.apple.com.akadns.net
 .adcommerce.cn
 .addthiscdn.com
 .addtoany.com
 .addyoutube.com
 .adgoogle.net
+.adguard-dns.com
 .adguard-vpn.com
 .adguard.com
 .adhelpnews.com
@@ -622,9 +624,11 @@ cloud.oracle.com
 .adultdeepfakes.com
 .adultdvdmarketplace.com
 .adultdvdtalk.com
+.adultempire.com
 .adultepic.com
 .adulterfree.com
 .adulters.org
+.adultfilmdatabase.com
 .adultfreex.com
 .adultgamereviews.com
 .adultgames.games
@@ -693,7 +697,6 @@ cloud.oracle.com
 .ahtranny.com
 .ahvideosexe.com
 .ahxxx.club
-.ai.com
 .aibaobei.me
 .aicoin.com
 .aimei133.com
@@ -740,6 +743,7 @@ cloud.oracle.com
 .akadns6.net
 .akaeai.com
 .akafms.net
+.akagtm.org
 .akahost.net
 .akaint.net
 .akam.net
@@ -758,6 +762,7 @@ cloud.oracle.com
 .akamai-thailand.net
 .akamai-trials.com
 .akamai.com
+.akamaiedge.net
 .akamaientrypoint.net
 .akamaietpcnctest.com
 .akamaietpcompromisedcnctest.com
@@ -824,6 +829,7 @@ cloud.oracle.com
 .allporncomic.com
 .allpornsites.net
 .allpornsitespass.com
+.allspyclips.com
 .allswingersclubs.org
 .allthefallen.moe
 .alohatube.com
@@ -853,6 +859,7 @@ cloud.oracle.com
 .amakings.com
 .amamanualofstyle.com
 .amandalist.com
+.amanmi.com
 .amapornofilme.com
 .amateur-cougar.com
 .amateur-exhibitionist.org
@@ -868,6 +875,7 @@ cloud.oracle.com
 .amateuranalvideos.com
 .amateurarchiver.com
 .amateurbdsmporn.com
+.amateurblondegirls.com
 .amateurblowjobporn.com
 .amateurcool.com
 .amateurcuckoldporn.com
@@ -908,6 +916,7 @@ cloud.oracle.com
 .amazon-lantern.com
 .amazon-launchpad.com
 .amazon.cn
+.amazon.dev
 .amazon.jobs
 .amazon.red
 .amazonalexavoxcon.com
@@ -1254,6 +1263,7 @@ cloud.oracle.com
 .arabysexy.mobi
 .arcadewank.com
 .arcgisonline.com
+.archive-it.org
 .archiveofourown.net
 .archlinux.org
 .archlinuxarm.org
@@ -1417,6 +1427,7 @@ cloud.oracle.com
 .avcnn.com
 .avcrempie.com
 .avdudu.top
+.avdwang.xyz
 .avelip.com
 .aventertainments.com
 .avfox.cc
@@ -1432,6 +1443,7 @@ cloud.oracle.com
 .avizoon.site
 .avizoone.com
 .avjb.com
+.avjoy.me
 .avlulu.cc
 .avmoo.click
 .avn.com
@@ -1488,6 +1500,8 @@ cloud.oracle.com
 .awsthinkbox.com
 .awstrack.me
 .awstrust.com
+.ayshdade.info
+.ayshdee.xyz
 .ayudanintendo.com
 .azadiradio.com
 .azadliq.org
@@ -1537,6 +1551,7 @@ cloud.oracle.com
 .azuredns-prd.info
 .azuredns-prd.org
 .azureedge-test.net
+.azurefd.net
 .azurehdinsight.cn
 .azureiotcentral.com
 .azureiotsolutions.com
@@ -1647,6 +1662,7 @@ cloud.oracle.com
 .bb33.net
 .bbbaihu.vip
 .bbc-anal.com
+.bbc-reporting-api.app
 .bbcpersian.com
 .bbcpornonly.com
 .bbcverticals.com
@@ -2005,13 +2021,13 @@ cloud.oracle.com
 .bestfreesexgames.com
 .bestfreetube.net
 .bestgames-2022.com
-.bestgore.com
 .besthandjobporn.com
 .besthentaitube.com
 .bestiality.guru
 .bestialitysextaboo.com
 .bestiphonestuff.com
 .bestjapanesepornsites.com
+.bestjavporn.com
 .bestjavporn.net
 .bestkinky.com
 .bestlistofporn.com
@@ -2042,6 +2058,9 @@ cloud.oracle.com
 .beyondcore.com
 .bffshd.com
 .bgov.com
+.biaoqs.xyz
+.biaoqs1.xyz
+.biaoqs2.xyz
 .bidbay.com
 .bidong25.com
 .bidong9.com
@@ -2085,6 +2104,7 @@ cloud.oracle.com
 .bili2.cc
 .bili888.com
 .bili999.com
+.bilibiligame.cn
 .bill-safe.com
 .billmelater.com
 .billmelater.info
@@ -2093,6 +2113,7 @@ cloud.oracle.com
 .billpoint.info
 .billpointnewzealand.com
 .bimbim.com
+.bimbolive.com
 .binads.com
 .binance.cc
 .binance.charity
@@ -2155,6 +2176,7 @@ cloud.oracle.com
 .bitwarden.com
 .bizarresexuality.com
 .bizographics.com
+.bkkdown.site
 .bkrtx.com
 .blackamateurfuck.com
 .blackamateursvideos.com
@@ -2463,6 +2485,7 @@ cloud.oracle.com
 .bountyhunterporn.com
 .bowlroll.net
 .bowsersinsidestory.com
+.box57.one
 .boxofficemojo.com
 .boy18tube.com
 .boycall.com
@@ -2555,7 +2578,6 @@ cloud.oracle.com
 .bronto.com
 .brotli.org
 .brourou.com
-.browserleaks.com
 .brutalbdsmtube.com
 .brutalfetish.com
 .bs-adreview.com
@@ -2632,7 +2654,9 @@ cloud.oracle.com
 .bvdinfo.com
 .bvfce6wz.xyz
 .bwh8.net
+.bwh81.net
 .bwh88.net
+.bwh89.net
 .bwin.com
 .bybeatsdre.com
 .bydrebeats.com
@@ -2661,6 +2685,7 @@ cloud.oracle.com
 .callhulu.com
 .calvappd.me
 .cam69.com
+.cambaddies.com
 .cambiaip.org
 .cambridgedigital.net
 .cambridgemaths.org
@@ -2805,12 +2830,12 @@ cloud.oracle.com
 .cdnjs.com
 .cdnlab.live
 .cdnpure.com
-.cds.apple.com.akadns.net
 .cebay.com
 .cegid-cloud.cn
 .ceicdata.com
 .celebforum.co
 .celebgramme.com
+.celebmasta.live
 .celebritygay.com
 .celebritynakeds.com
 .celebrityslips.com
@@ -2904,6 +2929,8 @@ cloud.oracle.com
 .cheapshoesvip.com
 .cheapwireless04.com
 .cheapwirelessbeats.com
+.chegg.com
+.cheggcdn.com
 .chemequations.com
 .chemnetbase.com
 .chengjuanseo.com
@@ -3007,10 +3034,6 @@ cloud.oracle.com
 .ckcdn.com
 .ckck.fun
 .ckss98.com
-.cl1-cdn.origin-apple.com.akadns.net
-.cl3-cdn.origin-apple.com.akadns.net
-.cl4-cdn.origin-apple.com.akadns.net
-.cl5-cdn.origin-apple.com.akadns.net
 .claravenger.com
 .clasporno.org
 .classicnike.com
@@ -3021,7 +3044,6 @@ cloud.oracle.com
 .click-url.com
 .clickserve.cc-dt.com
 .clickserver.googleads.com
-.clientflow.apple.com.akadns.net
 .clincha.cn
 .clinical-videos.com
 .clinicalkey.com
@@ -3045,6 +3067,7 @@ cloud.oracle.com
 .cloudcraze.com
 .cloudcredibility.com
 .cloudflare-dns.com
+.cloudflare-gateway.com
 .cloudflare-quic.com
 .cloudflare.net
 .cloudflareaccess.com
@@ -3053,6 +3076,7 @@ cloud.oracle.com
 .cloudflareclient.com
 .cloudflareinsights.com
 .cloudflareok.com
+.cloudflareportal.com
 .cloudflarepreview.com
 .cloudflareresolve.com
 .cloudflaressl.com
@@ -3063,6 +3087,7 @@ cloud.oracle.com
 .cloudflarewarp.com
 .cloudfront-test.cn
 .cloudfront.cn
+.cloudfront.com
 .cloudhealthtech.com
 .cloudinary.com
 .cloudinary.net
@@ -3076,6 +3101,7 @@ cloud.oracle.com
 .cloudyzgirl.com
 .cloupia.com
 .cloupia.net
+.clubhouse.com
 .clubseventeen.com
 .clubsweethearts.com
 .clubtubes.com
@@ -3159,7 +3185,6 @@ cloud.oracle.com
 .computingreviews.com
 .comsoc.org
 .conair.me
-.configuration.apple.com.akadns.net
 .connect-in-canada.com
 .connectcommerce.cn
 .connectcommerce.info
@@ -3182,6 +3207,7 @@ cloud.oracle.com
 .coolinet.net
 .cooliphonecasesstore.com
 .coolmonster.net
+.coolsexnew.com
 .coomer.party
 .coova.com
 .coova.net
@@ -3292,6 +3318,7 @@ cloud.oracle.com
 .cuckporn.com
 .cuckvideos.com
 .cuckwatchingwife.com
+.cuckwimp.com
 .cuebic.biz
 .cuffiesaldi.com
 .cultoferotica.com
@@ -3407,7 +3434,6 @@ cloud.oracle.com
 .dcard.link
 .dcocsp.cn
 .dctbeatsbydre.com
-.dd-cdn.origin-apple.com.akadns.net
 .ddd-smart.net
 .ddg.co
 .dditsadn.com
@@ -3676,6 +3702,7 @@ cloud.oracle.com
 .dlsitenews.com
 .dlsitestudio.com
 .dlyoutube.com
+.dm-event.net
 .dmed.technology
 .dmm-extension.com
 .dmmapis.com
@@ -3716,6 +3743,7 @@ cloud.oracle.com
 .dnset.com
 .dnsvisa.com
 .dnvod.tv
+.dnvodcdn.me
 .do.co
 .dobbyporn.com
 .doceapower.com
@@ -3744,6 +3772,7 @@ cloud.oracle.com
 .dollarphotosclub.com
 .dollnight.com
 .domywife.com
+.donatecarsoh.org
 .dongtaiwang.com
 .donkeykongcountryreturns.com
 .donkparty.com
@@ -3847,6 +3876,7 @@ cloud.oracle.com
 .dreprobeats.com
 .dreprofy.com
 .driverxxx.com
+.drivevideo.xyz
 .drkogyi.com
 .drmario-world.com
 .dronedj.com
@@ -3893,6 +3923,7 @@ cloud.oracle.com
 .dumpxxx.net
 .dungeonkeeper.cn
 .dungeonkeeper.com
+.duolingo.com
 .duoweiweek.com
 .durex-shopline.com
 .durex.com
@@ -4234,6 +4265,7 @@ cloud.oracle.com
 .entrustdatacard.com
 .epicbrowser.com
 .epicgames.com
+.epicgames.dev
 .epicreads.com
 .epigeum.com
 .epikporn.com
@@ -4655,6 +4687,7 @@ cloud.oracle.com
 .fakehub.com
 .faketaxi.com
 .fakings.com
+.faldgjalg.xyz
 .fameregistry.com
 .family-sex.me
 .familypies.net
@@ -4742,6 +4775,7 @@ cloud.oracle.com
 .favjapaneseporn.com
 .fawgaf.xyz
 .faycbok.com
+.fayuanbooks.com
 .fb.careers
 .fbacebook.com
 .fbbmarket.com
@@ -4871,6 +4905,7 @@ cloud.oracle.com
 .fiotolia.com
 .fire-emblem-heroes.com
 .firebase-settings.crashlytics.com
+.firebase.com
 .firebaseapp.com
 .firech.at
 .fireemblemawakening.com
@@ -4940,6 +4975,7 @@ cloud.oracle.com
 .fontshop.com
 .fontsinuse.com
 .foofle.com
+.footprintdns.com
 .footseen.com
 .footstockings.com
 .forbes.com
@@ -4947,6 +4983,7 @@ cloud.oracle.com
 .forbiddenasian.com
 .forbiddenmomsarchive.com
 .force.com
+.forduck.cyou
 .forgecdn.net
 .forhertube.com
 .fortawesome.com
@@ -5134,6 +5171,7 @@ cloud.oracle.com
 .freebigmovies.com
 .freebs.com
 .freebsd.org
+.freecamsfan.com
 .freecamstars.com
 .freecartoons.biz
 .freechatnow.com
@@ -5234,6 +5272,7 @@ cloud.oracle.com
 .fucktube.com
 .fuckvideos.biz
 .fuhouse.club
+.fukzr1.cc
 .fulanax.com
 .fuli3.net
 .fulib711.shop
@@ -5242,6 +5281,7 @@ cloud.oracle.com
 .fulldesisex.com
 .fullfuli.com
 .fullhdxxx.com
+.fullpornnetwork.com
 .fullsexmovs.com
 .fullstory.com
 .fullxxxmovies.net
@@ -5469,6 +5509,7 @@ cloud.oracle.com
 .girlsdelta.com
 .girlsfuck-tube.com
 .girlsheaven-job.net
+.girlsnudepic.com
 .girlsofdesire.org
 .girlsongirlstube.com
 .girlspoopingtube.com
@@ -5690,8 +5731,6 @@ cloud.oracle.com
 .grupobmw.com
 .gscanada.info
 .gsccdn.com
-.gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net
-.gspe19-cn.ls-apple.com.akadns.net
 .gstatic-cn.com
 .gstaticcnapps.cn
 .gsuite.com
@@ -5708,6 +5747,7 @@ cloud.oracle.com
 .guccitimeless.com
 .guifw.xyz
 .guifw2.top
+.guochantube.com
 .guochanw.life
 .guruofporn.com
 .guysnightlife.com
@@ -5794,6 +5834,7 @@ cloud.oracle.com
 .hbogo.com
 .hbogoasia.com
 .hbogoasia.hk
+.hbomax-images.warnermediacdn.com
 .hbomax.com
 .hbomaxcdn.com
 .hbonow.com
@@ -5852,10 +5893,12 @@ cloud.oracle.com
 .heavyfetish.com
 .hebiphone.com
 .hegre.com
+.heijidi.life
 .heinonline.org
 .helloavgirls.com
 .hellokittybeats.com
 .hellosmartbook.com
+.hellporno.com
 .hellven.net
 .hentai-ani.me
 .hentai-archive.com
@@ -5901,6 +5944,7 @@ cloud.oracle.com
 .hentaibar.com
 .hentaiblue.com
 .hentaibros.com
+.hentaicity.com
 .hentaicloud.com
 .hentaiclub.net
 .hentaicomics.life
@@ -6078,6 +6122,7 @@ cloud.oracle.com
 .homemadeanalporn.com
 .homemadefucktube.com
 .homemadepornclip.com
+.homemadeporntubes.com
 .homemadevids.net
 .homemoviestube.com
 .homephoneplus.com
@@ -6085,8 +6130,12 @@ cloud.oracle.com
 .homepornbay.com
 .homepornking.com
 .homepornvideo.net
+.homesexmade.com
 .honawalaan.com
 .honestpornreviews.com
+.hongjie10.xyz
+.hongjie11.xyz
+.hongkongdollvideo.org
 .hongmaodan100.com
 .honkaistarrail.com
 .hoodamateurs.com
@@ -6137,6 +6186,7 @@ cloud.oracle.com
 .hotmail.net
 .hotmail.org
 .hotmonsterbeats.com
+.hotmovies.com
 .hotmovs.com
 .hotntubes.com
 .hotnudegirls.net
@@ -6314,6 +6364,7 @@ cloud.oracle.com
 .huarenporn.com
 .huashundg.com
 .huati.cc
+.huaxin-lls.xyz
 .hubblephone.com
 .huffpost.com
 .huffpostarabi.com
@@ -6363,6 +6414,7 @@ cloud.oracle.com
 .hxc10.vip
 .hxcsxs.pro
 .hxdoll.com
+.hxxn12.top
 .hycgm1324.shop
 .hyperdreams.com
 .hypnohub.net
@@ -6384,6 +6436,7 @@ cloud.oracle.com
 .iamakamai.net
 .iamremarkable.org
 .iana.org
+.iavnight.com
 .ib.metapix.net
 .ibb.co
 .ibeats-uk.com
@@ -6402,7 +6455,6 @@ cloud.oracle.com
 .ichigocandy.com
 .ichineseporn.com
 .icloud-apple.cn
-.icloud-cdn.icloud.com.akadns.net
 .icloud-content.com
 .icloud-isupport.com
 .icloud.com
@@ -6538,8 +6590,6 @@ cloud.oracle.com
 .imagecurl.com
 .imagecurl.org
 .imagepost.com
-.images.apple.com.akadns.net
-.images.apple.com.edgekey.net.globalredir.akadns.net
 .imageshack.com
 .imagetwist.com
 .imageworks.com
@@ -6616,9 +6666,6 @@ cloud.oracle.com
 .ingyenszexvideo.top
 .inhumanity.com
 .inikesneakers.com
-.init-p01md-lb.push-apple.com.akadns.net
-.init-p01st-lb.push-apple.com.akadns.net
-.init-s01st-lb.push-apple.com.akadns.net
 .init.shop
 .initiummall.com
 .initproducts.com
@@ -6863,7 +6910,6 @@ cloud.oracle.com
 .itunbes.com
 .ituneas.com
 .itunes-apple.cn
-.itunes-apple.com.akadns.net
 .itunes-radio.net
 .itunes.co
 .itunes.com
@@ -7157,6 +7203,9 @@ cloud.oracle.com
 .justporn.link
 .justswallows.com
 .justusboys.com
+.juyangbee.xyz
+.juyangto.info
+.juzige.xyz
 .jvid.com
 .jwkcgd.xyz
 .jwpcdn.com
@@ -7166,6 +7215,7 @@ cloud.oracle.com
 .k9vidz.com
 .kaamuu.com
 .kaggle.com
+.kaggle.net
 .kaggleusercontent.com
 .kairakudoujin.net
 .kakaocorp.com
@@ -7307,6 +7357,7 @@ cloud.oracle.com
 .lanasbigboobs.com
 .langsuirs.com
 .lanternal.com
+.laosijifuli9009.top
 .laowang.vip
 .laracasts.com
 .largecamtube.com
@@ -7355,8 +7406,10 @@ cloud.oracle.com
 .legra.ph
 .legsex.com
 .lelavement.com
+.leliao1.com
 .lemoncams.com
 .lencr.org
+.lenporno.red
 .lepoint.fr
 .leporno.org
 .lepornochaud.com
@@ -7461,6 +7514,7 @@ cloud.oracle.com
 .littleasians.com
 .littlesexdolls.com
 .litv.tv
+.liuhefabu.club
 .liveauction.com
 .livecamclips.com
 .livehdcams.com
@@ -7482,6 +7536,7 @@ cloud.oracle.com
 .llnw.com
 .llnw.net
 .llnwi.net
+.llwht88.xyz
 .lmmbtc.com
 .lnstagram-help.com
 .loanbuilder.com
@@ -7543,16 +7598,24 @@ cloud.oracle.com
 .lovesexdurex.com
 .lovethiscity.com
 .lowergiseries.com
+.lowiro.com
 .lp99.pw
 .lqh0bon3.xyz
+.lrysgee.xyz
 .lsawards.com
 .lsj2.shop
 .lsj40.xyz
+.lsjfuli308.xyz
 .lsnzxzy1.com
 .lspimg.com
 .lss55.com
 .ltube.life
+.lu2100.com
+.lu2200.com
+.lu23.com
+.lu2300.cc
 .lua.org
+.luanlunmv.cc
 .lubetube.com
 .lucahmelayu.club
 .lucasentertainment.com
@@ -7568,6 +7631,8 @@ cloud.oracle.com
 .lustylist.com
 .luticlip.com
 .luvmov.com
+.luw666.xyz
+.luw666cm.cc
 .luxuretv.com
 .luxuretv.fun
 .lxxlxx.com
@@ -7619,8 +7684,11 @@ cloud.oracle.com
 .maddenseason.info
 .maddenseason.net
 .maddenseason.org
+.madhomemadeporn.com
 .madou.club
 .madouav.one
+.madouzx.monster
+.madouzx.top
 .madpeople.net
 .madshi.net
 .madvagina.com
@@ -7750,8 +7818,10 @@ cloud.oracle.com
 .mat6tube.com
 .mathoverflow.net
 .matters.one
+.matters.town
 .mature-amateur-sex.com
 .mature-porn-flix.com
+.matureclub.com
 .maturefuck.cc
 .matureladiesxxx.com
 .matureporner.com
@@ -7787,6 +7857,8 @@ cloud.oracle.com
 .mdn.dev
 .mdn.mozit.cloud
 .mdnkids.com
+.mdnplay.dev
+.mdnyalp.dev
 .mdpi.com
 .me-gay.com
 .meadjohnson.com
@@ -7831,8 +7903,6 @@ cloud.oracle.com
 .meridian.net
 .messengerdevelopers.com
 .messytube.com
-.mesu-cdn.apple.com.akadns.net
-.mesu-china.apple.com.akadns.net
 .met-nude.com
 .meta.com
 .metacloud.com
@@ -8095,6 +8165,7 @@ cloud.oracle.com
 .mmaaxx.com
 .mmdnn.com
 .mmonsterheadphones.net
+.mmtv.life
 .mncmsidlab1.cn
 .moapi.site
 .moapi1.club
@@ -8158,6 +8229,7 @@ cloud.oracle.com
 .monitoring.qpdp1.net
 .monitrix.net
 .mono-project.com
+.mono33.top
 .monotype.com
 .monotypeimaging.com
 .monster-beats-by-dr-dre.com
@@ -8249,6 +8321,7 @@ cloud.oracle.com
 .movidius.com
 .movidius.net
 .movie-erog.com
+.movie1000.xyz
 .moviepost.com
 .moviesanywhere.com
 .moviesarena.com
@@ -8336,6 +8409,7 @@ cloud.oracle.com
 .muncloud.dog
 .muryouav.net
 .musclegirlflix.com
+.mushroomtrack.com
 .musicbay.net
 .musickit.net
 .musixmatch.com
@@ -8356,6 +8430,7 @@ cloud.oracle.com
 .my9nj.com
 .myaccountglobalcash.com
 .myamateurgirls.net
+.myamateurtv.com
 .myanmar-porn.com
 .myappleid.com
 .myatos.net
@@ -8454,6 +8529,8 @@ cloud.oracle.com
 .mypornvid.fun
 .mypornwap.fun
 .myq2.com
+.myqnapcloud.cn
+.myqnapcloud.com
 .myrewardzone.com
 .myrimmingporn.com
 .myrz.com
@@ -8504,6 +8581,7 @@ cloud.oracle.com
 .naked.com
 .nakedamateurmilf.com
 .nakedasiansex.com
+.nakedgirlpic.com
 .nakedgirls.biz
 .nakedmodelsxxx.com
 .nakednews.com
@@ -8915,6 +8993,7 @@ cloud.oracle.com
 .nudekenya.com
 .nudelive.com
 .nudematurewomenpics.com
+.nudemilfporn.com
 .nudes7.com
 .nudespree.com
 .nudeteen.org
@@ -8981,7 +9060,6 @@ cloud.oracle.com
 .obutsumania.com
 .ocbmwdealers.com
 .ocsp-certum.com
-.ocsp-lb.apple.com.akadns.net
 .ocsp-responder.com
 .oculus-china.com
 .oculus2014.com
@@ -9027,6 +9105,7 @@ cloud.oracle.com
 .oldje.com
 .olehd.com
 .olelive.com
+.olemovienews.com
 .olevodtv.com
 .oli-school.com
 .omafotze.com
@@ -9055,6 +9134,8 @@ cloud.oracle.com
 .onefifteen.net
 .onefifteen.org
 .onejapanese.com
+.onekey-asset.com
+.onekeycn.com
 .onepornlist.com
 .onesiterip.com
 .oneworldmanystories.com
@@ -9096,6 +9177,7 @@ cloud.oracle.com
 .onsaletrend.com
 .onstream.cc
 .onxxxtube.com
+.onxxxvideo.com
 .ooni.org
 .op7979.com
 .openamt.com
@@ -9108,6 +9190,7 @@ cloud.oracle.com
 .opengraphprotocol.org
 .opengw.net
 .openjsf.org
+.openlibrary.org
 .openmaps.org
 .openresty.org
 .opensource.guide
@@ -9151,7 +9234,6 @@ cloud.oracle.com
 .orsm.net
 .orzqwq.com
 .osakamotion.net
-.oscdn.origin-apple.com.akadns.net
 .osdn.net
 .osiri-suki-club.com
 .osm.org
@@ -9174,6 +9256,8 @@ cloud.oracle.com
 .oss-us-east-1.aliyuncs.com
 .oss-us-west-1.aliyuncs.com
 .otaku-168.com
+.otaku18a.info
+.otaku55.xyz
 .otbm.com
 .otokonokoland.com
 .oudoll.com
@@ -9215,6 +9299,7 @@ cloud.oracle.com
 .pacifickitchenandhome.com
 .packagist.org
 .pacloudflare.com
+.paerosnen.club
 .page2rss.com
 .page3.com
 .pagecdn.com
@@ -9478,6 +9563,7 @@ cloud.oracle.com
 .petiteamateurteen.com
 .petiteballerinasfucked.com
 .petitehdporn.com
+.pgyy67.top
 .phantomjs.org
 .pheonix.money
 .phimsex47.club
@@ -9515,6 +9601,8 @@ cloud.oracle.com
 .pifpafarabia.com
 .pigav.com
 .pikabu.monster
+.pikpak.me
+.pikpakdrive.com
 .pillbeatsblackfridaysale.com
 .pinduck.com
 .pinflix.com
@@ -9593,11 +9681,14 @@ cloud.oracle.com
 .pobl-content.com
 .pocketbiketrader.com
 .pocketcasts.com
+.poe.com
 .poecdn.net
 .pogo.com
 .pogobeta.com
 .poi.moe
 .poisontube.com
+.pojiefuli20033.xyz
+.pojiefuli9113.xyz
 .pokedex3d.com
 .pokemon-moon.com
 .pokemon-sun.com
@@ -9683,6 +9774,7 @@ cloud.oracle.com
 .porncomics.me
 .porncomixonline.net
 .porncore.net
+.porncoven.com
 .porncrash.com
 .porndabster.com
 .porndeals.com
@@ -9769,6 +9861,7 @@ cloud.oracle.com
 .pornkai.com
 .pornkind.net
 .pornking.fun
+.pornkino.cc
 .pornkro.com
 .pornktube.com
 .pornky.com
@@ -9829,6 +9922,7 @@ cloud.oracle.com
 .pornogramxxx.com
 .pornogrund.com
 .pornoh.info
+.pornohd.blue
 .pornohd.plus
 .pornohut.info
 .pornohutdeutsch.net
@@ -9908,6 +10002,7 @@ cloud.oracle.com
 .porntube.com
 .porntubenews.com
 .porntubent.com
+.porntv.com
 .porntvblog.com
 .pornultras.com
 .pornv.org
@@ -10022,8 +10117,8 @@ cloud.oracle.com
 .privatecasting-x.com
 .privateclassics.com
 .privatemarketplaces.net
+.privatevoyeurvideos.com
 .proctoscopeexam.com
-.prod-support.apple-support.akadns.net
 .prodrive-japan.com
 .profreeporno.com
 .projectapex.com
@@ -10127,11 +10222,14 @@ cloud.oracle.com
 .qingenporn.net
 .qingse.one
 .qkjuyet.com
+.qlinkto.cn
 .qmap.pub
 .qmov.com
 .qmov.net
 .qmttqg3k.me
+.qnap.com
 .qombol.com
+.qooqlevideo.com
 .qorno.com
 .qprize.com
 .qpx.googleflights.net
@@ -10207,6 +10305,7 @@ cloud.oracle.com
 .rarbgto.org
 .rarbgunblock.com
 .rarbgunblock.org
+.rarbgunblocked.org
 .rarbgway.org
 .raspberrypi.org
 .raspbian.org
@@ -10311,6 +10410,7 @@ cloud.oracle.com
 .redkix.com
 .redlightcenter.com
 .redmatureporn.com
+.redpornpictures.com
 .redsexhub.com
 .redteenporn.com
 .redtub3xxx.com
@@ -10376,6 +10476,7 @@ cloud.oracle.com
 .riotpoints.com
 .risextube.com
 .rk.com
+.rlczdo.xyz
 .rm2029.com
 .ro89.com
 .road-crew.com
@@ -10401,6 +10502,7 @@ cloud.oracle.com
 .rootsigning.com
 .rosemarydoll.com
 .rou.video
+.roughebonysex.com
 .roughman.net
 .route53.cn
 .routerboard.com
@@ -10488,6 +10590,8 @@ cloud.oracle.com
 .sanspo.com
 .sanvaras.com
 .sanwapub.com
+.saoni91.xyz
+.saonidh01.cc
 .sapphicerotica.com
 .sapphicpornonly.com
 .sarajevopodopsadom.com
@@ -10575,6 +10679,7 @@ cloud.oracle.com
 .seaporn.org
 .secomtrust.net
 .secret-flirt-hub.com
+.secretubes.com
 .sectigo.com
 .secure-paypal.info
 .securepaypal.info
@@ -10590,6 +10695,7 @@ cloud.oracle.com
 .sehuatang.net
 .seiroganmania.com
 .seiron-sankei.com
+.sekai.colorfulpalette.org
 .selectanescort.com
 .selectyourgame.com
 .selfloversworld.com
@@ -10789,6 +10895,7 @@ cloud.oracle.com
 .sgp.file.myqcloud.com
 .sgp1.fun
 .sh-xuxingda.com
+.sh83.xyz
 .shadbase.com
 .shadowcomplex.com
 .shadowslaves.com
@@ -10820,6 +10927,7 @@ cloud.oracle.com
 .shemaletrannypics.com
 .shemaletube.pro
 .shemaletubevideos.com
+.shenyuncreations.com
 .shenzhoufilm.com
 .shequ8.cam
 .shequdaohang.com
@@ -10870,9 +10978,11 @@ cloud.oracle.com
 .showtime.com
 .showtimeanytime.com
 .showybeauty.com
+.shrkurl.com
 .shufflesex.com
 .shuziyimin.org
 .shyav.com
+.shymysex.com
 .shywifeswap.com
 .sibreal.org
 .siege-amazon.com
@@ -10908,6 +11018,7 @@ cloud.oracle.com
 .sipriyearbook.org
 .sirenxxxstudios.com
 .siri.com
+.siscache.com
 .sisisl.com
 .siska.video
 .sislovesme.com
@@ -10932,11 +11043,9 @@ cloud.oracle.com
 .skyassets.com
 .skydweller.cn
 .skyoceanrescue.com
-.skype-edf.akadns.net
 .skype.net
 .skypeassets.com
 .skypeassets.net
-.skypedata.akadns.net
 .skyporn.online
 .skysports.com
 .skysportsonline.com
@@ -10993,6 +11102,7 @@ cloud.oracle.com
 .sneaker666.com
 .sneakerpage.net
 .sneakerskick.com
+.snjulebu.com
 .snowmiku.com
 .soasta-dswb.com
 .socalbmw.com
@@ -11101,6 +11211,8 @@ cloud.oracle.com
 .spraynwash.com
 .spreadporn.org
 .spreadprivacy.com
+.spring06.top
+.spring13.top
 .springernature.com
 .sprinklesapp.com
 .spyjinx.com
@@ -11131,9 +11243,6 @@ cloud.oracle.com
 .sssjav.com
 .sssuo1.xyz
 .ssx3.com
-.st.dl.bscstorage.net
-.st.dl.eccdnx.com
-.st.dl.pinyuncloud.com
 .stackage.org
 .stackapps.com
 .stackauth.com
@@ -11208,12 +11317,9 @@ cloud.oracle.com
 .stockagainstphotography.com
 .stocking-tease.com
 .stockingfetishvideo.com
-.stocks-sparkline-lb.apple.com.akadns.net
 .stonefoxlingerie.com
 .stonefoxproductions.com
 .store-bridgestonesports.com
-.store.apple.com.edgekey.net.globalredir.akadns.net
-.store.storeimages.apple.com.akadns.net
 .storesense.com
 .storiesonline.net
 .storyful.com
@@ -11289,7 +11395,6 @@ cloud.oracle.com
 .superuser.com
 .supjav.com
 .supplybestjerseys.com
-.support-china.apple-support.akadns.net
 .supportfacebook.com
 .supremacy.com
 .supremacy.net
@@ -11315,8 +11420,6 @@ cloud.oracle.com
 .swapsmut.com
 .sway-cdn.com
 .sway.com
-.swcatalog-cdn.apple.com.akadns.net
-.swdist.apple.com.akadns.net
 .sweetadult-tube.com
 .sweetmlif.net
 .sweetsext.com
@@ -11347,7 +11450,6 @@ cloud.oracle.com
 .swjfo.com
 .swoosh.com
 .swpr.livedoor.blog
-.swscan-cdn.apple.com.akadns.net
 .swtor.com
 .swtor.net
 .sxarab.top
@@ -11385,6 +11487,7 @@ cloud.oracle.com
 .taptotokyo.com
 .taradinhos.com
 .targetimg1.com
+.tasexy.com
 .tasexy.top
 .tastyblacks.com
 .tati-log.com
@@ -11422,6 +11525,7 @@ cloud.oracle.com
 .teengirlfriendtube.com
 .teenporngallery.net
 .teenport.com
+.teenpussypicture.com
 .teenqueens.net
 .teenrave.org
 .teensex.me
@@ -11604,6 +11708,7 @@ cloud.oracle.com
 .thomsonreutersmexico.com
 .thottok.com
 .thotvids.com
+.threads.net
 .thrixxx.com
 .thtmod1.com
 .thumbnailseries.com
@@ -11612,6 +11717,7 @@ cloud.oracle.com
 .thz7.net
 .thzu.cc
 .tianbiav10.com
+.tiantang.today
 .tiava.com
 .tiava1.com
 .tiaz.site
@@ -11631,6 +11737,7 @@ cloud.oracle.com
 .timelinestoryteller.com
 .timesmembership.com
 .timestalks.com
+.timi1.me
 .timo0.com
 .tinhduc.org
 .tiny4k.com
@@ -11644,6 +11751,8 @@ cloud.oracle.com
 .tittykings.com
 .tjsbfj.com
 .tkb008.xyz
+.tkb2233.life
+.tkbqf2.life
 .tktube.com
 .tnatryouts.com
 .tnntoday.com
@@ -11706,6 +11815,7 @@ cloud.oracle.com
 .topxxxpornvids.com
 .topyoungporn.com
 .torcidadeouro.com
+.toroporno.com
 .torrentleen.com
 .torrindex.net
 .totalmateria.com
@@ -11717,6 +11827,7 @@ cloud.oracle.com
 .touhouwiki.net
 .tourporno.com
 .toutapp.com
+.toutoupa1024.fun
 .towerauction.com
 .townofsins.com
 .tpornstars.com
@@ -11900,6 +12011,7 @@ cloud.oracle.com
 .u3c3.com
 .u9a9.cc
 .u9a9.com
+.uaa.com
 .uber-assets.com
 .uber.com
 .ubereats.com
@@ -12021,9 +12133,9 @@ cloud.oracle.com
 .vaginacontest.com
 .vaginal-ultrasound.com
 .vaginalultrasound.info
+.vaginapics.pro
 .vagrantcloud.com
 .vagrantup.com
-.valid.origin-apple.com.akadns.net
 .valoryirene.com
 .valuegb.com
 .vanish.cn
@@ -12162,12 +12274,14 @@ cloud.oracle.com
 .vimeostatus.com
 .vintage-erotica-forum.com
 .vintageamateurporn.com
+.vintagehomemadesex.com
 .vintagemedicalpictures.com
 .vintagexxxfilms.com
 .vip-beats.com
 .vipbeatsbydre.com
 .vipheadphones.com
 .vipissy.com
+.vipmatureporn.com
 .vipshoes2.com
 .vipstudiocali.com
 .viralcum.com
@@ -12177,6 +12291,7 @@ cloud.oracle.com
 .virsto.net
 .virtualearth.net
 .virtualpartyworld.com
+.virtualporn.com
 .virtualrealgay.com
 .virtualrealporn.com
 .virtualrealtrans.com
@@ -12323,6 +12438,7 @@ cloud.oracle.com
 .voxfieldguide.com
 .voxmedia.com
 .voxops.net
+.voyeureye.com
 .voyeurhit.com
 .voyeurhouse.com
 .voyeurmonkey.com
@@ -12359,6 +12475,7 @@ cloud.oracle.com
 .vulgarx.com
 .vxnbbrs.xyz
 .vxxsred.xyz
+.w-mt.co
 .w.wiki
 .w0512.com
 .w6un.com
@@ -12368,6 +12485,7 @@ cloud.oracle.com
 .wal.co
 .wallet.com
 .walmart-content.com
+.walmart.cn
 .walmart.com
 .walmart.pharmacy
 .walmartimages.com
@@ -12414,7 +12532,6 @@ cloud.oracle.com
 .wdc.com
 .wdfiles.com
 .weareebay.com
-.weather-data.apple.com.akadns.net
 .weav.xyz
 .web-instagram.net
 .web.app
@@ -12449,6 +12566,7 @@ cloud.oracle.com
 .wetandpuffy.com
 .wetchicks.org
 .wetnhorny.com
+.wetsextube.com
 .wfm.com
 .what-fan.net
 .whatboyswant.com
@@ -12499,6 +12617,7 @@ cloud.oracle.com
 .whynotbi.com
 .wife-home-videos.com
 .wifehomeporn.com
+.wifeinlove.com
 .wifeinterracialfuck.com
 .wifeloversporn.com
 .wifemovies.net
@@ -12633,7 +12752,6 @@ cloud.oracle.com
 .www-facebook.com
 .www-paypal.info
 .www-sms-apple.com
-.www.apple.com.edgekey.net.globalredir.akadns.net
 .www.destinationurl.com
 .www.pxcc.com
 .www8-hp.com
@@ -12712,6 +12830,7 @@ cloud.oracle.com
 .xcg123.com
 .xchina.co
 .xchina.fun
+.xcum.com
 .xda-cdn.com
 .xdir.vip
 .xdporner.com
@@ -12742,8 +12861,10 @@ cloud.oracle.com
 .xiaofu.me
 .xiaogirls.com
 .xiaoyaoge.xyz
+.xie56.xyz
 .xindelu.com
 .xinfhw.com
+.xing66.life
 .xingrz.me
 .xinmeitulu.com
 .xiti.com
@@ -12946,6 +13067,7 @@ cloud.oracle.com
 .xxxclub.club
 .xxxcomics.org
 .xxxdan.com
+.xxxdesi.cc
 .xxxdinotube.com
 .xxxengine.net
 .xxxfile.org
@@ -12973,6 +13095,7 @@ cloud.oracle.com
 .xxxland.net
 .xxxlesbians.me
 .xxxlucah.com
+.xxxmaturepussypics.com
 .xxxmatures.net
 .xxxmofo.com
 .xxxmomporn.tube
@@ -13001,6 +13124,7 @@ cloud.oracle.com
 .xxxshame.com
 .xxxstreams.org
 .xxxstreams.watch
+.xxxteenanal.net
 .xxxtube1.com
 .xxxtubeasian.net
 .xxxtubedot.com
@@ -13048,6 +13172,7 @@ cloud.oracle.com
 .yandex.org
 .yandex.ru
 .yandexcloud.net
+.yaohubaba.com
 .yaoimangaonline.com
 .yaoiotaku.com
 .yaoyaomumu.com
@@ -13057,6 +13182,8 @@ cloud.oracle.com
 .yasarang.net
 .yatong.info
 .yavtube.com
+.yaya.cyou
+.yayadizhi.xyz
 .yazhouse8.com
 .yeonda.com
 .yepporn.com
@@ -13076,6 +13203,7 @@ cloud.oracle.com
 .yinac5.top
 .yingpianqu.com
 .yinmh.com
+.yinshuiger.info
 .yiqiedoushiganggangkaishi.org
 .yiqilai99.cn
 .yjcontentdelivery.com
@@ -13135,6 +13263,7 @@ cloud.oracle.com
 .yourporngod.com
 .yoursigmoidoscopy.com
 .yourspeculumexam.com
+.yourupskirt.com
 .yourvoyeurvideos.com
 .yourwifemymeat.com
 .yourxxxvideos.pro
@@ -13209,10 +13338,12 @@ cloud.oracle.com
 .yunlaopo.cc
 .yunlaopo.com
 .yunlaopo.net
+.yusercontent.com
 .yusjb.com
 .ywbclx.top
 .ywoos.com
 .yximg.cn
+.yyfb.cyou
 .yzld188.top
 .z.cn
 .z00.world
@@ -13834,6 +13965,7 @@ cloud.oracle.com
 .berlinerbericht.de
 .berm.co.nz
 .bestforchina.org
+.bestgore.com
 .bestvpn.com
 .bestvpnanalysis.com
 .bestvpnserver.com
@@ -14298,6 +14430,7 @@ cloud.oracle.com
 .clinica-tibet.ru
 .clipfish.de
 .cloakpoint.com
+.cloud.cupronickel.goog
 .cloudcone.com
 .cloudflare-ipfs.com
 .cloudflare.com
@@ -14580,6 +14713,7 @@ cloud.oracle.com
 .djangosnippets.org
 .djorz.com
 .dl-laby.jp
+.dler.io
 .dlive.tv
 .dlsite.com
 .dlsite.jp
@@ -15384,6 +15518,7 @@ cloud.oracle.com
 .greenreadings.com
 .greenvpn.net
 .greenvpn.org
+.grindr.com
 .grotty-monday.com
 .gs-discuss.com
 .gsearch.media
@@ -15778,6 +15913,7 @@ cloud.oracle.com
 .imb.org
 .imdb.com
 .img.ly
+.imgasd.com
 .imgchili.net
 .imgmega.com
 .imgur.com
@@ -15874,7 +16010,6 @@ cloud.oracle.com
 .israbox.com
 .issuu.com
 .istars.co.nz
-.istarshine.com
 .istef.info
 .istiqlalhewer.com
 .istockphoto.com
@@ -16991,6 +17126,7 @@ cloud.oracle.com
 .overcast.fm
 .overdaily.org
 .overplay.net
+.oversea.istarshine.com
 .ovi.com
 .ovpn.com
 .ow.ly
@@ -17164,7 +17300,6 @@ cloud.oracle.com
 .podbean.com
 .podcast.co
 .podictionary.com
-.poe.com
 .pokemon.com
 .pokerstars.com
 .pokerstars.net
@@ -17668,6 +17803,7 @@ cloud.oracle.com
 .sis001.us
 .site2unblock.com
 .site90.net
+.sitebro.tw
 .sitekreator.com
 .sitemaps.org
 .six-degrees.io
@@ -18958,6 +19094,7 @@ cloud.oracle.com
 .xiaohexie.com
 .xiaolan.me
 .xiaoma.org
+.xiaomi.eu
 .xiaxiaoqiang.net
 .xiezhua.com
 .xihua.es

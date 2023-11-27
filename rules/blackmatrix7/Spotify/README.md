@@ -12,17 +12,17 @@ Spotify规则由《RULE GENERATOR 规则生成器》自动生成。
 
 ## 规则统计
 
-最后更新时间：2023-07-20 23:22:32
+最后更新时间：2023-11-24 10:37:35
 
 各类型规则统计：
 | 类型 | 数量(条)  | 
 | ---- | ----  |
-| DOMAIN | 5  | 
+| DOMAIN | 6  | 
 | DOMAIN-KEYWORD | 2  | 
 | DOMAIN-SUFFIX | 19  | 
 | IP-CIDR | 2  | 
 | PROCESS-NAME | 1  | 
-| TOTAL | 29  | 
+| TOTAL | 30  | 
 
 
 ## Clash 
@@ -75,6 +75,7 @@ https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_scri
 - https://rules.kr328.app/spotify-ads.yaml
 - https://rules.kr328.app/spotify.yaml
 - https://rules.kr328.app/spotify-ads@ads.yaml
+- https://ruleset.isagood.day/spotify.conf
 
 
 感谢以上规则作者的辛勤付出（排名不分先后）。

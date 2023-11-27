@@ -1,7 +1,7 @@
 # NAME: IPTVOther
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2023-07-20 23:25:18
+# UPDATED: 2023-11-24 10:40:35
 # DOMAIN: 2328
 # IP-CIDR: 516
 # TOTAL: 2844
@@ -16,6 +16,7 @@ payload:
   - DOMAIN,106a0d4b0.vws.vegacdn.vn
   - DOMAIN,10tv.lincoln.ne.gov
   - DOMAIN,1111296894.rsc.cdn77.org
+  - DOMAIN,120play.longyuandingyi.com
   - DOMAIN,123tv-mx1.flex-cdn.net
   - DOMAIN,123tv.cdn.ses-ps.com
   - DOMAIN,156zy.suyunbo.tv
@@ -600,7 +601,6 @@ payload:
   - DOMAIN,dcunilive38-lh.akamaihd.net
   - DOMAIN,dcunilive83-lh.akamaihd.net
   - DOMAIN,dcunilive93-lh.akamaihd.net
-  - DOMAIN,de1cdn.plusx.tv
   - DOMAIN,de1se01.v2beat.live
   - DOMAIN,dee7mwgg9dzvl.cloudfront.net
   - DOMAIN,demandafrica-klowdtv.amagi.tv
@@ -648,7 +648,6 @@ payload:
   - DOMAIN,eco.streams.ovh
   - DOMAIN,ecuastreamhd.com
   - DOMAIN,ed1ov.live.opencaster.com
-  - DOMAIN,edge-hls.doppiocdn.com
   - DOMAIN,edge-ind.inapcdn.in
   - DOMAIN,edge-live-ger1.ovstream.com
   - DOMAIN,edge-telia1.tiesraides.lv
@@ -1299,6 +1298,7 @@ payload:
   - DOMAIN,livetvsteam.com
   - DOMAIN,livevideo.infomaniak.com
   - DOMAIN,lonestar-rakuten.amagi.tv
+  - DOMAIN,long.longyuandingyi.com
   - DOMAIN,loop-90s-1.roku.wurl.com
   - DOMAIN,loop-country-1.roku.wurl.com
   - DOMAIN,loop-hip-hop-1.roku.wurl.com

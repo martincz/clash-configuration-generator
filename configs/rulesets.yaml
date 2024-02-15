@@ -16,7 +16,7 @@
 # China
 - name: "China" 
   group: "DIRECT"
-  ruleset: "rules/blackmatrix7/China/China.yaml"
+  ruleset: "rules/blackmatrix7/China/China_Classical.yaml"
 
 # AsianMedia
 - name: "AsianMedia" 
@@ -26,12 +26,12 @@
 # GlobalMedia
 - name: "GlobalMedia"
   group: "GlobalMedia"
-  ruleset: "rules/blackmatrix7/GlobalMedia/GlobalMedia.yaml"
+  ruleset: "rules/blackmatrix7/GlobalMedia/GlobalMedia_Classical.yaml"
 
 # Apple
 - name: "Apple" 
   group: "Apple"
-  ruleset: "rules/blackmatrix7/Apple/Apple.yaml"
+  ruleset: "rules/blackmatrix7/Apple/Apple_Classical.yaml"
 
 # AppleTV
 - name: "AppleTV"

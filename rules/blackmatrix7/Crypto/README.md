@@ -12,25 +12,27 @@ Crypto规则由《RULE GENERATOR 规则生成器》自动生成。
 
 ## 规则统计
 
-最后更新时间：2023-11-24 10:40:39
+最后更新时间：2024-02-03 01:49:22
 
 各类型规则统计：
 | 类型 | 数量(条)  | 
 | ---- | ----  |
 | DOMAIN | 1  | 
 | DOMAIN-KEYWORD | 4  | 
-| DOMAIN-SUFFIX | 194  | 
+| DOMAIN-SUFFIX | 195  | 
 | PROCESS-NAME | 3  | 
-| TOTAL | 202  | 
+| TOTAL | 203  | 
 
 
 ## Clash 
 
 #### 使用说明
 - Crypto.yaml，请使用 behavior: "classical"。
+- Crypto_Resolve.yaml，请使用 behavior: "classical"。
 
 #### 配置建议
 - Crypto.yaml 单独使用。
+- Crypto_Resolve.yaml 单独使用。
 
 #### 规则链接
 **MASTER分支 (每日更新)**

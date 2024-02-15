@@ -1,10 +1,10 @@
-# 🧸 中信银行
+# 🧸 Oracle
 
 ## 前言
 
 ![](https://shields.io/badge/-移除重复规则-ff69b4) ![](https://shields.io/badge/-DOMAIN与DOMAIN--SUFFIX合并-green) ![](https://shields.io/badge/-DOMAIN--SUFFIX间合并-critical) ![](https://shields.io/badge/-DOMAIN--SUFFIX与DOMAIN--KEYWORD合并-blue) ![](https://shields.io/badge/-IP--CIDR(6)合并-blueviolet) 
 
-中信银行规则由《RULE GENERATOR 规则生成器》自动生成。
+Oracle规则由《RULE GENERATOR 规则生成器》自动生成。
 
 分流规则是互联网公共服务的域名和IP地址汇总，所有数据均收集自互联网公开信息，不代表我们支持或使用这些服务。
 
@@ -12,7 +12,7 @@
 
 ## 规则统计
 
-最后更新时间：2023-11-24 10:38:23
+最后更新时间：2024-02-03 01:47:29
 
 各类型规则统计：
 | 类型 | 数量(条)  | 
@@ -24,35 +24,37 @@
 ## Clash 
 
 #### 使用说明
-- CITIC.yaml，请使用 behavior: "classical"。
+- Oracle.yaml，请使用 behavior: "classical"。
+- Oracle_Resolve.yaml，请使用 behavior: "classical"。
 
 #### 配置建议
-- CITIC.yaml 单独使用。
+- Oracle.yaml 单独使用。
+- Oracle_Resolve.yaml 单独使用。
 
 #### 规则链接
 **MASTER分支 (每日更新)**
 
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/CITIC/CITIC.yaml
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Oracle/Oracle.yaml
 
 **MASTER分支 CDN (每日更新)**
 
-https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/CITIC/CITIC.yaml
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Oracle/Oracle.yaml
 
 **MASTER分支 GHProxy (每日更新)**
 
-https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/CITIC/CITIC.yaml
+https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Oracle/Oracle.yaml
 
 **RELEASE分支 (不定时更新)**
 
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/CITIC/CITIC.yaml
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Oracle/Oracle.yaml
 
 **RELEASE分支CDN (不定时更新)**
 
-https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@release/rule/Clash/CITIC/CITIC.yaml
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@release/rule/Clash/Oracle/Oracle.yaml
 
 **RELEASE分支 GHProxy (不定时更新)**
 
-https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/CITIC/CITIC.yaml
+https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Oracle/Oracle.yaml
 
 ## 子规则/排除规则
 
@@ -61,10 +63,10 @@ https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_scri
 
 ## 数据来源
 
-《中信银行》的数据来自以下链接，如与本项目的《中信银行》规则混合使用，可能会造成规则大量重复。
+《Oracle》的数据来自以下链接，如与本项目的《Oracle》规则混合使用，可能会造成规则大量重复。
 
-- https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/CITIC.list
-- https://rules.kr328.app/citic.yaml
+- https://raw.githubusercontent.com/LM-Firefly/Rules/master/PROXY/Oracle.list
+- https://raw.githubusercontent.com/LM-Firefly/Rules/master/Clash-RuleSet-Classical/PROXY/Oracle.yaml
 
 
 感谢以上规则作者的辛勤付出（排名不分先后）。

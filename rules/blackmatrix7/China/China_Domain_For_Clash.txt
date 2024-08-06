@@ -1,13 +1,13 @@
 # NAME: China
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-03-26 02:11:43
-# DOMAIN: 14
+# UPDATED: 2024-07-03 16:16:18
+# DOMAIN: 15
 # DOMAIN-KEYWORD: 9
 # DOMAIN-SUFFIX: 3675
 # IP-CIDR: 17
 # IP-CIDR6: 4
-# TOTAL: 3719
+# TOTAL: 3720
 analytics.strava.com
 blzddist1-a.akamaihd.net
 cdn.angruo.com
@@ -20,6 +20,7 @@ origin-a.akamaihd.ne
 origin-a.akamaihd.net
 sms.imagetasks.com
 steamcommunity-a.akamaihd.net
+weixin.com
 www.libvideo.com
 www.yxssp.com
 +.00cdn.com
@@ -611,7 +612,6 @@ www.yxssp.com
 +.bohejiasuqi.com
 +.bojianger.com
 +.bokecc.com
-+.booking.com
 +.boosj.com
 +.bootcdn.net
 +.bootcss.com
@@ -1157,6 +1157,7 @@ www.yxssp.com
 +.diyiyou.com
 +.dj99.com
 +.dl-vip.pcfaster.baidu.co.th
++.dler.cloud
 +.dlgslb.net
 +.dlnel.com
 +.dlnel.org
@@ -1788,6 +1789,7 @@ www.yxssp.com
 +.ip138.com
 +.ipanda.com
 +.ipanda.net
++.ipapark.com
 +.ipinyou.com
 +.ipip.net
 +.ipplus360.com
@@ -3302,7 +3304,6 @@ www.yxssp.com
 +.weiphone.com
 +.weiphone.net
 +.weixinbridge.com
-+.weixing.com
 +.weiyangx.com
 +.weiyun.com
 +.welltrend-edu.com

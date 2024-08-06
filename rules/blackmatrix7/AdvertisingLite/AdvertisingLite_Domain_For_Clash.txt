@@ -1,13 +1,13 @@
 # NAME: AdvertisingLite
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-03-23 02:07:46
-# DOMAIN: 23739
-# DOMAIN-KEYWORD: 217
-# DOMAIN-SUFFIX: 13808
-# IP-CIDR: 188
+# UPDATED: 2024-08-06 02:08:17
+# DOMAIN: 23746
+# DOMAIN-KEYWORD: 188
+# DOMAIN-SUFFIX: 13860
+# IP-CIDR: 184
 # IP-CIDR6: 1
-# TOTAL: 37953
+# TOTAL: 37979
 00-gov.cn
 0024aadd.com
 0026645142c89aeb1.com
@@ -1254,6 +1254,8 @@ adcash.com
 adcastplus.net
 adcde.com
 adcdn.hpplay.cn
+adcdn.tencentmusic.com
+adcdn6.tencentmusic.com
 adcdnx.com
 adcell.com
 adcell.de
@@ -1269,6 +1271,7 @@ adclear.net
 adclerks.com
 adclick.lv
 adclick.pk
+adclick.tencentmusic.com
 adclickafrica.com
 adclickmedia.com
 adclicks.io
@@ -1326,6 +1329,7 @@ adexchangemachine.com
 adexchangeprediction.com
 adexchangetracker.com
 adexcite.com
+adexpo.tencentmusic.com
 adexprts.com
 adextent.com
 adezrvjcbyu.com
@@ -8556,7 +8560,6 @@ getstatistics.se
 getsupernova.com
 gettipsz.info
 gettraff.com
-getui.net
 getxml.org
 getzwnrgsrz.com
 geusihivdqkwzf.com
@@ -8633,6 +8636,7 @@ givingsol.com
 gixmo.dk
 giyjhogjmfmc.com
 gizgxhqqdngfh.com
+gjapplog.uc.cn
 gjbgesaromnb.com
 gjdawsvqs.com
 gjdnksgfwoj.com
@@ -9411,6 +9415,7 @@ hlserve.com
 hlsqjrgeuw.com
 hlvzvisiwbtuwv.com
 hlykwstrvxa.com
+hm.baidu.com
 hm.baidu.com.jnsiematcnc.com
 hm.baidu.com.zzsdtzb.com
 hm252.cn
@@ -13290,6 +13295,7 @@ moneytec.com
 moneywhisper.com
 mongoosemetrics.com
 monitis.com
+monitor.music.qq.com
 monitoringservice.co
 monitus.net
 monkeybroker.net
@@ -14318,6 +14324,7 @@ o12zs3u2n.com
 o1mmijc4ki.com
 o1o6tadz5p.com
 o2live.com
+o2o-ad-log-gateway.alibaba.com
 o6ek91ag15.com
 oabcufwk.com
 oacautoh.net
@@ -15428,7 +15435,6 @@ play.estream.nu
 play.estream.to
 play.estream.xyz
 play.flowplayer.space
-play.gramombird.com
 play.istlandoll.com
 play.mine.gay-hotvideo.net
 play.on.animeteatr.ru
@@ -17631,7 +17637,6 @@ sdgvzdksjbl.com
 sdillrnslaiyb.com
 sdk.api.oaid.wocloud.cn
 sdk.appadhoc.com.bsclink.cn
-sdk.open.talk.getui.net
 sdk.zsdfm.com
 sdk2.youguoquan.com
 sdkauth.hpplay.cn
@@ -18774,6 +18779,7 @@ stat.ts.cn
 stat.v.17173.com
 stat.www.fi
 stat.xywy.com
+stat.y.qq.com
 stat.yunfan.com
 stat.zbii.com
 stat.zdnet.com.cn
@@ -19662,6 +19668,7 @@ tm1-001.com
 tmblaeivephb.com
 tmdn2015x9.com
 tmead.y.qq.com
+tmeadbak.y.qq.com
 tmeadcomm.y.qq.com
 tmearn.com
 tmfkuesmlpto.com
@@ -25111,6 +25118,7 @@ zzxosget.com
 +.ad.walkgame.com
 +.ad.wang502.com
 +.ad.wappalyzer.com
++.ad.weibo.com
 +.ad.winningpartner.com
 +.ad.winrar.com.cn
 +.ad.wretch.cc
@@ -25244,6 +25252,8 @@ zzxosget.com
 +.adimg.deviantart.net
 +.adimg.mobile.sina.cn
 +.adimg.qxlsjw.com
++.adimg.uve.weibo.com
++.adimg.vue.weibo.com
 +.adimg1.chosun.com
 +.adimg3.search.naver.net
 +.adimgs.xici.net
@@ -25359,10 +25369,12 @@ zzxosget.com
 +.adrotator.se
 +.adrs.sdo.com
 +.adrunnr.com
++.ads-d.viber.com
 +.ads-twitter.com
 +.ads.979799777.com
 +.ads.aplus.pptv.com
 +.ads.aplusapi.pptv.com
++.ads.aws.viber.com
 +.ads.bullionyield.com
 +.ads.cdn.tvb.com
 +.ads.creative-serving.com
@@ -25391,6 +25403,7 @@ zzxosget.com
 +.ads.twitter.com
 +.ads.uc.cn
 +.ads.union.jd.com
++.ads.viber.com
 +.ads.videosz.com
 +.ads.wakamoment.tk
 +.ads.wasu.tv
@@ -25575,6 +25588,7 @@ zzxosget.com
 +.affiliates.myfax.com
 +.affiliates.thrixxx.com
 +.affiliates.treasureisland.com
++.affiliates.vpn.ht
 +.affiliatesmedia.sbobet.com
 +.affiliation.fotovista.com
 +.afj0.com
@@ -25711,6 +25725,8 @@ zzxosget.com
 +.alistatic.cn
 +.alitianxia168.com
 +.aliticalpassister.info
++.alitui.weibo.com
++.alitui.weibo.com.cn
 +.alitx963.com
 +.aliyoo999.com
 +.aliyuncss.com
@@ -25759,6 +25775,7 @@ zzxosget.com
 +.analyticapi.pho.fm
 +.analytics-rhwg.rhcloud.com
 +.analytics-static.ugc.bazaarvoice.com
++.analytics.126.net
 +.analytics.21cn.com
 +.analytics.ad.daum.net
 +.analytics.anvato.net
@@ -25776,13 +25793,13 @@ zzxosget.com
 +.analytics.datahc.com
 +.analytics.dol.gr
 +.analytics.ecosia.org
-+.analytics.eip.telegraph.co.uk
 +.analytics.epi.es
 +.analytics.fairfax.com.au
 +.analytics.ganji.com
 +.analytics.gorillanation.com
 +.analytics.grupogodo.com
 +.analytics.hindustantimes.com
++.analytics.humanautomation.ai
 +.analytics.hz.netease.com
 +.analytics.ifood.tv
 +.analytics.industriemagazin.net
@@ -25821,10 +25838,13 @@ zzxosget.com
 +.analytics.thenewslens.com
 +.analytics.thetab.com
 +.analytics.tool.lu
++.analytics.tribeca.vidavee.com
 +.analytics.twitter.com
 +.analytics.upworthy.com
++.analytics.urx.io
 +.analytics.us.archive.org
 +.analytics.wanmei.com
++.analytics.worldtable.co
 +.analytics.ws.126.net
 +.analytics.xgimi.com
 +.analytics.yam.com
@@ -25833,6 +25853,7 @@ zzxosget.com
 +.analytics3.starschina.com
 +.analyticsengine.s3.amazonaws.com
 +.analyticsv2.dol.gr
++.analyze.full-marke.com
 +.analyzer52.fc2.com
 +.anastasiaana.com
 +.anatomicele.site
@@ -25881,6 +25902,7 @@ zzxosget.com
 +.api-flow.flyme.cn
 +.api-flow.meizu.com
 +.api-game.meizu.com
++.api-htp.beizi.biz
 +.api-push.meizu.com
 +.api-z.weidian.com
 +.api.0.0.0.0.cn
@@ -25989,6 +26011,7 @@ zzxosget.com
 +.applift.com
 +.applog.mobike.com
 +.applog.musical.ly
++.applog.uc.cn
 +.applogios.uc.cn
 +.applvn.com
 +.appnext-a.akamaihd.net
@@ -26543,6 +26566,8 @@ zzxosget.com
 +.biyibia.com
 +.biz.gexing.com
 +.biz.live.xunlei.com
++.biz.weibo.com
++.biz.weibo.com.cn
 +.biz37.net
 +.biz5.kankan.com
 +.bizanti.youwatch.org
@@ -26754,10 +26779,6 @@ zzxosget.com
 +.byhz.xyz
 +.bym03.cn
 +.bypbwm.cn
-+.bytedance.com
-+.bytegoofy.com
-+.byteimg.com
-+.byteorge.com
 +.byujf.cn
 +.bzclk.baidu.com
 +.bzshzx.com
@@ -27190,13 +27211,13 @@ zzxosget.com
 +.click.eyk.net
 +.click.ganji.com
 +.click.hd.sohu.com
++.click.hm.baidu.com
 +.click.hunantv.com
 +.click.jasmin.com
 +.click.livedoor.com
 +.click.livejasmin.com
 +.click.oneplus.com
 +.click.qianqian.com
-+.click.simba.taobao.com
 +.click.stat.hao.360.cn
 +.click.suning.cn
 +.click.tianya.cn
@@ -27205,6 +27226,7 @@ zzxosget.com
 +.click.tz.simba.taobao.com
 +.click.udimg.com
 +.click.uve.mobile.sina.cn
++.click.uve.weibo.com
 +.click1n.soufun.com
 +.click2.cafepress.com
 +.click2.hd.sohu.com
@@ -27448,6 +27470,7 @@ zzxosget.com
 +.cootek-file.cdn.cootekservice.com
 +.cop.my
 +.coral-task.uc.cn
++.core.unit-sense.net
 +.corechina.net
 +.coremetrics.com
 +.cornplus.cn
@@ -27825,6 +27848,7 @@ zzxosget.com
 +.damelaurig.info
 +.dami66.cn
 +.damiren.com
++.dampdock.com
 +.damumu.xyz
 +.danangmo.cn
 +.dandan11.top
@@ -27927,6 +27951,7 @@ zzxosget.com
 +.ddomm.com
 +.ddpxhq.cn
 +.ddrrccck.m.qxs.la
++.de-mi-nis-ner.info
 +.de-mi-nis-ner2.info
 +.de-ner-mi-nis4.info
 +.de.as.cp61.ott.cibntv.net
@@ -27943,6 +27968,7 @@ zzxosget.com
 +.debug-vp.webmd.com
 +.decisionediv.site
 +.deepknow.egoid.me
++.default.ixigua.com
 +.defeatureother.site
 +.definitedikdra.site
 +.dehua.ixinfan.com
@@ -28227,6 +28253,7 @@ zzxosget.com
 +.downloadb.dewmobile.net
 +.downmobile.kugou.com
 +.dp.559.cc
++.dp.im.weibo.cn
 +.dp3.qq.com
 +.dpc6.cn
 +.dpjszs.com
@@ -28282,6 +28309,7 @@ zzxosget.com
 +.dsp-impr2.youdao.com
 +.dsp.ali213.net
 +.dsp.com
++.dsp.edm.weibo.cn
 +.dsp.hypers.com.cn
 +.dsp.simba.taobao.com
 +.dsp.toutiao.com
@@ -28680,6 +28708,7 @@ zzxosget.com
 +.event-collector.udsrv.com
 +.event-reporting-dot-webylytics.appspot.com
 +.event.dkb.de
++.event.getblue.io
 +.event.ksosoft.com
 +.event.mackeeper.com
 +.eventlog.beacon.qq.com
@@ -28808,6 +28837,7 @@ zzxosget.com
 +.fastclick.com
 +.fastclick.net
 +.fastdld.com
++.fastimage.uve.weibo.com
 +.fastly.bench.cedexis.com
 +.fastpopclick.com
 +.fastpopunder.com
@@ -29143,6 +29173,9 @@ zzxosget.com
 +.game.qidian.com
 +.game.res.meizu.com
 +.game.rising.cn
++.game.weibo.cn
++.game.weibo.com
++.game.weibo.com.cn
 +.gamead.swjoy.com
 +.gameads.digyourowngrave.com
 +.gamebox.360.cn
@@ -29234,6 +29267,7 @@ zzxosget.com
 +.geo.kontagent.net
 +.geo.metronews.ca
 +.geo.play.it
++.geo.q5media.net
 +.geo2.adobe.com
 +.geobanner.alt.com
 +.geobanner.friendfinder.com
@@ -29269,6 +29303,7 @@ zzxosget.com
 +.getrockerbox.com
 +.gets.faz.net
 +.getui.com
++.getui.net
 +.gewuwen.com
 +.gf108.com
 +.gf1352.com
@@ -29453,6 +29488,7 @@ zzxosget.com
 +.gr8y7z1xaq30.com
 +.graftpool.ovh
 +.gragliapastri.info
++.gramombird.com
 +.grampouz.net
 +.grand.ele.me
 +.graunada.com
@@ -29527,6 +29563,8 @@ zzxosget.com
 +.guxiaom.cn
 +.guzijie.top
 +.gw069.com
++.gw5.push.mcp.weibo.cn
++.gw6.push.mcp.weibo.cn
 +.gw630.com
 +.gwdqp.com
 +.gwp.xiaojukeji.com
@@ -29838,7 +29876,6 @@ zzxosget.com
 +.hljyjm.cn
 +.hlrcv.stage.adobe.com
 +.hm.baidu.cn
-+.hm.baidu.com
 +.hmhqp.com
 +.hmma.baidu.cn
 +.hmma.baidu.com
@@ -30302,6 +30339,7 @@ zzxosget.com
 +.impservice2.youdao.com
 +.impservicetest.dictapp.youdao.com
 +.imrworldwide.com
++.imtmp.net
 +.imx.comedycentral.com
 +.imykgs.com
 +.in.qqhpg.com
@@ -30396,6 +30434,7 @@ zzxosget.com
 +.iosipa.b0.upaiyun.com
 +.ip.breitbart.com
 +.ip.hivps.xyz
++.ip.pichunter.com
 +.ip.taobao.com
 +.ipapi.tmbi.com
 +.ipchinatelecom.com
@@ -31372,6 +31411,7 @@ zzxosget.com
 +.log.b612kaji.com
 +.log.collect.yinyuetai.com
 +.log.hunantv.com
++.log.invodo.com
 +.log.kcisa.kr
 +.log.kibboko.com
 +.log.ltype.baofeng.com
@@ -31382,6 +31422,7 @@ zzxosget.com
 +.log.newsvine.com
 +.log.nuomi.com
 +.log.nvwa.baofeng.com
++.log.outbrainimg.com
 +.log.p2p.hunantv.com
 +.log.prezi.com
 +.log.rc.hunantv.com
@@ -31541,7 +31582,6 @@ zzxosget.com
 +.lzmm8.com
 +.lzwla.top
 +.lzytt.com
-+.m-78.jp
 +.m-adash.m.taobao.com
 +.m.027blzs.com
 +.m.107279.com
@@ -31557,7 +31597,6 @@ zzxosget.com
 +.m.77vcd.com
 +.m.937920.com
 +.m.adxpop.com
-+.m.analytics.126.net
 +.m.anzhuotan.com
 +.m.aqiudaohang.com
 +.m.aty.snmsohu.aisee.tv
@@ -31756,6 +31795,7 @@ zzxosget.com
 +.marketing.etouch.cn
 +.marketing.kalahari.net
 +.marketing.nodesource.com
++.marketing.tr.netsalesmedia.pl
 +.marketo.net
 +.marwinhitted.site
 +.masdk.3g.qq.com
@@ -32508,6 +32548,7 @@ zzxosget.com
 +.notify.wps.cn
 +.notifysrv.com
 +.noutstancerewe.info
++.novelapp.ixigua.com
 +.novelsns.html5.qq.com
 +.nowskip.com
 +.nozem.tvmaze.com
@@ -32638,7 +32679,6 @@ zzxosget.com
 +.oikxlcv.wang
 +.oimagea2.ydstatic.com
 +.oimg.m.cnbc.com
-+.oimg.mobile.cnbc.com
 +.oir85.cn
 +.oiwjcsh001.top
 +.oiwjcsh010.top
@@ -32675,7 +32715,6 @@ zzxosget.com
 +.omega7o.com
 +.omgnjvrjgpeg.com
 +.ommodatesjoin.info
-+.omni.nine.com.au
 +.omnikool.discovery.com
 +.omoaxaus.net
 +.omtrdc.net
@@ -32713,6 +32752,7 @@ zzxosget.com
 +.ooxoatse.com
 +.opaalopaa.com
 +.open-uc.cn
++.open.delivery.net
 +.open.mkt1397.com
 +.open.play.cn
 +.openapi-news.meizu.com
@@ -32867,6 +32907,7 @@ zzxosget.com
 +.panda.kdnet.net
 +.panel-cn.com
 +.pangle.io
++.pangolin.snssdk.com
 +.pangu.cc
 +.panoramio.com
 +.panwenjun.top
@@ -33263,6 +33304,7 @@ zzxosget.com
 +.prom.gome.com.cn
 +.promo.fileforum.com
 +.promos.fling.com
++.promote.biz.weibo.cn
 +.promote.caixin.com
 +.promote.pair.com
 +.promotion.gomlab.com
@@ -33719,6 +33761,7 @@ zzxosget.com
 +.reporting.flymonarch.com
 +.reporting.handll.net
 +.reporting.theonion.com
++.reports.pagesuite-professional.co.uk
 +.represented.cn
 +.reqpostanza.com
 +.request.issuu.com
@@ -33986,6 +34029,7 @@ zzxosget.com
 +.s9w.cc
 +.sa.bbc.co.uk
 +.sa.sina.cn
++.sa.sky.it
 +.sa.squareup.com
 +.sa.tf1.fr
 +.sa135.macworld.co.uk
@@ -34057,7 +34101,6 @@ zzxosget.com
 +.sbroughhig.info
 +.sbrqp.com
 +.sc.58mingtian.cn
-+.sc.cc.com
 +.sc.chinaiiss.com
 +.sc.csai.cn
 +.sc.ggfeng.com
@@ -34079,6 +34122,7 @@ zzxosget.com
 +.schprompt.dangdang.com
 +.sciencelolb.com
 +.scimg.27admin.com
++.scis.tbs.co.jp
 +.scjcgj.top
 +.sclick.6rooms.com
 +.sclick.baidu.com
@@ -34126,6 +34170,7 @@ zzxosget.com
 +.sdk.look.360.cn
 +.sdk.m.youku.com
 +.sdkapp.mobile.sina.cn
++.sdkapp.uve.weibo.com
 +.sdkclick.com
 +.sdkclick.mobile.sina.cn
 +.sdkconfig.video.qq.com
@@ -34638,8 +34683,6 @@ zzxosget.com
 +.sssgao999.com
 +.sssvd.china.com
 +.sstar.vip
-+.sstats.mora.jp
-+.sstats.oui.sncf
 +.sstc360.com
 +.st-n.ads3-adnow.com
 +.st.arte.tv
@@ -34793,6 +34836,7 @@ zzxosget.com
 +.stats.technopia.it
 +.stats.townnews.com
 +.stats.tudou.com
++.stats.twistage.com
 +.stats.uswitch.com
 +.stats.videodelivery.net
 +.stats.visistat.com
@@ -34816,6 +34860,7 @@ zzxosget.com
 +.stbt.coupons.com
 +.stdl.qq.com
 +.stdst.cn
++.steadfastsystem.com
 +.steelhousemedia.com
 +.steepto.com
 +.stervapoimenialena.info
@@ -35058,8 +35103,10 @@ zzxosget.com
 +.tag.yoc-adserver.com
 +.taglocker.target.com
 +.tags.bluekai.com
++.tags.cdn.circlesix.co
 +.tags.growingio.com
 +.tags.msnbc.com
++.tags.newscgp.com
 +.tags.sprizzy.com
 +.tags2.adshell.net
 +.tagtic.cn
@@ -35138,6 +35185,7 @@ zzxosget.com
 +.tdoup.com
 +.tdrec.youku.com
 +.tdtsd.com
++.te.supportfreecontent.com
 +.teachievedim.site
 +.tebadu.com
 +.tech.jiukang.org
@@ -35286,6 +35334,7 @@ zzxosget.com
 +.tk.baidu.cn
 +.tk.baidu.com
 +.tk.kargo.com
++.tk.storetail.io
 +.tk59n.cn
 +.tkd777.cn
 +.tkmdng.cn
@@ -35341,6 +35390,7 @@ zzxosget.com
 +.topgreatxoffers.com
 +.torimochi.line-apps.com
 +.torytalenty.site
++.tos.pstatp.com
 +.tosfeed.com
 +.totachrl.com
 +.total.xinmin.cn
@@ -35389,6 +35439,7 @@ zzxosget.com
 +.track.ning.com
 +.track.omg2.com
 +.track.omgpl.com
++.track.pnicnik.live
 +.track.pushbullet.com
 +.track.qcri.org
 +.track.securedvisit.com
@@ -35428,6 +35479,7 @@ zzxosget.com
 +.tracker.pandora.com
 +.tracker.pinnaclesports.com
 +.tracker.realclearpolitics.com
++.tracker.roitesting.com
 +.tracker.secretescapes.com
 +.tracker.sns.iqiyi.com
 +.tracker.tiu.ru
@@ -35582,6 +35634,7 @@ zzxosget.com
 +.tuadong.com
 +.tuanxue360.net
 +.tui.gtimg.com
++.tui.weibo.com
 +.tui1999.com
 +.tui98.cn
 +.tuigoo.com
@@ -36019,6 +36072,7 @@ zzxosget.com
 +.vice-publishers-cdn.vice.com
 +.vichc.com
 +.victorjx.com
++.video-cn.snssdk.com
 +.video.c-ctrip.com
 +.video.ureport.push.qq.com
 +.video231.oss-cn-beijing.aliyuncs.com
@@ -36215,6 +36269,8 @@ zzxosget.com
 +.watson.microsoft.com
 +.watson.telemetry.microsoft.com.nsatc.net
 +.waugeboa.net
++.wax.weibo.com
++.wax.weibo.com.cn
 +.waxpigbaa.com
 +.waynagmay.com
 +.waysinbeg.com
@@ -36283,6 +36339,7 @@ zzxosget.com
 +.weegebul.net
 +.weekslw.com
 +.weethery.com
++.weibomingzi.com
 +.weiguanwang888.com
 +.weiguizhizuo.com
 +.weihuiyungou.com
@@ -36352,6 +36409,7 @@ zzxosget.com
 +.widget.searchschoolsnetwork.com
 +.widget.shopstyle.com.au
 +.widget.solarquotes.com.au
++.widget.weibo.com
 +.widgets.comcontent.net
 +.widgets.fie-data.co.uk
 +.widgets.realestate.com.au
@@ -37521,6 +37579,7 @@ zzxosget.com
 +.zxziyuan.com
 +.zybpj.com
 +.zydyjzw.cn
++.zymo.mps.weibo.com
 +.zymro.com
 +.zyqp9.com
 +.zyrfanli.com

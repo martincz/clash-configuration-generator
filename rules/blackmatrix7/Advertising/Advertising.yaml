@@ -1,13 +1,13 @@
 # NAME: Advertising
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-04-07 02:08:01
-# DOMAIN: 16339
-# DOMAIN-KEYWORD: 277
-# DOMAIN-SUFFIX: 122288
-# IP-CIDR: 441
+# UPDATED: 2024-08-06 02:08:53
+# DOMAIN: 16327
+# DOMAIN-KEYWORD: 259
+# DOMAIN-SUFFIX: 135331
+# IP-CIDR: 445
 # IP-CIDR6: 1
-# TOTAL: 139346
+# TOTAL: 152363
 payload:
   - DOMAIN-KEYWORD,-logging.nextmedia.com
   - DOMAIN-KEYWORD,-s2s.sensic.net
@@ -22,6 +22,7 @@ payload:
   - DOMAIN-KEYWORD,_vmind.qqvideo.tc.qq.com
   - DOMAIN-KEYWORD,ad.ixigua.com
   - DOMAIN-KEYWORD,adjust.
+  - DOMAIN-KEYWORD,adktrack
   - DOMAIN-KEYWORD,admdfs
   - DOMAIN-KEYWORD,admob
   - DOMAIN-KEYWORD,adnewnc
@@ -37,6 +38,7 @@ payload:
   - DOMAIN-KEYWORD,allyes
   - DOMAIN-KEYWORD,analysys
   - DOMAIN-KEYWORD,anybest.
+  - DOMAIN-KEYWORD,cp-home-pl-
   - DOMAIN-KEYWORD,crashlytics
   - DOMAIN-KEYWORD,dat8
   - DOMAIN-KEYWORD,dnserror
@@ -71,30 +73,22 @@ payload:
   - DOMAIN-KEYWORD,umtrack
   - DOMAIN-KEYWORD,wxsnsdy
   - DOMAIN-KEYWORD,zymerget
-  - DOMAIN-KEYWORD,-tos.pstatp.com
   - DOMAIN-KEYWORD,112wan
   - DOMAIN-KEYWORD,789htbet
   - DOMAIN-KEYWORD,a.9game.cn
   - DOMAIN-KEYWORD,a.wkanx.com
   - DOMAIN-KEYWORD,a3.bytecdn.cn
   - DOMAIN-KEYWORD,a3.pstatp.com
-  - DOMAIN-KEYWORD,ad-sign.byteimg.com
   - DOMAIN-KEYWORD,ad.api.moji.com
   - DOMAIN-KEYWORD,ad.ihuman.com
   - DOMAIN-KEYWORD,ad.toutiao.com
-  - DOMAIN-KEYWORD,ad.weibo.com
   - DOMAIN-KEYWORD,adash.man.aliyuncs.com
   - DOMAIN-KEYWORD,adform
-  - DOMAIN-KEYWORD,adimg.uve.weibo.com
-  - DOMAIN-KEYWORD,adimg.vue.weibo.com
   - DOMAIN-KEYWORD,adm3.autoimg.cn
   - DOMAIN-KEYWORD,admarvel
   - DOMAIN-KEYWORD,admaster
   - DOMAIN-KEYWORD,adp.atm.youku.com
   - DOMAIN-KEYWORD,adproxy.autohome.com
-  - DOMAIN-KEYWORD,ads-d.viber.com
-  - DOMAIN-KEYWORD,ads.aws.viber.com
-  - DOMAIN-KEYWORD,ads.viber.com
   - DOMAIN-KEYWORD,adsage
   - DOMAIN-KEYWORD,adsensor
   - DOMAIN-KEYWORD,adservice
@@ -114,7 +108,6 @@ payload:
   - DOMAIN-KEYWORD,apiinit.amap.com
   - DOMAIN-KEYWORD,apimg.qunliao.info
   - DOMAIN-KEYWORD,app.51y5.net
-  - DOMAIN-KEYWORD,applog.uc.cn
   - DOMAIN-KEYWORD,applogapi.autohome.com
   - DOMAIN-KEYWORD,applovin
   - DOMAIN-KEYWORD,appsflyer
@@ -123,7 +116,6 @@ payload:
   - DOMAIN-KEYWORD,av1.xdrig.com
   - DOMAIN-KEYWORD,bds.snssdk.com
   - DOMAIN-KEYWORD,bdsp.x.jd.com
-  - DOMAIN-KEYWORD,biz.weibo.com
   - DOMAIN-KEYWORD,bj.imp.voiceads.cn
   - DOMAIN-KEYWORD,bngpt
   - DOMAIN-KEYWORD,bongacash
@@ -135,7 +127,6 @@ payload:
   - DOMAIN-KEYWORD,c1img.ali.kugou.com
   - DOMAIN-KEYWORD,caclick.baidu.com
   - DOMAIN-KEYWORD,cds.51y5.net
-  - DOMAIN-KEYWORD,click.uve.weibo.com
   - DOMAIN-KEYWORD,client-dmp.suishenyun.cn
   - DOMAIN-KEYWORD,clk.gentags.net
   - DOMAIN-KEYWORD,cm-10-134.getui.com
@@ -151,8 +142,6 @@ payload:
   - DOMAIN-KEYWORD,dm.pstatp.com
   - DOMAIN-KEYWORD,dm.toutiao.com
   - DOMAIN-KEYWORD,domob
-  - DOMAIN-KEYWORD,dp.im.weibo.cn
-  - DOMAIN-KEYWORD,dsp.edm.weibo.cn
   - DOMAIN-KEYWORD,dtscout
   - DOMAIN-KEYWORD,duomeng
   - DOMAIN-KEYWORD,dwtrack
@@ -162,15 +151,10 @@ payload:
   - DOMAIN-KEYWORD,exosrv
   - DOMAIN-KEYWORD,extlog.snssdk.com
   - DOMAIN-KEYWORD,fans.m.tmall.com
-  - DOMAIN-KEYWORD,fastimage.uve.weibo.com
   - DOMAIN-KEYWORD,fc-video.cdn.bcebos.com
   - DOMAIN-KEYWORD,fds.api.moji.com
-  - DOMAIN-KEYWORD,game.weibo.cn
-  - DOMAIN-KEYWORD,game.weibo.com
   - DOMAIN-KEYWORD,greenplasticdua
   - DOMAIN-KEYWORD,guanggao
-  - DOMAIN-KEYWORD,gw5.push.mcp.weibo.cn
-  - DOMAIN-KEYWORD,gw6.push.mcp.weibo.cn
   - DOMAIN-KEYWORD,haowanyou
   - DOMAIN-KEYWORD,highwebmedia
   - DOMAIN-KEYWORD,histats
@@ -223,7 +207,6 @@ payload:
   - DOMAIN-KEYWORD,p6-pack.byteimg.com
   - DOMAIN-KEYWORD,pagespeed-mod
   - DOMAIN-KEYWORD,pangolin-sdk-toutiao
-  - DOMAIN-KEYWORD,pangolin.snssdk.com
   - DOMAIN-KEYWORD,paradisestatic.vivo.com.cn
   - DOMAIN-KEYWORD,partnerad
   - DOMAIN-KEYWORD,pc.suishenyun.net
@@ -231,7 +214,6 @@ payload:
   - DOMAIN-KEYWORD,pglstatp-toutiao
   - DOMAIN-KEYWORD,pingfore
   - DOMAIN-KEYWORD,policy.jd.com
-  - DOMAIN-KEYWORD,promote.biz.weibo.cn
   - DOMAIN-KEYWORD,puds.ucweb.com
   - DOMAIN-KEYWORD,r1.ykimg.com
   - DOMAIN-KEYWORD,rescn.u3.ucweb.com
@@ -244,7 +226,6 @@ payload:
   - DOMAIN-KEYWORD,s3a.pstatp.com
   - DOMAIN-KEYWORD,sdfp.snssdk.com
   - DOMAIN-KEYWORD,sdk.open.talk.getui.com
-  - DOMAIN-KEYWORD,sdkapp.uve.weibo.com
   - DOMAIN-KEYWORD,searchrecommend.kugou.com
   - DOMAIN-KEYWORD,server.m.pp.cn
   - DOMAIN-KEYWORD,socdm
@@ -261,7 +242,6 @@ payload:
   - DOMAIN-KEYWORD,tracker.kugou.com
   - DOMAIN-KEYWORD,trackercdnbj.kugou.com
   - DOMAIN-KEYWORD,trwl1
-  - DOMAIN-KEYWORD,tui.weibo.com
   - DOMAIN-KEYWORD,tunion-api.m.taobao.com
   - DOMAIN-KEYWORD,utp-dmp.ucweb.com
   - DOMAIN-KEYWORD,utp.ucweb.com
@@ -269,15 +249,9 @@ payload:
   - DOMAIN-KEYWORD,v1.log.moji.com
   - DOMAIN-KEYWORD,v2.reachmax.cn
   - DOMAIN-KEYWORD,val.atm.youku.com
-  - DOMAIN-KEYWORD,video-cn.snssdk.com
   - DOMAIN-KEYWORD,vidoza
-  - DOMAIN-KEYWORD,volc
   - DOMAIN-KEYWORD,vs10.bj2ct.u3.ucweb.com
-  - DOMAIN-KEYWORD,wax.weibo.com
-  - DOMAIN-KEYWORD,wbapp.uve.weibo.com
-  - DOMAIN-KEYWORD,weibomingzi.com
   - DOMAIN-KEYWORD,wgo.mmstat.com
-  - DOMAIN-KEYWORD,widget.weibo.com
   - DOMAIN-KEYWORD,wixsite.com
   - DOMAIN-KEYWORD,wlmonitor
   - DOMAIN-KEYWORD,www.qmlog.cn
@@ -285,7 +259,15 @@ payload:
   - DOMAIN-KEYWORD,xxshuyuan
   - DOMAIN-KEYWORD,ynuf.alipay.com
   - DOMAIN-KEYWORD,zjtoolbar
-  - DOMAIN-KEYWORD,zymo.mps.weibo.com
+  - DOMAIN-KEYWORD,analytics.
+  - DOMAIN-KEYWORD,app-analytics
+  - DOMAIN-KEYWORD,app-log.
+  - DOMAIN-KEYWORD,applog.
+  - DOMAIN-KEYWORD,fzlm
+  - DOMAIN-KEYWORD,ios-log.
+  - DOMAIN-KEYWORD,ioslog.
+  - DOMAIN-KEYWORD,pc-log.
+  - DOMAIN-KEYWORD,pclog.
   - IP-CIDR,0.0.0.1/32
   - IP-CIDR,1.3.0.10/32
   - IP-CIDR,10.72.25.0/24
@@ -320,6 +302,7 @@ payload:
   - IP-CIDR,107.187.122.172/32
   - IP-CIDR,107.21.113.76/32
   - IP-CIDR,108.171.248.234/32
+  - IP-CIDR,109.123.233.251/32
   - IP-CIDR,111.11.208.2/32
   - IP-CIDR,111.175.220.160/29
   - IP-CIDR,111.175.221.58/32
@@ -370,13 +353,11 @@ payload:
   - IP-CIDR,120.209.138.64/32
   - IP-CIDR,120.240.95.37/32
   - IP-CIDR,120.26.151.246/32
-  - IP-CIDR,120.27.235.201/32
   - IP-CIDR,120.27.34.156/32
   - IP-CIDR,120.55.199.139/32
   - IP-CIDR,120.76.189.132/32
   - IP-CIDR,120.80.57.123/32
   - IP-CIDR,121.15.207.243/32
-  - IP-CIDR,121.196.197.147/32
   - IP-CIDR,121.199.73.185/32
   - IP-CIDR,121.201.108.2/32
   - IP-CIDR,121.201.11.95/32
@@ -422,6 +403,7 @@ payload:
   - IP-CIDR,139.196.239.52/32
   - IP-CIDR,139.224.26.92/32
   - IP-CIDR,139.224.74.148/32
+  - IP-CIDR,141.98.82.232/32
   - IP-CIDR,142.0.129.74/32
   - IP-CIDR,142.91.159.127/32
   - IP-CIDR,142.91.159.136/32
@@ -443,6 +425,7 @@ payload:
   - IP-CIDR,154.7.80.158/32
   - IP-CIDR,156.232.37.2/32
   - IP-CIDR,156.246.162.2/32
+  - IP-CIDR,157.148.47.204/32
   - IP-CIDR,158.247.208.115/32
   - IP-CIDR,162.212.181.32/32
   - IP-CIDR,162.252.214.4/32
@@ -453,6 +436,7 @@ payload:
   - IP-CIDR,167.99.31.227/32
   - IP-CIDR,172.121.4.251/32
   - IP-CIDR,172.121.4.252/32
+  - IP-CIDR,172.255.103.118/32
   - IP-CIDR,172.255.6.135/32
   - IP-CIDR,172.255.6.137/32
   - IP-CIDR,172.255.6.139/32
@@ -461,6 +445,7 @@ payload:
   - IP-CIDR,172.255.6.152/32
   - IP-CIDR,172.255.6.199/32
   - IP-CIDR,172.255.6.2/32
+  - IP-CIDR,172.255.6.217/32
   - IP-CIDR,172.255.6.228/32
   - IP-CIDR,172.255.6.248/32
   - IP-CIDR,172.255.6.252/32
@@ -566,6 +551,7 @@ payload:
   - IP-CIDR,218.68.250.120/31
   - IP-CIDR,218.93.127.37/32
   - IP-CIDR,218.94.207.205/32
+  - IP-CIDR,219.143.187.136/32
   - IP-CIDR,219.146.13.36/32
   - IP-CIDR,219.234.83.60/32
   - IP-CIDR,220.115.251.25/32
@@ -623,6 +609,8 @@ payload:
   - IP-CIDR,223.87.182.52/32
   - IP-CIDR,23.109.150.208/32
   - IP-CIDR,23.109.150.253/32
+  - IP-CIDR,23.109.170.212/32
+  - IP-CIDR,23.109.170.228/32
   - IP-CIDR,23.109.248.125/32
   - IP-CIDR,23.109.248.129/32
   - IP-CIDR,23.109.248.130/32
@@ -690,8 +678,6 @@ payload:
   - IP-CIDR,47.93.103.196/32
   - IP-CIDR,47.94.89.32/32
   - IP-CIDR,47.96.162.122/32
-  - IP-CIDR,47.97.215.55/32
-  - IP-CIDR,47.99.42.29/32
   - IP-CIDR,49.71.37.101/32
   - IP-CIDR,51.77.227.96/29
   - IP-CIDR,51.89.187.136/29

@@ -1,13 +1,13 @@
 # NAME: China
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-03-26 02:11:43
-# DOMAIN: 14
+# UPDATED: 2024-07-03 16:16:18
+# DOMAIN: 15
 # DOMAIN-KEYWORD: 9
 # DOMAIN-SUFFIX: 3675
 # IP-CIDR: 17
 # IP-CIDR6: 4
-# TOTAL: 3719
+# TOTAL: 3720
 DOMAIN,analytics.strava.com
 DOMAIN,blzddist1-a.akamaihd.net
 DOMAIN,cdn.angruo.com
@@ -20,6 +20,7 @@ DOMAIN,origin-a.akamaihd.ne
 DOMAIN,origin-a.akamaihd.net
 DOMAIN,sms.imagetasks.com
 DOMAIN,steamcommunity-a.akamaihd.net
+DOMAIN,weixin.com
 DOMAIN,www.libvideo.com
 DOMAIN,www.yxssp.com
 DOMAIN-SUFFIX,00cdn.com
@@ -611,7 +612,6 @@ DOMAIN-SUFFIX,bocim.com
 DOMAIN-SUFFIX,bohejiasuqi.com
 DOMAIN-SUFFIX,bojianger.com
 DOMAIN-SUFFIX,bokecc.com
-DOMAIN-SUFFIX,booking.com
 DOMAIN-SUFFIX,boosj.com
 DOMAIN-SUFFIX,bootcdn.net
 DOMAIN-SUFFIX,bootcss.com
@@ -1157,6 +1157,7 @@ DOMAIN-SUFFIX,discuz.org
 DOMAIN-SUFFIX,diyiyou.com
 DOMAIN-SUFFIX,dj99.com
 DOMAIN-SUFFIX,dl-vip.pcfaster.baidu.co.th
+DOMAIN-SUFFIX,dler.cloud
 DOMAIN-SUFFIX,dlgslb.net
 DOMAIN-SUFFIX,dlnel.com
 DOMAIN-SUFFIX,dlnel.org
@@ -1788,6 +1789,7 @@ DOMAIN-SUFFIX,ip.la
 DOMAIN-SUFFIX,ip138.com
 DOMAIN-SUFFIX,ipanda.com
 DOMAIN-SUFFIX,ipanda.net
+DOMAIN-SUFFIX,ipapark.com
 DOMAIN-SUFFIX,ipinyou.com
 DOMAIN-SUFFIX,ipip.net
 DOMAIN-SUFFIX,ipplus360.com
@@ -3302,7 +3304,6 @@ DOMAIN-SUFFIX,weilaiyunxiao.com
 DOMAIN-SUFFIX,weiphone.com
 DOMAIN-SUFFIX,weiphone.net
 DOMAIN-SUFFIX,weixinbridge.com
-DOMAIN-SUFFIX,weixing.com
 DOMAIN-SUFFIX,weiyangx.com
 DOMAIN-SUFFIX,weiyun.com
 DOMAIN-SUFFIX,welltrend-edu.com

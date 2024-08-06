@@ -1,22 +1,23 @@
 # NAME: Proxy
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-03-30 02:10:49
-# DOMAIN: 11
-# DOMAIN-KEYWORD: 29
-# DOMAIN-SUFFIX: 5883
-# IP-CIDR: 94
-# IP-CIDR6: 3
-# TOTAL: 6020
+# UPDATED: 2024-08-06 02:11:33
+# DOMAIN: 12
+# DOMAIN-KEYWORD: 28
+# DOMAIN-SUFFIX: 5914
+# IP-CIDR: 96
+# IP-CIDR6: 4
+# TOTAL: 6054
 api.waqi.info
 aqi.aqicn.org
 assets-priconne-redive-us.akamaized.net
-chat.openai.com.cdn.cloudflare.net
 cloud.oracle.com
+copilot.microsoft.com
 cvws.icloud-content.com
 developer.apple.com
-openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
-openaicomproductionae4b.blob.core.windows.net
+location.microsoft.com
+login.microsoftonline.com
+self.events.data.microsoft.com
 testflight.apple.com
 voice.telephony.goog
 +.000webhost.com
@@ -152,6 +153,7 @@ voice.telephony.goog
 +.9news.com.au
 +.9to5mac.com
 +.a-normal-day.com
++.a5.com.ru
 +.aamacau.com
 +.abc.com
 +.abc.net.au
@@ -319,7 +321,6 @@ voice.telephony.goog
 +.answering-islam.org
 +.antd.org
 +.anthonycalzadilla.com
-+.anthropic.com
 +.anti1984.com
 +.antichristendom.com
 +.antiwave.net
@@ -357,6 +358,7 @@ voice.telephony.goog
 +.apkmonk.com
 +.apkplz.com
 +.apkpure.com
++.apkpure.net
 +.aplusvpn.com
 +.app-measurement.net
 +.appdownloader.net
@@ -448,6 +450,7 @@ voice.telephony.goog
 +.axureformac.com
 +.azerbaycan.tv
 +.azerimix.com
++.azirevpn.com
 +.azubu.tv
 +.azure.com
 +.azureedge.net
@@ -573,6 +576,7 @@ voice.telephony.goog
 +.binance.com
 +.bing.com
 +.bing.net
++.bingapis.com
 +.bintray.com
 +.binux.me
 +.binwang.me
@@ -636,6 +640,7 @@ voice.telephony.goog
 +.blubrry.com
 +.blueangellive.com
 +.bmfinn.com
++.bnbstatic.com
 +.bnews.co
 +.bnext.com.tw
 +.bnn.co
@@ -835,6 +840,7 @@ voice.telephony.goog
 +.cdp1989.org
 +.cdp1998.org
 +.cdp2006.org
++.cdpa.url.tw
 +.cdpeu.org
 +.cdpusa.org
 +.cdpweb.org
@@ -865,6 +871,7 @@ voice.telephony.goog
 +.channelnewsasia.com
 +.chaoex.com
 +.chapm25.com
++.chat.openai.com
 +.chatnook.com
 +.chaturbate.com
 +.checkgfw.com
@@ -876,7 +883,9 @@ voice.telephony.goog
 +.cherrysave.com
 +.chhongbi.org
 +.chicagoncmtv.com
++.china-mmm.jp.net
 +.china-mmm.net
++.china-mmm.sa.com
 +.china-review.com.ua
 +.china-week.com
 +.china101.com
@@ -991,7 +1000,6 @@ voice.telephony.goog
 +.cl.ly
 +.clarionproject.org
 +.classicalguitarblog.net
-+.claude.ai
 +.clb.org.hk
 +.cleansite.biz
 +.cleansite.info
@@ -1017,6 +1025,7 @@ voice.telephony.goog
 +.clyp.it
 +.cmail19.com
 +.cmcn.org
++.cmegroup.com
 +.cmi.org.tw
 +.cmoinc.org
 +.cms.gov
@@ -1025,7 +1034,6 @@ voice.telephony.goog
 +.cmule.org
 +.cmx.im
 +.cn-proxy.com
-+.cn.com
 +.cn6.eu
 +.cna.com.tw
 +.cnabc.com
@@ -1060,7 +1068,6 @@ voice.telephony.goog
 +.coinut.com
 +.collateralmurder.com
 +.collateralmurder.org
-+.com.ru
 +.com.uk
 +.comedycentral.com
 +.comefromchina.com
@@ -1237,6 +1244,7 @@ voice.telephony.goog
 +.democrats.org
 +.demosisto.hk
 +.depositphotos.com
++.derekhsu.homeip.net
 +.desc.se
 +.desipro.de
 +.deskconnect.com
@@ -1247,6 +1255,7 @@ voice.telephony.goog
 +.deviantart.net
 +.devio.us
 +.devpn.com
++.devv.ai
 +.dfas.mil
 +.dfn.org
 +.dharamsalanet.com
@@ -1308,6 +1317,7 @@ voice.telephony.goog
 +.dnsrd.com
 +.dnssec.net
 +.docker.com
++.docker.io
 +.doctorvoice.org
 +.documentingreality.com
 +.dogfartnetwork.com
@@ -1361,6 +1371,7 @@ voice.telephony.goog
 +.duanzhihu.com
 +.dubox.com
 +.duck.com
++.duckdns.org
 +.duckduckgo.com
 +.duckload.com
 +.duckmylife.com
@@ -1526,6 +1537,7 @@ voice.telephony.goog
 +.etadult.com
 +.etaiwannews.com
 +.etherdelta.com
++.ethermine.org
 +.etherscan.io
 +.etizer.org
 +.etokki.com
@@ -1567,6 +1579,7 @@ voice.telephony.goog
 +.ezpc.tk
 +.ezpeer.com
 +.ezua.com
++.f2pool.com
 +.f8.com
 +.fa.gov.tw
 +.fabric.io
@@ -2302,7 +2315,6 @@ voice.telephony.goog
 +.holyspiritspeaks.org
 +.home.sina.com
 +.homedepot.com
-+.homeip.net
 +.homeperversion.com
 +.homeservershow.com
 +.honeynet.org
@@ -2341,6 +2353,7 @@ voice.telephony.goog
 +.hrcir.com
 +.hrea.org
 +.hrichina.org
++.hrntt.org
 +.hrtsea.com
 +.hrw.org
 +.hrweb.org
@@ -2430,7 +2443,7 @@ voice.telephony.goog
 +.ibytedtos.com
 +.ibyteimg.com
 +.icams.com
-+.icerocket.com
++.icedrive.net
 +.icij.org
 +.icl-fi.org
 +.icntv.xyz
@@ -2481,6 +2494,7 @@ voice.telephony.goog
 +.imageab.com
 +.imagefap.com
 +.imageflea.com
++.imageglass.org
 +.images-gaytube.com
 +.imageshack.us
 +.imagevenue.com
@@ -2612,6 +2626,7 @@ voice.telephony.goog
 +.ivacy.com
 +.iverycd.com
 +.ivpn.net
++.iwara.tv
 +.ixquick.com
 +.ixxx.com
 +.iyouport.com
@@ -2701,7 +2716,6 @@ voice.telephony.goog
 +.journalofdemocracy.org
 +.joymiihub.com
 +.jp.hao123.com
-+.jp.net
 +.jpopforum.net
 +.jqueryui.com
 +.js.revsci.net
@@ -2717,6 +2731,7 @@ voice.telephony.goog
 +.junauza.com
 +.june4commemoration.org
 +.junefourth-20.net
++.jungleheart.com
 +.junglobal.net
 +.juoaa.com
 +.justdied.com
@@ -2730,6 +2745,7 @@ voice.telephony.goog
 +.juyuange.org
 +.juziyue.com
 +.jwmusic.org
++.jwplayer.com
 +.jyxf.net
 +.k-doujin.net
 +.ka-wai.com
@@ -2896,6 +2912,7 @@ voice.telephony.goog
 +.lianyue.net
 +.liaowangxizang.net
 +.liberal.org.hk
++.libertysculpturepark.com
 +.libertytimes.com.tw
 +.libraryinformationtechnology.com
 +.libredd.it
@@ -2946,7 +2963,6 @@ voice.telephony.goog
 +.livefilestore.com
 +.liveleak.com
 +.livemint.com
-+.livestation.com
 +.livestream.com
 +.livevideo.com
 +.livingonline.us
@@ -2956,7 +2972,7 @@ voice.telephony.goog
 +.lizhizhuangbi.com
 +.lkcn.net
 +.llnwd.net
-+.llss.me
++.lmsys.org
 +.lncn.org
 +.load.to
 +.lobsangwangyal.com
@@ -3142,6 +3158,8 @@ voice.telephony.goog
 +.mh4u.org
 +.michaelanti.com
 +.michaelmarketl.com
++.microsoft-falcon.io
++.microsoftapp.net
 +.microsofttranslator.com
 +.microvpn.com
 +.middle-way.net
@@ -3522,6 +3540,7 @@ voice.telephony.goog
 +.noypf.com
 +.npa.go.jp
 +.npa.gov.tw
++.npm.gov.tw
 +.npnt.me
 +.nps.gov
 +.npsboost.com
@@ -3672,6 +3691,7 @@ voice.telephony.goog
 +.orchidbbs.com
 +.organcare.org.tw
 +.organharvestinvestigation.net
++.organiccrap.com
 +.orgasm.com
 +.orgfree.com
 +.oricon.co.jp
@@ -3794,6 +3814,7 @@ voice.telephony.goog
 +.perfect-privacy.com
 +.perfectgirls.net
 +.periscope.tv
++.perplexity.ai
 +.persecutionblog.com
 +.persiankitty.com
 +.phapluan.org
@@ -3842,6 +3863,7 @@ voice.telephony.goog
 +.piposay.com
 +.piraattilahti.org
 +.piring.com
++.pixeldrain.com
 +.pixelmator.com
 +.pixelqi.com
 +.pixiv.net
@@ -3875,6 +3897,7 @@ voice.telephony.goog
 +.podbean.com
 +.podcast.co
 +.podictionary.com
++.poe.com
 +.pokemon.com
 +.pokerstars.com
 +.pokerstars.net
@@ -3901,6 +3924,7 @@ voice.telephony.goog
 +.postimg.org
 +.potato.im
 +.potvpn.com
++.pourquoi.tw
 +.power.com
 +.powerapple.com
 +.powercx.com
@@ -3988,6 +4012,7 @@ voice.telephony.goog
 +.pythonic.life
 +.pytorch.org
 +.qanote.com
++.qbittorrent.org
 +.qgirl.com.tw
 +.qhigh.com
 +.qi-gong.me
@@ -4025,9 +4050,9 @@ voice.telephony.goog
 +.qz.com
 +.r0.ru
 +.r18.com
-+.ra.gg
 +.radicalparty.org
 +.radiko.jp
++.radio-canada.ca
 +.radio.garden
 +.radioaustralia.net.au
 +.radiohilight.net
@@ -4152,6 +4177,7 @@ voice.telephony.goog
 +.roodo.com
 +.rosechina.net
 +.rotten.com
++.rou.video
 +.rsdlmonitor.com
 +.rsf-chinese.org
 +.rsf.org
@@ -4184,7 +4210,6 @@ voice.telephony.goog
 +.s1s1s1.com
 +.s4miniarchive.com
 +.s8forum.com
-+.sa.com
 +.sa.hao123.com
 +.saboom.com
 +.sacks.com
@@ -4652,6 +4677,7 @@ voice.telephony.goog
 +.taipei.gov.tw
 +.taipeisociety.org
 +.taipeitimes.com
++.taisounds.com
 +.taiwan-sex.com
 +.taiwanbible.com
 +.taiwancon.com
@@ -4902,6 +4928,7 @@ voice.telephony.goog
 +.tibetswiss.ch
 +.tibettelegraph.com
 +.tibettimes.net
++.tibettruth.com
 +.tibetwrites.org
 +.ticket.com.tw
 +.tigervpn.com
@@ -5236,7 +5263,6 @@ voice.telephony.goog
 +.urbansurvival.com
 +.urchin.com
 +.url.com.tw
-+.url.tw
 +.urlborg.com
 +.urlparser.com
 +.us.to
@@ -5620,6 +5646,7 @@ voice.telephony.goog
 +.wr.pvp.net
 +.wrchina.org
 +.wretch.cc
++.writesonic.com
 +.wsj.com
 +.wsj.net
 +.wsjhk.com
@@ -5643,6 +5670,7 @@ voice.telephony.goog
 +.x-berry.com
 +.x-wall.org
 +.x.co
++.x.com
 +.x.company
 +.x1949x.com
 +.x24hr.com
@@ -5781,17 +5809,18 @@ voice.telephony.goog
 +.yingsuoss.com
 +.yinlei.org
 +.yipub.com
-+.yiyechat.com
 +.yizhihongxing.com
 +.yobit.net
 +.yobt.com
 +.yobt.tv
 +.yogichen.org
++.yolasite.com
 +.yomiuri.co.jp
 +.yong.hu
 +.yorkbbs.ca
 +.you-get.org
 +.you.com
++.youdontcare.com
 +.youjizz.com
 +.youmaker.com
 +.youngspiration.hk
@@ -5801,6 +5830,7 @@ voice.telephony.goog
 +.yourlisten.com
 +.yourlust.com
 +.yourprivatevpn.com
++.yourtrap.com
 +.yousendit.com
 +.youshun12.com
 +.youthforfreechina.org
@@ -5819,17 +5849,18 @@ voice.telephony.goog
 +.yuanzhengtang.org
 +.yulghun.com
 +.yunchao.net
-+.yuntipub.com
 +.yuvutu.com
 +.yvesgeleyn.com
 +.ywpw.com
 +.yx51.net
 +.yyii.org
 +.yyjlymb.xyz
++.yysub.net
 +.yzzk.com
 +.z-lib.org
 +.zacebook.com
 +.zalmos.com
++.zamimg.com
 +.zannel.com
 +.zaobao.com
 +.zaobao.com.sg
@@ -5841,6 +5872,7 @@ voice.telephony.goog
 +.zello.com
 +.zengjinyan.org
 +.zenmate.com
++.zenmate.com.ru
 +.zerohedge.com
 +.zeronet.io
 +.zeutch.com

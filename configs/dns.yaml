@@ -55,10 +55,41 @@ dns:
     ipcidr:
       - 240.0.0.0/4
     domain:
-      - '+.google.com'
-      - '+.facebook.com'
-      - '+.youtube.com'
-      - '+.twitter.com'
+        #NetFlix
+      - '+.netflix.com.edgesuite.net'
+      - '+.fast.com'
+      - '+.netflix.com'
+      - '+.netflix.net'
+      - '+.netflixdnstest0.com'
+      - '+.netflixdnstest1.com'
+      - '+.netflixdnstest2.com'
+      - '+.netflixdnstest3.com'
+      - '+.netflixdnstest4.com'
+      - '+.netflixdnstest5.com'
+      - '+.netflixdnstest6.com'
+      - '+.netflixdnstest7.com'
+      - '+.netflixdnstest8.com'
+      - '+.netflixdnstest9.com'
+      - '+.nflxext.com'
+      - '+.nflximg.com'
+      - '+.nflximg.net'
+      - '+.nflxso.net'
+      - '+.nflxvideo.net'
+      #Linkedin
+      - '+.linkedin.com'
+      - '+.licdn.com'
+      #proxy
+      - '+.renzhe.cloud'
+      - '+.nivod4.tv'
+      - '+.nivodz.com'
+      - '+.cloudflare.com'
+      - '+.onetrust.com'
+      - '+.plausible.io'
+      - '+.fhjasokiwq.com'
+      - '+.recaptcha.net'
+      - '+.biggggg.com'
+      - '+.newpppp.com'
+      - '+.ofalibi.com'
   
   # Lookup domains via specific nameservers
   # nameserver-policy:

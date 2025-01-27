@@ -1,10 +1,10 @@
 # NAME: GlobalMedia
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-07-03 16:16:08
+# UPDATED: 2024-11-17 02:11:53
 # DOMAIN: 27
-# DOMAIN-KEYWORD: 25
-# DOMAIN-SUFFIX: 1255
+# DOMAIN-KEYWORD: 24
+# DOMAIN-SUFFIX: 1256
 # IP-CIDR: 918
 # IP-CIDR6: 6
 # PROCESS-NAME: 3
@@ -656,6 +656,7 @@ rthklive2-lh.akamaihd.net
 +.italkbbtv.com
 +.itv.com
 +.itvstatic.com
++.iwara.tv
 +.japonx.com
 +.japonx.net
 +.japonx.tv

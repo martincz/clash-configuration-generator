@@ -1,10 +1,10 @@
 # NAME: GlobalMedia
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-07-03 16:16:08
+# UPDATED: 2024-11-17 02:11:53
 # DOMAIN: 27
-# DOMAIN-KEYWORD: 25
-# DOMAIN-SUFFIX: 1255
+# DOMAIN-KEYWORD: 24
+# DOMAIN-SUFFIX: 1256
 # IP-CIDR: 918
 # IP-CIDR6: 6
 # PROCESS-NAME: 3
@@ -657,6 +657,7 @@ payload:
   - DOMAIN-SUFFIX,italkbbtv.com
   - DOMAIN-SUFFIX,itv.com
   - DOMAIN-SUFFIX,itvstatic.com
+  - DOMAIN-SUFFIX,iwara.tv
   - DOMAIN-SUFFIX,japonx.com
   - DOMAIN-SUFFIX,japonx.net
   - DOMAIN-SUFFIX,japonx.tv
@@ -1292,7 +1293,6 @@ payload:
   - DOMAIN-SUFFIX,youtubemobilesupport.com
   - DOMAIN-SUFFIX,yt.be
   - DOMAIN-SUFFIX,ytimg.com
-  - DOMAIN-KEYWORD,-spotify-
   - DOMAIN-KEYWORD,abematv.akamaized.net
   - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-
   - DOMAIN-KEYWORD,avoddashs
@@ -1310,7 +1310,7 @@ payload:
   - DOMAIN-KEYWORD,nowtv100
   - DOMAIN-KEYWORD,olevod
   - DOMAIN-KEYWORD,rthklive
-  - DOMAIN-KEYWORD,spotify.com
+  - DOMAIN-KEYWORD,spotify
   - DOMAIN-KEYWORD,tiktokcdn
   - DOMAIN-KEYWORD,ttvnw
   - DOMAIN-KEYWORD,tvbanywhere

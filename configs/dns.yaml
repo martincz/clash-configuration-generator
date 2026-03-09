@@ -11,7 +11,7 @@ dns:
     - 114.114.114.114
     - 223.5.5.5
   enhanced-mode: redir-host # or fake-ip
-  respect-rules: true
+  respect-rules: false
   # fake-ip-range: 198.18.0.1/16 # Fake IP addresses pool CIDR
   # use-hosts: true # lookup hosts and return IP record
   

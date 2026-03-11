@@ -13,20 +13,15 @@
   group: "DIRECT"
   ruleset: "rules/blackmatrix7/ChinaMedia/ChinaMedia.yaml"
 
-# China
-- name: "China" 
-  group: "DIRECT"
-  ruleset: "rules/blackmatrix7/China/China_Classical.yaml"
-
 # AsianMedia
 - name: "AsianMedia" 
   group: "DIRECT"
   ruleset: "rules/blackmatrix7/AsianMedia/AsianMedia.yaml"
 
-# GlobalMedia
-- name: "GlobalMedia"
-  group: "GlobalMedia"
-  ruleset: "rules/blackmatrix7/GlobalMedia/GlobalMedia_Classical.yaml"
+# China
+- name: "China" 
+  group: "DIRECT"
+  ruleset: "rules/blackmatrix7/China/China_Classical.yaml"
 
 # Apple
 - name: "Apple" 
@@ -67,3 +62,8 @@
 - name: "Speedtest"
   group: "Speedtest"
   ruleset: "rules/blackmatrix7/Speedtest/Speedtest.yaml"
+
+# GlobalMedia
+- name: "GlobalMedia"
+  group: "GlobalMedia"
+  ruleset: "rules/blackmatrix7/GlobalMedia/GlobalMedia_Classical.yaml"

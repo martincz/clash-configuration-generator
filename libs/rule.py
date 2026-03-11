@@ -47,18 +47,18 @@ class Rule(object):
         always_merger.merge(rules, prefix_rules)
 
         # 前置规则集
-        with open(os.path.join(self.top_dir, 'configs/rulesets-prefix.yaml'), 'rb') as fp:
+        with open(os.path.join(self.top_dir, 'configs/rulesets.yaml'), 'rb') as fp:
             def_prefix_rulesets = self.yaml.load(fp)
-            always_merger.merge(rules, self.getRulesFromRuleSets(def_prefix_rulesets))
+            always_merger.merge(rules, self.getRulesFromRuleSets(def_prefix_rulesets['prefix']))
 
         # 偏好规则集
         pref_rulesets = preference.get('rulesets')
         always_merger.merge(rules, self.getRulesFromRuleSets(pref_rulesets))
 
         # 后置规则集
-        with open(os.path.join(self.top_dir, 'configs/rulesets-suffix.yaml'), 'rb') as fp:
+        with open(os.path.join(self.top_dir, 'configs/rulesets.yaml'), 'rb') as fp:
             def_suffix_rulesets = self.yaml.load(fp)
-            always_merger.merge(rules, self.getRulesFromRuleSets(def_suffix_rulesets))
+            always_merger.merge(rules, self.getRulesFromRuleSets(def_suffix_rulesets['suffix']))
 
         # 后置偏好规则
         suffix_rules = {'rules': preference.get('rules-suffix')}

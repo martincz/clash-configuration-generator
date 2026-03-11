@@ -26,18 +26,12 @@ dns:
   # All DNS questions are sent directly to the nameserver, without proxies
   # involved. Clash answers the DNS question with the first result gathered.
   nameserver:
-    - https://doh.pub/dns-query
-    - https://223.5.5.5/dns-query
-    - tls://dns.rubyfish.cn:853
 
   # When `fallback` is present, the DNS server will send concurrent requests
   # to the servers in this section along with servers in `nameservers`.
   # The answers from fallback servers are used when the GEOIP country
   # is not `CN`.
   fallback:
-    - tls://101.101.101.101
-    - tls://8.8.4.4:853
-    - tls://1.0.0.1:853
 
   # If IP addresses resolved with servers in `nameservers` are in the specified
   # subnets below, they are considered invalid and results from `fallback`
@@ -52,11 +46,9 @@ dns:
   # This is a countermeasure against DNS pollution attacks.
   fallback-filter:
     geoip: true
-  #   geoip-code: CN
+    geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
-    geosite:
-      - gfw
   
   # Lookup domains via specific nameservers
   # nameserver-policy:

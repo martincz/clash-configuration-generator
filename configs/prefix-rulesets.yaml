@@ -1,0 +1,14 @@
+# 本地局域网地址
+- name: "Lan"
+  group: "DIRECT"
+  ruleset: "rules/blackmatrix7/Lan/Lan.yaml"
+
+# 反劫持
+- name: "Hijacking"
+  group: "Hijacking"
+  ruleset: "rules/blackmatrix7/Hijacking/Hijacking.yaml"
+
+# Speedtest
+- name: "Speedtest"
+  group: "Speedtest"
+  ruleset: "rules/blackmatrix7/Speedtest/Speedtest.yaml"

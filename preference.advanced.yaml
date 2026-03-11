@@ -125,7 +125,7 @@ proxy-groups:
     - "KR-Seoul-01"
     - "KR-Seoul-02"
 
-prefix-rules: # 前置规则
+rules-prefix: # 前置规则
 # 绕过代理
   - DST-PORT,22,DIRECT # SSH
   - SRC-PORT,51413,DIRECT # Transmission
@@ -137,7 +137,7 @@ prefix-rules: # 前置规则
 # 特殊规则
   - DOMAIN-SUFFIX,synocommunity.com,Proxy
 
-suffix-rules: # 后置规则
+rules-suffix: # 后置规则
 # 绕过代理
   - SRC-IP-CIDR,192.168.0.2/32,DIRECT # Synology
 

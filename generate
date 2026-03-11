@@ -1,19 +1,19 @@
 #!/usr/bin/env python
 #
 # MIT License
-
+#
 # Copyright (c) 2022 Martincz Gao
-
+#
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
 # in the Software without restriction, including without limitation the rights
 # to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 # copies of the Software, and to permit persons to whom the Software is
 # furnished to do so, subject to the following conditions:
-
+#
 # The above copyright notice and this permission notice shall be included in all
 # copies or substantial portions of the Software.
-
+#
 # THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 # IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 # FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -31,26 +31,67 @@ import sys
 
 ROOT_DIR = os.path.dirname(os.path.realpath(__file__))
 
+
 class _Options(object):
-  dns = False
+
+    def __init__(self):
+        self.dns = False
+        self.stdout = False
+        self.output = None
+
+
+def _Usage():
+    return (
+        'Usage: generate [--dns] [--stdout|--dry-run] [-o|--output <path>]\n'
+        '  --dns                 Include dns section\n'
+        '  --stdout, --dry-run   Print generated config to stdout only\n'
+        '  -o, --output <path>   Write generated config to the given file path\n'
+        'Default behavior without --stdout/--output: write to config.yaml'
+    )
+
 
 def _ParseArguments(args):
-  cmd = None
-  opt = _Options()
-  arg = []
+    cmd = None
+    opt = _Options()
+    arg = []
 
-  for i in range(len(args)):
-    a = args[i]
-    if a == '--dns':
-      opt.dns = True
-    elif not a.startswith('-'):
-      cmd = a
-      arg = args[i + 1:]
-      break
-  return cmd, opt, arg
+    i = 0
+    while i < len(args):
+        a = args[i]
+        if a == '--dns':
+            opt.dns = True
+            i += 1
+            continue
+
+        if a in ['--stdout', '--dry-run']:
+            opt.stdout = True
+            i += 1
+            continue
+
+        if a in ['-o', '--output']:
+            if i + 1 >= len(args):
+                raise ValueError('Missing output path for %s' % a)
+            opt.output = args[i + 1]
+            i += 2
+            continue
+
+        if a.startswith('-'):
+            raise ValueError('Unknown option: %s' % a)
+
+        cmd = a
+        arg = args[i + 1:]
+        break
+
+    return cmd, opt, arg
+
 
 def main(orig_args):
-    cmd, opt, args = _ParseArguments(orig_args)
+    try:
+        cmd, opt, args = _ParseArguments(orig_args)
+    except ValueError as ex:
+        print(str(ex), file=sys.stderr)
+        print(_Usage(), file=sys.stderr)
+        return 2
 
     yaml = YAML()
     yaml.allow_unicode = True
@@ -58,20 +99,34 @@ def main(orig_args):
     yaml.preserve_quotes = True
     yaml.indent(mapping=2, sequence=4, offset=2)
 
-    # 读取默认配置
+    # Read default config.
     with open(os.path.join(ROOT_DIR, 'configs/basic.yaml'), 'rb') as fp:
         cfg_basic = yaml.load(fp)
 
-    # 合并偏好配置
+    # Merge user preference.
     cfg_final = cfg_basic.copy()
     cfg_final.update(getPreference())
 
     if opt.dns != True and 'dns' in cfg_final.keys():
         del cfg_final['dns']
 
-    # 生成最终配置
-    with open(os.path.join(ROOT_DIR, 'config.yaml'), 'w', encoding='utf-8') as fp:
-        yaml.dump(cfg_final, fp)
+    wrote_output = False
+
+    if opt.output is not None:
+        output_path = os.path.abspath(opt.output)
+        with open(output_path, 'w', encoding='utf-8') as fp:
+            yaml.dump(cfg_final, fp)
+        wrote_output = True
+
+    if opt.stdout:
+        yaml.dump(cfg_final, sys.stdout)
+
+    if not opt.stdout and not wrote_output:
+        with open(os.path.join(ROOT_DIR, 'config.yaml'), 'w', encoding='utf-8') as fp:
+            yaml.dump(cfg_final, fp)
+
+    return 0
+
 
 if __name__ == '__main__':
-    main(sys.argv[1:])
+    sys.exit(main(sys.argv[1:]))

@@ -46,6 +46,20 @@ rules-prefix: # 前置规则
 
 rules-suffix: # 后置规则
 
+# Optional: policy priority for rulesets when match precision is the same.
+# Lower list position means higher priority.
+# rules-policy-priority:
+#   - Speedtest
+#   - AI
+#   - Game
+#   - Static
+#   - DIRECT
+#   - GlobalMedia
+#   - Proxy
+#   - Apple
+#   - Secure
+#   - Hijacking
+
 rulesets:
 # PayPal
 - name: "PayPal"

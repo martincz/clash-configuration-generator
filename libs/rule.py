@@ -21,10 +21,12 @@
 # SOFTWARE.
 #
 
+from collections import Counter
 from ruamel.yaml import YAML
 
 import ipaddress
 import os
+import sys
 
 ALLOWED_RULE_TYPES = ['DOMAIN', 'DOMAIN-KEYWORD', 'DOMAIN-SUFFIX', 'IP-CIDR', 'IP-CIDR6']
 
@@ -38,8 +40,11 @@ class Rule(object):
         self.yaml.preserve_quotes = True
         self.yaml.indent(mapping=2, sequence=4, offset=2)
         self.top_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+        self.unknown_rule_type_counter = Counter()
+        self.unknown_rule_type_examples = {}
 
     def getRules(self, preference):
+        self.resetUnknownRuleTypeWarnings()
 
         with open(os.path.join(self.top_dir, 'configs/rulesets.yaml'), 'rb') as fp:
             default_rulesets = self.yaml.load(fp) or {}
@@ -74,7 +79,37 @@ class Rule(object):
             if key in preference:
                 del preference[key]
 
+        self.emitUnknownRuleTypeWarnings()
         return rules
+
+    def resetUnknownRuleTypeWarnings(self):
+        self.unknown_rule_type_counter = Counter()
+        self.unknown_rule_type_examples = {}
+
+    def trackUnknownRuleType(self, rule_type, ruleset, raw_line):
+        normalized_type = str(rule_type).strip().upper() or '<EMPTY>'
+        self.unknown_rule_type_counter[normalized_type] += 1
+        if normalized_type not in self.unknown_rule_type_examples:
+            example_line = str(raw_line).strip()
+            if len(example_line) > 120:
+                example_line = example_line[:117] + '...'
+            self.unknown_rule_type_examples[normalized_type] = (ruleset, example_line)
+
+    def emitUnknownRuleTypeWarnings(self):
+        if len(self.unknown_rule_type_counter) == 0:
+            return
+
+        total = sum(self.unknown_rule_type_counter.values())
+        print(
+            '[WARN] Skipped %d rule lines with unknown rule types.' % total,
+            file=sys.stderr
+        )
+        for rule_type, count in self.unknown_rule_type_counter.most_common():
+            ruleset, example = self.unknown_rule_type_examples.get(rule_type, ('<unknown>', ''))
+            print(
+                '[WARN]   %s: %d (ruleset=%s, example=%s)' % (rule_type, count, ruleset, example),
+                file=sys.stderr
+            )
 
     def buildPolicyPriority(self, priority_config):
         policy_priorities = {}
@@ -114,13 +149,21 @@ class Rule(object):
                         continue
 
                     info = [part.strip() for part in line.split(',')]
-                    if info[0] not in ALLOWED_RULE_TYPES:
+                    if len(info) == 0:
+                        continue
+
+                    rule_type = info[0].upper()
+                    if rule_type not in ALLOWED_RULE_TYPES:
+                        self.trackUnknownRuleType(rule_type, ruleset, line)
+                        continue
+
+                    if len(info) < 2:
                         continue
 
                     if len(info) == 2:
-                        rule = ','.join([info[0], info[1], group])
+                        rule = ','.join([rule_type, info[1], group])
                     else:
-                        rule = ','.join([info[0], info[1], group] + info[2:])
+                        rule = ','.join([rule_type, info[1], group] + info[2:])
 
                     rules['rules'].append(rule)
 

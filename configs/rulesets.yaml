@@ -2,70 +2,70 @@ prefix:
   # 本地局域网地址
   - name: "Lan"
     group: "DIRECT"
-    ruleset: "rules/blackmatrix7/Lan/Lan.yaml"
+    ruleset: "rules/blackmatrix7/Lan/Lan_No_Resolve.yaml"
 
   # 反劫持
   - name: "Hijacking"
     group: "Hijacking"
-    ruleset: "rules/blackmatrix7/Hijacking/Hijacking.yaml"
+    ruleset: "rules/blackmatrix7/Hijacking/Hijacking_No_Resolve.yaml"
 
   # Speedtest
   - name: "Speedtest"
     group: "Speedtest"
-    ruleset: "rules/blackmatrix7/Speedtest/Speedtest.yaml"
+    ruleset: "rules/blackmatrix7/Speedtest/Speedtest_No_Resolve.yaml"
 
 suffix:
   # ChinaMedia
   - name: "ChinaMedia" 
     group: "DIRECT"
-    ruleset: "rules/blackmatrix7/ChinaMedia/ChinaMedia.yaml"
+    ruleset: "rules/blackmatrix7/ChinaMedia/ChinaMedia_No_Resolve.yaml"
 
   # AsianMedia
   - name: "AsianMedia" 
     group: "DIRECT"
-    ruleset: "rules/blackmatrix7/AsianMedia/AsianMedia.yaml"
+    ruleset: "rules/blackmatrix7/AsianMedia/AsianMedia_No_Resolve.yaml"
 
   # China
   - name: "China" 
     group: "DIRECT"
-    ruleset: "rules/blackmatrix7/China/China_Classical.yaml"
+    ruleset: "rules/blackmatrix7/China/China_Classical_No_Resolve.yaml"
 
   # Apple
   - name: "Apple" 
     group: "Apple"
-    ruleset: "rules/blackmatrix7/Apple/Apple_Classical.yaml"
+    ruleset: "rules/blackmatrix7/Apple/Apple_Classical_No_Resolve.yaml"
 
   # AppleTV
   - name: "AppleTV"
     group: "GlobalMedia"
-    ruleset: "rules/blackmatrix7/AppleTV/AppleTV.yaml"
+    ruleset: "rules/blackmatrix7/AppleTV/AppleTV_No_Resolve.yaml"
 
   # Facebook
   - name: "Facebook"
     group: "Proxy"
-    ruleset: "rules/blackmatrix7/Facebook/Facebook.yaml"
+    ruleset: "rules/blackmatrix7/Facebook/Facebook_No_Resolve.yaml"
 
   # Twitter
   - name: "Twitter"
     group: "Proxy"
-    ruleset: "rules/blackmatrix7/Twitter/Twitter.yaml"
+    ruleset: "rules/blackmatrix7/Twitter/Twitter_No_Resolve.yaml"
 
   # Google
   - name: "Google"
     group: "Proxy"
-    ruleset: "rules/blackmatrix7/Google/Google.yaml"
+    ruleset: "rules/blackmatrix7/Google/Google_No_Resolve.yaml"
 
   # OneDrive
   - name: "OneDrive"
     group: "Proxy"
-    ruleset: "rules/blackmatrix7/OneDrive/OneDrive.yaml"
+    ruleset: "rules/blackmatrix7/OneDrive/OneDrive_No_Resolve.yaml"
 
   # Telegram
   - name: "Telegram"
     group: "Proxy"
-    ruleset: "rules/blackmatrix7/Telegram/Telegram.yaml"
+    ruleset: "rules/blackmatrix7/Telegram/Telegram_No_Resolve.yaml"
 
   # GlobalMedia
   - name: "GlobalMedia"
     group: "GlobalMedia"
-    ruleset: "rules/blackmatrix7/GlobalMedia/GlobalMedia_Classical.yaml"
+    ruleset: "rules/blackmatrix7/GlobalMedia/GlobalMedia_Classical_No_Resolve.yaml"

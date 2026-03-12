@@ -58,6 +58,19 @@ class GenerateCliTests(unittest.TestCase):
         self.assertTrue(os.path.exists(output_path))
         self.assertFalse(os.path.exists(os.path.join(temp_dir.name, "config.yaml")))
 
+    def test_output_mode_creates_parent_directories(self):
+        temp_dir = self._prepare_temp_root()
+        self.addCleanup(temp_dir.cleanup)
+
+        output_path = os.path.join(temp_dir.name, "nested", "dir", "custom-output.yaml")
+        self.generate.ROOT_DIR = temp_dir.name
+        self.generate.getPreference = lambda: {"rules": ["MATCH,Proxy"]}
+
+        rc = self.generate.main(["--output", output_path])
+
+        self.assertEqual(rc, 0)
+        self.assertTrue(os.path.exists(output_path))
+
     def test_unknown_option_returns_error_code(self):
         stderr = io.StringIO()
         with redirect_stderr(stderr):
@@ -65,6 +78,14 @@ class GenerateCliTests(unittest.TestCase):
 
         self.assertEqual(rc, 2)
         self.assertIn("Unknown option", stderr.getvalue())
+
+    def test_positional_argument_returns_error_code(self):
+        stderr = io.StringIO()
+        with redirect_stderr(stderr):
+            rc = self.generate.main(["build"])
+
+        self.assertEqual(rc, 2)
+        self.assertIn("Unexpected argument", stderr.getvalue())
 
 
 if __name__ == "__main__":

@@ -132,6 +132,44 @@ class RuleLogicTests(unittest.TestCase):
             self.assertTrue(any("ok.example.com" in line for line in generated))
             self.assertFalse(any("PROCESS-NAME" in line for line in generated))
 
+    def test_duplicated_ruleset_paths_emit_warning(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            os.makedirs(os.path.join(temp_dir, "configs"), exist_ok=True)
+            os.makedirs(os.path.join(temp_dir, "rules"), exist_ok=True)
+            os.makedirs(os.path.join(temp_dir, "rulesets"), exist_ok=True)
+
+            _write_yaml(
+                os.path.join(temp_dir, "configs", "rulesets.yaml"),
+                {
+                    "prefix": [{"name": "FB-Proxy", "group": "Proxy", "ruleset": "rulesets/fb.yaml"}],
+                    "suffix": [{"name": "FB-Static", "group": "Static", "ruleset": "rulesets/fb.yaml"}],
+                },
+            )
+            _write_yaml(
+                os.path.join(temp_dir, "rules", "suffix.yaml"),
+                {"rules": ["MATCH,Proxy"]},
+            )
+            _write_yaml(
+                os.path.join(temp_dir, "rulesets", "fb.yaml"),
+                {"payload": ["DOMAIN-SUFFIX,facebook.com"]},
+            )
+
+            preference = {
+                "rules-prefix": [],
+                "rules-suffix": [],
+                "rules-policy-priority": ["Static", "Proxy"],
+                "rulesets": [],
+            }
+
+            rule = self._build_rule(temp_dir)
+            stderr = io.StringIO()
+            with redirect_stderr(stderr):
+                generated = rule.getRules(copy.deepcopy(preference))["rules"]
+
+            warning_text = stderr.getvalue()
+            self.assertIn("duplicated ruleset paths", warning_text)
+            self.assertTrue(any(line == "DOMAIN-SUFFIX,facebook.com,Static" for line in generated))
+
     def test_match_key_normalization_deduplicates_plus_prefix(self):
         rule = Rule()
         rules = [

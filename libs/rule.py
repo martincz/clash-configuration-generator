@@ -21,7 +21,7 @@
 # SOFTWARE.
 #
 
-from collections import Counter
+from collections import Counter, defaultdict
 from ruamel.yaml import YAML
 
 import ipaddress
@@ -34,38 +34,36 @@ ALLOWED_RULE_TYPES = ['DOMAIN', 'DOMAIN-KEYWORD', 'DOMAIN-SUFFIX', 'IP-CIDR', 'I
 class Rule(object):
 
     def __init__(self):
-        self.yaml = YAML()
-        self.yaml.allow_unicode = True
-        self.yaml.explicit_start = False
-        self.yaml.preserve_quotes = True
-        self.yaml.indent(mapping=2, sequence=4, offset=2)
+        self.yaml_safe = YAML(typ='safe')
         self.top_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+        self.yaml_file_cache = {}
         self.unknown_rule_type_counter = Counter()
         self.unknown_rule_type_examples = {}
 
     def getRules(self, preference):
         self.resetUnknownRuleTypeWarnings()
 
-        with open(os.path.join(self.top_dir, 'configs/rulesets.yaml'), 'rb') as fp:
-            default_rulesets = self.yaml.load(fp) or {}
+        default_rulesets = self.loadYamlFile('configs/rulesets.yaml')
 
         policy_priorities = self.buildPolicyPriority(preference.get('rules-policy-priority'))
 
         prefix_rules = self.ensureRuleList(preference.get('rules-prefix'))
         suffix_rules = self.ensureRuleList(preference.get('rules-suffix'))
 
-        rulesets_rules = []
-        rulesets_rules.extend(self.getRulesFromRuleSets(default_rulesets.get('prefix')).get('rules'))
-        rulesets_rules.extend(self.getRulesFromRuleSets(preference.get('rulesets')).get('rules'))
-        rulesets_rules.extend(self.getRulesFromRuleSets(default_rulesets.get('suffix')).get('rules'))
+        selected_rulesets = []
+        selected_rulesets.extend(self.ensureRulesets(default_rulesets.get('prefix')))
+        selected_rulesets.extend(self.ensureRulesets(preference.get('rulesets')))
+        selected_rulesets.extend(self.ensureRulesets(default_rulesets.get('suffix')))
+
+        self.emitDuplicatedRulesetWarnings(selected_rulesets, policy_priorities)
+        rulesets_rules = self.getRulesFromRuleSets(selected_rulesets).get('rules')
 
         # Rulesets are updated from upstream frequently. Sort all ruleset-derived
         # rules together by specificity to reduce cross-ruleset shadowing.
         optimized_rulesets = self.optimizeRulesOrder(rulesets_rules, policy_priorities)
 
-        with open(os.path.join(self.top_dir, 'rules/suffix.yaml'), 'rb') as fp:
-            suffix = self.yaml.load(fp) or {}
-            final_suffix_rules = self.ensureRuleList(suffix.get('rules'))
+        suffix = self.loadYamlFile('rules/suffix.yaml')
+        final_suffix_rules = self.ensureRuleList(suffix.get('rules'))
 
         merged_rules = []
         merged_rules.extend(prefix_rules)
@@ -81,6 +79,17 @@ class Rule(object):
 
         self.emitUnknownRuleTypeWarnings()
         return rules
+
+    def loadYamlFile(self, relative_path):
+        absolute_path = os.path.join(self.top_dir, relative_path)
+        if absolute_path in self.yaml_file_cache:
+            return self.yaml_file_cache[absolute_path]
+
+        with open(absolute_path, 'rb') as fp:
+            data = self.yaml_safe.load(fp) or {}
+
+        self.yaml_file_cache[absolute_path] = data
+        return data
 
     def resetUnknownRuleTypeWarnings(self):
         self.unknown_rule_type_counter = Counter()
@@ -132,40 +141,101 @@ class Rule(object):
 
         return policy_priorities
 
+    def ensureRulesets(self, rulesets):
+        if rulesets is None:
+            return []
+        return [item for item in rulesets if isinstance(item, dict)]
+
+    def emitDuplicatedRulesetWarnings(self, rulesets, policy_priorities):
+        by_ruleset = defaultdict(list)
+
+        for index, policy in enumerate(self.ensureRulesets(rulesets)):
+            ruleset = str(policy.get('ruleset') or '').strip()
+            if ruleset == '':
+                continue
+
+            by_ruleset[ruleset].append({
+                'index': index,
+                'name': str(policy.get('name') or ruleset).strip(),
+                'group': str(policy.get('group') or '').strip(),
+            })
+
+        conflict_entries = []
+        for ruleset, entries in by_ruleset.items():
+            groups = {item.get('group') for item in entries}
+            if len(entries) < 2 or len(groups) <= 1:
+                continue
+
+            ordered = sorted(
+                entries,
+                key=lambda item: (policy_priorities.get(item.get('group'), 10_000), item.get('index'))
+            )
+            conflict_entries.append((ruleset, ordered))
+
+        if len(conflict_entries) == 0:
+            return
+
+        print(
+            '[WARN] Found %d duplicated ruleset paths with different groups.' % len(conflict_entries),
+            file=sys.stderr
+        )
+        for ruleset, ordered in conflict_entries:
+            winner = ordered[0]
+            winner_rank = policy_priorities.get(winner.get('group'), 'NA')
+            candidates = ', '.join([
+                '%s(group=%s,priority=%s)' % (
+                    item.get('name'),
+                    item.get('group'),
+                    policy_priorities.get(item.get('group'), 'NA')
+                )
+                for item in ordered
+            ])
+            print(
+                '[WARN]   %s => winner=%s(group=%s,priority=%s); candidates=%s' % (
+                    ruleset,
+                    winner.get('name'),
+                    winner.get('group'),
+                    winner_rank,
+                    candidates
+                ),
+                file=sys.stderr
+            )
+
     def getRulesFromRuleSets(self, rulesets):
         rules = {'rules': []}
         if rulesets is None:
             return rules
 
-        for policy in rulesets:
-            group = policy.get('group')
+        for policy in self.ensureRulesets(rulesets):
+            group = str(policy.get('group') or '')
             ruleset = policy.get('ruleset')
-            with open(os.path.join(self.top_dir, ruleset), 'rb') as fp:
-                rulelines = self.yaml.load(fp) or {}
-                payload = rulelines.get('payload') or []
+            if ruleset is None:
+                continue
+            rulelines = self.loadYamlFile(ruleset)
+            payload = rulelines.get('payload') or []
 
-                for line in payload:
-                    if not isinstance(line, str):
-                        continue
+            for line in payload:
+                if not isinstance(line, str):
+                    continue
 
-                    info = [part.strip() for part in line.split(',')]
-                    if len(info) == 0:
-                        continue
+                info = [part.strip() for part in line.split(',')]
+                if len(info) == 0:
+                    continue
 
-                    rule_type = info[0].upper()
-                    if rule_type not in ALLOWED_RULE_TYPES:
-                        self.trackUnknownRuleType(rule_type, ruleset, line)
-                        continue
+                rule_type = info[0].upper()
+                if rule_type not in ALLOWED_RULE_TYPES:
+                    self.trackUnknownRuleType(rule_type, ruleset, line)
+                    continue
 
-                    if len(info) < 2:
-                        continue
+                if len(info) < 2:
+                    continue
 
-                    if len(info) == 2:
-                        rule = ','.join([rule_type, info[1], group])
-                    else:
-                        rule = ','.join([rule_type, info[1], group] + info[2:])
+                if len(info) == 2:
+                    rule = ','.join([rule_type, info[1], group])
+                else:
+                    rule = ','.join([rule_type, info[1], group] + info[2:])
 
-                    rules['rules'].append(rule)
+                rules['rules'].append(rule)
 
         return rules
 

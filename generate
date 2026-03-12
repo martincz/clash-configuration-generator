@@ -51,9 +51,7 @@ def _Usage():
 
 
 def _ParseArguments(args):
-    cmd = None
     opt = _Options()
-    arg = []
 
     i = 0
     while i < len(args):
@@ -78,16 +76,14 @@ def _ParseArguments(args):
         if a.startswith('-'):
             raise ValueError('Unknown option: %s' % a)
 
-        cmd = a
-        arg = args[i + 1:]
-        break
+        raise ValueError('Unexpected argument: %s' % a)
 
-    return cmd, opt, arg
+    return opt
 
 
 def main(orig_args):
     try:
-        cmd, opt, args = _ParseArguments(orig_args)
+        opt = _ParseArguments(orig_args)
     except ValueError as ex:
         print(str(ex), file=sys.stderr)
         print(_Usage(), file=sys.stderr)
@@ -114,6 +110,9 @@ def main(orig_args):
 
     if opt.output is not None:
         output_path = os.path.abspath(opt.output)
+        output_dir = os.path.dirname(output_path)
+        if output_dir != '':
+            os.makedirs(output_dir, exist_ok=True)
         with open(output_path, 'w', encoding='utf-8') as fp:
             yaml.dump(cfg_final, fp)
         wrote_output = True

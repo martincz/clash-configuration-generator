@@ -39,13 +39,15 @@ def getProxyGroups(preference):
     with open(os.path.join(top_dir, 'configs/proxy-groups.yaml'), 'rb') as fp:
         cur_groups = yaml.load(fp)
     # 获取偏好代理组
-    pref_groups = preference.get('proxy-groups')
+    pref_groups = preference.get('proxy-groups') or []
+    if not isinstance(pref_groups, list):
+        pref_groups = []
 
     # 获取所有代理节点名
     all_proxies = [proxy['name'] for proxy in getProxies(preference)]
 
     # 获取偏好代理组名
-    pref_group_names = [proxy['name'] for proxy in pref_groups]
+    pref_group_names = [group.get('name') for group in pref_groups if isinstance(group, dict) and group.get('name') is not None]
 
     proxy_groups = {'proxy-groups': []}
     # 预设代理组
@@ -57,6 +59,8 @@ def getProxyGroups(preference):
         proxy_groups['proxy-groups'].append(group)
     # 偏好代理组
     for group in pref_groups:
+        if not isinstance(group, dict):
+            continue
         replaceProxies(group, all_proxies)
         proxy_groups['proxy-groups'].append(group)
 
@@ -64,6 +68,8 @@ def getProxyGroups(preference):
 
 def replaceProxies(group, proxies):
     def_proxies = group.get('proxies')
+    if not isinstance(def_proxies, list):
+        return
     if ('.*' in def_proxies):
         index = def_proxies.index('.*')
         def_proxies.remove('.*')

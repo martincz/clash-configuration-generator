@@ -141,6 +141,17 @@ rules-suffix: # 后置规则
 # 绕过代理
   - SRC-IP-CIDR,192.168.0.2/32,DIRECT # Synology
 
+# Optional: policy priority for rulesets when match precision is the same.
+# Lower list position means higher priority.
+# rules-policy-priority:
+#   - Speedtest
+#   - Hijacking
+#   - DIRECT
+#   - Static
+#   - GlobalMedia
+#   - Proxy
+#   - Apple
+
 rulesets:
 # PayPal
 - name: "PayPal"

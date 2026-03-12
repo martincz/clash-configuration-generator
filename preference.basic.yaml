@@ -50,15 +50,12 @@ rules-suffix: # 后置规则
 # Lower list position means higher priority.
 # rules-policy-priority:
 #   - Speedtest
-#   - AI
-#   - Game
-#   - Static
+#   - Hijacking
 #   - DIRECT
+#   - Static
 #   - GlobalMedia
 #   - Proxy
 #   - Apple
-#   - Secure
-#   - Hijacking
 
 rulesets:
 # PayPal

@@ -1,120 +1,109 @@
 # Clash Configuration Generator
 
-适用于 Clash 的自定义配置生成脚本
+用于生成 Clash 配置文件的脚本工具。
 
-## 前提条件
+## 环境准备
 
-* 安装 [Git](https://git-scm.com/) 分布式版本控制系统。
-
-* 安装 [Python](https://www.python.org/) 运行环境。
-
-* 安装必要的 Python 软件包：
-
-    ```bash
-    pip install deepmerge
-    pip install ruamel.yaml
-    ```
-
-* 使用以下命令同步仓库到本地：
-
-    ```bash
-    git clone --recurse-submodules https://github.com/martincz/clash-configuration-generator.git
-    ```
-
-## 简易用法
-
-1. 拷贝配置示例的副本并更名为 preference.yaml。
-
-    | 文件名 | 解释 |
-    | :--- | :--- |
-    | preference.yaml | 实际生效的配置 |
-    | preference.basic.yaml | 用于参考的标准配置示例 |
-    | preference.merlinclash.yaml | 用于参考的 MerlinClash 配置示例 |
-    | preference.advanced.yaml | 用于参考的进阶配置示例 |
-
-2. 按需修改 preference.yaml 中的默认参数。
-
-3. 在仓库根目录运行以下命令：
-
-    ```bash
-    python generate
-    ```
-
-4. 导入生成的 config.yaml 配置文件到 Clash。
-
-## 可选参数
-
-    --dns
-        生成带有 DNS 服务器相关配置的文件。（Clash 内置了 DNS 服务器，默认未启用）
-
-    --stdout
-        将生成结果输出到标准输出，不写入 config.yaml。
-
-    --dry-run
-        等价于 --stdout，用于只检查生成结果、不落盘。
-
-    -o, --output <path>
-        将生成结果写入指定文件路径，不写入默认的 config.yaml。
-
-## generate 用法示例
+1. 安装 [Git](https://git-scm.com/)。
+2. 安装 [Python](https://www.python.org/)。
+3. 安装依赖：
 
 ```bash
-# 默认行为：写入项目根目录 config.yaml
+pip install deepmerge
+pip install ruamel.yaml
+```
+
+4. 拉取仓库（含子模块）：
+
+```bash
+git clone --recurse-submodules https://github.com/martincz/clash-configuration-generator.git
+```
+
+## 快速开始
+
+1. 准备 `preference.yaml`（可从示例文件复制）：
+
+| 文件名 | 说明 |
+| :--- | :--- |
+| `preference.yaml` | 实际生效配置 |
+| `preference.basic.yaml` | 基础示例 |
+| `preference.merlinclash.yaml` | MerlinClash 示例 |
+| `preference.advanced.yaml` | 进阶示例 |
+
+2. 按需修改 `preference.yaml`。
+3. 在仓库根目录执行：
+
+```bash
 python generate
-
-# 生成包含 DNS 配置的默认 config.yaml
-python generate --dns
-
-# 只输出到终端，不改动本地 config.yaml
-python generate --stdout
-
-# 输出到指定文件（推荐用于验证）
-python generate --output config.preview.yaml
-
-# 组合使用：带 DNS + 输出到指定文件
-python generate --dns --output config.preview.yaml
 ```
 
-## 测试用法
+4. 将生成的 `config.yaml` 导入 Clash 客户端。
 
-项目已内置基于 `unittest` 的回归测试，覆盖：
+## generate 参数与示例
 
-* rules-prefix / rules-suffix 的位置语义
-* rulesets 排序与去重
-* rules-policy-priority 决策
-* generate 参数行为（`--stdout` / `--output`）
-
-在项目根目录运行：
-
-```bash
-# 运行全部测试
-python -m unittest discover -s tests -v
-
-# 只运行规则逻辑测试
-python -m unittest tests.test_rule_logic -v
-
-# 只运行 generate 参数测试
-python -m unittest tests.test_generate_cli -v
-
-# 只运行 proxy-group 容错测试
-python -m unittest tests.test_proxy_group -v
-```
-
-## 命令行行为说明（更新）
-
-`generate` 不再接受位置参数，仅支持以下选项形式：
+命令格式：
 
 ```bash
 python generate [--dns] [--stdout|--dry-run] [-o|--output <path>]
 ```
 
+参数说明：
+
+| 参数 | 说明 |
+| :--- | :--- |
+| `--dns` | 生成结果中包含 DNS 配置（默认不输出 DNS 段） |
+| `--stdout` | 只输出到标准输出，不写入 `config.yaml` |
+| `--dry-run` | 与 `--stdout` 等价 |
+| `-o, --output <path>` | 输出到指定文件，不写入默认 `config.yaml` |
+
 行为说明：
 
-* `--stdout` / `--dry-run`：仅输出结果，不写入 `config.yaml`。
-* `--output <path>`：写入指定文件，并自动创建父目录。
-* 未知选项或位置参数会返回错误码 `2`，同时输出用法说明。
+1. 默认行为是写入项目根目录 `config.yaml`。
+2. 使用 `--stdout` 或 `--dry-run` 时，不会修改本地 `config.yaml`。
+3. 使用 `--output` 时，会自动创建目标文件的父目录。
+4. 不支持位置参数；未知选项或位置参数会返回错误码 `2` 并输出用法。
 
-规则生成告警：
+示例：
 
-* 未知规则类型会被跳过，并输出到 `stderr`。
-* 当同一路径 ruleset 使用了不同分组时，会输出到 `stderr`，最终生效分组由 `rules-policy-priority` 决定。
+```bash
+# 默认生成到 config.yaml
+python generate
+
+# 生成包含 DNS 配置的 config.yaml
+python generate --dns
+
+# 只预览，不落盘
+python generate --stdout
+
+# 生成到指定文件（推荐用于验证）
+python generate --output config.preview.yaml
+
+# 带 DNS 并输出到指定文件
+python generate --dns --output config.preview.yaml
+```
+
+## 规则生成提示
+
+1. 规则按 `rules-prefix` -> `rulesets` -> `rules-suffix` -> `rules/suffix.yaml` 的顺序合并。
+2. `rulesets` 部分会按规则精度排序，并结合 `rules-policy-priority` 决定同精度冲突优先级。
+3. 相同 `TYPE+PATTERN` 的重复规则会在生成阶段去重，保留排序更靠前的一条。
+4. 未知规则类型会被跳过，并输出到 `stderr`。
+5. 同一路径 ruleset 被配置到不同分组时，会输出告警，最终生效分组由 `rules-policy-priority` 决定。
+
+## 测试
+
+项目内置 `unittest` 回归测试，覆盖规则排序/去重、CLI 参数行为、proxy-group 容错等场景。
+
+```bash
+# 运行全部测试
+python -m unittest discover -s tests -v
+
+# 仅运行规则逻辑测试
+python -m unittest tests.test_rule_logic -v
+
+# 仅运行 generate 参数测试
+python -m unittest tests.test_generate_cli -v
+
+# 仅运行 proxy-group 容错测试
+python -m unittest tests.test_proxy_group -v
+```

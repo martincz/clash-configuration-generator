@@ -170,6 +170,96 @@ class RuleLogicTests(unittest.TestCase):
             self.assertIn("duplicated ruleset paths", warning_text)
             self.assertTrue(any(line == "DOMAIN-SUFFIX,facebook.com,Static" for line in generated))
 
+    def test_ruleset_rule_patches_drop_specific_ruleset(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            os.makedirs(os.path.join(temp_dir, "configs"), exist_ok=True)
+            os.makedirs(os.path.join(temp_dir, "rules"), exist_ok=True)
+            os.makedirs(os.path.join(temp_dir, "rulesets"), exist_ok=True)
+
+            _write_yaml(
+                os.path.join(temp_dir, "configs", "rulesets.yaml"),
+                {
+                    "prefix": [{"name": "Copilot", "group": "AI", "ruleset": "rulesets/copilot.yaml"}],
+                    "suffix": [{"name": "GlobalMedia", "group": "GlobalMedia", "ruleset": "rulesets/global.yaml"}],
+                },
+            )
+            _write_yaml(
+                os.path.join(temp_dir, "rules", "suffix.yaml"),
+                {"rules": ["MATCH,Proxy"]},
+            )
+            _write_yaml(
+                os.path.join(temp_dir, "rulesets", "copilot.yaml"),
+                {"payload": ["DOMAIN-SUFFIX,challenges.cloudflare.com"]},
+            )
+            _write_yaml(
+                os.path.join(temp_dir, "rulesets", "global.yaml"),
+                {"payload": ["DOMAIN-SUFFIX,challenges.cloudflare.com"]},
+            )
+
+            preference = {
+                "rules-prefix": [],
+                "rules-suffix": [],
+                "rulesets": [],
+                "rules-policy-priority": ["AI", "GlobalMedia"],
+                "ruleset-rule-patches": [
+                    {
+                        "ruleset": "rulesets/copilot.yaml",
+                        "drop": ["DOMAIN-SUFFIX,challenges.cloudflare.com"],
+                    }
+                ],
+            }
+
+            rule = self._build_rule(temp_dir)
+            generated = rule.getRules(copy.deepcopy(preference))["rules"]
+            challenge_rules = [line for line in generated if "challenges.cloudflare.com" in line]
+
+            self.assertEqual(challenge_rules, ["DOMAIN-SUFFIX,challenges.cloudflare.com,GlobalMedia"])
+
+    def test_ruleset_rule_patches_override_by_name(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            os.makedirs(os.path.join(temp_dir, "configs"), exist_ok=True)
+            os.makedirs(os.path.join(temp_dir, "rules"), exist_ok=True)
+            os.makedirs(os.path.join(temp_dir, "rulesets"), exist_ok=True)
+
+            _write_yaml(
+                os.path.join(temp_dir, "configs", "rulesets.yaml"),
+                {
+                    "prefix": [{"name": "OpenAI", "group": "AI", "ruleset": "rulesets/openai.yaml"}],
+                    "suffix": [],
+                },
+            )
+            _write_yaml(
+                os.path.join(temp_dir, "rules", "suffix.yaml"),
+                {"rules": ["MATCH,Proxy"]},
+            )
+            _write_yaml(
+                os.path.join(temp_dir, "rulesets", "openai.yaml"),
+                {"payload": ["DOMAIN-SUFFIX,challenges.cloudflare.com"]},
+            )
+
+            preference = {
+                "rules-prefix": [],
+                "rules-suffix": [],
+                "rulesets": [],
+                "ruleset-rule-patches": [
+                    {
+                        "name": "OpenAI",
+                        "override": [
+                            {
+                                "match": "DOMAIN-SUFFIX,challenges.cloudflare.com",
+                                "group": "Proxy",
+                            }
+                        ],
+                    }
+                ],
+            }
+
+            rule = self._build_rule(temp_dir)
+            generated = rule.getRules(copy.deepcopy(preference))["rules"]
+            challenge_rules = [line for line in generated if "challenges.cloudflare.com" in line]
+
+            self.assertEqual(challenge_rules, ["DOMAIN-SUFFIX,challenges.cloudflare.com,Proxy"])
+
     def test_match_key_normalization_deduplicates_plus_prefix(self):
         rule = Rule()
         rules = [

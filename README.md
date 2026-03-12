@@ -90,6 +90,35 @@ python generate --dns --output config.preview.yaml
 4. 未知规则类型会被跳过，并输出到 `stderr`。
 5. 同一路径 ruleset 被配置到不同分组时，会输出告警，最终生效分组由 `rules-policy-priority` 决定。
 
+### ruleset-rule-patches（本地规则补丁）
+
+当上游 ruleset 中存在不符合你分流策略的条目时，可以在 `preference.yaml` 中使用 `ruleset-rule-patches` 做本地修正，无需修改 `rules/blackmatrix7` 目录文件。
+
+支持能力：
+
+1. `drop`：删除指定规则（按 `TYPE+PATTERN` 匹配）
+2. `override`：改写指定规则的分组（按 `TYPE+PATTERN` 匹配）
+
+作用范围：
+
+1. `ruleset`：按 ruleset 路径匹配
+2. `name`：按 ruleset 名称匹配（即 `rulesets` 里的 `name`）
+3. 未设置 `ruleset`/`name` 时，视为全局补丁
+
+示例（把 Copilot 中的 `challenges.cloudflare.com` 删除，并把 OpenAI 中同条目改到 `Proxy`）：
+
+```yaml
+ruleset-rule-patches:
+  - ruleset: "rules/blackmatrix7/Copilot/Copilot_No_Resolve.yaml"
+    drop:
+      - "DOMAIN-SUFFIX,challenges.cloudflare.com"
+
+  - name: "OpenAI"
+    override:
+      - match: "DOMAIN-SUFFIX,challenges.cloudflare.com"
+        group: "Proxy"
+```
+
 ## 测试
 
 项目内置 `unittest` 回归测试，覆盖规则排序/去重、CLI 参数行为、proxy-group 容错等场景。

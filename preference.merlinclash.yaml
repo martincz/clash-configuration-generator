@@ -47,8 +47,8 @@ rules-prefix: # 前置规则
 
 rules-suffix: # 后置规则
 
-# Optional: policy priority for rulesets when match precision is the same.
-# Lower list position means higher priority.
+# 可选：当 rulesets 规则匹配精度相同时，按策略优先级决策。
+# 列表位置越靠前，优先级越高。
 # rules-policy-priority:
 #   - Speedtest
 #   - Hijacking
@@ -57,6 +57,18 @@ rules-suffix: # 后置规则
 #   - GlobalMedia
 #   - Proxy
 #   - Apple
+
+# 可选：对上游 ruleset 做本地补丁。
+# 可用于删除或改写指定 TYPE+PATTERN 规则，
+# 且无需修改 rules/blackmatrix7 下的原始文件。
+# ruleset-rule-patches:
+#   - ruleset: "rules/blackmatrix7/Copilot/Copilot_No_Resolve.yaml"
+#     drop:
+#       - "DOMAIN-SUFFIX,challenges.cloudflare.com"
+#   - name: "OpenAI"
+#     override:
+#       - match: "DOMAIN-SUFFIX,challenges.cloudflare.com"
+#         group: "Proxy"
 
 rulesets:
 # PayPal

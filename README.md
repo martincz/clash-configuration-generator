@@ -100,21 +100,21 @@ python -m unittest tests.test_generate_cli -v
 python -m unittest tests.test_proxy_group -v
 ```
 
-## CLI Notes (Updated)
+## 命令行行为说明（更新）
 
-`generate` no longer accepts positional arguments. Use options only:
+`generate` 不再接受位置参数，仅支持以下选项形式：
 
 ```bash
 python generate [--dns] [--stdout|--dry-run] [-o|--output <path>]
 ```
 
-Behavior details:
+行为说明：
 
-* `--stdout` / `--dry-run`: print result only, do not write `config.yaml`.
-* `--output <path>`: write to target file and automatically create parent directories.
-* Unknown options or positional args now return an error code (`2`) with usage text.
+* `--stdout` / `--dry-run`：仅输出结果，不写入 `config.yaml`。
+* `--output <path>`：写入指定文件，并自动创建父目录。
+* 未知选项或位置参数会返回错误码 `2`，同时输出用法说明。
 
-Rule generation warnings:
+规则生成告警：
 
-* Unknown rule types are skipped and reported to `stderr`.
-* Duplicated ruleset paths with different groups are reported to `stderr`, with the effective winner decided by `rules-policy-priority`.
+* 未知规则类型会被跳过，并输出到 `stderr`。
+* 当同一路径 ruleset 使用了不同分组时，会输出到 `stderr`，最终生效分组由 `rules-policy-priority` 决定。

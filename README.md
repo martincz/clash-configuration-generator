@@ -46,3 +46,53 @@
 
     --dns
         生成带有 DNS 服务器相关配置的文件。（Clash 内置了 DNS 服务器，默认未启用）
+
+    --stdout
+        将生成结果输出到标准输出，不写入 config.yaml。
+
+    --dry-run
+        等价于 --stdout，用于只检查生成结果、不落盘。
+
+    -o, --output <path>
+        将生成结果写入指定文件路径，不写入默认的 config.yaml。
+
+## generate 用法示例
+
+```bash
+# 默认行为：写入项目根目录 config.yaml
+python generate
+
+# 生成包含 DNS 配置的默认 config.yaml
+python generate --dns
+
+# 只输出到终端，不改动本地 config.yaml
+python generate --stdout
+
+# 输出到指定文件（推荐用于验证）
+python generate --output config.preview.yaml
+
+# 组合使用：带 DNS + 输出到指定文件
+python generate --dns --output config.preview.yaml
+```
+
+## 测试用法
+
+项目已内置基于 `unittest` 的回归测试，覆盖：
+
+* rules-prefix / rules-suffix 的位置语义
+* rulesets 排序与去重
+* rules-policy-priority 决策
+* generate 参数行为（`--stdout` / `--output`）
+
+在项目根目录运行：
+
+```bash
+# 运行全部测试
+python -m unittest discover -s tests -v
+
+# 只运行规则逻辑测试
+python -m unittest tests.test_rule_logic -v
+
+# 只运行 generate 参数测试
+python -m unittest tests.test_generate_cli -v
+```

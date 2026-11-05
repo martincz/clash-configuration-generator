@@ -87,6 +87,8 @@ profile:
 experimental:
   ignore-resolve-fail: true
 
+listeners:
+
 # 代理节点
 proxies:
 # 代理组策略

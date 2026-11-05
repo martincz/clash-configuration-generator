@@ -49,7 +49,7 @@ dns:
     geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
-  
+
   # Lookup domains via specific nameservers
   # nameserver-policy:
   #   'www.baidu.com': '114.114.114.114'

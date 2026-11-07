@@ -1,15 +1,18 @@
 # NAME: Lan
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-03-04 02:17:55
-# DOMAIN: 6
+# UPDATED: 2026-10-20 05:59:47
+# DOMAIN: 9
 # DOMAIN-SUFFIX: 115
 # IP-CIDR: 14
 # IP-CIDR6: 4
-# TOTAL: 139
+# TOTAL: 142
 payload:
   - DOMAIN,asusrouter.com
   - DOMAIN,instant.arubanetworks.com
+  - DOMAIN,local.adguard.org
+  - DOMAIN,localhost.weixin.qq.com
+  - DOMAIN,localhost.work.weixin.qq.com
   - DOMAIN,oasisauth.h3c.com
   - DOMAIN,router.asus.com
   - DOMAIN,setmeup.arubanetworks.com
@@ -112,6 +115,7 @@ payload:
   - DOMAIN-SUFFIX,d.f.ip6.arpa
   - DOMAIN-SUFFIX,hiwifi.com
   - DOMAIN-SUFFIX,home.arpa
+  - DOMAIN-SUFFIX,kis.v2.scr.kaspersky-labs.com
   - DOMAIN-SUFFIX,leike.cc
   - DOMAIN-SUFFIX,localhost.ptlogin2.qq.com
   - DOMAIN-SUFFIX,localhost.sec.qq.com
@@ -123,7 +127,6 @@ payload:
   - DOMAIN-SUFFIX,router.ctc
   - DOMAIN-SUFFIX,routerlogin.com
   - DOMAIN-SUFFIX,tendawifi.com
-  - DOMAIN-SUFFIX,test.steampowered.com
   - DOMAIN-SUFFIX,tplinkwifi.net
   - DOMAIN-SUFFIX,tplogin.cn
   - DOMAIN-SUFFIX,ts.net

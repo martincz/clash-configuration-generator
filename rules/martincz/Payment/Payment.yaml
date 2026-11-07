@@ -1,0 +1,14 @@
+# NAME: Payment
+# 结账、支付 API 和 3D Secure 入口使用 Secure；通用 SDK 仍单独分类。
+# Sources:
+# https://docs.stripe.com/payments/checkout
+# https://docs.stripe.com/customer-management
+# https://docs.stripe.com/payment-links
+# https://docs.stripe.com/security/guide#content-security-policy
+payload:
+  - DOMAIN,checkout.stripe.com
+  - DOMAIN,billing.stripe.com
+  - DOMAIN,buy.stripe.com
+  - DOMAIN,api.stripe.com
+  - DOMAIN,hooks.stripe.com
+  - DOMAIN-SUFFIX,link.com

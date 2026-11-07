@@ -28,7 +28,8 @@ import ipaddress
 import os
 import sys
 
-ALLOWED_RULE_TYPES = ['DOMAIN', 'DOMAIN-KEYWORD', 'DOMAIN-SUFFIX', 'IP-CIDR', 'IP-CIDR6']
+IP_RULE_TYPES = ['IP-CIDR', 'IP-CIDR6', 'IP-ASN']
+ALLOWED_RULE_TYPES = ['DOMAIN', 'DOMAIN-KEYWORD', 'DOMAIN-SUFFIX'] + IP_RULE_TYPES
 
 
 class Rule(object):
@@ -286,7 +287,7 @@ class Rule(object):
                     continue
 
                 default_group = group
-                if ip_group is not None and rule_type in ['IP-CIDR', 'IP-CIDR6']:
+                if ip_group is not None and rule_type in IP_RULE_TYPES:
                     default_group = ip_group
                 final_group = override_rules.get(rule_match_key, default_group)
 
@@ -477,6 +478,9 @@ class Rule(object):
             return 2
         if rule_type in ['IP-CIDR', 'IP-CIDR6']:
             return 3
+        if rule_type == 'IP-ASN':
+            # An ASN can span many networks; explicit CIDRs take precedence.
+            return 4
         return 10
 
     def getRuleSpecificity(self, rule_type, matcher):

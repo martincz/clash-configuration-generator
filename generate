@@ -23,14 +23,18 @@
 # SOFTWARE.
 #
 
-from libs.preference import getPreference
-from ruamel.yaml import YAML
-
 import io
 import os
 import sys
 
 ROOT_DIR = os.path.dirname(os.path.realpath(__file__))
+
+if __name__ == '__main__':
+    from libs.runtime import use_project_python
+    use_project_python(ROOT_DIR)
+
+from libs.preference import getPreference
+from ruamel.yaml import YAML
 
 
 class _Options(object):

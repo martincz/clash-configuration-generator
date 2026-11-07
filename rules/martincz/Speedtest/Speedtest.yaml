@@ -1,0 +1,10 @@
+# NAME: SpeedtestSupplement
+# 补充上游清单未覆盖的测速站；不接管 Netflix 等共享媒体 CDN。
+# Sources:
+# https://www.nperf.com/en/
+# https://speedof.me/
+# https://testmy.net/
+payload:
+  - DOMAIN-SUFFIX,nperf.com
+  - DOMAIN-SUFFIX,speedof.me
+  - DOMAIN-SUFFIX,testmy.net

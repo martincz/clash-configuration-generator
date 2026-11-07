@@ -1,5 +1,5 @@
 # NAME: SharedServices
-# UPDATED: 2026-11-07
+# UPDATED: 2026-11-08
 # 共享平台不属于单一 AI 产品；具体租户域名可在前置业务规则中单独覆盖。
 # 在普通 rulesets 层使用，保留媒体/游戏平台更精确的 CDN 子域例外。
 payload:
@@ -22,4 +22,6 @@ payload:
   - DOMAIN-SUFFIX,challenges.cloudflare.com
   - DOMAIN-SUFFIX,cloudfront.net
   - DOMAIN-SUFFIX,akamaized.net
+  - DOMAIN-SUFFIX,amazonaws.com
+  - DOMAIN-SUFFIX,amazonaws.co.uk
   - DOMAIN,static.cloudflareinsights.com

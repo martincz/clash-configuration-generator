@@ -1,5 +1,5 @@
 # NAME: AI
-# UPDATED: 2026-11-07
+# UPDATED: 2026-11-08
 # 专属业务域名放在 rulesets-prefix 中，先于综合媒体/开发规则匹配。
 # 共享验证码、支付、统计和 CDN 平台不按整个供应商域名归入 AI。
 # Sources:
@@ -9,6 +9,8 @@
 # https://cursor.com/docs/enterprise/network-configuration
 # https://cursor.com/help/troubleshooting/sign-in-domains
 # https://ai.google.dev/gemini-api/docs
+# https://console.groq.com/docs/overview
+# https://docs.together.ai/docs/inference/openai-compatibility
 payload:
   # OpenAI / ChatGPT：API、登录、静态资源、用户文件和专属遥测。
   - DOMAIN-SUFFIX,openai.com
@@ -27,9 +29,7 @@ payload:
   - DOMAIN,production-openaicom-storage.azureedge.net
   - DOMAIN,o207216.ingest.sentry.io
   - DOMAIN,o33249.ingest.sentry.io
-  # 保留原 OpenAI 规则中的两个精确地址，不引入共享云 ASN。
-  - IP-CIDR,24.199.123.28/32,no-resolve
-  - IP-CIDR,64.23.132.171/32,no-resolve
+  # 语音 IP 单独使用 ChatGPTVoice.yaml，按 OpenAI 官方清单更新。
 
   # Claude：主站、API、桌面应用桥接、附件和 Artifacts 使用同一出口。
   - DOMAIN-SUFFIX,anthropic.com
@@ -84,3 +84,8 @@ payload:
   - DOMAIN-SUFFIX,x.ai
   - DOMAIN-SUFFIX,grok.com
   - DOMAIN-SUFFIX,poe.com
+
+  # Groq / Together AI：覆盖控制台、现行 API 和上游清单中的旧入口。
+  - DOMAIN-SUFFIX,groq.com
+  - DOMAIN-SUFFIX,together.ai
+  - DOMAIN,api.together.xyz

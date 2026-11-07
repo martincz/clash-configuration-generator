@@ -14,6 +14,11 @@ prefix:
     group: "Speedtest"
     ruleset: "rules/blackmatrix7/Speedtest/Speedtest_No_Resolve.yaml"
 
+  # 补充常用测速站点
+  - name: "SpeedtestSupplement"
+    group: "Speedtest"
+    ruleset: "rules/martincz/Speedtest/Speedtest.yaml"
+
 suffix:
   # ChinaMedia
   - name: "ChinaMedia" 
@@ -68,7 +73,7 @@ suffix:
   # GlobalMedia
   - name: "GlobalMedia"
     group: "GlobalMedia"
-    # 综合媒体库包含共享云服务网段；仅域名用于识别媒体业务。
-    # 保留 IP 规则的代理覆盖，但不让整段云网络跟随媒体出口。
+    # 综合媒体库中的未分类 IP 保留通用出口。
+    # 已核实的媒体专属网段由前置 MediaIP 规则集优先处理。
     ip-group: "Proxy"
     ruleset: "rules/blackmatrix7/GlobalMedia/GlobalMedia_Classical_No_Resolve.yaml"

@@ -1,0 +1,46 @@
+# NAME: MediaIP
+# VERIFIED-AT: 2026-11-07T16:14:49+00:00
+# Provider-registered Netflix, Hulu and YouTube networks already present in GlobalMedia.
+# Import before the general IP fallback with group GlobalMedia.
+# Other shared-cloud and unverified endpoint ranges keep their existing general proxy policy.
+# netflix 23.246.0.0/18 | https://rdap.arin.net/registry/ip/23.246.0.0 | sha256:6548ee5819b6d982982afce34b42859163d55b6d1da044a7bb989aee040a4d36
+# netflix 37.77.184.0/21 | https://rdap.db.ripe.net/ip/37.77.184.0/21 | sha256:5e25508b9a43e924fc4d134900c0b74b4a3da6803f5ceaabfd07b1b3a1650c25
+# netflix 45.57.0.0/17 | https://rdap.arin.net/registry/ip/45.57.0.0 | sha256:271993460336b631b158132948e2f3f7efa4716c45d4dd80b8931132524594c8
+# netflix 64.120.128.0/17 | https://rdap.arin.net/registry/ip/64.120.128.0 | sha256:e0d5fad5f5b874c4235d6552a921669b422d9781a9c86f9b036853a9fb271eef
+# netflix 66.197.128.0/17 | https://rdap.arin.net/registry/ip/66.197.128.0/17 | sha256:53ee696a4eaa98ca93aac769ecd917f1447f644f853f180d055207331e2a68f9
+# netflix 69.53.224.0/19 | https://rdap.arin.net/registry/ip/69.53.224.0 | sha256:f016e8587d26c1d4384fc0af07dc99e7bd9bad71a8776eb43f28032425c6c140
+# netflix 108.175.32.0/20 | https://rdap.arin.net/registry/ip/108.175.32.0 | sha256:5e6ca9bfca14c3199e7b3e3944e280814c7de9d2b605668a83f36c46c74f3a47
+# netflix 185.2.220.0/22 | https://rdap.db.ripe.net/ip/185.2.220.0/22 | sha256:763a565678a7c39399d6f503bf70b1f0e3b424bf7a56701f7a778a5920d4ce03
+# netflix 185.9.188.0/22 | https://rdap.db.ripe.net/ip/185.9.188.0 | sha256:1da6b160c2d63bd20bc6df36c5cd684123c931e40efca934e279b19d540a3ad5
+# netflix 192.173.64.0/18 | https://rdap.arin.net/registry/ip/192.173.64.0 | sha256:5dace86b4966f10da371005e096af02a8b5d0e4a7ac6ee1754c2c448ece5922a
+# netflix 198.38.96.0/19 | https://rdap.arin.net/registry/ip/198.38.96.0/19 | sha256:c9457f53ebfc237d83ce80a49d157e3009b4fc3594ace589741c91830f15fcfe
+# netflix 198.45.48.0/20 | https://rdap.arin.net/registry/ip/198.45.48.0/20 | sha256:1c609b433f2c68e46cd899db12c4ce19cb5dab931e5c8d9bf5d51936a7dd44cf
+# hulu 199.200.48.0/22 | https://rdap.arin.net/registry/ip/199.200.48.0/22 | sha256:b4c730883d58f6109ed039ffcae1b11df40618af4bfb91b4ba2af8c95697635d
+# netflix 208.75.76.0/22 | https://rdap.arin.net/registry/ip/208.75.76.0/22 | sha256:3d91b1b367ce731a2d381732fc06760365c86802fd3ff2cfc0090f0cda45176d
+# netflix 2607:fb10::/32 | https://rdap.arin.net/registry/ip/2607:fb10::/32 | sha256:cb3fd1c68492d375015b10e21d492630c8e2d340bd54e396d1989ce6261fdfa4
+# hulu 2620:100:3000::/40 | https://rdap.arin.net/registry/ip/2620:100:3000::/40 | sha256:14cb4944d2645b9987897831b0ef29a43274632ff6d3db3c8aa9f7886db2a5fd
+# netflix 2620:10c:7000::/44 | https://rdap.arin.net/registry/ip/2620:10c:7000::/44 | sha256:2f5a661c1b54245dc3d8b949d8ea71541301c4761082d65f62496257d569d652
+# youtube 2620:120:e000::/40 | https://rdap.arin.net/registry/ip/2620:120:e000::/40 | sha256:b72cc2d23db85572ad3b7063a76663f4dd44d0bfbe151da8ac315ca2e3ee37c3
+# netflix 2a00:86c0::/32 | https://rdap.db.ripe.net/ip/2a00:86c0::/32 | sha256:6574abd319cca96cf464c84cc0887f68d901ef94d1594d319080e4faef5a581d
+# netflix 2a03:5640::/32 | https://rdap.db.ripe.net/ip/2a03:5640::/32 | sha256:8a3cf553bd70229294d9dfa2c4cfa5ad09ee43496367fc86c820807071ce6cea
+payload:
+  - IP-CIDR,23.246.0.0/18,no-resolve
+  - IP-CIDR,37.77.184.0/21,no-resolve
+  - IP-CIDR,45.57.0.0/17,no-resolve
+  - IP-CIDR,64.120.128.0/17,no-resolve
+  - IP-CIDR,66.197.128.0/17,no-resolve
+  - IP-CIDR,69.53.224.0/19,no-resolve
+  - IP-CIDR,108.175.32.0/20,no-resolve
+  - IP-CIDR,185.2.220.0/22,no-resolve
+  - IP-CIDR,185.9.188.0/22,no-resolve
+  - IP-CIDR,192.173.64.0/18,no-resolve
+  - IP-CIDR,198.38.96.0/19,no-resolve
+  - IP-CIDR,198.45.48.0/20,no-resolve
+  - IP-CIDR,199.200.48.0/22,no-resolve
+  - IP-CIDR,208.75.76.0/22,no-resolve
+  - IP-CIDR6,2607:fb10::/32,no-resolve
+  - IP-CIDR6,2620:100:3000::/40,no-resolve
+  - IP-CIDR6,2620:10c:7000::/44,no-resolve
+  - IP-CIDR6,2620:120:e000::/40,no-resolve
+  - IP-CIDR6,2a00:86c0::/32,no-resolve
+  - IP-CIDR6,2a03:5640::/32,no-resolve

@@ -30,13 +30,29 @@ git clone --recurse-submodules https://github.com/martincz/clash-configuration-g
 | `preference.advanced.yaml` | 进阶示例 |
 
 2. 按需修改 `preference.yaml`。
-3. 在仓库根目录执行：
+3. 两个平台分别准备项目环境（虚拟环境不能跨 Windows/Linux 共用）：
+
+```bash
+# Linux
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+```
+
+```powershell
+# Windows PowerShell
+python -m venv .venv-windows
+.venv-windows\Scripts\python.exe -m pip install -r requirements.txt
+```
+
+4. 在仓库根目录执行。命令会优先使用当前平台的项目环境，避免误用全局旧依赖：
 
 ```bash
 python generate
 ```
 
-4. 将生成的 `config.yaml` 导入 Clash 客户端。
+5. 将生成的 `config.yaml` 导入 Clash 客户端。
+
+Magic Catling2 的 DNS 在应用内单独配置，默认生成结果不包含 `dns` 段属于正常用法。只有需要包含 DNS 的完整文件时才使用 `--dns`。sniffer 是否开启由实际使用需要决定。
 
 ## generate 参数与示例
 
@@ -102,9 +118,18 @@ rulesets-prefix:
   - name: "AI"
     group: "AI"
     ruleset: "rules/martincz/AI/AI.yaml"
+  - name: "ChatGPTVoice"
+    group: "AI"
+    ruleset: "rules/martincz/AI/ChatGPTVoice.yaml"
+  - name: "Payment"
+    group: "Secure"
+    ruleset: "rules/martincz/Payment/Payment.yaml"
   - name: "Media"
     group: "GlobalMedia"
     ruleset: "rules/martincz/Media/Media.yaml"
+  - name: "MediaIP"
+    group: "GlobalMedia"
+    ruleset: "rules/martincz/Media/MediaIP.yaml"
 
 rulesets:
   - name: "SharedServices"
@@ -116,9 +141,19 @@ rulesets:
 
 `Media` 规则集补充 Bilibili、iQIYI、WeTV 国际版的专属入口，覆盖综合国内媒体清单中的冲突条目；国内站点和通用 API 仍保留直连。
 
+`Payment` 单列 Stripe Checkout、付款链接、客户账单、支付 API、3D Secure 和 Link 入口；`Secure` 组需要由偏好配置定义为同城节点的手动选择组。通用 `js.stripe.com` SDK 仍按共享服务处理。PayPal 保留普通规则排序，使其中的通用关键词不会抢占其他站点更精确的域名规则。
+
+`ChatGPTVoice` 是 OpenAI 官方语音地址的版本化快照，包含来源时间和 SHA-256。显式执行以下命令可刷新；下载或验证失败时保留原文件，普通 `generate` 不访问网络：
+
+```bash
+python update_voice_rules.py
+```
+
+`MediaIP` 恢复经 ARIN/RIPE 登记核实、且已在综合媒体库中的 Netflix、Hulu、YouTube 专属网段；每个网段记录了核验来源。共享云网段和未核实的地址仍保留通用代理策略。
+
 ### 综合规则集的 IP 出口
 
-规则集可以用 `ip-group` 为 `IP-CIDR` / `IP-CIDR6` 指定不同出口，显式规则补丁仍优先。默认 `GlobalMedia` 已采用这一设置：
+规则集可以用 `ip-group` 为 `IP-CIDR` / `IP-CIDR6` / `IP-ASN` 指定不同出口，显式规则补丁仍优先。默认 `GlobalMedia` 已采用这一设置：
 
 ```yaml
 - name: "GlobalMedia"
@@ -127,7 +162,13 @@ rulesets:
   ruleset: "rules/blackmatrix7/GlobalMedia/GlobalMedia_Classical_No_Resolve.yaml"
 ```
 
-媒体域名跟随 `GlobalMedia`；综合库中的共享云网段继续走代理，但使用通用 `Proxy`。只有 IP、没有域名信息的连接会按 IP 规则分流，不保证跟随媒体组。
+媒体域名及前置 `MediaIP` 中的专属网段跟随 `GlobalMedia`；综合库中的其余 IP 使用通用 `Proxy`。Nintendo 的 `35.192.0.0/12` 属于共享 Google Cloud 网络，可在该规则集配置 `ip-group: "Proxy"`，保留其域名走 `Game`。
+
+`IP-ASN` 按目标 IP 所属的自治系统编号匹配，例如 `IP-ASN,32934,Static,no-resolve`。Mihomo v1.19.28 支持该类型；生成器保留上游 Facebook、Telegram 的 ASN 规则，并在普通规则集中将其排在域名和明确的 CIDR 之后。`no-resolve` 选项保持不变，仍参与规则补丁、策略优先级和去重。
+
+ASN 匹配依赖内核数据目录中的 `ASN.mmdb`；文件缺失时 Mihomo 会按 `geox-url.asn` 的配置或内核默认地址尝试下载。生成命令本身不下载数据库。路由器转发流量通常没有客户端进程信息，因此上游 `PROCESS-NAME` 规则仍会跳过并告警。
+
+参考：[Mihomo 路由规则](https://wiki.metacubex.one/config/rules/)。
 
 ## 代理组选择
 
@@ -138,8 +179,25 @@ rulesets:
 - 普通访问的地区组可以使用 `url-test`，例如显式设置 `tolerance: 50`、`interval: 300`、`lazy: true`，测试地址使用 HTTPS。
 - `url-test` 比较延迟，`fallback` 按顺序选择可用节点，均不自动测量持续吞吐。媒体组不要仅凭 204 延迟认定最快节点。
 - `select` 如果选择了一个自动组，其最终出口仍会随下层自动组切换。需要固定出口时应选择具体节点。
+- `Speedtest` 用于手动切换出口，在不同测试站比较网速；各测试站保持跟随这个独立组，不绑定媒体组。
 
-实际策略保存在 `preference.yaml` 和规则文件中；调整后执行 `python generate` 即可重建 `config.yaml`。`preference.yaml`、生成结果和 `.venv/` 不纳入 Git。
+实际策略保存在 `preference.yaml` 和规则文件中；调整后执行 `python generate` 即可重建 `config.yaml`。`preference.yaml`、生成结果、`.venv/` 和 `.venv-windows/` 不纳入 Git。
+
+### 常规入口下的业务分流
+
+AI、支付、测速通过现有透明代理或普通代理入口使用规则分流，偏好配置保留实际使用的 SmartDNS SOCKS 监听。专属业务域名分别跟随各自的手动组；共享验证码、统计和 CDN 平台使用通用代理。共享域名无法仅凭域名规则判断发起业务，因此主站固定出口不等于所有第三方依赖都固定出口。
+
+`SharedServices` 收录通用 AWS、CloudFront、Akamai 等共享域名。在偏好配置中对 `amazonaws.com`、`amazonaws.co.uk`、`cloudfront.net`、`akamaized.net` 使用 `Proxy` 覆盖补丁，避免综合媒体库将整个共享平台归入媒体。明确的媒体专属域名和前置业务例外仍优先。
+
+### 普通分流下的跨站测速
+
+默认测速规则包含上游清单及本地 `SpeedtestSupplement`，后者补充 nPerf、SpeedOf.Me、TestMy.net。可以将补充清单放入 `rulesets-prefix`，与上游测速清单一起优先处理，测试客户端继续使用现有入口。
+
+FAST.com 使用 Netflix 服务器测量吞吐，其页面命中 `Speedtest`，Netflix CDN 数据可能命中 `GlobalMedia`。进行 FAST 测试时，将两个组选成同一个被测节点，测试后恢复媒体组。切换节点后重新开始测试，已建立的连接不会随组选择迁移。
+
+其他测速站也可能使用清单未覆盖的动态服务器域名或共享 CDN。通过 Mihomo 连接记录确认实际测速连接命中的规则，再补充专属测试服务器域名；站点首页归组不能证明全部测速连接都使用同一出口。
+
+参考：[FAST.com 官方说明](https://fast.com/en)。
 
 ### ruleset-rule-patches（本地规则补丁）
 
@@ -191,6 +249,7 @@ GitHub Actions 在 Windows 和 Linux 上运行相同测试，包括输出字节�
 
 项目内置 `unittest` 回归测试，覆盖规则排序/去重、CLI 参数行为、proxy-group 容错等场景。
 业务策略测试还覆盖 AI/媒体/支付分类、共享云网段、前置规则集、默认规则集覆盖和设备端口逻辑规则去重。
+测试前请激活对应平台的项目环境，或把下面的 `python` 替换为 `.venv/bin/python`（Linux）或 `.venv-windows\Scripts\python.exe`（Windows）。
 
 ```bash
 # 运行全部测试

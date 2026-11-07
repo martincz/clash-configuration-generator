@@ -1,23 +1,8 @@
-- name: "Proxy" # 手动选择代理节点
+- name: "Proxy" # 通用出口；自动分区组由 preference.yaml 显式配置
   type: select
   proxies:
-    - "Auto"
+    - ".*"
     - "DIRECT"
-    - ".*"
-
-- name: "Auto" # 通过指定的 URL 测试并自动选择延迟最低的节点
-  type: url-test
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
-  proxies:
-    - ".*"
-
-- name: "Load-Balance" # 负载均衡
-  type: load-balance
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300
-  proxies:
-    - ".*"
 
 - name: "Apple" # Apple 服务代理
   type: select
@@ -26,19 +11,11 @@
     - "Proxy"
     - ".*"
 
-- name: "AsianMedia" # 亚洲流媒体服务
+- name: "GlobalMedia" # 媒体出口手动选择，避免把低延迟当作高吞吐
   type: select
   proxies:
-    - "DIRECT"
-    - "Proxy"
     - ".*"
-
-- name: "GlobalMedia" # 国际流媒体服务
-  type: select
-  proxies:
-    - "Proxy"
     - "DIRECT"
-    - ".*"
 
 - name: "Speedtest" # 测速专用
   type: select

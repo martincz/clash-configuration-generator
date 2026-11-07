@@ -1,0 +1,33 @@
+# NAME: Media
+# UPDATED: 2026-11-07
+# 从 ChinaMedia / AsianMedia 的直连清单中提取国际版专属入口。
+# 在 rulesets-prefix 中使用；国内 bilibili.com / iqiyi.com 仍按原规则直连。
+# Sources:
+# rules/blackmatrix7/AsianMedia/AsianMedia_No_Resolve.yaml
+# rules/blackmatrix7/ChinaMedia/ChinaMedia_No_Resolve.yaml
+# rules/blackmatrix7/GlobalMedia/GlobalMedia_Classical_No_Resolve.yaml
+# https://www.iq.com/
+# https://wetv.vip/en
+payload:
+  # Bilibili 国际版及其专属资源；不覆盖国内通用 API。
+  - DOMAIN-SUFFIX,bilibili.tv
+  - DOMAIN-SUFFIX,biliintl.com
+  - DOMAIN-SUFFIX,biliintl.co
+  - DOMAIN-SUFFIX,bstarstatic.com
+  - DOMAIN-SUFFIX,p-bstarstatic.akamaized.net
+  - DOMAIN-SUFFIX,upos-bstar-mirrorakam.akamaized.net
+  - DOMAIN-SUFFIX,upos-bstar1-mirrorakam.akamaized.net
+
+  # iQIYI 国际版；共享 iqiyipic.com 图片平台保留原有策略。
+  - DOMAIN-SUFFIX,iq.com
+  - DOMAIN-SUFFIX,intl.iqiyi.com
+  - DOMAIN,intl-rcd.iqiyi.com
+  - DOMAIN,intl-subscription.iqiyi.com
+  - DOMAIN,akmcdnoversea-tw.inter.iqiyi.com
+  - DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
+  - DOMAIN,chuangcachecdnoversea-tw.inter.iqiyi.com
+  - DOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
+
+  # WeTV 国际版，国内腾讯视频保持直连。
+  - DOMAIN-SUFFIX,wetv.vip
+  - DOMAIN-SUFFIX,wetvinfo.com

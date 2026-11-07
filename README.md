@@ -5,12 +5,11 @@
 ## 环境准备
 
 1. 安装 [Git](https://git-scm.com/)。
-2. 安装 [Python](https://www.python.org/)。
+2. 安装 [Python](https://www.python.org/) 3.9 或更新版本。
 3. 安装依赖：
 
 ```bash
-pip install deepmerge
-pip install ruamel.yaml
+pip install -r requirements.txt
 ```
 
 4. 拉取仓库（含子模块）：
@@ -84,11 +83,63 @@ python generate --dns --output config.preview.yaml
 
 ## 规则生成提示
 
-1. 规则按 `rules-prefix` -> `rulesets` -> `rules-suffix` -> `rules/suffix.yaml` 的顺序合并。
-2. `rulesets` 部分会按规则精度排序，并结合 `rules-policy-priority` 决定同精度冲突优先级。
+1. 规则按 `rules-prefix` -> `rulesets-prefix` -> 普通 `rulesets` -> `rules-suffix` -> `rules/suffix.yaml` 的顺序合并。
+2. `rulesets-prefix` 按配置中的规则集顺序保留分块，每块内部按精度排序；普通 `rulesets` 仍整体按精度排序，并结合 `rules-policy-priority` 决定同精度冲突优先级。
 3. 相同 `TYPE+PATTERN` 的重复规则会在生成阶段去重，保留排序更靠前的一条。
 4. 未知规则类型会被跳过，并输出到 `stderr`。
-5. 同一路径 ruleset 被配置到不同分组时，会输出告警，最终生效分组由 `rules-policy-priority` 决定。
+5. 偏好配置显式引用某个 ruleset 路径时，会替换默认清单中同路径的引用，避免 Facebook 等规则同时被默认组和自定义组接管。
+6. 自定义清单内部仍存在同路径不同组时会告警：前置规则集按块顺序生效，普通规则集按 `rules-policy-priority` 决定同精度冲突。
+
+### 业务前置规则集
+
+需要固定出口的业务可以放进 `rulesets-prefix`，确保综合媒体库中的精确域名不会抢走业务流量。例：
+
+```yaml
+rulesets-prefix:
+  - name: "Lan"
+    group: "DIRECT"
+    ruleset: "rules/blackmatrix7/Lan/Lan_No_Resolve.yaml"
+  - name: "AI"
+    group: "AI"
+    ruleset: "rules/martincz/AI/AI.yaml"
+  - name: "Media"
+    group: "GlobalMedia"
+    ruleset: "rules/martincz/Media/Media.yaml"
+
+rulesets:
+  - name: "SharedServices"
+    group: "Proxy"
+    ruleset: "rules/martincz/SharedServices/SharedServices.yaml"
+```
+
+`AI` 代理组需要在 `preference.yaml` 中定义为 `select`，候选直接填写验证过的节点名。该规则集包括 OpenAI、Claude、Cursor、GitHub/Microsoft Copilot、Gemini 和 NotebookLM 等专属域名；共享平台域名由 `SharedServices` 分开处理，更具体的业务租户域名仍可覆盖它们。
+
+`Media` 规则集补充 Bilibili、iQIYI、WeTV 国际版的专属入口，覆盖综合国内媒体清单中的冲突条目；国内站点和通用 API 仍保留直连。
+
+### 综合规则集的 IP 出口
+
+规则集可以用 `ip-group` 为 `IP-CIDR` / `IP-CIDR6` 指定不同出口，显式规则补丁仍优先。默认 `GlobalMedia` 已采用这一设置：
+
+```yaml
+- name: "GlobalMedia"
+  group: "GlobalMedia"
+  ip-group: "Proxy"
+  ruleset: "rules/blackmatrix7/GlobalMedia/GlobalMedia_Classical_No_Resolve.yaml"
+```
+
+媒体域名跟随 `GlobalMedia`；综合库中的共享云网段继续走代理，但使用通用 `Proxy`。只有 IP、没有域名信息的连接会按 IP 规则分流，不保证跟随媒体组。
+
+## 代理组选择
+
+默认只保留 `Proxy`、`Apple`、`GlobalMedia`、`Speedtest`、`Hijacking` 五组。其他分组由偏好配置显式添加，同名组仍可覆盖默认组。
+
+- AI、支付等需要稳定出口的业务使用 `select`，直接选择具体节点；支付备用节点应限定在可接受的同一城市。
+- TikTok、Apple TV 和其他海外视频可统一使用 `GlobalMedia`，按实际播放/下载吞吐手选节点；国内媒体继续直连。
+- 普通访问的地区组可以使用 `url-test`，例如显式设置 `tolerance: 50`、`interval: 300`、`lazy: true`，测试地址使用 HTTPS。
+- `url-test` 比较延迟，`fallback` 按顺序选择可用节点，均不自动测量持续吞吐。媒体组不要仅凭 204 延迟认定最快节点。
+- `select` 如果选择了一个自动组，其最终出口仍会随下层自动组切换。需要固定出口时应选择具体节点。
+
+实际策略保存在 `preference.yaml` 和规则文件中；调整后执行 `python generate` 即可重建 `config.yaml`。`preference.yaml`、生成结果和 `.venv/` 不纳入 Git。
 
 ### ruleset-rule-patches（本地规则补丁）
 
@@ -119,9 +170,27 @@ ruleset-rule-patches:
         group: "Proxy"
 ```
 
+## Windows 与 Linux 的文件格式
+
+仓库文本统一使用 UTF-8（无 BOM）和 LF 换行：
+
+- `.gitattributes` 固定 Git 索引和检出文件的文本换行规则，不依赖各机器的 `core.autocrlf` 设置；二进制文件保持原样。
+- `.editorconfig` 约束支持它的编辑器，保存文件时使用 UTF-8、LF 和末尾换行。
+- `generate` 以 UTF-8 文本读取所有 YAML，在解析前统一输入换行，兼容 UTF-8 BOM；再将配置统一渲染成无 BOM 的 UTF-8 / LF 字节。默认文件、`--output`、`--stdout` 和 `--dry-run` 使用同一份内容，YAML 字符串中的转义数据不变。
+- 两个平台使用同一份输入和 `requirements.txt` 中固定的依赖版本，可得到一致的生成结果。
+
+跨平台保存文件推荐直接指定输出路径，避开外部 Shell 重定向可能引入的重新编码：
+
+```bash
+python generate --output config.yaml
+```
+
+GitHub Actions 在 Windows 和 Linux 上运行相同测试，包括输出字节、CRLF 输入，以及 `core.autocrlf=true/input/false` 下的检出检查。
+
 ## 测试
 
 项目内置 `unittest` 回归测试，覆盖规则排序/去重、CLI 参数行为、proxy-group 容错等场景。
+业务策略测试还覆盖 AI/媒体/支付分类、共享云网段、前置规则集、默认规则集覆盖和设备端口逻辑规则去重。
 
 ```bash
 # 运行全部测试
@@ -135,4 +204,7 @@ python -m unittest tests.test_generate_cli -v
 
 # 仅运行 proxy-group 容错测试
 python -m unittest tests.test_proxy_group -v
+
+# 仅运行业务策略测试
+python -m unittest discover -s tests -p test_rule_policy.py -v
 ```

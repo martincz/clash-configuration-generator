@@ -36,7 +36,7 @@ def getProxyGroups(preference):
 
     # 获取预设代理组
     top_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-    with open(os.path.join(top_dir, 'configs/proxy-groups.yaml'), 'rb') as fp:
+    with open(os.path.join(top_dir, 'configs/proxy-groups.yaml'), 'r', encoding='utf-8-sig') as fp:
         cur_groups = yaml.load(fp)
     # 获取偏好代理组
     pref_groups = preference.get('proxy-groups') or []

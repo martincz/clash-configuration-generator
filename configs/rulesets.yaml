@@ -68,4 +68,7 @@ suffix:
   # GlobalMedia
   - name: "GlobalMedia"
     group: "GlobalMedia"
+    # 综合媒体库包含共享云服务网段；仅域名用于识别媒体业务。
+    # 保留 IP 规则的代理覆盖，但不让整段云网络跟随媒体出口。
+    ip-group: "Proxy"
     ruleset: "rules/blackmatrix7/GlobalMedia/GlobalMedia_Classical_No_Resolve.yaml"

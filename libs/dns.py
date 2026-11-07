@@ -34,6 +34,6 @@ def getDns():
     yaml.indent(mapping=2, sequence=4, offset=2)
 
     top_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-    with open(os.path.join(top_dir, 'configs/dns.yaml'), 'rb') as fp:
+    with open(os.path.join(top_dir, 'configs/dns.yaml'), 'r', encoding='utf-8-sig') as fp:
         dns = yaml.load(fp)
     return dns

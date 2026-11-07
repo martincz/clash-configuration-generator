@@ -51,12 +51,18 @@ class Rule(object):
         prefix_rules = self.ensureRuleList(preference.get('rules-prefix'))
         suffix_rules = self.ensureRuleList(preference.get('rules-suffix'))
 
-        selected_rulesets = []
-        selected_rulesets.extend(self.ensureRulesets(default_rulesets.get('prefix')))
-        selected_rulesets.extend(self.ensureRulesets(preference.get('rulesets')))
-        selected_rulesets.extend(self.ensureRulesets(default_rulesets.get('suffix')))
+        priority_rulesets, selected_rulesets = self.selectRulesets(default_rulesets, preference)
+        self.emitDuplicatedRulesetWarnings(
+            priority_rulesets + selected_rulesets, policy_priorities, len(priority_rulesets)
+        )
 
-        self.emitDuplicatedRulesetWarnings(selected_rulesets, policy_priorities)
+        # Explicit business blocks keep their order. A precise rule from a broad
+        # upstream collection must not override a pinned business policy.
+        priority_rules = []
+        for policy in priority_rulesets:
+            block = self.getRulesFromRuleSets([policy], ruleset_rule_patches).get('rules')
+            priority_rules.extend(self.optimizeRulesOrder(block, policy_priorities))
+
         rulesets_rules = self.getRulesFromRuleSets(selected_rulesets, ruleset_rule_patches).get('rules')
 
         # Rulesets are updated from upstream frequently. Sort all ruleset-derived
@@ -68,13 +74,17 @@ class Rule(object):
 
         merged_rules = []
         merged_rules.extend(prefix_rules)
+        merged_rules.extend(priority_rules)
         merged_rules.extend(optimized_rulesets)
         merged_rules.extend(suffix_rules)
         merged_rules.extend(final_suffix_rules)
 
         rules = {'rules': self.deduplicateRules(merged_rules)}
 
-        for key in ['rulesets', 'rules-prefix', 'rules-suffix', 'rules-policy-priority', 'ruleset-rule-patches']:
+        for key in [
+            'rulesets', 'rulesets-prefix', 'rules-prefix', 'rules-suffix',
+            'rules-policy-priority', 'ruleset-rule-patches',
+        ]:
             if key in preference:
                 del preference[key]
 
@@ -86,7 +96,7 @@ class Rule(object):
         if absolute_path in self.yaml_file_cache:
             return self.yaml_file_cache[absolute_path]
 
-        with open(absolute_path, 'rb') as fp:
+        with open(absolute_path, 'r', encoding='utf-8-sig') as fp:
             data = self.yaml_safe.load(fp) or {}
 
         self.yaml_file_cache[absolute_path] = data
@@ -147,7 +157,30 @@ class Rule(object):
             return []
         return [item for item in rulesets if isinstance(item, dict)]
 
-    def emitDuplicatedRulesetWarnings(self, rulesets, policy_priorities):
+    def selectRulesets(self, defaults, preference):
+        priority_rulesets = self.ensureRulesets(preference.get('rulesets-prefix'))
+        preferred_rulesets = self.ensureRulesets(preference.get('rulesets'))
+
+        def path_key(policy):
+            path = policy.get('ruleset')
+            if not path:
+                return None
+            return os.path.normcase(os.path.normpath(os.path.join(self.top_dir, str(path))))
+
+        preferred_paths = {path_key(policy) for policy in priority_rulesets + preferred_rulesets}
+        preferred_paths.discard(None)
+        selected_rulesets = [
+            policy for policy in self.ensureRulesets(defaults.get('prefix'))
+            if path_key(policy) not in preferred_paths
+        ]
+        selected_rulesets.extend(preferred_rulesets)
+        selected_rulesets.extend(
+            policy for policy in self.ensureRulesets(defaults.get('suffix'))
+            if path_key(policy) not in preferred_paths
+        )
+        return priority_rulesets, selected_rulesets
+
+    def emitDuplicatedRulesetWarnings(self, rulesets, policy_priorities, priority_ruleset_count=0):
         by_ruleset = defaultdict(list)
 
         for index, policy in enumerate(self.ensureRulesets(rulesets)):
@@ -157,6 +190,7 @@ class Rule(object):
 
             by_ruleset[ruleset].append({
                 'index': index,
+                'stage': min(index, priority_ruleset_count),
                 'name': str(policy.get('name') or ruleset).strip(),
                 'group': str(policy.get('group') or '').strip(),
             })
@@ -169,7 +203,11 @@ class Rule(object):
 
             ordered = sorted(
                 entries,
-                key=lambda item: (policy_priorities.get(item.get('group'), 10_000), item.get('index'))
+                key=lambda item: (
+                    item.get('stage'),
+                    policy_priorities.get(item.get('group'), 10_000),
+                    item.get('index'),
+                )
             )
             conflict_entries.append((ruleset, ordered))
 
@@ -211,6 +249,11 @@ class Rule(object):
 
         for policy in self.ensureRulesets(rulesets):
             group = str(policy.get('group') or '')
+            ip_group = policy.get('ip-group')
+            if ip_group is not None:
+                if not isinstance(ip_group, str) or not ip_group.strip():
+                    raise ValueError('ruleset ip-group must be a non-empty group name')
+                ip_group = ip_group.strip()
             ruleset = policy.get('ruleset')
             if ruleset is None:
                 continue
@@ -242,7 +285,10 @@ class Rule(object):
                 if rule_match_key in drop_keys:
                     continue
 
-                final_group = override_rules.get(rule_match_key, group)
+                default_group = group
+                if ip_group is not None and rule_type in ['IP-CIDR', 'IP-CIDR6']:
+                    default_group = ip_group
+                final_group = override_rules.get(rule_match_key, default_group)
 
                 if len(info) == 2:
                     rule = ','.join([rule_type, info[1], final_group])
@@ -496,6 +542,21 @@ class Rule(object):
     def getRuleMatchKey(self, rule):
         if not isinstance(rule, str):
             return str(rule)
+
+        rule_type, separator, expression = rule.partition(',')
+        rule_type = rule_type.strip().upper()
+        if separator and rule_type in ['AND', 'OR', 'NOT', 'SUB-RULE']:
+            # Commas inside a logical expression are part of its matcher. Using
+            # split(',') here would collapse distinct port/device exceptions.
+            depth = 0
+            for index, character in enumerate(expression):
+                if character == '(':
+                    depth += 1
+                elif character == ')':
+                    depth -= 1
+                elif character == ',' and depth == 0:
+                    return ','.join([rule_type, expression[:index].strip()])
+            return rule.strip()
 
         info = [item.strip() for item in rule.split(',')]
         if len(info) == 0:

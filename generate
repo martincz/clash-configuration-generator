@@ -26,6 +26,7 @@
 from libs.preference import getPreference
 from ruamel.yaml import YAML
 
+import io
 import os
 import sys
 
@@ -81,6 +82,18 @@ def _ParseArguments(args):
     return opt
 
 
+def _WriteStdout(content):
+    # Bypass Windows text encoding/newline translation for the actual CLI.
+    # StringIO and other text-only captures still receive decoded UTF-8 text.
+    stream = getattr(sys.stdout, 'buffer', None)
+    if stream is None:
+        sys.stdout.write(content.decode('utf-8'))
+    else:
+        sys.stdout.flush()
+        stream.write(content)
+        stream.flush()
+
+
 def main(orig_args):
     try:
         opt = _ParseArguments(orig_args)
@@ -93,10 +106,11 @@ def main(orig_args):
     yaml.allow_unicode = True
     yaml.explicit_start = False
     yaml.preserve_quotes = True
+    yaml.line_break = '\n'
     yaml.indent(mapping=2, sequence=4, offset=2)
 
     # Read default config.
-    with open(os.path.join(ROOT_DIR, 'configs/basic.yaml'), 'rb') as fp:
+    with open(os.path.join(ROOT_DIR, 'configs/basic.yaml'), 'r', encoding='utf-8-sig') as fp:
         cfg_basic = yaml.load(fp)
 
     # Merge user preference.
@@ -106,6 +120,12 @@ def main(orig_args):
     if opt.dns != True and 'dns' in cfg_final.keys():
         del cfg_final['dns']
 
+    # Round-trip YAML comments may retain CRLF from the input. Render once and
+    # normalize physical line endings, while YAML-escaped data stays intact.
+    rendered = io.StringIO()
+    yaml.dump(cfg_final, rendered)
+    content = rendered.getvalue().replace('\r\n', '\n').replace('\r', '\n').encode('utf-8')
+
     wrote_output = False
 
     if opt.output is not None:
@@ -113,16 +133,16 @@ def main(orig_args):
         output_dir = os.path.dirname(output_path)
         if output_dir != '':
             os.makedirs(output_dir, exist_ok=True)
-        with open(output_path, 'w', encoding='utf-8') as fp:
-            yaml.dump(cfg_final, fp)
+        with open(output_path, 'wb') as fp:
+            fp.write(content)
         wrote_output = True
 
     if opt.stdout:
-        yaml.dump(cfg_final, sys.stdout)
+        _WriteStdout(content)
 
     if not opt.stdout and not wrote_output:
-        with open(os.path.join(ROOT_DIR, 'config.yaml'), 'w', encoding='utf-8') as fp:
-            yaml.dump(cfg_final, fp)
+        with open(os.path.join(ROOT_DIR, 'config.yaml'), 'wb') as fp:
+            fp.write(content)
 
     return 0
 

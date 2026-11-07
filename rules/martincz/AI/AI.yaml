@@ -1,0 +1,86 @@
+# NAME: AI
+# UPDATED: 2026-11-07
+# 专属业务域名放在 rulesets-prefix 中，先于综合媒体/开发规则匹配。
+# 共享验证码、支付、统计和 CDN 平台不按整个供应商域名归入 AI。
+# Sources:
+# https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps
+# https://docs.github.com/en/copilot/reference/copilot-allowlist-reference
+# https://code.claude.com/docs/en/network-config
+# https://cursor.com/docs/enterprise/network-configuration
+# https://cursor.com/help/troubleshooting/sign-in-domains
+# https://ai.google.dev/gemini-api/docs
+payload:
+  # OpenAI / ChatGPT：API、登录、静态资源、用户文件和专属遥测。
+  - DOMAIN-SUFFIX,openai.com
+  - DOMAIN-SUFFIX,chatgpt.com
+  - DOMAIN-SUFFIX,oaistatic.com
+  - DOMAIN-SUFFIX,oaiusercontent.com
+  - DOMAIN-SUFFIX,oaistatsig.com
+  - DOMAIN-SUFFIX,openaimerge.com
+  - DOMAIN-SUFFIX,chatgpt.livekit.cloud
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+  - DOMAIN-SUFFIX,openaicom.imgix.net
+  - DOMAIN,chat.openai.com.cdn.cloudflare.net
+  - DOMAIN,openai-api.arkoselabs.com
+  - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+  - DOMAIN,openaicomproductionae4b.blob.core.windows.net
+  - DOMAIN,production-openaicom-storage.azureedge.net
+  - DOMAIN,o207216.ingest.sentry.io
+  - DOMAIN,o33249.ingest.sentry.io
+  # 保留原 OpenAI 规则中的两个精确地址，不引入共享云 ASN。
+  - IP-CIDR,24.199.123.28/32,no-resolve
+  - IP-CIDR,64.23.132.171/32,no-resolve
+
+  # Claude：主站、API、桌面应用桥接、附件和 Artifacts 使用同一出口。
+  - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,claude.ai
+  - DOMAIN-SUFFIX,claude.com
+  - DOMAIN-SUFFIX,claudeusercontent.com
+  - DOMAIN-SUFFIX,claude.sites
+  - DOMAIN-SUFFIX,claudemcpcontent.com
+
+  # Cursor：编辑器、API、扩展及静态资源。
+  - DOMAIN-SUFFIX,cursor.com
+  - DOMAIN-SUFFIX,cursor.sh
+  - DOMAIN-SUFFIX,cursorapi.com
+  - DOMAIN-SUFFIX,cursor-cdn.com
+  - DOMAIN-SUFFIX,cursorvm.com
+  - DOMAIN,accounts.spacexsi.com
+  - DOMAIN,auth.grokusercontent.com
+  - DOMAIN,auth.grokipedia.com
+
+  # GitHub Copilot：包括 individual / business / enterprise 子域。
+  - DOMAIN-SUFFIX,githubcopilot.com
+  - DOMAIN,copilot-proxy.githubusercontent.com
+  - DOMAIN,copilot-telemetry.githubusercontent.com
+  - DOMAIN,origin-tracker.githubusercontent.com
+
+  # Microsoft Copilot；与 GitHub Copilot 分开维护。
+  - DOMAIN-SUFFIX,copilot.microsoft.com
+  - DOMAIN-SUFFIX,copilot.cloud.microsoft
+  - DOMAIN-SUFFIX,edgeservices.bing.com
+  - DOMAIN-SUFFIX,api.microsoftapp.net
+  - DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io
+  - DOMAIN,sydney.bing.com
+  - DOMAIN,www.bing.com
+  - DOMAIN,services.bingapis.com
+  - DOMAIN,gateway.bingviz.microsoft.net
+  - DOMAIN,gateway.bingviz.microsoftapp.net
+
+  # Gemini / AI Studio / NotebookLM，不把整个 Google 平台归入 AI。
+  - DOMAIN-SUFFIX,gemini.google.com
+  - DOMAIN-SUFFIX,aistudio.google.com
+  - DOMAIN-SUFFIX,notebooklm.google.com
+  - DOMAIN-SUFFIX,notebooklm.google
+  - DOMAIN,generativelanguage.googleapis.com
+  - DOMAIN,notebooklm-pa.googleapis.com
+  - DOMAIN,notebooklm-pa.clients6.google.com
+  - DOMAIN,ai.google.dev
+  - DOMAIN,makersuite.google.com
+
+  # 从 GlobalMedia 中提取的其他 AI 服务。
+  - DOMAIN-SUFFIX,perplexity.ai
+  - DOMAIN-SUFFIX,mistral.ai
+  - DOMAIN-SUFFIX,x.ai
+  - DOMAIN-SUFFIX,grok.com
+  - DOMAIN-SUFFIX,poe.com

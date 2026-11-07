@@ -41,7 +41,7 @@ def getPreference():
 
     try:
         top_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-        with open(os.path.join(top_dir, 'preference.yaml'), 'rb') as fp:
+        with open(os.path.join(top_dir, 'preference.yaml'), 'r', encoding='utf-8-sig') as fp:
             orig_preference = yaml.load(fp)
             if orig_preference is None:
                 raise FileNotFoundError
